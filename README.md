@@ -32,25 +32,25 @@ The bundeled **modules script packages** are arranged by the pages of the shop t
 
 The bundeled **tests script packages** are arranged by the business domain aspects of the shop. Every test may consist of a test setup, test start, test steps, and test end. 
 
-#### tests.account
+### tests.account
 
 - **TCreateAccount**: Register new user and validate account page.
 
-#### tests.cart
+### tests.cart
 
 - **TCart**: Add three products to cart and validate cart page with manipulation.
 
-#### tests.catalog
+### tests.catalog
 
 - **TCatalogBrowsing**: Browse and validate homepage, catalog page, product detail page.
 
-#### tests.order
+### tests.order
 
 - **TGuestOrder**: Order random product via search with guest checkout via visa.
 - **TNewCustomerOrder**: Order random product via search and checkout with new user via visa.
 - **TReturningCusomerOrder**: Register new user and order random product via shop naviagtion and checkout with created user and via visa.
 
-#### tests.search
+### tests.search
 
 - **TSearch**: Search for color, product number and not existing search term with suggestion and validate results.
 
@@ -63,14 +63,14 @@ The bundeled **tests script packages** are arranged by the business domain aspec
 - Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
 - Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
 
-### XLT (Script Developer)
+### XLT
 
 - XLT [Main](https://www.xceptance.de/en/xlt/)
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
 - XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
 - XLT Script Developer [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 
-### Demandware (Shop System)
+### Demandware
 
 - [Demandware](http://www.demandware.com/)
 - Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
