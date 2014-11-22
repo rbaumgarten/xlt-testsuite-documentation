@@ -2,12 +2,12 @@
 
 # XLT SiteGenesis-Community-TestSuite
 
-The Xceptance LoadTest Script Developer (XLT) SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. The test object is the default demonstration implementation of the shop system also known as SiteGenesis.
+**The Xceptance LoadTest Script Developer (XLT) SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. The test object is the default demonstration implementation of the shop system also known as SiteGenesis.**
 
 ## Versions
 
-- **XLT Script Developer**: _Version 4.5.0 alpha1_
-- **Demandware Site Genesis**: _Version 15.1.0.14_
+- XLT Script Developer: _Version 4.5.0 alpha1_
+- Demandware Site Genesis: _Version 15.1.0.14_
 
 ## Definitions
 
