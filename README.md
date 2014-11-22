@@ -56,26 +56,26 @@ The bundeled **tests script packages** are arranged by the business domain aspec
 
 ## References
 
-#### Xceptance
+### Xceptance
 
 - [Xceptance](https://www.xceptance.de/en/)
 - [Xceptance Blog](http://blog.xceptance.com/)
 - Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
 - Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
 
-#### XLT (Script Developer)
+### XLT (Script Developer)
 
 - XLT [Main](https://www.xceptance.de/en/xlt/)
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
 - XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
 - XLT Script Developer [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 
-#### Demandware (Shop System)
+### Demandware (Shop System)
 
 - [Demandware](http://www.demandware.com/)
 - Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
 
-#### Technology
+### Technology
 
 - w3schools Reference: [XPath, XQuery and XSLT Functions](http://www.w3schools.com/jsref/default.asp)
 - w3schools Reference: [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
