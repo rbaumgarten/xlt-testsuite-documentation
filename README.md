@@ -11,14 +11,14 @@
 
 ## Definitions
 
-- _homepage_ : main landing page.
-- _catalog_ : catalog page, product grid page (PGP), product listing page (PLP), product overview page (POP).
-- _product detail_ : product detail page (PDP).
-- _minicart_ : mini cart pop up.
-- _cart_ : cart page.
-- _checkout_ : checkout pages and process consisting of three steps (addresses shipping, billing, order submit)
-- _account_ : account page, my account.
-- _search_ : search box and search result page.
+- _homepage_: main landing page.
+- _catalog_: catalog page, product grid page (PGP), product listing page (PLP), product overview page (POP).
+- _product detail_: product detail page (PDP).
+- _minicart_: mini cart pop up.
+- _cart_: cart page.
+- _checkout_: checkout pages and process consisting of three steps (addresses shipping, billing, order submit)
+- _account_: account page, my account.
+- _search_: search box and search result page.
 
 ## Test Data
 
