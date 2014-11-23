@@ -18,7 +18,7 @@
 - **product detail**: product detail page (PDP).
 - **minicart**: mini cart pop up.
 - **cart**: cart page.
-- **checkout**: checkout pages and process consisting of three steps (addresses [shipping/billing], payement, order submit)
+- **checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
 - **account**: account page, my account.
 - **customer**: registered user with account.
 - **guest**: unregistered user without account.
