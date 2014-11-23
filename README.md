@@ -14,7 +14,7 @@
 
 - **homepage**: main landing page.
 - **search**: search box and search result page.
-- **catalog**: catalog page, product grid page (PGP), product listing page (PLP), product overview page (POP).
+- **catalog**: catalog page, product grid page (PGP), product listing page, product overview page (POP).
 - **product detail**: product detail page (PDP).
 - **minicart**: mini cart pop up.
 - **cart**: cart page.
