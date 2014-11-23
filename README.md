@@ -14,11 +14,11 @@
 
 - **homepage**: main landing page.
 - **search**: search box and search result page.
-- **catalog**: catalog page, product grid page (PGP), product listing page, product overview page (POP).
+- **catalog**: catalog page, product grid/listing/overview page (PGP/PLP/POP).
 - **product detail**: product detail page (PDP).
 - **minicart**: mini cart pop up.
 - **cart**: cart page.
-- **checkout**: checkout pages and process consisting of three steps (addresses, [shipping,/billing], payement, order submit)
+- **checkout**: checkout pages and process consisting of three steps (addresses [shipping/billing], payement, order submit)
 - **account**: account page, my account.
 - **customer**: registered user with account.
 - **guest**: unregistered user without account.
