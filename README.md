@@ -11,14 +11,14 @@
 
 ## Definitions
 
-- _homepage_: main landing page.
-- _catalog_: catalog page, product grid page (PGP), product listing page (PLP), product overview page (POP).
-- _product detail_: product detail page (PDP).
-- _minicart_: mini cart pop up.
-- _cart_: cart page.
-- _checkout_: checkout pages and process consisting of three steps (addresses shipping, billing, order submit)
-- _account_: account page, my account.
-- _search_: search box and search result page.
+- _homepage_ > main landing page.
+- _catalog_ > catalog page, product grid page (PGP), product listing page (PLP), product overview page (POP).
+- _product detail_ > product detail page (PDP).
+- _minicart_ > mini cart pop up.
+- _cart_ > cart page.
+- _checkout_ > checkout pages and process consisting of three steps (addresses shipping, billing, order submit)
+- _account_ > account page, my account.
+- _search_ > search box and search result page.
 
 ## Test Data
 
@@ -68,7 +68,7 @@ The bundeled **tests script packages** are arranged by the business domain aspec
 - XLT [Main](https://www.xceptance.de/en/xlt/)
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
 - XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
-- XLT Script Developer [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
+- XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 
 #### Demandware
 
