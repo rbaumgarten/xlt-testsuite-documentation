@@ -2,23 +2,26 @@
 
 # XLT SiteGenesis-Community-TestSuite
 
-##### The Xceptance LoadTest Script Developer (XLT) SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. The test object is the default demonstration implementation of the shop system also known as SiteGenesis.
+##### The Xceptance LoadTest Script Developer (XLT) SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. 
+##### The test object is the default demonstration implementation of the shop system also known as SiteGenesis.
 
 ## Versions
 
-- XLT Script Developer: _Version 4.5.0 alpha1_
-- Demandware Site Genesis: _Version 15.1.0.14_
+- XLT Script Developer: Version 4.5.0 alpha1.
+- Demandware Site Genesis: Version 15.1.0.14.
 
 ## Definitions
 
-- _homepage_ > main landing page.
-- _catalog_ > catalog page, product grid page (PGP), product listing page (PLP), product overview page (POP).
-- _product detail_ > product detail page (PDP).
-- _minicart_ > mini cart pop up.
-- _cart_ > cart page.
-- _checkout_ > checkout pages and process consisting of three steps (addresses shipping, billing, order submit)
-- _account_ > account page, my account.
-- _search_ > search box and search result page.
+- **homepage**: main landing page.
+- **search**: search box and search result page.
+- **catalog**: catalog page, product grid page (PGP), product listing page (PLP), product overview page (POP).
+- **product detail**: product detail page (PDP).
+- **minicart**: mini cart pop up.
+- **cart**: cart page.
+- **checkout**: checkout pages and process consisting of three steps (addresses, [shipping,/billing], payement, order submit)
+- **account**: account page, my account.
+- **customer**: registered user with account.
+- **guest**: unregistered user without account.
 
 ## Test Data
 
