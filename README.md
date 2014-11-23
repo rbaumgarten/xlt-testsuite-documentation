@@ -25,7 +25,7 @@
 
 ## Test Data
 
-The used **variables** are stored in **property** files. The variables are defined in the global test data property file, the package (module/tests) specific property files or annotated at the scripts (modules/tests) themselves. Each variable is inheritated in descending oder and may be overwritten. Caution: PLEASE DO NOT EDIT PROPERTY FILES WITH AN EXTERNAL TEXT EDITOR!
+The used **variables** are stored in **property** files. The variables are defined in the global test data property file `global_testdata.properties`, the package (module/tests) specific property files `package_testdata.properties` or annotated at the scripts (modules/tests) themselves. Each variable is inheritated in descending file tree order and may be overwritten. Caution: PLEASE DO NOT EDIT PROPERTY FILES WITH AN EXTERNAL TEXT EDITOR!
 
 ## Modules
 
