@@ -137,8 +137,8 @@ The bundeled **tests script packages** are arranged by the business domain aspec
 
 ## Technology
 
-- w3schools [HTTML](http://www.w3schools.com/html/)
-- w3schools [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
-- w3schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/jsref/default.asp)
-- w3schools [JavaScript](http://www.w3schools.com/jsref/default.asp)
+- w3schools [HTML](http://www.w3schools.com/html/)
+- w3schools [JavaScript and HTML DOM](http://www.w3schools.com/jsref/)
+- w3schools [CSS Selectors](http://www.w3schools.com/cssref/)
+- w3schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
