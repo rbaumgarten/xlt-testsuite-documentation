@@ -73,7 +73,7 @@ Each test can utilize these scripts from their pages module to create workflows 
 
 _While shopping with your webbrowser you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
 
-With the XLT Script Developer Firefox extension and the SiteGenesis-Community-TestSuite framework from GitHub it is easy to create test cases for the described scenario by following this short step-by-step-setup-guide:
+With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short step-by-step-setup-guide:
 
 - **Identify** the workflow you want to simulate by making a informal list of page interactions.
 - **Search** for all interactions in the according modules inside of the testsuite.
