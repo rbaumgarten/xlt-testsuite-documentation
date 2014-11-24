@@ -16,7 +16,7 @@ By dividing the Demandware SiteGenesis shop in certain **page types** (like Home
 
 Hence **every page has its own module** with scripts that can interact with this page. This layer of interactions is **directly mapped** with the actions you can execute when you actually visit the page inside of your web browser. This means for every page certain interactions can be invoked by scripts (bundled in modules packages for each page type).
 
-Each **test** can utilize these scripts from their pages module to create **workflows** that interact in a certain way with all pages to **simulate user interactions** (between web browser and shop) and to **evalute certain assertains** of business and technical scenarios of the shop system. All tests are **bundled in packages** matching their main purpose, **testing scope** or shop area for validation.
+Each **test** can utilize these scripts from their pages module to create **workflows** that interact in a certain way with all pages to **simulate interactions** of a user with the shop system and to **evaluate assumptions** of business and technical scenarios of the shop system. All tests are bundled in packages matching their **scope of testing** (main purpose or shop area for validation).
 
 ## Structure
 
