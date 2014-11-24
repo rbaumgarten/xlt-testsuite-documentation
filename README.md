@@ -40,9 +40,9 @@ Each **test** can utilize these scripts from their pages module to create **work
     |       |-- cart                  # tests for Cart page
     |       |-- catalog               # tests for Catalog pages
     |       |-- checkout              # tests for Checkout pages
-   	|       \-- search                # tests for Searches
+    |       \-- search                # tests for Searches
     \-- src
-   	    \-- tests                     # XLT java wrapper classes
+        \-- tests                     # XLT java wrapper classes
 
 ## Definitions
 
