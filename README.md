@@ -103,7 +103,7 @@ The bundeled **tests script packages** are arranged by the business domain aspec
 
 - **TCatalogBrowsing**: Browse and validate homepage, catalog page, product detail page.
 
-### tests.order
+### tests.checkout
 
 - **TGuestOrder**: Order random product via search with guest checkout via visa.
 - **TNewCustomerOrder**: Order random product via search and checkout with new user via visa.
