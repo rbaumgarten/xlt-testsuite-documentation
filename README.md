@@ -1,4 +1,4 @@
-<a href="https://gitter.im/dataduke/xlt-testsuite-documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter badge"></a> &nbsp; &nbsp; <a href="http://github.com/dataduke/xlt-testsuite-documentation/blob/master/LICENSE.md" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT-license badge"></a>
+<!-- <a href="https://gitter.im/dataduke/xlt-testsuite-documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter badge"></a> &nbsp; &nbsp; --> <a href="http://github.com/dataduke/xlt-testsuite-documentation/blob/master/LICENSE.md" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT-license badge"></a>
 
 # XLT SiteGenesis-Community-TestSuite
 
@@ -10,18 +10,74 @@
 - XLT Script Developer: Version 4.5.0 alpha1.
 - Demandware Site Genesis: Version 15.1.0.14.
 
+## Concept
+
+By dividing the Demandware SiteGenesis shop in certain page types (like Homepage, Catalog Page or ProductDetailPage) an basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arragned accordingly. 
+
+Hence every page has its own module with scripts that can interact with this page. This layer of interactions is directly mapped with the actions you can execute when you actually visit the page inside of your web browser. This means for every page certain interactions can be invoked by scripts (bundled in modules packages for each page type).
+
+Each test can utilize these scripts from their pages module to create workflows that interacts in a certain way with all pages to simulate user interactions (between webbrowser and shop) and to evalute certain assertains of business and technical scenarios of the shop system. All tests are bundled in packages matching their main purpose, testing scope or shop area for validation.
+
+## Struture
+
+    .
+    |-- build.properties              # XLT java build properties
+    |-- build.xml    				  # XLT java build configuration
+    |-- global_testdata.properties    # global testdata properties
+    |-- scripts                       
+    |   |-- modules.helper            # basic scripts
+    |   |-- modules.pages             # scripts for specific pages
+    |   |   |-- account               # scripts on Account pages
+    |   |   |-- cart           		  # scripts on Cart page
+    |   |   |-- catalog           	  # scripts on Catalog pages
+    |   |   |-- checkout           	  # scripts on Checkout pages
+    |   |   |-- homepage              # scripts on Homepage
+    |   |   |-- minicart              # scripts on MiniCart popup
+    |   |   |-- productdetailpage     # scripts on ProductDetailPage
+    |   |   \-- search           	  # scripts for Searching
+    |   \-- tests            		  
+    |       |-- account            	  # tests for Account pages
+    |       |-- cart           		  # tests for Cart page
+    |       |-- catalog           	  # tests for Catalog pages
+    |       |-- checkout           	  # tests for Checkout pages
+   	|       \-- search           	  # tests for Searches
+    \-- src            	  			  
+   	    \-- tests           	      # XLT java wrapper classes
+
+
+## Guide
+
+_While shopping with your webbrowser you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
+
+With the XLT Script Developer Firefox extension and the SiteGenesis-Community-TestSuite framework from GitHub it is easy to create test cases for the described scenario by following this short step-by-step-setup-guide:
+
+1. Identify the workflow you want to simulate by making a informal list of page interactions.
+2. Search for all interactions in the according modules inside of the testsuite.
+3. Create a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select _Manage Test Data..._.
+4. Run your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
+
 ## Definitions
 
-- **homepage**: main landing page.
-- **search**: search box and search result page.
-- **catalog**: catalog page, product grid/listing/overview page (PGP/PLP/POP).
-- **product detail**: product detail page (PDP).
-- **minicart**: mini cart pop up.
-- **cart**: cart page.
-- **checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
-- **account**: account page, my account.
-- **customer**: registered user with account.
-- **guest**: unregistered user without account.
+#### Users
+
+- **Customer**: registered user with account.
+- **Guest**: unregistered user without account.
+
+#### Pages
+
+- **Homepage**: main landing page.
+- **Search**: search box and search result page.
+- **Catalog**: catalog page, product grid/listing/overview page (PGP/PLP/POP).
+- **ProductDetailPage**: product detail page (PDP).
+- **MiniCart**: minicart pop up.
+- **Cart**: cart page.
+- **Checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
+- **Account**: account page, my account.
+
+#### Interactions
+
+- **order**: purchase, buy products.
+- **verify**: validate and assert a page contents.
 
 ## Test Data
 
