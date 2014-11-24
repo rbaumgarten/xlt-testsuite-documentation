@@ -75,10 +75,10 @@ _While shopping with your webbrowser you may change product attributes like colo
 
 With the XLT Script Developer Firefox extension and the SiteGenesis-Community-TestSuite framework from GitHub it is easy to create test cases for the described scenario by following this short step-by-step-setup-guide:
 
-- Identify the workflow you want to simulate by making a informal list of page interactions.
-- Search for all interactions in the according modules inside of the testsuite.
-- Create a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
-- Run your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
+- **Identify** the workflow you want to simulate by making a informal list of page interactions.
+- **Search** for all interactions in the according modules inside of the testsuite.
+- **Create** a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
+- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
 
 ## Test Data
 
