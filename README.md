@@ -139,6 +139,6 @@ The bundled **tests script packages** are arranged by the business domain aspect
 
 - w3schools [HTML](http://www.w3schools.com/html/)
 - w3schools [JavaScript and HTML DOM](http://www.w3schools.com/jsref/)
-- w3schools [CSS Selectors](http://www.w3schools.com/cssref/)
+- w3schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
 - w3schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
