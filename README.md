@@ -7,8 +7,8 @@
 
 ## Versions
 
-- XLT Script Developer: Version 4.5.0 alpha1.
-- Demandware Site Genesis: Version 15.1.0.14.
+- XLT Script Developer: Version **4.5.0 alpha1**
+- Demandware SiteGenesis: Version **15.1.0.14**
 
 ## Concept
 
@@ -18,43 +18,31 @@ Hence every page has its own module with scripts that can interact with this pag
 
 Each test can utilize these scripts from their pages module to create workflows that interacts in a certain way with all pages to simulate user interactions (between webbrowser and shop) and to evalute certain assertains of business and technical scenarios of the shop system. All tests are bundled in packages matching their main purpose, testing scope or shop area for validation.
 
-## Struture
+## Structure
 
     .
     |-- build.properties              # XLT java build properties
-    |-- build.xml    				  # XLT java build configuration
+    |-- build.xml                     # XLT java build configuration
     |-- global_testdata.properties    # global testdata properties
-    |-- scripts                       
+    |-- scripts
     |   |-- modules.helper            # basic scripts
     |   |-- modules.pages             # scripts for specific pages
     |   |   |-- account               # scripts on Account pages
-    |   |   |-- cart           		  # scripts on Cart page
-    |   |   |-- catalog           	  # scripts on Catalog pages
-    |   |   |-- checkout           	  # scripts on Checkout pages
+    |   |   |-- cart                  # scripts on Cart page
+    |   |   |-- catalog               # scripts on Catalog pages
+    |   |   |-- checkout              # scripts on Checkout pages
     |   |   |-- homepage              # scripts on Homepage
     |   |   |-- minicart              # scripts on MiniCart popup
     |   |   |-- productdetailpage     # scripts on ProductDetailPage
-    |   |   \-- search           	  # scripts for Searching
-    |   \-- tests            		  
-    |       |-- account            	  # tests for Account pages
-    |       |-- cart           		  # tests for Cart page
-    |       |-- catalog           	  # tests for Catalog pages
-    |       |-- checkout           	  # tests for Checkout pages
-   	|       \-- search           	  # tests for Searches
-    \-- src            	  			  
-   	    \-- tests           	      # XLT java wrapper classes
-
-
-## Guide
-
-_While shopping with your webbrowser you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
-
-With the XLT Script Developer Firefox extension and the SiteGenesis-Community-TestSuite framework from GitHub it is easy to create test cases for the described scenario by following this short step-by-step-setup-guide:
-
-- Identify the workflow you want to simulate by making a informal list of page interactions.
-- Search for all interactions in the according modules inside of the testsuite.
-- Create a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
-- Run your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
+    |   |   \-- search                # scripts for Searching
+    |   \-- tests
+    |       |-- account               # tests for Account pages
+    |       |-- cart                  # tests for Cart page
+    |       |-- catalog               # tests for Catalog pages
+    |       |-- checkout              # tests for Checkout pages
+   	|       \-- search                # tests for Searches
+    \-- src
+   	    \-- tests                     # XLT java wrapper classes
 
 ## Definitions
 
@@ -78,6 +66,19 @@ With the XLT Script Developer Firefox extension and the SiteGenesis-Community-Te
 
 - **order**: purchase, buy products.
 - **verify**: validate and assert a page contents.
+
+# Framework
+
+## Guide
+
+_While shopping with your webbrowser you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
+
+With the XLT Script Developer Firefox extension and the SiteGenesis-Community-TestSuite framework from GitHub it is easy to create test cases for the described scenario by following this short step-by-step-setup-guide:
+
+- Identify the workflow you want to simulate by making a informal list of page interactions.
+- Search for all interactions in the according modules inside of the testsuite.
+- Create a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
+- Run your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
 
 ## Test Data
 
@@ -113,30 +114,31 @@ The bundeled **tests script packages** are arranged by the business domain aspec
 
 - **TSearch**: Search for color, product number and not existing search term with suggestion and validate results.
 
-## References
+# References
 
-#### Xceptance
+## Xceptance
 
 - [Xceptance](https://www.xceptance.de/en/)
 - [Xceptance Blog](http://blog.xceptance.com/)
 - Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
 - Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
 
-#### XLT
+## XLT
 
 - XLT [Main](https://www.xceptance.de/en/xlt/)
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
 - XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
 - XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 
-#### Demandware
+## Demandware
 
 - [Demandware](http://www.demandware.com/)
 - Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
 
-#### Technology
+## Technology
 
-- w3schools Reference: [XPath, XQuery and XSLT Functions](http://www.w3schools.com/jsref/default.asp)
-- w3schools Reference: [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
-- w3schools Reference: [JavaScript](http://www.w3schools.com/jsref/default.asp)
+- w3schools [HTTML](http://www.w3schools.com/html/)
+- w3schools [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
+- w3schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/jsref/default.asp)
+- w3schools [JavaScript](http://www.w3schools.com/jsref/default.asp)
 
