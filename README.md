@@ -12,7 +12,7 @@
 
 ## Concept
 
-By dividing the Demandware SiteGenesis shop in certain **page types** (like Homepage, Catalog Page or ProductDetailPage) an basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arranged accordingly. 
+By dividing the Demandware SiteGenesis shop in certain **page types** (like Homepage, Catalog Page or ProductDetailPage) a basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arranged accordingly. 
 
 Hence **every page has its own module** with scripts that can interact with this page. This layer of interactions is **directly mapped** with the actions you can execute when you actually visit the page inside of your web browser. This means for every page certain interactions can be invoked by scripts (bundled in modules packages for each page type).
 
