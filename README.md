@@ -3,7 +3,7 @@
 # XLT SiteGenesis-Community-TestSuite
 
 ##### The Xceptance LoadTest Script Developer (XLT) SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. 
-##### The test object is the default demonstration implementation of the shop system also known as SiteGenesis.
+##### The test object of this test uite for [XLT Script Developer](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/) is the default demonstration implementation of the shop system also known as [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site).
 
 ## Versions
 
@@ -76,7 +76,7 @@ _While shopping with your web browser at a shop you may change product attribute
 With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
 
 - **Identify** the workflow you want to simulate by making a informal list of page interactions.
-- **Search** for all interactions in the according modules inside of the testsuite.
+- **Search** for all interactions in the according modules inside of the test suite.
 - **Create** a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
 - **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
 
