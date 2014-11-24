@@ -21,28 +21,28 @@ Each **test** can utilize these scripts from their pages module to create **work
 ## Structure
 
     .
-    |-- build.properties              # XLT java build properties
-    |-- build.xml                     # XLT java build configuration
-    |-- global_testdata.properties    # global testdata properties
+    |-- build.properties                # XLT java build properties
+    |-- build.xml                       # XLT java build configuration
+    |-- global_testdata.properties      # global testdata properties
     |-- scripts
-    |   |-- modules.helper            # basic scripts
-    |   |-- modules.pages             # scripts for specific pages
-    |   |   |-- account               # scripts on Account pages
-    |   |   |-- cart                  # scripts on Cart page
-    |   |   |-- catalog               # scripts on Catalog pages
-    |   |   |-- checkout              # scripts on Checkout pages
-    |   |   |-- homepage              # scripts on Homepage
-    |   |   |-- minicart              # scripts on MiniCart popup
-    |   |   |-- productdetailpage     # scripts on ProductDetailPage
-    |   |   \-- search                # scripts for Searching
+    |   |-- modules.helper              # basic scripts
+    |   |-- modules.pages               # scripts for specific pages
+    |   |   |-- account                 # scripts on Account pages
+    |   |   |-- cart                    # scripts on Cart page
+    |   |   |-- catalog                 # scripts on Catalog pages
+    |   |   |-- checkout                # scripts on Checkout pages
+    |   |   |-- homepage                # scripts on Homepage
+    |   |   |-- minicart                # scripts on MiniCart popup
+    |   |   |-- productdetailpage       # scripts on ProductDetailPage
+    |   |   \-- search                  # scripts for Searching
     |   \-- tests
-    |       |-- account               # tests for Account pages
-    |       |-- cart                  # tests for Cart page
-    |       |-- catalog               # tests for Catalog pages
-    |       |-- checkout              # tests for Checkout pages
-    |       \-- search                # tests for Searches
+    |       |-- account                 # tests for Account pages
+    |       |-- cart                    # tests for Cart page
+    |       |-- catalog                 # tests for Catalog pages
+    |       |-- checkout                # tests for Checkout pages
+    |       \-- search                  # tests for Searches
     \-- src
-        \-- tests                     # XLT java wrapper classes
+        \-- tests                       # XLT java wrapper classes
 
 ## Definitions
 
