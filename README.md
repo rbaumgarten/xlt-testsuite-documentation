@@ -12,11 +12,11 @@
 
 ## Concept
 
-By dividing the Demandware SiteGenesis shop in certain page types (like Homepage, Catalog Page or ProductDetailPage) an basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arragned accordingly. 
+By dividing the Demandware SiteGenesis shop in certain **page types** (like Homepage, Catalog Page or ProductDetailPage) an basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arranged accordingly. 
 
-Hence every page has its own module with scripts that can interact with this page. This layer of interactions is directly mapped with the actions you can execute when you actually visit the page inside of your web browser. This means for every page certain interactions can be invoked by scripts (bundled in modules packages for each page type).
+Hence **every page has its own module** with scripts that can interact with this page. This layer of interactions is **directly mapped** with the actions you can execute when you actually visit the page inside of your web browser. This means for every page certain interactions can be invoked by scripts (bundled in modules packages for each page type).
 
-Each test can utilize these scripts from their pages module to create workflows that interacts in a certain way with all pages to simulate user interactions (between webbrowser and shop) and to evalute certain assertains of business and technical scenarios of the shop system. All tests are bundled in packages matching their main purpose, testing scope or shop area for validation.
+Each **test** can utilize these scripts from their pages module to create **workflows** that interact in a certain way with all pages to **simulate user interactions** (between web browser and shop) and to **evalute certain assertains** of business and technical scenarios of the shop system. All tests are **bundled in packages** matching their main purpose, **testing scope** or shop area for validation.
 
 ## Structure
 
@@ -73,7 +73,7 @@ Each test can utilize these scripts from their pages module to create workflows 
 
 _While shopping with your webbrowser you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
 
-With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short step-by-step-setup-guide:
+With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
 
 - **Identify** the workflow you want to simulate by making a informal list of page interactions.
 - **Search** for all interactions in the according modules inside of the testsuite.
