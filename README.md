@@ -64,8 +64,8 @@ Each test can utilize these scripts from their pages module to create workflows 
 
 #### Interactions
 
-- **order**: purchase, buy products.
-- **verify**: validate and assert a page contents.
+- **order**: purchase or buy products.
+- **verify**: validate and assert values, information or elements.
 
 # Framework
 
