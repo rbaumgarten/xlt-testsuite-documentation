@@ -21,9 +21,10 @@ Each **test** can utilize these scripts from their pages module to create **work
 ## Structure
 
     .
-    |-- build.properties                   # XLT java build properties
-    |-- build.xml                          # XLT java build configuration
-    |-- global_testdata.properties         # global testdata properties
+    |-- bin                                # executables
+    |-- config                             # IDE configuration
+    |   |-- data                           # test data dictionaries
+    |   |   \-- default                    
     |-- scripts
     |   |-- modules.helper                 # basic scripts
     |   |-- modules.pages                  # scripts for specific pages
@@ -41,8 +42,12 @@ Each **test** can utilize these scripts from their pages module to create **work
     |       |-- catalog                    # tests for Catalog pages
     |       |-- checkout                   # tests for Checkout pages
     |       \-- search                     # tests for Searches
-    \-- src
-        \-- tests                          # XLT java wrapper classes
+    |-- src
+    |   \-- tests                          # XLT java wrapper classes
+    |-- build.properties                   # XLT java build properties
+    |-- build.xml                          # XLT java build configuration
+    |-- xlt-scriptdeveloper.properties     # XLT settings
+    \-- global_testdata.properties         # global testdata properties
 
 ## Definitions
 
