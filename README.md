@@ -44,8 +44,8 @@ Each **test** can utilize these scripts from their pages module to create **work
     |       \-- search                     # tests for Searches
     |-- src
     |   \-- tests                          # XLT java wrapper classes
-    |-- build.properties                   # XLT java build properties
-    |-- build.xml                          # XLT java build configuration
+    |-- build.properties                   # XLT ant build properties
+    |-- build.xml                          # XLT ant build configuration
     |-- xlt-scriptdeveloper.properties     # XLT settings
     \-- global_testdata.properties         # global testdata properties
 
@@ -149,4 +149,5 @@ The bundled **tests script packages** are arranged by the business domain aspect
 - w3schools [JavaScript RegEx](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
+- Ant [Manual](https://ant.apache.org/manual/running.html)
 
