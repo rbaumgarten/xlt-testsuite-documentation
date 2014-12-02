@@ -148,4 +148,5 @@ The bundled **tests script packages** are arranged by the business domain aspect
 - w3schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 - w3schools [JavaScript RegEx](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
+- RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
 
