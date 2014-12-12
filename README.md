@@ -142,15 +142,17 @@ The bundled **tests script packages** are arranged by the business domain aspect
 
 ## Technology
 
-- W3C Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
-- W3C [HTML TR](http://www.w3.org/TR/html/)
+- W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
+- W3C [DOM TR](http://www.w3.org/TR/dom/)
+- W3C [HTML & CSS Portal](http://www.w3.org/standards/webdesign/htmlcss.html), [HTML TR](http://www.w3.org/TR/html/)
 - W3C [CSS Portal](http://www.w3.org/Style/CSS/), [CSS TR](http://www.w3.org/TR/CSS/), [CSS Selectors TR](http://www.w3.org/TR/selectors/#selectors)
+- W3C [Javascript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
 - W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
+- W3C [XML Portal](http://www.w3.org/standards/xml/)
 - w3schools [HTML](http://www.w3schools.com/html/)
-- w3schools [JavaScript and HTML DOM](http://www.w3schools.com/jsref/)
 - w3schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
+- w3schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - w3schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
-- w3schools [JavaScript RegEx](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
 - Ant [Manual](https://ant.apache.org/manual/running.html)
