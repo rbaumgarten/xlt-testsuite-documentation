@@ -140,7 +140,7 @@ The bundled **tests script packages** are arranged by the business domain aspect
 - [Demandware](http://www.demandware.com/)
 - Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
 
-## Technology
+## W3C
 
 - W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
 - W3C [DOM TR](http://www.w3.org/TR/dom/)
@@ -149,10 +149,17 @@ The bundled **tests script packages** are arranged by the business domain aspect
 - W3C [Javascript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
 - W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
 - W3C [XML Portal](http://www.w3.org/standards/xml/)
-- w3schools [HTML](http://www.w3schools.com/html/)
-- w3schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
-- w3schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
-- w3schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
+
+## W3Schools
+
+- W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
+- W3Schools [HTML](http://www.w3schools.com/html/)
+- W3Schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
+- W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+- W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
+
+## Other Technology
+
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
 - Ant [Manual](https://ant.apache.org/manual/running.html)
