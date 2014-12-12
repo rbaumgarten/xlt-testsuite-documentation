@@ -142,6 +142,9 @@ The bundled **tests script packages** are arranged by the business domain aspect
 
 ## Technology
 
+- W3C Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
+- W3C [TR HTML](http://www.w3.org/TR/html/)
+- W3C [CSS Portal](http://www.w3.org/Style/CSS/), [TR CSS](http://www.w3.org/TR/CSS/), [TR CSS Selectors](http://www.w3.org/TR/selectors/#selectors)
 - w3schools [HTML](http://www.w3schools.com/html/)
 - w3schools [JavaScript and HTML DOM](http://www.w3schools.com/jsref/)
 - w3schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
