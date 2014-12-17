@@ -126,25 +126,25 @@ The bundled **tests script packages** are arranged by the business domain aspect
 
 In the following there are several examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
 
-Remove trailing whitespace (ex: totals shipping)
+#### Remove trailing whitespace (ex: totals shipping)
 
     storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
 
-Substring inclusive until last character (ex: creditcard number)
+#### Substring inclusive until last character (ex: creditcard number)
 
     storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
 
-Substring exclusive until first occurence of character (ex: shipping method label)
+#### Substring exclusive until first occurence of character (ex: shipping method label)
 
     storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
     storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
     storeEval('"${shipping_method_label}".replace(/\:.*$/,"")', '${shipping_method_name')
 
-Convert full english month name to number with two digits (ex: helper module)
+#### Convert full english month name to number with two digits (ex: helper module)
 
     storeEval('("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)', '$(month_number)');
 
-Pattern matching for order date and order number (ex: order confirmation summary)
+#### Pattern matching for order date and order number (ex: order confirmation summary)
 
     assertText('css=#main .order-date .value','regexp: [A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');
     assertText('css=#main .order-number .value','regexp: 00[0-9]{6}');
