@@ -100,6 +100,7 @@ The bundled **tests script packages** are arranged by the business domain aspect
 ### tests.account
 
 - **TCreateAccount**: Register new user and validate account page.
+- **TUpdatePersonalData**: Registers new user and changes personald data afterwards.
 
 ### tests.cart
 
@@ -107,6 +108,7 @@ The bundled **tests script packages** are arranged by the business domain aspect
 
 ### tests.catalog
 
+- **THomepage**: Validates global site elements and homepage.
 - **TCatalogBrowsing**: Browse and validate homepage, catalog page, product detail page.
 
 ### tests.checkout
@@ -118,6 +120,29 @@ The bundled **tests script packages** are arranged by the business domain aspect
 ### tests.search
 
 - **TSearch**: Search for color, product number and not existing search term with suggestion and validate results.
+- **TSearchExtended**: Search for several products with advanced parameter usage and sorting.
+
+## Examples
+
+Following are several examples to show case possible parameter and regex handling.
+
+- Remove trailing whitespace (ex: totals shipping)
+
+    "${block_totals_shipping}".trim()
+
+- Substring inclusive until last character (ex: creditcard number)
+
+    "${creditcard_number}".substring(12,16)
+
+- Substring exclusive until first occurence of character (ex: shipping method label)
+
+    "${shipping_method_label}".slice(0, “${shipping_method_label}".indexOf(‘:’)
+    "${shipping_method_label}".match(/[^:]*/)
+    "${shipping_method_label}".replace(/\:.*$/,"")
+
+- Convert full english month name to number with two digits (ex: helper module)
+
+("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)
 
 # References
 
