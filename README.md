@@ -146,8 +146,8 @@ In the following there are several examples to showcase possible ways for parame
 
 #### Pattern matching for order date and order number (ex: order confirmation summary)
 
-    assertText('css=#main .order-date .value','regexp: [A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');
-    assertText('css=#main .order-number .value','regexp: 00[0-9]{6}');
+    assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');
+    assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
 
 # References
 
