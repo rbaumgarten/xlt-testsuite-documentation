@@ -124,7 +124,7 @@ The bundled **tests script packages** are arranged by the business domain aspect
 
 ## Examples
 
-Following are several examples to show case possible parameter and regex handling.
+In the following there are several examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
 
 Remove trailing whitespace (ex: totals shipping)
 
