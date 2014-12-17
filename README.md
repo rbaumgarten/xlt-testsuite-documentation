@@ -128,7 +128,7 @@ Following are several examples to show case possible parameter and regex handlin
 
 - Remove trailing whitespace (ex: totals shipping)
 
-    "${block_totals_shipping}".trim()
+    `"${block_totals_shipping}".trim()`
 
 - Substring inclusive until last character (ex: creditcard number)
 
@@ -136,13 +136,13 @@ Following are several examples to show case possible parameter and regex handlin
 
 - Substring exclusive until first occurence of character (ex: shipping method label)
 
-    "${shipping_method_label}".slice(0, “${shipping_method_label}".indexOf(‘:’)
-    "${shipping_method_label}".match(/[^:]*/)
-    "${shipping_method_label}".replace(/\:.*$/,"")
+    `"${shipping_method_label}".slice(0, “${shipping_method_label}".indexOf(‘:’)`
+    `"${shipping_method_label}".match(/[^:]*/)`
+    `"${shipping_method_label}".replace(/\:.*$/,"")`
 
 - Convert full english month name to number with two digits (ex: helper module)
 
-("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)
+    `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`
 
 # References
 
