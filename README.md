@@ -149,11 +149,11 @@ In the following there are several examples to showcase possible ways for parame
     assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');
     assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
 
-#### Pattern matching for uppercase words (ex: table column or navigation block headers)
+#### Pattern matching for uppercased words by css (ex: table column or navigation block headers)
 
     assertText ('css=#main .label .capitalized', 'regexpi:CaseInsensitveMatch')
 
-#### Pattern matching for any substrings with asterisk (ex: shipping address)
+#### Pattern matching for any substring with asterisk (ex: shipping address)
 
     assertText ('css=#main .shipping-address .city-state-postal', '*${state}*'')
 
