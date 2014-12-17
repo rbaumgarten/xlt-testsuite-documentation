@@ -155,7 +155,7 @@ In the following there are several examples to showcase possible ways for parame
 
 #### Pattern matching for any substring with asterisk (ex: shipping address)
 
-    assertText('css=#main .shipping-address .city-state-postal', '*${state}*'')
+    assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 
 # References
 
