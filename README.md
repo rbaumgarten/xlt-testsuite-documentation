@@ -128,21 +128,26 @@ Following are several examples to show case possible parameter and regex handlin
 
 Remove trailing whitespace (ex: totals shipping)
 
-    "${block_totals_shipping}".trim()`
+    storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
 
 Substring inclusive until last character (ex: creditcard number)
 
-    "${creditcard_number}".substring(12,16)
+    storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
 
 Substring exclusive until first occurence of character (ex: shipping method label)
 
-    `"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)`
-    `"${shipping_method_label}".match(/[^:]*/)`
-    `"${shipping_method_label}".replace(/\:.*$/,"")`
+    storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
+    storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
+    storeEval('"${shipping_method_label}".replace(/\:.*$/,"")', '${shipping_method_name')
 
 Convert full english month name to number with two digits (ex: helper module)
 
-    `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`
+    storeEval('("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)', '$(month_number)');
+
+Pattern matching for order date and order number (ex: order confirmation summary)
+
+    assertText('css=#main .order-date .value','regexp: [A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');
+    assertText('css=#main .order-number .value','regexp: 00[0-9]{6}');
 
 # References
 
