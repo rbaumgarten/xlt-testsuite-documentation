@@ -76,6 +76,9 @@ In the following there are several scripting examples to showcase possible ways 
 
 # Framework
 
+- `{name}` are obligatory parameter. 
+- `[name]` are optional parameter.
+
 ## Structure
 
     .
@@ -110,19 +113,19 @@ In the following there are several scripting examples to showcase possible ways 
 
 ## Packages
 
-- Tests: `tests.$area`
-- Pageflows: `pageflows.[$startpage]`
+- Tests: `tests.{area}`
+- Pageflows: `pageflows.{startpage}`
 - Helper Pageflows: `pageflows.helper`
-- Modules: `modules.pages.[$area].$pagename`
-- Helper Modules: `modules.helper.[$area]`
+- Modules: `modules.pages.[area].{currentpage}`
+- Helper Modules: `modules.helper.[area]`
 
 ## Files
 
 - Tests: `T$Testscope`
-- Pageflows: `P$Startpage$Processscope$Endpage`
-- Modules: `M$Pagename[$Pagepart]$Pageinteraction`
+- Pageflows: `P{Startpage}{Processscope][Endpage]`
+- Modules: `M{Currentpage}.[Pagepart].{Pageinteraction}`
 
-## Names
+## Naming
 
 #### Users
 
@@ -196,7 +199,7 @@ Pageflows or short flows are modeling actions that interact with multiple connec
 
 In this context masking means to hide a set of multiple page interactions that are essential to the test case itself but are not important to the test focus of the test case. Hence all needed interactions can be aggegrated into a single pageflow and be gently hidden when opening a test case inside the XLT script developer.  Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.
 
-### pageflows.$startpage
+### pageflows.{startpage}
 
 Pageflows might be arranged in seperate packages named after the startpage to mimic the already established pageing concept for modules.  
 
@@ -213,7 +216,7 @@ _For example a specific flow can be used for test case setup and another for a t
 
 The bundled **modules script packages** are arranged by the pages of the shop they can be applied to. Every module has the ability to envoke actions, commands or reuse other modules to interact with the corresponding page.
 
-### modules.pages
+### modules.pages.{currentpage}
 
 Modules focusing on specific interaction with page parts.  
 _Example: enter, select or choose data of test/page/product, store data form current page, validate current page elements, text or values._
