@@ -70,7 +70,22 @@ Each **test** can utilize these scripts from their pages module to create **work
 #### Interactions
 
 - **order**: purchase or buy products.
-- **verify**: validate and assert values, information or elements.
+- **add to cart**: puts product in cart.
+- **add to wishlist**: putproduct to wishlist.
+- **set color**: set product color
+- **set size**: set product size
+- **set quantity**: set product quantity
+- **continue**: save entered data an go to next page
+- **go to**: go to the given page
+- **submit**: save and send entered from (several) pages
+
+#### Scripting
+
+- **validate**: verify and assert values, parameters or elements.
+- **enter**: enter parameters or values in input fields;
+- **select**: choose from radio buttons.
+- **check**: mark checkboxes.
+- **store**: store values from a page for following validations.
 
 # Framework
 
