@@ -63,7 +63,7 @@ Each **test** can utilize these scripts from their pages module to create **work
 - Pageflows: `P$Startpage$Testscope$Endpage`
 - Modules: `M$Pagename[$Pagepart]$Pageinteraction`
 
-## Definitions
+## Names
 
 #### Users
 
