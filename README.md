@@ -50,14 +50,14 @@ Each **test** can utilize these scripts from their pages module to create **work
     \-- global_testdata.properties         # global testdata properties
 
 
-## Packagename Conventions
+## Packages
 
 - Tests: `tests.$area`
 - Pageflows: `pageflows.[$startpage]`
 - Modules: `modules.pages.[$area].$pagename`
 - Helper: `modules.helper.[$area]`
 
-## Filename Conventions
+## Files
 
 - Tests: `T$Testscope`
 - Pageflows: `P$Startpage$Testscope$Endpage`
