@@ -112,8 +112,9 @@ In the following there are several scripting examples to showcase possible ways 
 
 - Tests: `tests.$area`
 - Pageflows: `pageflows.[$startpage]`
+- Helper Pageflows: `pageflows.helper`
 - Modules: `modules.pages.[$area].$pagename`
-- Helper: `modules.helper.[$area]`
+- Helper Modules: `modules.helper.[$area]`
 
 ## Files
 
