@@ -127,13 +127,13 @@ Pageflows or short flows are modeling actions that interact with multiple connec
 
 #### Masking
 
-In this context masking means to hide all page interactions that are essential for the main test focus but are not important for the test object themselves. Hence all need page module can be aggegrated into a single pageflow. 
-__For example a specific flow can be used for test case setup and another for a test case teardown.__
+In this context masking means to hide all page interactions that are essential for the main test focus but are not important for the test object themselves. Hence all need page module can be aggegrated into a single pageflow.  
+_For example a specific flow can be used for test case setup and another for a test case teardown._
 
 #### Workflows
 
-Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.
-__For example** a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases.__
+Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.  
+_For example a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases._
 
 ## Modules
 
