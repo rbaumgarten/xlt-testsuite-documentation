@@ -45,13 +45,16 @@ In the following there are several scripting examples to showcase possible ways 
 
 - Remove trailing whitespace (ex: totals shipping)  
 
+
     storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
 
 - Substring inclusive until last character (ex: creditcard number)  
 
+
     storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
 
 -  Substring exclusive until first occurence of character (ex: shipping method label)  
+
 
     storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
     storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
