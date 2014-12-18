@@ -89,13 +89,9 @@ With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-
 
 The used **variables** are stored in **property** files. The variables are defined in the global test data property file `global_testdata.properties`, the package (module/tests) specific property files `package_testdata.properties` or annotated at the scripts (modules/tests) themselves. Each variable is inheritated in descending file tree order and may be overwritten. Caution: PLEASE DO NOT EDIT PROPERTY FILES WITH AN EXTERNAL TEXT EDITOR!
 
-## Modules
+## Test Cases
 
-The bundled **modules script packages** are arranged by the pages of the shop they can be applied to. Every module has the ability to envoke actions, commands or reuse other modules to interact with the corresponding page.
-
-## Tests
-
-The bundled **tests script packages** are arranged by the business domain aspects of the shop. Every test may consist of a test setup, test start, test steps, and test end. 
+Test Cases or short cases are the core compement of the test suite. A test case may consist out of pageflows and moduls that aggreggate page interactions. The bundled **tests script packages** are arranged by the business domain aspects of the shop. Every test may consist of a test setup, test start, test steps, and test end. 
 
 ### tests.account
 
@@ -122,7 +118,30 @@ The bundled **tests script packages** are arranged by the business domain aspect
 - **TSearch**: Search for color, product number and not existing search term with suggestion and validate results.
 - **TSearchExtended**: Search for several products with advanced parameter usage and sorting.
 
-## Examples
+## Pageflows
+
+Pageflows or short flows are modeling actions that interact with multiple connected pages and therefor have to use different moduls from different packages to:
+
+- mask unimportant but needed processes from the test developer (masking)
+- reuse typical page set interaction (workflows).
+
+#### Masking
+
+In this context masking means to hide all page interactions that are essential for the main test focus but are not important for the test object themselves. Hence all need page module can be aggegrated into a single pageflow. 
+
+**For example** a specific flow can be used for test case setup and another for a test case teardown. 
+
+#### Workflows
+
+Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.
+
+**For example** a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases.
+
+## Modules
+
+The bundled **modules script packages** are arranged by the pages of the shop they can be applied to. Every module has the ability to envoke actions, commands or reuse other modules to interact with the corresponding page.
+
+## Scripting
 
 In the following there are several examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
 
