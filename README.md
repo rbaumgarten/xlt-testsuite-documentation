@@ -12,6 +12,17 @@
 
 # Guideline
 
+## Development
+
+_While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
+
+With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
+
+- **Identify** the workflow you want to simulate by making a informal list of page interactions.
+- **Search** for all interactions in the according modules inside of the test suite.
+- **Create** a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
+- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
+
 ## Concept
 
 By dividing the Demandware SiteGenesis shop in certain **page types** (like Homepage, Catalog Page or ProductDetailPage) a basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arranged accordingly. 
@@ -24,20 +35,9 @@ Each **test** can utilize these scripts from their pages module to create **work
 
     [img-test-pyramid]
 
-## Development
+## Examples
 
-_While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
-
-With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
-
-- **Identify** the workflow you want to simulate by making a informal list of page interactions.
-- **Search** for all interactions in the according modules inside of the test suite.
-- **Create** a new testcase and drag and drop the needed scripts in the fitting order inside and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
-- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
-
-## Scripting
-
-In the following there are several examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
+In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
 
 #### Remove trailing whitespace (ex: totals shipping)
 
