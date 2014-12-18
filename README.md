@@ -123,7 +123,7 @@ Following is an explantion of used abbreviations for place holders of parameter 
 
 ## Files
 
-- Tests: `T$Testscope`
+- Tests: `{TTestscope}`
 - Pageflows: `P{Startpage}{Processscope][Endpage]`
 - Modules: `M{Currentpage}.[Pagepart].{Pageinteraction}`
 
