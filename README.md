@@ -69,15 +69,15 @@ Each **test** can utilize these scripts from their pages module to create **work
 
 #### Interactions
 
+- **go to**: navigate to a page
+- **continue**: save entered data an go to next page
+- **submit**: save and send entered data from (several) pages
 - **order**: purchase or buy products.
+- **set color**: select product color
+- **set size**: select product size
+- **set quantity**: enter product quantity
 - **add to cart**: puts product in cart.
 - **add to wishlist**: putproduct to wishlist.
-- **set color**: set product color
-- **set size**: set product size
-- **set quantity**: set product quantity
-- **continue**: save entered data an go to next page
-- **go to**: go to the given page
-- **submit**: save and send entered data from (several) pages
 
 #### Scripting
 
