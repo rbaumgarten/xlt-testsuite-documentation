@@ -127,7 +127,7 @@ Pageflows or short flows are modeling actions that interact with multiple connec
 
 #### Masking
 
-In this context masking means to hide all page interactions that are essential for the main test focus but are not important for the test object themselves. Hence all need page module can be aggegrated into a single pageflow.  
+In this context masking means to hide a set of multiple page interactions that are essential to the test case itself but are not important to the test focus of the test case. Hence all needed interactions can be aggegrated into a single pageflow and be gently hidden when opening a test case.  
 _For example a specific flow can be used for test case setup and another for a test case teardown._
 
 #### Workflows
