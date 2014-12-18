@@ -76,8 +76,10 @@ In the following there are several scripting examples to showcase possible ways 
 
 # Framework
 
-- `{name}` are obligatory parameter. 
-- `[name]` are optional parameter.
+Following is an explantion of used abbreviations for place holders of parameter names.
+
+- `{name}` are obligatory parameter names. 
+- `[name]` are optional parameter names.
 
 ## Structure
 
