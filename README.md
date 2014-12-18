@@ -77,7 +77,7 @@ Each **test** can utilize these scripts from their pages module to create **work
 - **set quantity**: set product quantity
 - **continue**: save entered data an go to next page
 - **go to**: go to the given page
-- **submit**: save and send entered from (several) pages
+- **submit**: save and send entered data from (several) pages
 
 #### Scripting
 
