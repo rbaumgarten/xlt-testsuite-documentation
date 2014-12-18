@@ -87,6 +87,14 @@ Each **test** can utilize these scripts from their pages module to create **work
 - **check**: mark checkboxes.
 - **store**: store values from a page for following validations.
 
+#### Conventions
+
+File naming strategies for different file types:
+
+- Tests: `T$Testscope`
+- Pageflows: `P$Startpage$Testscope$Endpage`
+- Modules: `M$Pagename[$Pagepart]$Pageinteraction`
+
 # Framework
 
 ## Guide
