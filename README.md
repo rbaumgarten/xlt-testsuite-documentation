@@ -213,14 +213,14 @@ _For example a specific flow can be used for test case setup and another for a t
 
 The bundled **modules script packages** are arranged by the pages of the shop they can be applied to. Every module has the ability to envoke actions, commands or reuse other modules to interact with the corresponding page.
 
-### modules.helper
-
-Modules to enable othe page interactions that are mostly reused by several page modules.
-
 ### modules.pages
 
 Modules focusing on specific interaction with page parts.  
 _Example: enter, select or choose data of test/page/product, store data form current page, validate current page elements, text or values._
+
+### modules.helper
+
+Modules to enable othe page interactions from other main modules. Thus these helper modules are sometimes also reused by several page modules.
 
 # References
 
