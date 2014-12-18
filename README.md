@@ -27,7 +27,7 @@ With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-
 
 ## Fundamentals
 
-By dividing the Demandware SiteGenesis shop in certain **page types** (like Homepage, Catalog Page or ProductDetailPage) a basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arranged accordingly. 
+By dividing the Demandware SiteGenesis shop in certain **page types** (like Homepage, Catalog Page or ProductDetailPage) a basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arranged accordingly. This allows us to follow a strict **PAGING CONCEPT** when building and extending this testsuite!
 
 Hence **every page has its own module** with scripts that can interact with this page. This layer of interactions is **directly mapped** with the actions you can execute when you actually visit the page inside of your web browser. This means for every page certain interactions can be invoked by scripts (bundled in modules packages for each page type).
 
@@ -192,20 +192,19 @@ Test Cases or short cases are the core compement of the test suite. A test case 
 
 ## Pageflows
 
-Pageflows or short flows are modeling actions that interact with multiple connected pages and therefor have to use different moduls from different packages to:
+Pageflows or short flows are modeling actions that interact with multiple connected pages and therefor have to utilize moduls from different packages. The intention of a pageflow might be to mask unimportant but needed processes from the test developer (masking) or enable reuse of typical page interaction sets (reutilization).
 
-- mask unimportant but needed processes from the test developer (helper)
-- reuse typical page set interaction (reutilization).
+_In this context masking means to hide a set of multiple page interactions that are essential to the test case itself but are not important to the test focus of the test case. Hence all needed interactions can be aggegrated into a single pageflow and be gently hidden when opening a test case inside the XLT script developer.  Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows. _
+
+### pageflows.$startpage
+
+Pageflows might be arranged in seperate packages named after the startpage to mimic the already established pageing concept for modules.
+_For example a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases._
 
 ### pageflows.helper
 
-In this context masking means to hide a set of multiple page interactions that are essential to the test case itself but are not important to the test focus of the test case. Hence all needed interactions can be aggegrated into a single pageflow and be gently hidden when opening a test case inside the XLT script developer.  
-_For example a specific flow can be used for test case setup and another for a test case teardown._
+Some pageflows might use the same set of interactions or might need help to enable several interactions. These essential scripts for main pageflows are located in a seperate helper package. _For example a specific flow can be used for test case setup and another for a test case teardown._
 
-### pageflows.process
-
-Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.  
-_For example a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases._
 
 ## Modules
 
