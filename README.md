@@ -5,10 +5,12 @@
 ##### The Xceptance LoadTest (XLT) Script Developer SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. 
 ##### The test object of this test suite for [XLT Script Developer](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/) is the default demonstration implementation of the shop known as [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site).
 
-## Versions
+#### Versions
 
 - XLT Script Developer: Version **4.5.0 alpha1**
 - Demandware SiteGenesis: Version **15.1.0.14**
+
+# Guideline
 
 ## Concept
 
@@ -18,7 +20,9 @@ Hence **every page has its own module** with scripts that can interact with this
 
 Each **test** can utilize these scripts from their pages module to create **workflows** that interact in a certain way with all pages to **simulate interactions** of a user with the shop system and to **evaluate assumptions** of business and technical scenarios of the shop system. All tests are bundled in packages matching their **scope of testing** (main purpose or shop area for validation).
 
-# Guideline
+## Fundament
+
+    [img-test-pyramid]
 
 ## Development
 
@@ -110,7 +114,7 @@ In the following there are several examples to showcase possible ways for parame
 ## Files
 
 - Tests: `T$Testscope`
-- Pageflows: `P$Startpage$Testscope$Endpage`
+- Pageflows: `P$Startpage$Processscope$Endpage`
 - Modules: `M$Pagename[$Pagepart]$Pageinteraction`
 
 ## Names
@@ -185,15 +189,15 @@ Test Cases or short cases are the core compement of the test suite. A test case 
 
 Pageflows or short flows are modeling actions that interact with multiple connected pages and therefor have to use different moduls from different packages to:
 
-- mask unimportant but needed processes from the test developer (masking)
-- reuse typical page set interaction (workflows).
+- mask unimportant but needed processes from the test developer (helper)
+- reuse typical page set interaction (reutilization).
 
-#### Masking
+### pageflows.helper
 
 In this context masking means to hide a set of multiple page interactions that are essential to the test case itself but are not important to the test focus of the test case. Hence all needed interactions can be aggegrated into a single pageflow and be gently hidden when opening a test case inside the XLT script developer.  
 _For example a specific flow can be used for test case setup and another for a test case teardown._
 
-#### Workflows
+### pageflows.process
 
 Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.  
 _For example a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases._
@@ -201,6 +205,15 @@ _For example a pageflow might include: login to account, add shipping address an
 ## Modules
 
 The bundled **modules script packages** are arranged by the pages of the shop they can be applied to. Every module has the ability to envoke actions, commands or reuse other modules to interact with the corresponding page.
+
+### modules.helper
+
+Modules to enable othe page interactions that are mostly reused by several page modules.
+
+### modules.pages
+
+Modules focusing on specific interaction with page parts.  
+_Example: enter, select or choose data of test/page/product, store data form current page, validate current page elements, text or values._
 
 # References
 
