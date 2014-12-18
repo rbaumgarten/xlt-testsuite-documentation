@@ -241,7 +241,7 @@ The bundled **modules script packages** are arranged by the pages of the shop th
 - W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
-## Other Technology
+## Other
 
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
