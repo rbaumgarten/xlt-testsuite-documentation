@@ -49,6 +49,20 @@ Each **test** can utilize these scripts from their pages module to create **work
     |-- xlt-scriptdeveloper.properties     # XLT settings
     \-- global_testdata.properties         # global testdata properties
 
+
+## Packagename Conventions
+
+- Tests: `tests.$area`
+- Pageflows: `pageflows.[$startpage]`
+- Modules: `modules.pages.[$area].$pagename`
+- Helper: `modules.helper.[$area]`
+
+## Filename Conventions
+
+- Tests: `T$Testscope`
+- Pageflows: `P$Startpage$Testscope$Endpage`
+- Modules: `M$Pagename[$Pagepart]$Pageinteraction`
+
 ## Definitions
 
 #### Users
@@ -86,14 +100,6 @@ Each **test** can utilize these scripts from their pages module to create **work
 - **select**: choose from radio buttons.
 - **check**: mark checkboxes.
 - **store**: store values from a page for following validations.
-
-#### Conventions
-
-File naming strategies for different file types:
-
-- Tests: `T$Testscope`
-- Pageflows: `P$Startpage$Testscope$Endpage`
-- Modules: `M$Pagename[$Pagepart]$Pageinteraction`
 
 # Framework
 
