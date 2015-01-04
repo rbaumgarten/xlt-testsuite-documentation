@@ -186,7 +186,7 @@ Test Cases or short cases are the core compement of the test suite. A test case 
 
 ### tests.account
 
-- **TAccountRegisterNewCustomer**: Register new user and validate account page.
+- **TAccountRegisterCreate**: Register new user and validate account page.
 - **TAccountUpdatePersonalData**: Registers new user and changes personald data afterwards.
 
 ### tests.browse

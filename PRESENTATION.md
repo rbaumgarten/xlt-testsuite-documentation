@@ -6,7 +6,7 @@
 - Showcase new features of latest xlt versions
 - Duration around 15 min
 
-# Outline
+# Outline of Presentation
 
 ## Presentation Title (1 min)
 
