@@ -180,53 +180,56 @@ Following is an explantion of used abbreviations for place holders of parameter 
 
 The used **variables** are stored in **property** files. The variables are defined in the global test data property file `global_testdata.properties`, the package (module/tests) specific property files `package_testdata.properties` or annotated at the scripts (modules/tests) themselves. Each variable is inheritated in descending file tree order and may be overwritten. Caution: PLEASE DO NOT EDIT PROPERTY FILES WITH AN EXTERNAL TEXT EDITOR!
 
-## Test Cases
+## Tests
 
 Test Cases or short cases are the core compement of the test suite. A test case may consist out of pageflows and moduls that aggreggate page interactions. The bundled **tests script packages** are arranged by the business domain aspects of the shop. Every test may consist of a test setup, test start, test steps, and test end. 
 
 ### tests.account
 
-- **TCreateAccount**: Register new user and validate account page.
-- **TUpdatePersonalData**: Registers new user and changes personald data afterwards.
+- **TAccountRegisterNewCustomer**: Register new user and validate account page.
+- **TAccountUpdatePersonalData**: Registers new user and changes personald data afterwards.
 
-### tests.cart
+### tests.browse
 
-- **TCart**: Add three products to cart and validate cart page with manipulation.
+- **TBrowseHomepage**: Validates global site elements and homepage.
+- **TBrowseCatalog**: Browse and validate homepage, catalog page, product detail page.
+- **TBrowseProductDetailPage**:
 
-### tests.catalog
+### tests.carts
 
-- **THomepage**: Validates global site elements and homepage.
-- **TCatalogBrowsing**: Browse and validate homepage, catalog page, product detail page.
+- **TCartBasics**: Add three products to cart and validate cart page with manipulation.
+- **TCartExtended**:
+- **TMiniCartBasics**:
+- **TMiniCartExtended**:
 
-### tests.checkout
+### tests.checkouts
 
-- **TGuestOrder**: Order random product via search with guest checkout via visa.
-- **TNewCustomerOrder**: Order random product via search and checkout with new user via visa.
-- **TReturningCusomerOrder**: Register new user and order random product via shop naviagtion and checkout with created user and via visa.
+- **TCheckoutGuest**: Order random product via search with guest checkout via visa.
+- **TCheckoutNewCustomer**: Order random product via search and checkout with new user via visa.
+- **TCheckoutReturningCustomer**: Register new user and order random product via shop naviagtion and checkout with created user and via visa.
 
 ### tests.search
 
-- **TSearch**: Search for color, product number and not existing search term with suggestion and validate results.
+- **TSearchBasics**: Search for color, product number and not existing search term with suggestion and validate results.
 - **TSearchExtended**: Search for several products with advanced parameter usage and sorting.
 
-## Pageflows
+## Flows
 
 Pageflows or short flows are modeling actions that interact with multiple connected pages and therefor have to utilize moduls from different packages. The intention of a pageflow might be to mask unimportant but needed processes from the test developer (masking) or enable reuse of typical page interaction sets (reutilization).
 
 In this context masking means to hide a set of multiple page interactions that are essential to the test case itself but are not important to the test focus of the test case. Hence all needed interactions can be aggegrated into a single pageflow and be gently hidden when opening a test case inside the XLT script developer.  Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.
 
-### pageflows.{page}
+### flows.{page}
 
 Pageflows might be arranged in seperate packages named after the startpage to mimic the already established pageing concept for modules.  
 
 _For example a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases._
 
-### pageflows.helper
+### flows.helper
 
 Some pageflows might use the same set of interactions or might need help to enable several interactions. These essential scripts for main pageflows are located in a seperate helper package.  
 
 _For example a specific flow can be used for test case setup and another for a test case teardown._
-
 
 ## Modules
 
@@ -285,4 +288,5 @@ Modules to enable othe page interactions from other main modules. Thus these hel
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
 - Ant [Manual](https://ant.apache.org/manual/running.html)
+- [Markdown](http://daringfireball.net/projects/markdown/), [MulitMarkdown](http://fletcherpenney.net/multimarkdown/)
 
