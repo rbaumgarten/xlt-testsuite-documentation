@@ -288,5 +288,5 @@ Modules to enable othe page interactions from other main modules. Thus these hel
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
 - Ant [Manual](https://ant.apache.org/manual/running.html)
-- [Markdown](http://daringfireball.net/projects/markdown/), [MulitMarkdown](http://fletcherpenney.net/multimarkdown/)
+- [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
