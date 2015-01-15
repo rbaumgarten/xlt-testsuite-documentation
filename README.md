@@ -1,14 +1,144 @@
 <!-- <a href="https://gitter.im/dataduke/xlt-testsuite-documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter badge"></a> &nbsp; &nbsp; --> <a href="http://github.com/dataduke/xlt-testsuite-documentation/blob/master/LICENSE.md" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT-license badge"></a>
 
-<!-- # XLT SiteGenesis-Community-TestSuite -->
+# XLT SiteGenesis-Community-TestSuite
 
-##### The Xceptance LoadTest (XLT) Script Developer SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. 
-##### The test object of this test suite for [XLT Script Developer](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/) is the default demonstration implementation of the shop known as [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site).
+The Xceptance LoadTest (XLT) Script Developer SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. 
+The test object of this test suite for [XLT Script Developer](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/) is the default demonstration implementation of the shop known as [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site).
 
-#### Versions
+- Name: SiteGenesis-Community-TestSuite
+- Version: to be defined #todo
+- Release: January 2015
+- License: MIT License
+- License URI: http://opensource.org/licenses/MIT
+- Tags: load testing, performance testing, testing
+- Contributors:
+    - Benjamin Nothurft, Xceptance Software Technologies GmbH
+    - Robert Baumgarten, Xceptance Software Technologies GmbH
+    - René Schwietzke, Xceptance Software Technologies GmbH
+- Prerequisites:
+    - XLT Script Developer Version: 4.5.0 alpha1
+    - Demandware SiteGenesis Version: 15.1.0.14
 
-- XLT Script Developer: Version **4.5.0 alpha1**
-- Demandware SiteGenesis: Version **15.1.0.14**
+
+## Intention
+
+As we had already build more comlex test suites for SiteGenesis we realized it is time to incoporate all our gained expierence and knowledge base inside a compulsive, non redundant, well defined and clearly structured package. 
+
+We want you, our customer, to profit from this piece of condensed high quality testing best practises collected over dozens of projects and collaborativly shared ideas inside our circle of coworkers over the past decade.
+
+Hence this test suite is released into public to be used, extend, improved and fully adapted to your specific needs. The test suite is here to serve the community and wil be extended in the future with our future best practises so it will always represent state of the art test automation as we provide it as a paid service to ur customers.
+
+> It is a representation of shared and collected testing expierence, applicable knowledge and think tank for best practises as well as compulsive ideas in test automation. 
+Every test automation project may be able to profit from the incopareted concepts of this test suite. It doesn't matter if you build want to build a suite for a shop systems (ecommerce) or other web appications. The underlying principial are the same. The test object Demandware SiteGenesis is just one specific example to serves as reference.
+
+## Use Cases
+
+The test suite is a handy reference for everybody interested in test automation:
+
+__Introduction -__ If you are new to test automation in general this test suite may be serve as helpful demonstration for how test automation works. Furthermore it is also a great entry point for your first project to learn about building a test automation suite. Due to it's easy structure it can enhance your learning curve with XLT Script Developer and guide you in the right direction for script modularization.
+
+__Existing Projects -__ As an collection of examples and concepts the test suite may serve as an idea generator for your quality asssurance wether beeing a singular quality assurance engineer integrated in a development team, dynamic team roles or a completly seperated QA team there are also quite advanced ideas you may and your organization may profit of.
+
+__New Projects -__ For all demandware customers starting with SiteGenesis as their shop template and customizing and extending it form there our test suite can provide a perfect fit for test automation at the inital project stage.
+
+## Tests
+
+The aim of our test set is to cover all standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closy a test even focuses on specific part of buying process which is tested in depth. This test focus defines, where the test case file is placed inside the shop-area-driven test case package structure of the test suite. 
+
+__All tests cover a wide variety of different test pathes and are build up on script modules.__
+
+> Each test consists of a test setup (ensuriing that all preconditions are met), a test scope (focusing on all relevant testing steps) and a test teardown (cleaning up of all changed data in your browser and reversing the state of the shop system to its origin).
+
+
+## Modules
+
+A module is script containing commands and comments. Each module interacts with elements of the website. Thus all modules are packaged by their belonging website. Each module can be reused by different tests. 
+
+All modules are named with "M" as first letter but to clearify the structure even further we decided to outline special modules:
+
+__Validation -__ Very important to the testing is the validation of website elements and dynamic data. These modules evalute via assertion that a fit criterion is meet. To make this clear we decided to name these modules with "V" fo validation as first letter.
+
+__Flow -__ Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several websites or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an "F" as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it's name and the script location inside the package structure.
+
+
+## Installation
+
+You need the following prequesites (all links can be found in references):
+
+__Xceptance XLT Script Developer -__ Just download our firefox extension form mozzilla or our company website.
+
+__DemandWare SiteGenesis Shop -__ We provide you with a public instance of SiteGenesis but you can also choose to setup your own. For further infomration please rely on Demandware.
+
+__XLT Community Test Suite -__ Download this test suite and unzip it on your disc.
+
+
+## First Run
+
+Next open xlt script developer and click the folder icon above the left navigation to import an existing testing project. Choose the unzipped community test suite. Now you may already run the first tests. If you want to use your own shop instance go to glabal test data and change the storefront url to your web address.
+
+## Configuration
+
+__XLT -__ You may download xlt form our webiste and run the scripts via your IDE and a selenium webdriver. For further configuration please rely on our XLT doucumentation online.
+
+## Guide
+
+
+### Prefered Naming Conventions
+
+
+## Feature Backlog
+
+All planned features (ex: new tests or modules) for the furture are tracked as issues at the GitHub project repository.
+
+## Examples
+
+## References
+
+### Xceptance
+
+- [Xceptance](https://www.xceptance.de/en/)
+- [Xceptance Blog](http://blog.xceptance.com/)
+- Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
+- Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
+
+### XLT
+
+- XLT [Main](https://www.xceptance.de/en/xlt/)
+- XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
+- XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
+- XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
+
+### Demandware
+
+- [Demandware](http://www.demandware.com/)
+- Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
+
+### W3C
+
+- W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
+- W3C [DOM TR](http://www.w3.org/TR/dom/)
+- W3C [HTML & CSS Portal](http://www.w3.org/standards/webdesign/htmlcss.html), [HTML TR](http://www.w3.org/TR/html/)
+- W3C [CSS Portal](http://www.w3.org/Style/CSS/), [CSS TR](http://www.w3.org/TR/CSS/), [CSS Selectors TR](http://www.w3.org/TR/selectors/#selectors)
+- W3C [Javascript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
+- W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
+- W3C [XML Portal](http://www.w3.org/standards/xml/)
+
+### W3Schools
+
+- W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
+- W3Schools [HTML](http://www.w3schools.com/html/)
+- W3Schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
+- W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+- W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
+
+### Other
+
+- Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
+- RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
+- Ant [Manual](https://ant.apache.org/manual/running.html)
+- [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+
+
 
 # Guideline
 
@@ -243,50 +373,4 @@ _Example: enter, select or choose data of test/page/product, store data form cur
 ### modules.helper
 
 Modules to enable othe page interactions from other main modules. Thus these helper modules are sometimes also reused by several page modules.
-
-# References
-
-## Xceptance
-
-- [Xceptance](https://www.xceptance.de/en/)
-- [Xceptance Blog](http://blog.xceptance.com/)
-- Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
-- Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
-
-## XLT
-
-- XLT [Main](https://www.xceptance.de/en/xlt/)
-- XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
-- XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
-- XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
-
-## Demandware
-
-- [Demandware](http://www.demandware.com/)
-- Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
-
-## W3C
-
-- W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
-- W3C [DOM TR](http://www.w3.org/TR/dom/)
-- W3C [HTML & CSS Portal](http://www.w3.org/standards/webdesign/htmlcss.html), [HTML TR](http://www.w3.org/TR/html/)
-- W3C [CSS Portal](http://www.w3.org/Style/CSS/), [CSS TR](http://www.w3.org/TR/CSS/), [CSS Selectors TR](http://www.w3.org/TR/selectors/#selectors)
-- W3C [Javascript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
-- W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
-- W3C [XML Portal](http://www.w3.org/standards/xml/)
-
-## W3Schools
-
-- W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
-- W3Schools [HTML](http://www.w3schools.com/html/)
-- W3Schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
-- W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
-- W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
-
-## Other
-
-- Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
-- RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
-- Ant [Manual](https://ant.apache.org/manual/running.html)
-- [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
