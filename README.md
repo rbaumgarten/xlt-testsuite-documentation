@@ -2,8 +2,8 @@
 
 # XLT SiteGenesis-Community-TestSuite
 
-The Xceptance LoadTest (XLT) Script Developer SiteGenesis-Community-TestSuite contains a base test suite for functional test automation and load and performance testing of Demandware based shops systems. 
-The test object of this test suite for [XLT Script Developer](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/) is the default demonstration implementation of the shop known as [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site).
+This is a test suite for XLT to showcase best practises, collected expierences and share our testing knowledge.
+The test object is the demo shop Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) but the underlying concepts are valid for other test objects as well.
 
 - Name: SiteGenesis-Community-TestSuite
 - Version: to be defined #todo
@@ -12,13 +12,34 @@ The test object of this test suite for [XLT Script Developer](https://addons.moz
 - License URI: http://opensource.org/licenses/MIT
 - Tags: load testing, performance testing, testing
 - Contributors:
-    - Benjamin Nothurft, Xceptance Software Technologies GmbH
+    - Benjamin Nothdurft, Xceptance Software Technologies GmbH
     - Robert Baumgarten, Xceptance Software Technologies GmbH
+    - Timo Naumann, Xceptance Software Technologies GmbH
     - René Schwietzke, Xceptance Software Technologies GmbH
-- Prerequisites:
+- Requirements:
     - XLT Script Developer Version: 4.5.0 alpha1
     - Demandware SiteGenesis Version: 15.1.0.14
 
+## Requirements
+
+You need the following prequesites (all links can be found in references):
+
+__Xceptance XLT Script Developer -__ Just download our firefox extension form mozzilla or our company website.
+__DemandWare SiteGenesis Shop -__ We provide you with a public instance of SiteGenesis but you can also choose to setup your own. For further infomration please rely on Demandware.
+__XLT Community Test Suite -__ Download this test suite and unzip it on your disc.
+
+- Xceptance LoadTest: http://www.xceptance-loadtest.com/
+- JDK 7 (6 might still work, but we have not tested that)
+- Apache Ant v1.7.0 or higher
+- Eclipse or any other Java IDE
+
+## Installation
+
+Next open xlt script developer and click the folder icon above the left navigation to import an existing testing project. Choose the unzipped community test suite. Now you may already run the first tests. If you want to use your own shop instance go to glabal test data and change the storefront url to your web address.
+
+## Configuration
+
+__XLT -__ You may download xlt form our webiste and run the scripts via your IDE and a selenium webdriver. For further configuration please rely on our XLT doucumentation online.
 
 ## Intention
 
@@ -41,6 +62,8 @@ __Existing Projects -__ As an collection of examples and concepts the test suite
 
 __New Projects -__ For all demandware customers starting with SiteGenesis as their shop template and customizing and extending it form there our test suite can provide a perfect fit for test automation at the inital project stage.
 
+# Extended Description
+
 ## Tests
 
 The aim of our test set is to cover all standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closy a test even focuses on specific part of buying process which is tested in depth. This test focus defines, where the test case file is placed inside the shop-area-driven test case package structure of the test suite. 
@@ -61,25 +84,6 @@ __Validation -__ Very important to the testing is the validation of website elem
 __Flow -__ Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several websites or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an "F" as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it's name and the script location inside the package structure.
 
 
-## Installation
-
-You need the following prequesites (all links can be found in references):
-
-__Xceptance XLT Script Developer -__ Just download our firefox extension form mozzilla or our company website.
-
-__DemandWare SiteGenesis Shop -__ We provide you with a public instance of SiteGenesis but you can also choose to setup your own. For further infomration please rely on Demandware.
-
-__XLT Community Test Suite -__ Download this test suite and unzip it on your disc.
-
-
-## First Run
-
-Next open xlt script developer and click the folder icon above the left navigation to import an existing testing project. Choose the unzipped community test suite. Now you may already run the first tests. If you want to use your own shop instance go to glabal test data and change the storefront url to your web address.
-
-## Configuration
-
-__XLT -__ You may download xlt form our webiste and run the scripts via your IDE and a selenium webdriver. For further configuration please rely on our XLT doucumentation online.
-
 ## Guide
 
 
@@ -92,7 +96,16 @@ All planned features (ex: new tests or modules) for the furture are tracked as i
 
 ## Examples
 
-## References
+
+
+## Besonderheiten
+
+- flow to quantity rein und raus (configurierbar halten)
+- enter and submit module getrennt
+
+
+
+# References
 
 ### Xceptance
 
@@ -138,6 +151,8 @@ All planned features (ex: new tests or modules) for the furture are tracked as i
 - Ant [Manual](https://ant.apache.org/manual/running.html)
 - [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
+
+---
 
 
 # Guideline
