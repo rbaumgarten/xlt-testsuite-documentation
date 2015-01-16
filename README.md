@@ -1,66 +1,74 @@
 <!-- <a href="https://gitter.im/dataduke/xlt-testsuite-documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter badge"></a> &nbsp; &nbsp; --> <a href="http://github.com/dataduke/xlt-testsuite-documentation/blob/master/LICENSE.md" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT-license badge"></a>
 
-# XLT SiteGenesis-Community-TestSuite
+# SiteGenesis-Community-TestSuite
 
-This is a __Xceptance__ test suite for __XLT Script Developer__ and __XLT__ to showcase best practises, collected expierences and share consolidated knowledge of our testing expertise. The test object is the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
+This is a test suite for __XLT Script Developer__ and __XLT__ to collect expierences, consolidate and share knowledge. It is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
 
 - Name: SiteGenesis-Community-TestSuite
-- Version: to be defined
+- Version: #TODO
 - Release: January 2015
 - License: MIT License
-- License URI: http://opensource.org/licenses/MIT
-- Tags: xlt, testing, best practises, test automation, funtional testing
+- License URI: http://opensource.org/licenses/MIT (#TODO is this link okay?)
+- Tags: xlt, testing, best practises, test automation, funtional testing, regression test, selenium (#TODO ?)
 - Contributors:
-    - Benjamin Nothdurft, Xceptance Software Technologies GmbH
+    - René Schwietzke, Xceptance Software Technologies GmbH
     - Robert Baumgarten, Xceptance Software Technologies GmbH
-    - Timo Naumann, Xceptance Software Technologies GmbH
+    - Benjamin Nothdurft, Xceptance Software Technologies GmbH
 
 ## Requirements
 
-Besides this test suite you only need the following requirements to run, use, improve and change it:
+Besides this test suite you only need the following requirements:
 
-- Firefox v31 or higher
-- XLT Script Developer v4.5.0 or higher: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
+- Firefox
+- XLT Script Developer v4.5.0 or higher: [Download](https://www.xceptance.com/en/xlt/download.html)
 - [Demandware](http://www.demandware.com/) [SiteGenesis](ttp://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) v15.1.0.14 or higher
 
-If you want to use WebDrivers or extend it with Java or similar you may also install the following requirements:
+If you want to run more extended tests (e.g. with webdriver or full Java stack) please install the following requirements:
 
-- XLT (otional): [Main](https://www.xceptance.de/en/xlt/) or [Lab](https://lab.xceptance.de/releases/xlt/latest/)
-- JDK 8 or higher (optional)
-- Apache Ant v1.7.0 or higher (optional)
-- Eclipse or any other Java IDE  (optional)
+- XLT&reg;: [Download](https://www.xceptance.com/en/xlt/download.html)
+- JDK
+- Java IDE (e.g. eclipse)
 
-## Installation
+## Installation and Configuration
 
-1. Open **XLT Script Developer** inside of Firefox.
-2. Import this (unzipped) test suite by clicking the folder icon above the navigation panel.
-3. Just run the provided test cases and enjoy!
+Using this test suite with **XLT Script Developer**:
 
-## Configuration
+1. Install Firefox add-on XLT Script Developer.
+2. Open XLT Script Developer.
+3. Import this (unzipped) test suite by clicking the folder icon above the navigation panel.
+4. Configure the **SiteGenesis** storefront URL in global test data.
+5. Open a test case in the navigaton panel and click replay button in toolbar.
 
-In **XLT Script Developer** you have to configure the shop website storefront url inside of the global testd data
+Using this test suite with **XLT**:
 
-In **XLT** you may optionally configure enhanced settings (e.g.: WebDriver path) by adapting the provided files inside of `\config\` or via `*.properties` in the root directory. For further information please refer to the official [documentation](https://lab.xceptance.de/releases/xlt/latest/).
+1. Create new Java project (with JDK runtime) based on unzipped test suite.
+2. Import XLT libraries.
+2. Edit configuration see below.
+4. Run test as JUnit test. (default: Firefox webdriver)
+5. Adapt webdriver configurations in `project.properties` if you like.
 
-## Intention
+For further information please refer to the official [documentation](https://lab.xceptance.de/releases/xlt/latest/).
 
-As we had already build more comlex test suites for SiteGenesis we realized it is time to focus on building a small, compulsive, well-defined and clearly structured test suite to bundle all our collected testing expierence in a handy set of tests.
+## Project Idea
 
-The intention of this new test suite is to serve, incoperate and represent all our gained testing expierence and condensed testing knowledge base on building a great test suite to the community. Thus everybody can now use it, learn from it, improve it and adapt it to their needs.
+As there are complex test suites for SiteGenesis we realized it is time to focus on building a small, well-defined and clearly structured test suite to bundle collected testing expierence in a handy set of tests. Everybody is invited to use it, learn from it, improve it and adapt it to their needs.
 
 ## Use Cases
 
 The test suite is a handy reference for everybody interested in test automation:
 
-__Introduction -__ If you are new to test automation in general this test suite may serve as helpful demonstration for how test automation works. Furthermore it is also a great entry point for your first project to learn about building a test automation suite. Due to it's easy structure it can enhance your learning curve with XLT Script Developer and guide you in the right direction for script modularization.
-
-__Existing Projects -__ As an collection of examples and concepts the test suite may serve as an idea generator for your quality assurance wether beeing a singular quality assurance engineer integrated in a development team, dynamic team roles or a completly seperated QA team there are also quite advanced ideas you may and your organization may profit of.
-
-__New Projects -__ For all demandware customers starting with SiteGenesis as their shop system which is further customized and extended our test suite can provide a perfect fit for test automation at the inital project stage.
+- Introduction
+    - demonstrate test automation and structure
+    - use it as entry point with fast learning curve
+- Existing Projects 
+    - serve as collection of examples and show cases
+    - reuse best practises for QA of other projects 
+- New Projects
+    - utilize for initial test automation of new shop projects based on SiteGenesis
 
 ## Feature Backlog
 
-All planned features (ex: new tests or modules) for the furture are tracked as issues at the GitHub project repository.
+All planned features are tracked as issues of this GitHub repository.
 
 ---
 
@@ -100,12 +108,12 @@ With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-
 
 In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
 
-- TSearchAddProductToCart: product quantity is used a s input parameter but also as as output parameter. This is because the store **PDP** product details 
+- TSearchAddProductToCart: product quantity is used as input parameter but also as an output parameter. This is because the store **PDP** product details module may be uses in other cases outside the flow so every product dtails is saved as an ourputparameter even though in this flow it would be irrelevant due to th input parameters.
 
 
+- TAccountAddressBook 
 
-rein und raus (configurierbar halten)
-- enter and submit module getrennt
+enter and submit module getrennt
 
 - Remove trailing whitespace (ex: totals shipping)  
 
