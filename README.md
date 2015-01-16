@@ -2,76 +2,75 @@
 
 # XLT SiteGenesis-Community-TestSuite
 
-This is a test suite for XLT to showcase best practises, collected expierences and share our testing knowledge.
-The test object is the demo shop Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) but the underlying concepts are valid for other test objects as well.
+This is a __Xceptance__ test suite for __XLT Script Developer__ and __XLT__ to showcase best practises, collected expierences and share consolidated knowledge of our testing expertise. The test object is the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
 
 - Name: SiteGenesis-Community-TestSuite
-- Version: to be defined #todo
+- Version: to be defined
 - Release: January 2015
 - License: MIT License
 - License URI: http://opensource.org/licenses/MIT
-- Tags: load testing, performance testing, testing
+- Tags: xlt, testing, best practises, test automation, funtional testing
 - Contributors:
     - Benjamin Nothdurft, Xceptance Software Technologies GmbH
     - Robert Baumgarten, Xceptance Software Technologies GmbH
     - Timo Naumann, Xceptance Software Technologies GmbH
-    - René Schwietzke, Xceptance Software Technologies GmbH
-- Requirements:
-    - XLT Script Developer Version: 4.5.0 alpha1
-    - Demandware SiteGenesis Version: 15.1.0.14
 
 ## Requirements
 
-You need the following prequesites (all links can be found in references):
+Besides this test suite you only need the following requirements to run, use, improve and change it:
 
-__Xceptance XLT Script Developer -__ Just download our firefox extension form mozzilla or our company website.
-__DemandWare SiteGenesis Shop -__ We provide you with a public instance of SiteGenesis but you can also choose to setup your own. For further infomration please rely on Demandware.
-__XLT Community Test Suite -__ Download this test suite and unzip it on your disc.
+- Firefox v31 or higher
+- XLT Script Developer v4.5.0 or higher: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
+- [Demandware](http://www.demandware.com/) [SiteGenesis](ttp://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) v15.1.0.14 or higher
 
-- Xceptance LoadTest: http://www.xceptance-loadtest.com/
-- JDK 7 (6 might still work, but we have not tested that)
-- Apache Ant v1.7.0 or higher
-- Eclipse or any other Java IDE
+If you want to use WebDrivers or extend it with Java or similar you may also install the following requirements:
+
+- XLT (otional): [Main](https://www.xceptance.de/en/xlt/) or [Lab](https://lab.xceptance.de/releases/xlt/latest/)
+- JDK 8 or higher (optional)
+- Apache Ant v1.7.0 or higher (optional)
+- Eclipse or any other Java IDE  (optional)
 
 ## Installation
 
-Next open xlt script developer and click the folder icon above the left navigation to import an existing testing project. Choose the unzipped community test suite. Now you may already run the first tests. If you want to use your own shop instance go to glabal test data and change the storefront url to your web address.
+1. Open **XLT Script Developer** inside of Firefox.
+2. Import this (unzipped) test suite by clicking the folder icon above the navigation panel.
+3. Just run the provided test cases and enjoy!
 
 ## Configuration
 
-__XLT -__ You may download xlt form our webiste and run the scripts via your IDE and a selenium webdriver. For further configuration please rely on our XLT doucumentation online.
+In **XLT Script Developer** you have to configure the shop website storefront url inside of the global testd data
+
+In **XLT** you may optionally configure enhanced settings (e.g.: WebDriver path) by adapting the provided files inside of `\config\` or via `*.properties` in the root directory. For further information please refer to the official [documentation](https://lab.xceptance.de/releases/xlt/latest/).
 
 ## Intention
 
-As we had already build more comlex test suites for SiteGenesis we realized it is time to incoporate all our gained expierence and knowledge base inside a compulsive, non redundant, well defined and clearly structured package. 
+As we had already build more comlex test suites for SiteGenesis we realized it is time to focus on building a small, compulsive, well-defined and clearly structured test suite to bundle all our collected testing expierence in a handy set of tests.
 
-We want you, our customer, to profit from this piece of condensed high quality testing best practises collected over dozens of projects and collaborativly shared ideas inside our circle of coworkers over the past decade.
-
-Hence this test suite is released into public to be used, extend, improved and fully adapted to your specific needs. The test suite is here to serve the community and wil be extended in the future with our future best practises so it will always represent state of the art test automation as we provide it as a paid service to ur customers.
-
-> It is a representation of shared and collected testing expierence, applicable knowledge and think tank for best practises as well as compulsive ideas in test automation. 
-Every test automation project may be able to profit from the incopareted concepts of this test suite. It doesn't matter if you build want to build a suite for a shop systems (ecommerce) or other web appications. The underlying principial are the same. The test object Demandware SiteGenesis is just one specific example to serves as reference.
+The intention of this new test suite is to serve, incoperate and represent all our gained testing expierence and condensed testing knowledge base on building a great test suite to the community. Thus everybody can now use it, learn from it, improve it and adapt it to their needs.
 
 ## Use Cases
 
 The test suite is a handy reference for everybody interested in test automation:
 
-__Introduction -__ If you are new to test automation in general this test suite may be serve as helpful demonstration for how test automation works. Furthermore it is also a great entry point for your first project to learn about building a test automation suite. Due to it's easy structure it can enhance your learning curve with XLT Script Developer and guide you in the right direction for script modularization.
+__Introduction -__ If you are new to test automation in general this test suite may serve as helpful demonstration for how test automation works. Furthermore it is also a great entry point for your first project to learn about building a test automation suite. Due to it's easy structure it can enhance your learning curve with XLT Script Developer and guide you in the right direction for script modularization.
 
-__Existing Projects -__ As an collection of examples and concepts the test suite may serve as an idea generator for your quality asssurance wether beeing a singular quality assurance engineer integrated in a development team, dynamic team roles or a completly seperated QA team there are also quite advanced ideas you may and your organization may profit of.
+__Existing Projects -__ As an collection of examples and concepts the test suite may serve as an idea generator for your quality assurance wether beeing a singular quality assurance engineer integrated in a development team, dynamic team roles or a completly seperated QA team there are also quite advanced ideas you may and your organization may profit of.
 
-__New Projects -__ For all demandware customers starting with SiteGenesis as their shop template and customizing and extending it form there our test suite can provide a perfect fit for test automation at the inital project stage.
+__New Projects -__ For all demandware customers starting with SiteGenesis as their shop system which is further customized and extended our test suite can provide a perfect fit for test automation at the inital project stage.
+
+## Feature Backlog
+
+All planned features (ex: new tests or modules) for the furture are tracked as issues at the GitHub project repository.
+
+---
 
 # Extended Description
 
 ## Tests
 
-The aim of our test set is to cover all standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closy a test even focuses on specific part of buying process which is tested in depth. This test focus defines, where the test case file is placed inside the shop-area-driven test case package structure of the test suite. 
+The aim of our test set is to cover all standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closy a test even focuses on specific part of buying process which is tested in depth. This test focus defines, where the test case file is placed inside the shop-area-driven test case package structure of the test suite. All tests cover a wide variety of different test pathes and are build up on script modules.
 
-__All tests cover a wide variety of different test pathes and are build up on script modules.__
-
-> Each test consists of a test setup (ensuriing that all preconditions are met), a test scope (focusing on all relevant testing steps) and a test teardown (cleaning up of all changed data in your browser and reversing the state of the shop system to its origin).
-
+Each test consists of a test setup (ensuring that all preconditions are met), a test scope (focusing on all relevant testing steps) and a test teardown (cleaning up of all changed data in your browser and reversing the state of the shop system to its origin).
 
 ## Modules
 
@@ -84,84 +83,9 @@ __Validation -__ Very important to the testing is the validation of website elem
 __Flow -__ Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several websites or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an "F" as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it's name and the script location inside the package structure.
 
 
-## Guide
+## Step-by-Step-Guide
 
-
-### Prefered Naming Conventions
-
-
-## Feature Backlog
-
-All planned features (ex: new tests or modules) for the furture are tracked as issues at the GitHub project repository.
-
-## Examples
-
-
-
-## Besonderheiten
-
-- flow to quantity rein und raus (configurierbar halten)
-- enter and submit module getrennt
-
-
-
-# References
-
-### Xceptance
-
-- [Xceptance](https://www.xceptance.de/en/)
-- [Xceptance Blog](http://blog.xceptance.com/)
-- Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
-- Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
-
-### XLT
-
-- XLT [Main](https://www.xceptance.de/en/xlt/)
-- XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
-- XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
-- XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
-
-### Demandware
-
-- [Demandware](http://www.demandware.com/)
-- Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
-
-### W3C
-
-- W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
-- W3C [DOM TR](http://www.w3.org/TR/dom/)
-- W3C [HTML & CSS Portal](http://www.w3.org/standards/webdesign/htmlcss.html), [HTML TR](http://www.w3.org/TR/html/)
-- W3C [CSS Portal](http://www.w3.org/Style/CSS/), [CSS TR](http://www.w3.org/TR/CSS/), [CSS Selectors TR](http://www.w3.org/TR/selectors/#selectors)
-- W3C [Javascript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
-- W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
-- W3C [XML Portal](http://www.w3.org/standards/xml/)
-
-### W3Schools
-
-- W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
-- W3Schools [HTML](http://www.w3schools.com/html/)
-- W3Schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
-- W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
-- W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
-
-### Other
-
-- Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
-- RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
-- Ant [Manual](https://ant.apache.org/manual/running.html)
-- [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
-
-
----
-
-
-# Guideline
-
-## Scenario
-
-_While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields._
-
-## Step-by-Step
+__Scenario -__ While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields.
 
 With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
 
@@ -170,23 +94,18 @@ With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-
 - **Create** a new testcase and drag and drop the needed scripts form pageflow and modules packages in the fitting order into the testcase and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
 - **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
 
-## Fundamentals
+---
 
-By dividing the Demandware SiteGenesis shop in certain **page types** (like Homepage, Catalog Page or ProductDetailPage) a basic project structure for the SiteGenesis-Community-TestSuite inside of XLT Script Developer can be arranged accordingly. This allows us to follow a strict **PAGING CONCEPT** when building and extending this testsuite!
-
-Hence **every page has its own module** with scripts that can interact with this page. This layer of interactions is **directly mapped** with the actions you can execute when you actually visit the page inside of your web browser. This means for every page certain interactions can be invoked by scripts (bundled in modules packages for each page type).
-
-More complex sets of interactions with several connected pages can be used and aggregate in scripts for **pageflows**.
-
-Each **test** can utilize these scripts (**pageflows** and **pagemodules**) to create **workflows** that interact in a certain way with all pages to **simulate interactions** of a user with the shop system and to **evaluate assumptions** of business and technical scenarios of the shop system. All tests are bundled in packages matching their **scope of testing** (main purpose or shop area for validation).
-
-## Architecture
-
-    ToDo [img-test-pyramid]
-
-## Examples
+# Examples and special cases
 
 In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
+
+- TSearchAddProductToCart: product quantity is used a s input parameter but also as as output parameter. This is because the store **PDP** product details 
+
+
+
+rein und raus (configurierbar halten)
+- enter and submit module getrennt
 
 - Remove trailing whitespace (ex: totals shipping)  
 
@@ -232,15 +151,9 @@ In the following there are several scripting examples to showcase possible ways 
 
     assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 
+---
 
-# Framework
-
-Following is an explantion of used abbreviations for place holders of parameter names.
-
-- `{name}` are obligatory parameter names. 
-- `[name]` are optional parameter names.
-
-## Structure
+# Structure
 
     .
     |-- bin                                # executables
@@ -286,14 +199,12 @@ Following is an explantion of used abbreviations for place holders of parameter 
 - Pageflows: `P{Startpage}{Processscope][Endpage]`
 - Modules: `M{Currentpage}.[Pagepart].{Pageinteraction}`
 
-## Naming
-
-#### Users
+## Users
 
 - **Customer**: registered user with account.
 - **Guest**: unregistered user without account.
 
-#### Pages
+## Pages
 
 - **Homepage**: main landing page.
 - **Search**: search box and search result page.
@@ -304,7 +215,7 @@ Following is an explantion of used abbreviations for place holders of parameter 
 - **Checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
 - **Account**: account page, my account.
 
-#### Interactions
+## Interactions
 
 - **go to**: navigate to a page
 - **continue**: save entered data an go to next page
@@ -321,71 +232,52 @@ Following is an explantion of used abbreviations for place holders of parameter 
 - **check**: mark checkboxes.
 - **store**: store values from a page for following validations.
 
-## Test Data
+---
 
-The used **variables** are stored in **property** files. The variables are defined in the global test data property file `global_testdata.properties`, the package (module/tests) specific property files `package_testdata.properties` or annotated at the scripts (modules/tests) themselves. Each variable is inheritated in descending file tree order and may be overwritten. Caution: PLEASE DO NOT EDIT PROPERTY FILES WITH AN EXTERNAL TEXT EDITOR!
+# References
 
-## Tests
+## Xceptance
 
-Test Cases or short cases are the core compement of the test suite. A test case may consist out of pageflows and moduls that aggreggate page interactions. The bundled **tests script packages** are arranged by the business domain aspects of the shop. Every test may consist of a test setup, test start, test steps, and test end. 
+- [Xceptance](https://www.xceptance.de/en/)
+- [Xceptance Blog](http://blog.xceptance.com/)
+- Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
+- Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
 
-### tests.account
+## XLT
 
-- **TAccountRegisterCreate**: Register new user and validate account page.
-- **TAccountUpdatePersonalData**: Registers new user and changes personald data afterwards.
+- XLT [Main](https://www.xceptance.de/en/xlt/)
+- XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
+- XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
+- XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 
-### tests.browse
+## Demandware
 
-- **TBrowseHomepage**: Validates global site elements and homepage.
-- **TBrowseCatalog**: Browse and validate homepage, catalog page, product detail page.
-- **TBrowseProductDetailPage**:
+- [Demandware](http://www.demandware.com/)
+- Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
 
-### tests.carts
+## W3C
 
-- **TCartBasics**: Add three products to cart and validate cart page with manipulation.
-- **TCartExtended**:
-- **TMiniCartBasics**:
-- **TMiniCartExtended**:
+- W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
+- W3C [DOM TR](http://www.w3.org/TR/dom/)
+- W3C [HTML & CSS Portal](http://www.w3.org/standards/webdesign/htmlcss.html), [HTML TR](http://www.w3.org/TR/html/)
+- W3C [CSS Portal](http://www.w3.org/Style/CSS/), [CSS TR](http://www.w3.org/TR/CSS/), [CSS Selectors TR](http://www.w3.org/TR/selectors/#selectors)
+- W3C [Javascript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
+- W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
+- W3C [XML Portal](http://www.w3.org/standards/xml/)
 
-### tests.checkouts
+## W3Schools
 
-- **TCheckoutGuest**: Order random product via search with guest checkout via visa.
-- **TCheckoutNewCustomer**: Order random product via search and checkout with new user via visa.
-- **TCheckoutReturningCustomer**: Register new user and order random product via shop naviagtion and checkout with created user and via visa.
+- W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
+- W3Schools [HTML](http://www.w3schools.com/html/)
+- W3Schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
+- W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
+- W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
-### tests.search
+## Other
 
-- **TSearchBasics**: Search for color, product number and not existing search term with suggestion and validate results.
-- **TSearchExtended**: Search for several products with advanced parameter usage and sorting.
+- Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
+- RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
+- Ant [Manual](https://ant.apache.org/manual/running.html)
+- [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
-## Flows
-
-Pageflows or short flows are modeling actions that interact with multiple connected pages and therefor have to utilize moduls from different packages. The intention of a pageflow might be to mask unimportant but needed processes from the test developer (masking) or enable reuse of typical page interaction sets (reutilization).
-
-In this context masking means to hide a set of multiple page interactions that are essential to the test case itself but are not important to the test focus of the test case. Hence all needed interactions can be aggegrated into a single pageflow and be gently hidden when opening a test case inside the XLT script developer.  Another reason and example for using pageflows is to model complex but typical interactions with a set of pages. The intention of these pageflows is to be reusable inside different test case (also repetitivly) and also by other more advanved pageflows.
-
-### flows.{page}
-
-Pageflows might be arranged in seperate packages named after the startpage to mimic the already established pageing concept for modules.  
-
-_For example a pageflow might include: login to account, add shipping address and log out. You can reinvoke this pageflow several times to add as even more addresses as you like in one test case. Or you might use this flow as part of test setup pageflow in several test cases._
-
-### flows.helper
-
-Some pageflows might use the same set of interactions or might need help to enable several interactions. These essential scripts for main pageflows are located in a seperate helper package.  
-
-_For example a specific flow can be used for test case setup and another for a test case teardown._
-
-## Modules
-
-The bundled **modules script packages** are arranged by the pages of the shop they can be applied to. Every module has the ability to envoke actions, commands or reuse other modules to interact with the corresponding page.
-
-### modules.pages.{page}
-
-Modules focusing on specific interaction with page parts.  
-_Example: enter, select or choose data of test/page/product, store data form current page, validate current page elements, text or values._
-
-### modules.helper
-
-Modules to enable othe page interactions from other main modules. Thus these helper modules are sometimes also reused by several page modules.
-
+---
