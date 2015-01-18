@@ -2,14 +2,14 @@
 
 # SiteGenesis-Community-TestSuite
 
-This is a test suite for __XLT Script Developer__ and __XLT__ to collect expierences, consolidate and share knowledge. It is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
+This is a test suite for __XLT Script Developer__ and __XLT__ to collect testing experience, consolidate testing knowledge and share ideas for testing. This project is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
 
 - Name: SiteGenesis-Community-TestSuite
 - Version: #TODO
 - Release: January 2015
 - License: MIT License
-- License URI: http://opensource.org/licenses/MIT (#TODO is this link okay?)
-- Tags: xlt, testing, best practises, test automation, funtional testing, regression test, selenium (#TODO ?)
+- License URI: http://opensource.org/licenses/MIT (#TODO good link?)
+- Tags: xlt, testing, best practises, test automation, funtional testing, regression test (#TODO selenium?)
 - Contributors:
     - René Schwietzke, Xceptance Software Technologies GmbH
     - Robert Baumgarten, Xceptance Software Technologies GmbH
@@ -51,7 +51,7 @@ For further information please refer to the official [documentation](https://lab
 
 ## Project Idea
 
-As there are complex test suites for SiteGenesis we realized it is time to focus on building a small, well-defined and clearly structured test suite to bundle collected testing expierence in a handy set of tests. Everybody is invited to use it, learn from it, improve it and adapt it to their needs.
+As there are complex test suites (including SiteGenesis) we realized it is time to bundle the collected testing know-how by building a small and clearly structured test suite to showcase best practises with a well-defined set of tests. Everybody is invited to use it, learn from it, improve it and adapt it to their needs.
 
 ## Use Cases
 
