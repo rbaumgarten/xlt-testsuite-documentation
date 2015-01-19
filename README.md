@@ -29,7 +29,7 @@ If you want to run more extended tests (e.g. with webdriver or full Java stack) 
 - JDK
 - Java IDE (e.g. eclipse)
 
-## Installation and Configuration
+## Installation
 
 Using this test suite with **XLT Script Developer**:
 
@@ -72,4 +72,4 @@ All planned features are tracked as issues of this GitHub repository.
 
 ## Manual
 
-For an extended description please refer to the test suite [manual](https://github.com/dataduke/xlt-testsuite-documentation/blob/master/MANUAL.md)
+For an extended description please refer to the test suite [manual](https://github.com/dataduke/xlt-testsuite-documentation/blob/master/MANUAL.md).
