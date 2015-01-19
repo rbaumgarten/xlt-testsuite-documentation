@@ -69,3 +69,7 @@ The test suite is a handy reference for everybody interested in test automation:
 ## Feature Backlog
 
 All planned features are tracked as issues of this GitHub repository.
+
+## Manual
+
+For an extended description please refer to the test suite [manual](https://github.com/dataduke/xlt-testsuite-documentation/blob/master/MANUAL.md)
