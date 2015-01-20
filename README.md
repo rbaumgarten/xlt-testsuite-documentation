@@ -12,6 +12,7 @@ This is a test suite for __XLT Script Developer__ and __XLT__ to collect testing
 - Tags: xlt, testing, best practises, test automation, funtional testing, regression test, selenium
 
 Contributors:
+
 - René Schwietzke, Xceptance Software Technologies GmbH
 - Robert Baumgarten, Xceptance Software Technologies GmbH
 - Benjamin Nothdurft, Xceptance Software Technologies GmbH
