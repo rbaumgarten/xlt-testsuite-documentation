@@ -4,9 +4,9 @@ Extended description for SiteGenesis-Community-TestSuite:
 
 - [Tests](#tests)
 - [Modules](#modules)
+- [Structure](#structure)
 - [Guide](#guide)
 - [Examples](#examples)
-- [Structure](#structure)
 - [References](#references)
 
 ## Tests
@@ -101,6 +101,17 @@ __Flow -__ Sometimes you have a very long setup procedure that you want to mask 
 - **check**: mark checkboxes.
 - **store**: store values from a page for following validations.
 
+## Guide
+
+__Scenario -__ While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields.
+
+With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
+
+- **Identify** the workflow you want to simulate by making an informal list of page interactions.
+- **Search** for all interactions in the according modules inside of the test suite.
+- **Create** a new testcase and drag and drop the needed scripts form pageflow and modules packages in the fitting order into the testcase and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
+- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
+
 ## Examples
 
 In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
@@ -137,17 +148,6 @@ In the following there are several scripting examples to showcase possible ways 
 - Pattern matching for any substring with asterisk (ex: shipping address)  
 
         assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
-
-## Guide
-
-__Scenario -__ While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields.
-
-With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
-
-- **Identify** the workflow you want to simulate by making an informal list of page interactions.
-- **Search** for all interactions in the according modules inside of the test suite.
-- **Create** a new testcase and drag and drop the needed scripts form pageflow and modules packages in the fitting order into the testcase and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
-- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
 
 ## References
 
