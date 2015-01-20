@@ -58,14 +58,19 @@ As there are complex test suites (including SiteGenesis) we realized it is time 
 
 The test suite is a handy reference for everybody interested in test automation:
 
-- Introduction
-    - demonstrate test automation and structure
-    - use it as entry point with fast learning curve
-- Existing Projects 
-    - serve as collection of examples and show cases
-    - reuse best practises for QA of other projects 
-- New Projects
-    - utilize for initial test automation of new shop projects based on SiteGenesis
+Introduction:
+ 
+- demonstrate test automation and structure
+- use it as entry point with fast learning curve
+
+Existing Projects:
+
+- serve as collection of examples and show cases
+- reuse best practises for QA of other projects 
+
+New Projects:
+
+- utilize for initial test automation of new shop projects based on SiteGenesis
 
 ## Feature Backlog
 
