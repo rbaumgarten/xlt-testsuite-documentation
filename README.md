@@ -2,7 +2,7 @@
 
 # SiteGenesis-Community-TestSuite
 
-The test suite was build for __XLT Script Developer__ and __XLT__ with the intention of collecting experiences, consolidating knowledge and sharing ideas in testing practises. This project is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
+The test suite was build with __XLT Script Developer__ and usable with __XLT__ including execution via webdriver. The intention encompasses collecting experiences, consolidating knowledge and sharing ideas of testing practises. This project is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
 
 - Name: SiteGenesis-Community-TestSuite
 - Version: v15.1.0.14 (matches SiteGenesis)
