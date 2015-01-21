@@ -1,6 +1,13 @@
 # Manual
 
-Extended Description for SiteGenesis-Community-TestSuite
+Extended description for SiteGenesis-Community-TestSuite:
+
+- [Tests](#tests)
+- [Modules](#modules)
+- [Structure](#structure)
+- [Guide](#guide)
+- [Examples](#examples)
+- [References](#references)
 
 ## Tests
 
@@ -17,68 +24,6 @@ All modules are named with "M" as first letter but to clearify the structure eve
 __Validation -__ Very important to the testing is the validation of website elements and dynamic data. These modules evalute via assertion that a fit criterion is meet. To make this clear we decided to name these modules with "V" fo validation as first letter.
 
 __Flow -__ Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several websites or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an "F" as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it's name and the script location inside the package structure.
-
-
-## Step-by-Step-Guide
-
-__Scenario -__ While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields.
-
-With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
-
-- **Identify** the workflow you want to simulate by making an informal list of page interactions.
-- **Search** for all interactions in the according modules inside of the test suite.
-- **Create** a new testcase and drag and drop the needed scripts form pageflow and modules packages in the fitting order into the testcase and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
-- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
-
-## Examples
-
-In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
-
-- TSearchAddProductToCart: product quantity is used as input parameter but also as an output parameter. This is because the store **PDP** product details module may be uses in other cases outside the flow so every product dtails is saved as an ourputparameter even though in this flow it would be irrelevant due to th input parameters.
-
-- Remove trailing whitespace (ex: totals shipping)  
-
-
-    storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
-
-
-- Substring inclusive until last character (ex: creditcard number)  
-
-
-    storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
-
-
--  Substring exclusive until first occurence of character (ex: shipping method label)  
-
-
-    storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
-    storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
-    storeEval('"${shipping_method_label}".replace(/\:.*$/,"")', '${shipping_method_name')
-
-
-- Convert full english month name to number with two digits (ex: helper module)  
-
-
-    storeEval('("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)', '$(month_number)');
-
-
-- Pattern matching for order date and order number (ex: order confirmation summary)  
-
-
-    assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');
-    assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
-
-
-- Pattern matching for uppercased words by css (ex: column or navigation headers)  
-
-
-    assertText('css=#main .label .capitalized', 'regexpi:CaseInsensitive HEADER')
-
-
-- Pattern matching for any substring with asterisk (ex: shipping address)  
-
-
-    assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 
 ## Structure
 
@@ -110,7 +55,6 @@ In the following there are several scripting examples to showcase possible ways 
     |-- build.xml                          # XLT ant build configuration
     |-- xlt-scriptdeveloper.properties     # XLT settings
     \-- global_testdata.properties         # global testdata properties
-
 
 ### Packages
 
@@ -156,6 +100,54 @@ In the following there are several scripting examples to showcase possible ways 
 - **select**: choose from radio buttons.
 - **check**: mark checkboxes.
 - **store**: store values from a page for following validations.
+
+## Guide
+
+__Scenario -__ While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields.
+
+With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
+
+- **Identify** the workflow you want to simulate by making an informal list of page interactions.
+- **Search** for all interactions in the according modules inside of the test suite.
+- **Create** a new testcase and drag and drop the needed scripts form pageflow and modules packages in the fitting order into the testcase and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
+- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
+
+## Examples
+
+In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
+
+- FSearchAddProductToCart: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.
+
+- Remove trailing whitespace (ex: totals shipping)  
+
+        storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
+
+- Substring inclusive until last character (ex: creditcard number)  
+
+        storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
+
+-  Substring exclusive until first occurence of character (ex: shipping method label)  
+
+        storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
+        storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
+        storeEval('"${shipping_method_label}".replace(/\:.*$/,"")', '${shipping_method_name')
+
+- Convert full english month name to number with two digits (ex: helper module)  
+
+        storeEval('("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)', '$(month_number)');
+
+- Pattern matching for order date and order number (ex: order confirmation summary)  
+
+        assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');   
+        assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
+
+- Pattern matching for uppercased words by css (ex: column or navigation headers)  
+
+        assertText('css=#main .label .capitalized', 'regexpi:CaseInsensitive HEADER')
+
+- Pattern matching for any substring with asterisk (ex: shipping address)  
+
+        assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 
 ## References
 

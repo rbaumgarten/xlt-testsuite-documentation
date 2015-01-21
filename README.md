@@ -10,10 +10,12 @@ The test suite was build for __XLT Script Developer__ and __XLT__ with the inten
 - License: MIT License
 - License URI: http://opensource.org/licenses/MIT
 - Tags: xlt, testing, best practises, test automation, funtional testing, regression test, selenium
-- Contributors:
-    - René Schwietzke, Xceptance Software Technologies GmbH
-    - Robert Baumgarten, Xceptance Software Technologies GmbH
-    - Benjamin Nothdurft, Xceptance Software Technologies GmbH
+
+Contributors:
+
+- René Schwietzke, Xceptance Software Technologies GmbH
+- Robert Baumgarten, Xceptance Software Technologies GmbH
+- Benjamin Nothdurft, Xceptance Software Technologies GmbH
 
 ## Requirements
 
@@ -33,19 +35,19 @@ If you want to run more extended tests (e.g. with webdriver or full Java stack) 
 
 Using this test suite with **XLT Script Developer**:
 
-1. Install Firefox add-on XLT Script Developer.
-2. Open XLT Script Developer.
-3. Import this (unzipped) test suite by clicking the folder icon above the navigation panel.
-4. Configure the **SiteGenesis** storefront URL in global test data.
-5. Open a test case in the navigaton panel and click replay button in toolbar.
+- Install Firefox add-on XLT Script Developer.
+- Open XLT Script Developer.
+- Import this (unzipped) test suite by clicking the folder icon above the navigation panel.
+- Configure the **SiteGenesis** storefront URL in global test data.
+- Open a test case in the navigaton panel and click replay button in toolbar.
 
 Using this test suite with **XLT**:
 
-1. Create new Java project (with JDK runtime) based on unzipped test suite.
-2. Import XLT libraries.
-2. Edit configuration see below.
-4. Run test as JUnit test. (default: Firefox webdriver)
-5. Adapt webdriver configurations in `project.properties` if you like.
+- Create new Java project (with JDK runtime) based on unzipped test suite.
+- Import XLT libraries.
+- Edit configuration see below.
+- Run test as JUnit test. (default: Firefox webdriver)
+- Adapt webdriver configurations in `project.properties` if you like.
 
 For further information please refer to the official [documentation](https://lab.xceptance.de/releases/xlt/latest/).
 
@@ -57,14 +59,19 @@ As there are complex test suites (including SiteGenesis) we realized it is time 
 
 The test suite is a handy reference for everybody interested in test automation:
 
-- Introduction
-    - demonstrate test automation and structure
-    - use it as entry point with fast learning curve
-- Existing Projects 
-    - serve as collection of examples and show cases
-    - reuse best practises for QA of other projects 
-- New Projects
-    - utilize for initial test automation of new shop projects based on SiteGenesis
+Introduction:
+ 
+- demonstrate test automation and structure
+- use it as entry point with fast learning curve
+
+Existing Projects:
+
+- serve as collection of examples and show cases
+- reuse best practises for QA of other projects 
+
+New Projects:
+
+- utilize for initial test automation of new shop projects based on SiteGenesis
 
 ## Feature Backlog
 
