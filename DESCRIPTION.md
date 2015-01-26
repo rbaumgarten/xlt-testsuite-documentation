@@ -17,13 +17,13 @@ Each test consists of a test setup (ensuring that all preconditions are met), a 
 
 ## Modules
 
-A module is script containing commands and comments. Each module interacts with elements of the website. Thus all modules are packaged by their belonging website. Each module can be reused by different tests. 
+A module is script containing commands and comments. Each module interacts with elements of the webpahe. Thus all modules are packaged by their belonging webpage. Each module can be reused by different tests. 
 
 All modules are named with "M" as first letter but to clearify the structure even further we decided to outline special modules:
 
-__Validation -__ Very important to the testing is the validation of website elements and dynamic data. These modules evalute via assertion that a fit criterion is meet. To make this clear we decided to name these modules with "V" fo validation as first letter.
+__Validation -__ Very important to the testing is the validation of webpage elements and dynamic data. These modules evalute via assertion that a fit criterion is meet. To make this clear we decided to name these modules with "V" fo validation as first letter.
 
-__Flow -__ Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several websites or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an "F" as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it's name and the script location inside the package structure.
+__Flow -__ Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several webpages or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an "F" as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it's name and the script location inside the package structure.
 
 ## Structure
 
