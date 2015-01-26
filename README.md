@@ -54,7 +54,7 @@ For further information please visit [XLT Online](https://lab.xceptance.de/relea
 
 ## Feature Backlog
 
-All planned features are tracked as issues of this GitHub repository.
+All planned features are tracked as issues[https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues].
 
 ## Metadata
 
