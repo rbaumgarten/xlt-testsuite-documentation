@@ -1,4 +1,4 @@
-# Manual
+# Description
 
 Extended description for SiteGenesis-Community-TestSuite:
 
