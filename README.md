@@ -27,7 +27,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Installation
 
-- Download and unzip this test suite in a directory of your choice.
+- [Download](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/archive/master.zip) and unzip this test suite in a directory of your choice.
 - Install Firefox add-on `XLT Script Developer`.
 - Open `Tools > XLT Script Developer` in Firefox.
 - Import this test suite by clicking the `folder` icon above the navigation panel.
@@ -46,7 +46,7 @@ To run the test suite with the __XLT Framework__ and WebDrivers you also need:
 
 #### Installation
 
-- Download and unzip this test suite in a directory of your choice.
+- [Download](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/archive/master.zip) and unzip this test suite in a directory of your choice.
 - Import test suite as new Java project (with JDK runtime).
 - Import XLT libraries.
 - Edit configuration see below.
