@@ -4,7 +4,7 @@
 
 The test suite focuses on functional frontend blackbox regression testing. It was build and may be run with the __XLT Script Developer__ in Firefox and the __XLT Framework__ by orchestrating different WebDrivers. 
 
-As there are already many complex test suites (including some for SiteGenesis) we realized it is time to build a small and clearly structured test suite to showcase best practises with a well-defined set of tests. Thus the project idea is to collect experiences, consolidate this knowledge and share ideas of testing practises. 
+As there are already many complex test suites (including some for SiteGenesis) we realized it is time to build a small and clearly structured test suite to showcase best practises with a well-defined set of tests. Thus the project idea is to collect experiences, consolidate knowledge and share ideas of testing practises. 
 
 This test suite is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well. Everybody is invited to use it, learn from it, improve it and adapt it to their needs. Possible purposes encompass:
 
