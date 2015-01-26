@@ -60,13 +60,15 @@ __Flow -__ Sometimes you have a very long setup procedure that you want to mask 
 
 - Tests: `tests.{area}`
 - Modules: `modules.pages.[area].{currentpage}`
-- Helper Modules: `modules.helper.[area]`
+- Modules > global : `modules.global.[area]`
+- Modules > helper : `modules.helper.[area]`
 
 ### Files
 
-- Tests: `{TTestscope}`
-- Flows: `F{Page}{Processfocus}`
+- Tests: `{TAreaTestscope}`
 - Modules: `M{Page}.[Pagepart].{Interaction}`
+- Special Modules > Flows: `F{Page}{Processfocus}`
+- Special Modules > Validation: `V{Page}.[Pagepart].{Interaction}`
 
 ### Users
 
