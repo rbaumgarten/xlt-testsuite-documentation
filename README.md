@@ -2,19 +2,18 @@
 
 # SiteGenesis-Community-TestSuite
 
-The test suite was build and can be run with the __XLT Script Developer__ in Firefox and the __XLT Framework__ with different WebDrivers. This project is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
+The test suite focuses on functional frontend blackbox regression testing. It was build and may be run with the __XLT Script Developer__ in Firefox and the __XLT Framework__ by orchestrating different WebDrivers. 
 
-As there are complex test suites (including SiteGenesis) we realized it is time for collecting experiences, consolidating knowledge and sharing ideas of testing practises.
+As there are already many complex test suites (including some for SiteGenesis) we realized it is time to build a small and clearly structured test suite to showcase best practises with a well-defined set of tests. Thus the project idea is to collect experiences, consolidate this knowledge and share ideas of testing practises. 
 
-This is why we build this small and clearly structured test suite to showcase best practises with a well-defined set of tests. Everybody is invited to use it, learn from it, improve it and adapt it to their needs. Possible purposes encompass:
+This test suite is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well. Everybody is invited to use it, learn from it, improve it and adapt it to their needs. Possible purposes encompass:
 
 - Demonstration of test automation and test suite structuring.
-- Entry point with fast learning curve.
-- Collection of examples and show cases and
-- Reuse of best practises for existing projectss.
-- Initial test suite of new shop projects based on SiteGenesis.
+- Entry point for test development with fast learning curve.
+- Reuse of collected best practises in other (existing) projectss.
+- Initial test suite to automate new shops based on SiteGenesis.
 
-For extended information please visit the [generated description](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html).
+For more information please visit the [extended description](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) generated with the included **ScriptDoc** tool.
 
 ## System Prerequisites
 
