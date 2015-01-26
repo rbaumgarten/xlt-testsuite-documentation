@@ -49,7 +49,7 @@ To run the test suite with the __XLT Framework__ you also need:
 - Import XLT libraries.
 - Edit configuration see below.
 - Run test as JUnit test (default configuration: Firefox WebDriver).
-- Adapt webdriver configurations in `project.properties` if you like.
+- Adapt WebDriver configurations in `project.properties` if you like.
 
 For further information please visit [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).
 
