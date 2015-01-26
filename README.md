@@ -2,7 +2,7 @@
 
 # SiteGenesis-Community-TestSuite
 
-The test suite was build and can be run with the __XLT Script Developer__ in Firefox and the __XLT Framework__ with different WebDrivers. The intention encompasses collecting experiences, consolidating knowledge and sharing ideas of testing practises. This project is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
+The test suite was build and can be run with the __XLT Script Developer__ in Firefox and the __XLT Framework__ with different WebDriversf . The intention encompasses collecting experiences, consolidating knowledge and sharing ideas of testing practises. This project is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
 
 - Name: SiteGenesis-Community-TestSuite
 - Version: v15.1.0.14 (matches SiteGenesis)
@@ -19,13 +19,13 @@ Contributors:
 
 ## System Prerequisites
 
-To run this test suite with the __XLT Script Developer__ in Firefox you only need:
+To run the test suite with the __XLT Script Developer__ in Firefox you only need:
 
 - Firefox
 - XLT Script Developer v4.5.0 or higher: [Download](https://www.xceptance.com/en/xlt/download.html)
 - [Demandware](http://www.demandware.com/) [SiteGenesis](ttp://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) v15.1.0.14 or higher
 
-To run this test suite with the __XLT Framework__ you also need:
+To run the test suite with the __XLT Framework__ you also need:
 
 - XLT&reg;: [Download](https://www.xceptance.com/en/xlt/download.html)
 - JDK
@@ -33,9 +33,9 @@ To run this test suite with the __XLT Framework__ you also need:
 
 ## Installation
 
-- Download and unzip the test suite in a directory of rour choice.
+- Download and unzip the test suite in a directory of your choice.
 
-To run this test suite with the __XLT Script Developer__ in Firefox you only need:
+To run the test suite with the __XLT Script Developer__ in Firefox you only need:
 
 - Install Firefox add-on `XLT Script Developer`.
 - Open `Tools > XLT Script Developer` in Firefox.
@@ -43,7 +43,7 @@ To run this test suite with the __XLT Script Developer__ in Firefox you only nee
 - `XLT Scipt Developer > Manage Global Test Data` set the **SiteGenesis** `storefront_url`.
 - Open a test case in the navigaton panel and click replay button in toolbar.
 
-To run this test suite with the __XLT Framework__ you also need:
+To run the test suite with the __XLT Framework__ you also need:
 
 - Import test suite as new Java project (with JDK runtime).
 - Import XLT libraries.
