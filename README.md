@@ -72,4 +72,4 @@ For further information please visit [XLT Online](https://lab.xceptance.de/relea
 
 ## Feature Backlog
 
-All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add your own feature requests!
+All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
