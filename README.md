@@ -4,6 +4,8 @@
 
 The test suite was build and can be run with the __XLT Script Developer__ in Firefox and the __XLT Framework__ with different WebDrivers. The intention encompasses collecting experiences, consolidating knowledge and sharing ideas of testing practises. This project is based on the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well.
 
+For an extended description please refer to the test suite [description](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html)
+
 - Name: SiteGenesis-Community-TestSuite
 - Version: v15.1.0.14 (matches SiteGenesis)
 - Release: January 2015
@@ -78,7 +80,3 @@ New Projects:
 ## Feature Backlog
 
 All planned features are tracked as issues of this GitHub repository.
-
-## Description
-
-For an extended description please refer to the test suite [description](https://github.com/dataduke/xlt-testsuite-documentation/blob/master/MANUAL.md).
