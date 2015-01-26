@@ -124,6 +124,169 @@
             </div>
     </div><!-- /main -->
 
+<ul>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#modules">Modules</a></li>
+<li><a href="#structure">Structure</a></li>
+<li><a href="#guide">Guide</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul>
+
+<h2 id="tests">Tests</h2>
+
+<p>The aim of our test set is to cover all standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closy a test even focuses on specific part of buying process which is tested in depth. This test focus defines, where the test case file is placed inside the shop-area-driven test case package structure of the test suite. All tests cover a wide variety of different test pathes and are build up on script modules.</p>
+
+<p>Each test consists of a test setup (ensuring that all preconditions are met), a test scope (focusing on all relevant testing steps) and a test teardown (cleaning up of all changed data in your browser and reversing the state of the shop system to its origin).</p>
+
+<h2 id="modules">Modules</h2>
+
+<p>A module is script containing commands and comments. Each module interacts with elements of the website. Thus all modules are packaged by their belonging website. Each module can be reused by different tests. </p>
+
+<p>All modules are named with &#8220;M&#8221; as first letter but to clearify the structure even further we decided to outline special modules:</p>
+
+<p><strong>Validation -</strong> Very important to the testing is the validation of website elements and dynamic data. These modules evalute via assertion that a fit criterion is meet. To make this clear we decided to name these modules with &#8220;V&#8221; fo validation as first letter.</p>
+
+<p><strong>Flow -</strong> Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several websites or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an &#8220;F&#8221; as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it&#8217;s name and the script location inside the package structure.</p>
+
+<h2 id="structure">Structure</h2>
+
+<pre><code>.  
+|-- bin                                # executables  
+|-- config                             # IDE configuration  
+|   |-- data                           # test data dictionaries  
+|   |   \-- default  
+|-- scripts  
+|   |-- modules.helper                 # basic scripts  
+|   |-- modules.pages                  # scripts for specific pages  
+|   |   |-- account                    # scripts on Account pages  
+|   |   |-- cart                       # scripts on Cart page  
+|   |   |-- catalog                    # scripts on Catalog pages  
+|   |   |-- checkout                   # scripts on Checkout pages  
+|   |   |-- homepage                   # scripts on Homepage  
+|   |   |-- minicart                   # scripts on MiniCart popup  
+|   |   |-- productdetailpage          # scripts on ProductDetailPage  
+|   |   \-- search                     # scripts for Searching  
+|   \-- tests  
+|       |-- account                    # tests for Account pages  
+|       |-- cart                       # tests for Cart page  
+|       |-- catalog                    # tests for Catalog pages  
+|       |-- checkout                   # tests for Checkout pages  
+|       \-- search                     # tests for Searches  
+|-- src  
+|   \-- tests                          # XLT java wrapper classes  
+|-- build.properties                   # XLT ant build properties  
+|-- build.xml                          # XLT ant build configuration  
+|-- xlt-scriptdeveloper.properties     # XLT settings  
+\-- global_testdata.properties         # global testdata properties
+</code></pre>
+
+<h3 id="packages">Packages</h3>
+
+<ul>
+<li>Tests: <code>tests.{area}</code></li>
+<li>Modules: <code>modules.pages.[area].{currentpage}</code></li>
+<li>Helper Modules: <code>modules.helper.[area]</code></li>
+</ul>
+
+<h3 id="files">Files</h3>
+
+<ul>
+<li>Tests: <code>{TTestscope}</code></li>
+<li>Flows: <code>F{Page}{Processfocus}</code></li>
+<li>Modules: <code>M{Page}.[Pagepart].{Interaction}</code></li>
+</ul>
+
+<h3 id="users">Users</h3>
+
+<ul>
+<li><strong>Customer</strong>: registered user with account.</li>
+<li><strong>Guest</strong>: unregistered user without account.</li>
+</ul>
+
+<h3 id="pages">Pages</h3>
+
+<ul>
+<li><strong>Homepage</strong>: main landing page.</li>
+<li><strong>Search</strong>: search box and search result page.</li>
+<li><strong>Catalog</strong>: catalog page, product grid/listing/overview page (PGP/PLP/POP).</li>
+<li><strong>ProductDetailPage</strong>: product detail page (PDP).</li>
+<li><strong>MiniCart</strong>: minicart pop up.</li>
+<li><strong>Cart</strong>: cart page.</li>
+<li><strong>Checkout</strong>: checkout pages and steps: addresses (shipping/billing), payement, order submit.</li>
+<li><strong>Account</strong>: account page, my account.</li>
+</ul>
+
+<h3 id="interactions">Interactions</h3>
+
+<ul>
+<li><strong>go to</strong>: navigate to a page</li>
+<li><strong>continue</strong>: save entered data an go to next page</li>
+<li><strong>submit</strong>: save and send entered data from (several) pages</li>
+<li><strong>order</strong>: purchase or buy products.</li>
+<li><strong>set color</strong>: select product color</li>
+<li><strong>set size</strong>: select product size</li>
+<li><strong>set quantity</strong>: enter product quantity</li>
+<li><strong>add to cart</strong>: puts product in cart.</li>
+<li><strong>add to wishlist</strong>: putproduct to wishlist.</li>
+<li><strong>validate</strong>: verify and assert values, parameters or elements.</li>
+<li><strong>enter</strong>: enter parameters or values in input fields;</li>
+<li><strong>select</strong>: choose from radio buttons.</li>
+<li><strong>check</strong>: mark checkboxes.</li>
+<li><strong>store</strong>: store values from a page for following validations.</li>
+</ul>
+
+<h2 id="guide">Guide</h2>
+
+<p><strong>Scenario -</strong> While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields.</p>
+
+<p>With <strong>XLT Script Developer</strong> Firefox extension and <strong>XLT SiteGenesis-Community-TestSuite</strong> framework from GitHub it is easy to create test cases for the described scenario by following this short <strong>step-by-step guide</strong>:</p>
+
+<ul>
+<li><strong>Identify</strong> the workflow you want to simulate by making an informal list of page interactions.</li>
+<li><strong>Search</strong> for all interactions in the according modules inside of the test suite.</li>
+<li><strong>Create</strong> a new testcase and drag and drop the needed scripts form pageflow and modules packages in the fitting order into the testcase and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select &#8220;Manage Test Data&#8221;.</li>
+<li><strong>Run</strong> your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<p>In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.</p>
+
+<ul>
+<li><p>FSearchAddProductToCart: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.</p></li>
+<li><p>Remove trailing whitespace (ex: totals shipping) </p>
+
+<pre><code>storeEval('&quot;${block_totals_shipping}&quot;.trim()','${totals_shipping}')
+</code></pre></li>
+<li><p>Substring inclusive until last character (ex: creditcard number) </p>
+
+<pre><code>storeEval('&quot;${creditcard_number}&quot;.substring(12,16)','$'{creditcard_last_four_digits})
+</code></pre></li>
+<li><p>Substring exclusive until first occurence of character (ex: shipping method label) </p>
+
+<pre><code>storeEval('&quot;${shipping_method_label}&quot;.slice(0, &quot;${shipping_method_label}&quot;.indexOf(‘:’)', '${shipping_method_name')  
+storeEval('&quot;${shipping_method_label}&quot;.match(/[^:]*/)', '${shipping_method_name')  
+storeEval('&quot;${shipping_method_label}&quot;.replace(/\:.*$/,&quot;&quot;)', '${shipping_method_name')
+</code></pre></li>
+<li><p>Convert full english month name to number with two digits (ex: helper module) </p>
+
+<pre><code>storeEval('(&quot;0&quot; + (&quot;January___February__March_____April_____May_______June______July______August____September_October___November__December__&quot;.indexOf(&quot;@{MMonthName}&quot;)/ 10 + 1)).slice(-2)', '$(month_number)');
+</code></pre></li>
+<li><p>Pattern matching for order date and order number (ex: order confirmation summary) </p>
+
+<pre><code>assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');  
+assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
+</code></pre></li>
+<li><p>Pattern matching for uppercased words by css (ex: column or navigation headers) </p>
+
+<pre><code>assertText('css=#main .label .capitalized', 'regexpi:CaseInsensitive HEADER')
+</code></pre></li>
+<li><p>Pattern matching for any substring with asterisk (ex: shipping address) </p>
+
+<pre><code>assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
+</code></pre></li>
+</ul>
+
 </div><!-- /.container -->
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
