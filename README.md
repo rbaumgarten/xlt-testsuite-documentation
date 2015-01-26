@@ -55,7 +55,11 @@ To run the test suite with the __XLT Framework__ and WebDrivers you also need:
 
 For further information please visit [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).
 
-## Metadata
+## Testsuite Backlog
+
+All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
+
+## TestSuite Metadata
 
 - Name: SiteGenesis-Community-TestSuite
 - Version: v15.1.0.14 (matches SiteGenesis)
@@ -64,12 +68,8 @@ For further information please visit [XLT Online](https://lab.xceptance.de/relea
 - License URI: http://opensource.org/licenses/MIT
 - Tags: xlt, testing, best practises, test automation, funtional testing, regression test, selenium
 
-## Contributors
+## TestSuite Contributors
 
 - René Schwietzke, Xceptance Software Technologies GmbH
 - Robert Baumgarten, Xceptance Software Technologies GmbH
 - Benjamin Nothdurft, Xceptance Software Technologies GmbH
-
-## Feature Backlog
-
-All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
