@@ -25,7 +25,7 @@ All planned features are publicly tracked as [GitHub issues](https://github.com/
 
 ### XLT Script Developer
 
-The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox:
+The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or to run the test suite with the __XLT Framework__ and WebDrivers:
 
 #### Prerequisites
 
@@ -43,8 +43,6 @@ The following prerequisites and installation steps are needed to run the test su
 - Open a test case in the navigaton panel and click replay button in toolbar.
 
 ### XLT Framework
-
-To run the test suite with the __XLT Framework__ and WebDrivers you also need:
 
 #### Prerequisites
 
