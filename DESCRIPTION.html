@@ -15,7 +15,7 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 </style>
 
 </head>
-<body class="normal">
+<body class="normal firstload">
   <div id="wrapper">
       <h3 id="testsuitestructure">Test Suite Structure</h3>
 
@@ -29,18 +29,17 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 
 <p>A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.</p>
 
-<h4 id="specialmodulesvaldiation">Special Modules &gt; Valdiation</h4>
+<h4 id="specialmodulesvalidation">Special Modules &gt; Validation</h4>
 
 <p>Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).</p>
 
 <h4 id="specialmodulesflow">Special Modules &gt; Flow</h4>
 
-<p>Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow.<br/>
-In contrast to the single steps the achivied specific goal at the end of the process is only of importance. Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.</p>
+<p>Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.</p>
 
 <h3 id="testsuitedevelopmentguide">Test Suite Development Guide</h3>
 
-<p>This short paragraph may help you in buildiung your first own tests. Enjoy the comfort of the provided modules!</p>
+<p>This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!</p>
 
 <h4 id="simulateashoppingprocess">Simulate a shopping process</h4>
 
@@ -57,9 +56,9 @@ In contrast to the single steps the achivied specific goal at the end of the pro
 
 <p>Congratulations, you may <strong>run your first own test now</strong> (after several iterations over steps 3 and 4).</p>
 
-<h3 id="testsuitestyleguide">Test Suite Styleguide</h3>
+<h3 id="testsuitestyleguidelines">Test Suite Style Guidelines</h3>
 
-<p>The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guide may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.</p>
+<p>The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.</p>
 
 <h4 id="projecttree">Project Tree</h4>
 
