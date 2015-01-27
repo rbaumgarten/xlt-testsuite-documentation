@@ -82,9 +82,9 @@ The following styling rules where quite consequently applied to form a solid str
 #### Files
 
 - Tests: `T{ShopArea}{TestScope}`
-- Modules: `M{Page}_[PagePart]_{PageInteraction}`
-- Special Modules > Validation: `V{Page}_[PagePart]_{PageInteraction}`
-- Special Modules > Flows: `F_{StartPage}_{ProcessFlow}`
+- Modules: `M{Page}_[PagePart]_{Interaction}`
+- Special Modules > Validation: `V{Page}_[PagePart]_{Interaction}`
+- Special Modules > Flows: `F_{StartPage}_{Process}`
 
 #### Users
 
