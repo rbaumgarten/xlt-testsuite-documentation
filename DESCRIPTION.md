@@ -20,7 +20,7 @@ Some modules mimic more sophisticated shopping behaviours by interacting with se
 
 ### Test Suite Development Guide
 
-This short paragraph may help you in buildiung your first own tests. Enjoy the comfort of the provided modules!
+This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!
 
 #### Simulate a shopping process
 
