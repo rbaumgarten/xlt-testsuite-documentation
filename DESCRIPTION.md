@@ -84,7 +84,7 @@ The following styling rules where quite consequently applied to form a solid str
 - Tests: `T{ShopArea}{TestScope}`
 - Modules: `M{Page}_[PagePart]_{Interaction}`
 - Special Modules > Validation: `V{Page}_[PagePart]_{Interaction}`
-- Special Modules > Flows: `F_{StartPage}_{Process}`
+- Special Modules > Flow: `F_{StartPage}_{Process}`
 
 #### Users
 
