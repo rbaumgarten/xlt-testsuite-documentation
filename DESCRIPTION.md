@@ -88,18 +88,14 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Parameters
 
-- Module Parameters (types, used as input): `InTypeNameSubname`
-- Module Parameters (types, used as output): `OutTypeNameSubname`
+- Module Parameters (types, used as input): `TypeNameSubname`
+- Module Parameters (types, used as output): `ReturnTypeNameSubname`
 
 #### Variables
 
-- Variables: `typeNameSubname`
 - Dynamic Variables: `typeNameSubname`
-
-#### Constants
-
-- Test Data (constants, defined inside): `IN_TYPE_NAME_SUBNAME`
-- Test Data (constants, defined outside): `OUT_TYPE_NAME_SUBNAME` 
+- Final Variables (constants): `TYPE_NAME_SUBNAME`
+- Test Data (final, constants): `DATA_TYPE_NAME_SUBNAME` 
 
 #### Users
 
