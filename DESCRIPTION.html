@@ -41,11 +41,11 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 
 <p>This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!</p>
 
-<h4 id="simulateashoppingprocess">Simulate a shopping process</h4>
+<h4 id="simulateadesiredshoppingprocess">Simulate a desired shopping process</h4>
 
 <p>While shopping with your web browser you may browse the <code>catalog</code>, end up on a <code>productdetailpage</code>, change details like <code>color</code>, <code>size</code> and <code>quantity</code>, and may decide to add the product to <code>wishlist</code>. Therefor the shop might ask you to <code>create an account</code>, which you will to save your wish for later. Now you may leave the shop until your next visit.</p>
 
-<h4 id="buildingthecorrespondingtestcase">Building the corresponding test case</h4>
+<h4 id="buildthecorrespondingtestcase">Build the corresponding test case</h4>
 
 <p>Following this simple step-by-step guide you may to easily implement yout own test case:</p>
 
@@ -65,11 +65,11 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 <pre><code>.  
 |-- bin                                # executables  
 |-- config                             # IDE configuration  
-|   |-- data                           # test data dictionaries  
-|   |   \-- default  
+|   \-- data                           # test data dictionaries  
+|       \-- default  
 |-- scripts  
-|   |-- modules.helper                 # basic scripts  
-|   |-- modules.pages                  # scripts for specific pages  
+|   |-- modules/helper                 # basic scripts  
+|   |-- modules/pages                  # scripts for specific pages  
 |   |   |-- account                    # scripts on Account pages  
 |   |   |-- cart                       # scripts on Cart page  
 |   |   |-- catalog                    # scripts on Catalog pages  
@@ -95,19 +95,29 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 <h4 id="packages">Packages</h4>
 
 <ul>
-<li>Tests: <code>tests.{area}</code></li>
-<li>Modules: <code>modules.pages.[area].{currentpage}</code></li>
-<li>Special Modules &gt; global : <code>modules.global.[area]</code></li>
-<li>Special Modules &gt; helper : <code>modules.helper.[area]</code></li>
+<li>Tests: <code>tests.{shoparea}</code></li>
+<li>Modules: <code>modules.pages.[shoparea].{currentpage}</code></li>
+<li>Special Modules &gt; global : <code>modules.global.[shoparea]</code></li>
+<li>Special Modules &gt; helper : <code>modules.helper.[shoparea]</code></li>
 </ul>
 
 <h4 id="files">Files</h4>
 
 <ul>
-<li>Tests: <code>{TAreaTestscope}</code></li>
-<li>Modules: <code>M{Page}.[Pagepart].{Interaction}</code></li>
-<li>Special Modules &gt; Flows: <code>F{Page}{Processfocus}</code></li>
-<li>Special Modules &gt; Validation: <code>V{Page}.[Pagepart].{Interaction}</code></li>
+<li>Tests: <code>T{ShopArea}{TestScope}_{interaction}</code></li>
+<li>Modules: <code>M{Page}_[PagePart]_{interaction}</code></li>
+<li>Special Modules &gt; Validation: <code>V{Page}_[PagePart]_{interaction}</code></li>
+<li>Special Modules &gt; Flow: <code>F_{StartPage}_{process}</code></li>
+</ul>
+
+<h4 id="variables">Variables</h4>
+
+<ul>
+<li>Test Data (defined inside): <code>OUT_NAME_SUBNAME</code></li>
+<li>Test Data (defined outside): <code>IN_NAME_SUBNAME</code></li>
+<li>Module Parameters (used as input): <code>InNameSubname</code></li>
+<li>Module Parameters (used output): <code>OutNameSubname</code></li>
+<li>Dynamic Variables: <code>typeNameSubname</code></li>
 </ul>
 
 <h4 id="users">Users</h4>

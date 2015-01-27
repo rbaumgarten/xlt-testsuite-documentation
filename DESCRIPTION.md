@@ -81,10 +81,18 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Files
 
-- Tests: `T{ShopArea}{TestScope}`
-- Modules: `M{Page}_[PagePart]_{Interaction}`
-- Special Modules > Validation: `V{Page}_[PagePart]_{Interaction}`
-- Special Modules > Flow: `F_{StartPage}_{Process}`
+- Tests: `T{ShopArea}{TestScope}_{interaction}`
+- Modules: `M{Page}_[PagePart]_{interaction}`
+- Special Modules > Validation: `V{Page}_[PagePart]_{interaction}`
+- Special Modules > Flow: `F_{StartPage}_{process}`
+
+#### Variables
+
+- Test Data (defined inside): `OUT_NAME_SUBNAME`
+- Test Data (defined outside): `IN_NAME_SUBNAME` 
+- Module Parameters (used as input): `InNameSubname`
+- Module Parameters (used output): `OutNameSubname`
+- Dynamic Variables: `typeNameSubname`
 
 #### Users
 
