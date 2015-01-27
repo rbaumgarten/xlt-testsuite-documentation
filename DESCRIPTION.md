@@ -24,7 +24,7 @@ This development guide may help you to build your first own tests. Enjoy the com
 
 #### Simulate a shopping process
 
-While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`, for later. Thus the shops asks you to `create an account`, which you will to save your wish. Now you may leave the shop until your next visit.
+While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`. Therefor the shop might ask you to `create an account`, which you will to save your wish for later. Now you may leave the shop until your next visit.
 
 #### Building the according test
 
