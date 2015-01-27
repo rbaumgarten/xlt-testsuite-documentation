@@ -10,7 +10,7 @@ All tests cover a wide variety of different test pathes and are build up on scri
 
 A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.
 
-#### Special Modules > Valdiation
+#### Special Modules > Validation
 
 Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
 
