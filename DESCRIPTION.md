@@ -98,8 +98,8 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Constants
 
-- Test Data (constants, defined inside): `OUT_TYPE_NAME_SUBNAME`
-- Test Data (constants, defined outside): `IN_TYPE_NAME_SUBNAME` 
+- Test Data (constants, defined inside): `IN_TYPE_NAME_SUBNAME`
+- Test Data (constants, defined outside): `OUT_TYPE_NAME_SUBNAME` 
 
 #### Users
 
