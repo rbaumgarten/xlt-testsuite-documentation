@@ -46,8 +46,8 @@ The following styling rules where quite consequently applied to form a solid str
     .
     |-- bin                                # executables
     |-- config                             # IDE configuration
-    |   |-- data                           # test data dictionaries
-    |   |   \-- default                    
+    |   \-- data                           # test data dictionaries
+    |       \-- default                    
     |-- scripts
     |   |-- modules.helper                 # basic scripts
     |   |-- modules.pages                  # scripts for specific pages
