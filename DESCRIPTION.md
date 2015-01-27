@@ -32,14 +32,14 @@ Following this simple step-by-step guide you may to easily implement  yout own t
 
 **1. Create** a new test and write a (informal) list of short steps describing the simulated process.
 **2. Insert** comment lines in the test with steps aggregated by their interacted pages.
-**3. Drag and drop** the needed form the according page packages in the project tree
+**3. Drag and drop** the needed form the according page packages in the project tree.
 **4. Configure** your needed test data and dynamic variables.
 
  Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
 ### Test Suite Styleguide
 
-The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments and establish a naming scheme for folders, packages and files. The elaborately discussed style guide may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guide may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.
 
 #### Project Tree
 
