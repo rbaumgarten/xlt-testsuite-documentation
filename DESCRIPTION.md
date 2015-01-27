@@ -16,7 +16,7 @@ Validation of webpage elements and dynamic data is a very essential part of test
 
 #### Special Modules > Flow
 
-Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. In contrast to the single steps the achivied specific goal at the end of the process is only of importance. Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
+Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. In contrast to the taken singular steps the achieved specific goal at the end of the process is only of importance. Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
 
 ### Test Suite Development Guide
 
