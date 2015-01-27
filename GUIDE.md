@@ -14,7 +14,7 @@ Following this simple step-by-step guide you may to easily implement  yout own t
 1. **Create** a new `test case` and write an informal list of short steps describing the simulated process.
 2. **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
 3. **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
-4. **Configure** specific `test data` and dynamic variables for `modules`.
+4. **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
 
 Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
