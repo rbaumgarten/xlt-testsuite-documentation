@@ -22,11 +22,11 @@ Some modules mimic more sophisticated shopping behaviours by interacting with se
 
 This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!
 
-#### Simulate a shopping process
+#### Simulate a desired shopping process
 
 While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`. Therefor the shop might ask you to `create an account`, which you will to save your wish for later. Now you may leave the shop until your next visit.
 
-#### Building the corresponding test case
+#### Build the corresponding test case
 
 Following this simple step-by-step guide you may to easily implement  yout own test case:
 
