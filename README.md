@@ -23,7 +23,7 @@ All planned features are publicly tracked as [GitHub issues](https://github.com/
 
 ## Test Suite Setup
 
-The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. For further help on how to setup or configurate you test suite please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/):
+The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. For further help on setup and configuration please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/):
 
 ### XLT Script Developer
 
