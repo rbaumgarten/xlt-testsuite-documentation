@@ -62,7 +62,7 @@ Sites-SiteGenesis-Site) v15.1.0.14 or higher
 
 ## Test Suite Structure
 
-#### Project Tree
+### Project Tree
 
     .
     |-- bin                                # executables
@@ -99,7 +99,7 @@ The aim of our test set is to cover standard functions of the shop system. Every
 
 All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of changed data in your browser and reversing the state of the shop system to its origin).
 
-#### Modules
+### Modules
 
 A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.
 
