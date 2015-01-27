@@ -120,47 +120,6 @@
 
 <h3 id="testsuitestructure">Test Suite Structure</h3>
 
-<h4 id="tests">Tests</h4>
-
-<p>The aim of our test set is to cover standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closely a test even focuses on a specific part of the buying process which is tested in depth. This test focus describes several shop area in the package structrue in which tests are ordered. </p>
-
-<p>All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of changed data in your browser and reversing the state of the shop system to its origin).</p>
-
-<h4 id="modules">Modules</h4>
-
-<p>A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.</p>
-
-<h4 id="specialmodulesvalidation">Special Modules &gt; Validation</h4>
-
-<p>Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).</p>
-
-<h4 id="specialmodulesflow">Special Modules &gt; Flow</h4>
-
-<p>Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.</p>
-
-<h3 id="testsuitedevelopmentguide">Test Suite Development Guide</h3>
-
-<p>This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!</p>
-
-<h4 id="simulateadesiredshoppingprocess">Simulate a desired shopping process</h4>
-
-<p>While shopping with your web browser you may browse the <code>catalog</code>, end up on a <code>productdetailpage</code>, change details like <code>color</code>, <code>size</code> and <code>quantity</code>, and may decide to add the product to <code>wishlist</code>. Therefor the shop might ask you to <code>create an account</code>, which you will to save your wish for later. Now you may leave the shop until your next visit.</p>
-
-<h4 id="buildthecorrespondingtestcase">Build the corresponding test case</h4>
-
-<p>Following this simple step-by-step guide you may to easily implement yout own test case:</p>
-
-<p><strong>1. Create</strong> a new <code>test case</code> and write an informal list of short steps describing the simulated process.<br/>
-<strong>2. Insert</strong> <code>comment</code> lines in the <code>test case</code> with steps descriptions aggregated by their interacted <code>pages</code>.<br/>
-<strong>3. Drag and drop</strong> the needed modules form the <code>modules</code> packages in the project tree.<br/>
-<strong>4. Configure</strong> your needed <code>test data</code> at the <code>test case</code> and <code>dynamic variables</code> in the used <code>modules</code>.</p>
-
-<p>Congratulations, you may <strong>run your first own test now</strong> (after several iterations over steps 3 and 4).</p>
-
-<h3 id="testsuitestyleguidelines">Test Suite Style Guidelines</h3>
-
-<p>The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.</p>
-
 <h4 id="projecttree">Project Tree</h4>
 
 <pre><code>.  
@@ -193,176 +152,24 @@
 \-- global_testdata.properties         # global testdata properties
 </code></pre>
 
-<h4 id="packages">Packages</h4>
+<h4 id="tests">Tests</h4>
 
-<ul>
-<li>Tests: <code>tests.{shoparea}</code></li>
-<li>Modules: <code>modules.pages.[shoparea].{currentpage}</code></li>
-<li>Special Modules &gt; global : <code>modules.global.[shoparea]</code></li>
-<li>Special Modules &gt; helper : <code>modules.helper.[shoparea]</code></li>
-</ul>
+<p>The aim of our test set is to cover standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closely a test even focuses on a specific part of the buying process which is tested in depth. This test focus describes several shop area in the package structrue in which tests are ordered. </p>
 
-<h4 id="files">Files</h4>
+<p>All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of changed data in your browser and reversing the state of the shop system to its origin).</p>
 
-<ul>
-<li>Tests: <code>T{ShopArea}{TestScope}_{executeInteractionName}</code></li>
-<li>Modules: <code>M{Page}_[PagePart]_{executeInteractionName}</code></li>
-<li>Special Modules &gt; Validation: <code>V{Page}_[PagePart]_{executeInteractionName}</code></li>
-<li>Special Modules &gt; Flow: <code>F_{StartPage}_{executeProcessName}</code></li>
-</ul>
+<h4 id="modules">Modules</h4>
 
-<h4 id="parameters">Parameters</h4>
+<p>A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.</p>
 
-<ul>
-<li>Module Parameters (types, used as input): <code>TypeNameSubname</code></li>
-<li>Module Parameters (types, used as output): <code>ReturnTypeNameSubname</code></li>
-</ul>
+<h4 id="specialmodulesvalidation">Special Modules &gt; Validation</h4>
 
-<h4 id="variables">Variables</h4>
+<p>Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).</p>
 
-<ul>
-<li>Dynamic Variables: <code>typeNameSubname</code></li>
-<li>Final Variables (constants): <code>TYPE_NAME_SUBNAME</code></li>
-<li>Test Data (final, constants): <code>DATA_TYPE_NAME_SUBNAME</code></li>
-</ul>
+<h4 id="specialmodulesflow">Special Modules &gt; Flow</h4>
 
-<h4 id="users">Users</h4>
+<p>Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.</p>
 
-<ul>
-<li><strong>Customer</strong>: registered user with account.</li>
-<li><strong>Guest</strong>: unregistered user without account.</li>
-</ul>
-
-<h4 id="pages">Pages</h4>
-
-<ul>
-<li><strong>Homepage</strong>: main landing page.</li>
-<li><strong>Search</strong>: search box and search result page.</li>
-<li><strong>Catalog</strong>: catalog page, product grid/listing/overview page (PGP/PLP/POP).</li>
-<li><strong>ProductDetailPage</strong>: product detail page (PDP).</li>
-<li><strong>MiniCart</strong>: minicart pop up.</li>
-<li><strong>Cart</strong>: cart page.</li>
-<li><strong>Checkout</strong>: checkout pages and steps: addresses (shipping/billing), payement, order submit.</li>
-<li><strong>Account</strong>: account page, my account.</li>
-</ul>
-
-<h4 id="interactions">Interactions</h4>
-
-<ul>
-<li><strong>go to</strong>: navigate to a page</li>
-<li><strong>continue</strong>: save entered data an go to next page</li>
-<li><strong>submit</strong>: save and send entered data from (several) pages</li>
-<li><strong>order</strong>: purchase or buy products.</li>
-<li><strong>set color</strong>: select product color</li>
-<li><strong>set size</strong>: select product size</li>
-<li><strong>set quantity</strong>: enter product quantity</li>
-<li><strong>add to cart</strong>: puts product in cart.</li>
-<li><strong>add to wishlist</strong>: putproduct to wishlist.</li>
-<li><strong>validate</strong>: verify and assert values, parameters or elements.</li>
-<li><strong>enter</strong>: enter parameters or values in input fields;</li>
-<li><strong>select</strong>: choose from radio buttons.</li>
-<li><strong>check</strong>: mark checkboxes.</li>
-<li><strong>store</strong>: store values from a page for following validations.</li>
-</ul>
-
-<h3 id="testsuiteexamples">Test Suite Examples</h3>
-
-<p>Following is a short list of advanced scripting examples and showcases (e.g. for string operations by utilization of regular expressions):</p>
-
-<ol>
-<li><p><code>FSearchAddProductToCart</code>: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.</p></li>
-<li><p>Remove trailing whitespace (ex: totals shipping) </p>
-
-<pre><code>storeEval('&quot;${block_totals_shipping}&quot;.trim()','${totals_shipping}')
-</code></pre></li>
-<li><p>Substring inclusive until last character (ex: creditcard number) </p>
-
-<pre><code>storeEval('&quot;${creditcard_number}&quot;.substring(12,16)','$'{creditcard_last_four_digits})
-</code></pre></li>
-<li><p>Substring exclusive until first occurence of character (ex: shipping method label) </p>
-
-<pre><code>storeEval('&quot;${shipping_method_label}&quot;.slice(0, &quot;${shipping_method_label}&quot;.indexOf(‘:’)', '${shipping_method_name')  
-storeEval('&quot;${shipping_method_label}&quot;.match(/[^:]*/)', '${shipping_method_name')  
-storeEval('&quot;${shipping_method_label}&quot;.replace(/\:.*$/,&quot;&quot;)', '${shipping_method_name')
-</code></pre></li>
-<li><p>Convert full english month name to number with two digits (ex: helper module) </p>
-
-<pre><code>storeEval('(&quot;0&quot; + (&quot;January___February__March_____April_____May_______June______July______August____September_October___November__December__&quot;.indexOf(&quot;@{MMonthName}&quot;)/ 10 + 1)).slice(-2)', '$(month_number)');
-</code></pre></li>
-<li><p>Pattern matching for order date and order number (ex: order confirmation summary) </p>
-
-<pre><code>assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');  
-assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
-</code></pre></li>
-<li><p>Pattern matching for uppercased words by css (ex: column or navigation headers) </p>
-
-<pre><code>assertText('css=#main .label .capitalized', 'regexpi:CaseInsensitive HEADER')
-</code></pre></li>
-<li><p>Pattern matching for any substring with asterisk (ex: shipping address) </p>
-
-<pre><code>assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
-</code></pre></li>
-</ol>
-
-<h3 id="references">References</h3>
-
-<p>This is just a list of pointers to other uselful resources:</p>
-
-<h4 id="xceptance">Xceptance</h4>
-
-<ul>
-<li><a href="https://www.xceptance.de/en/">Xceptance</a></li>
-<li><a href="http://blog.xceptance.com/">Xceptance Blog</a></li>
-<li>Xceptance Blog: <a href="http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/">Test Automation for Demandware SiteGenesis with XLT</a></li>
-<li>Xceptance Blog: <a href="http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/">Use XLT with Sauce Labs and BrowserStack</a></li>
-</ul>
-
-<h4 id="xlt">XLT</h4>
-
-<ul>
-<li>XLT <a href="https://www.xceptance.de/en/xlt/">Main</a></li>
-<li>XLT <a href="https://lab.xceptance.de/releases/xlt/latest/user-manual.html">Manual</a></li>
-<li>XLT <a href="https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html">Quick Start</a></li>
-<li>XLT Script Developer: <a href="https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/">Firefox Addon EN</a>, <a href="https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/">Firefox Addon DE</a></li>
-</ul>
-
-<h4 id="demandware">Demandware</h4>
-
-<ul>
-<li><a href="http://www.demandware.com/">Demandware</a></li>
-<li>Demandware <a href="http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site">SiteGenesis</a> (Default Shop Implementation)</li>
-</ul>
-
-<h4 id="w3c">W3C</h4>
-
-<ul>
-<li>W3C All Standards and Drafts <a href="http://www.w3.org/TR/">Technical Reports</a></li>
-<li>W3C <a href="http://www.w3.org/TR/dom/">DOM TR</a></li>
-<li>W3C <a href="http://www.w3.org/standards/webdesign/htmlcss.html">HTML &amp; CSS Portal</a>, <a href="http://www.w3.org/TR/html/">HTML TR</a></li>
-<li>W3C <a href="http://www.w3.org/Style/CSS/">CSS Portal</a>, <a href="http://www.w3.org/TR/CSS/">CSS TR</a>, <a href="http://www.w3.org/TR/selectors/#selectors">CSS Selectors TR</a></li>
-<li>W3C <a href="http://www.w3.org/standards/webdesign/script.html">Javascript Portal</a>, <a href="http://www.w3.org/standards/techs/js#w3c_all">JS All</a></li>
-<li>W3C <a href="http://www.w3.org/standards/techs/xpath#w3c_all">XPath All</a>, <a href="http://www.w3.org/TR/xpath-30/">XPath TR</a>, <a href="http://www.w3.org/TR/xpath-functions-30/">XPath Functions TR</a></li>
-<li>W3C <a href="http://www.w3.org/standards/xml/">XML Portal</a></li>
-</ul>
-
-<h4 id="w3schools">W3Schools</h4>
-
-<ul>
-<li>W3Schools <a href="http://www.w3schools.com/sitemap/sitemap_references.asp">References</a>, <a href="http://www.w3schools.com/sitemap/default.asp">Tutorials</a>, <a href="http://www.w3schools.com/sitemap/sitemap_examples.asp">Examples</a></li>
-<li>W3Schools <a href="http://www.w3schools.com/html/">HTML</a></li>
-<li>W3Schools <a href="http://www.w3schools.com/cssref/">CSS</a>, <a href="http://www.w3schools.com/cssref/css_selectors.asp">CSS Selectors</a></li>
-<li>W3Schools <a href="http://www.w3schools.com/jsref/">JavaScript Reference</a>, <a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">JavaScript Regexp</a></li>
-<li>W3Schools <a href="http://www.w3schools.com/xpath/">XPath, XQuery and XSLT Functions</a></li>
-</ul>
-
-<h4 id="other">Other</h4>
-
-<ul>
-<li>Selenium <a href="http://docs.seleniumhq.org/docs/">Docs</a>, <a href="http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns">RegEx</a></li>
-<li>RegEx <a href="http://www.rexegg.com/regex-quickstart.html">Quickstart</a></li>
-<li>Ant <a href="https://ant.apache.org/manual/running.html">Manual</a></li>
-<li><a href="http://daringfireball.net/projects/markdown/">Markdown</a>, <a href="http://fletcherpenney.net/multimarkdown/">MultiMarkdown</a></li>
-</ul>
 
                 </div><!-- /.suite description -->
               </div><!-- /.section-content -->
