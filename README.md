@@ -29,9 +29,10 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Prerequisites
 
+- XLT&reg; Script Developer v4.5.0 or higher: [Download](https://www.xceptance.com/en/xlt/download.html)
+- [Demandware](http://www.demandware.com/) [SiteGenesis](ttp://www.demandware.com/on/demandware.store/
+Sites-SiteGenesis-Site) v15.1.0.14 or higher
 - Firefox
-- XLT Script Developer v4.5.0 or higher: [Download](https://www.xceptance.com/en/xlt/download.html)
-- [Demandware](http://www.demandware.com/) [SiteGenesis](ttp://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) v15.1.0.14 or higher
 
 #### Installation
 
@@ -46,7 +47,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Prerequisites
 
-- XLT&reg;: [Download](https://www.xceptance.com/en/xlt/download.html)
+- XLT&reg; Framework v4.5.0 or higher: [Download](https://www.xceptance.com/en/xlt/download.html)
 - JDK
 - Java IDE (e.g. Eclipse, IDEA, NetBeans)
 
