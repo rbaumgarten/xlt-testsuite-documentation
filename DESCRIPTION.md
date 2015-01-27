@@ -1,31 +1,46 @@
-# Description
+### Test Suite Structure
 
-Extended description for SiteGenesis-Community-TestSuite:
+#### Tests
 
-- [Tests](#tests)
-- [Modules](#modules)
-- [Structure](#structure)
-- [Guide](#guide)
-- [Examples](#examples)
-- [References](#references)
+The aim of our test set is to cover standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closely a test even focuses on a specific part of the buying process which is tested in depth. This test focus describes several shop area in the package structrue in which tests are ordered. 
 
-### Tests
+All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of changed data in your browser and reversing the state of the shop system to its origin).
 
-The aim of our test set is to cover all standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closy a test even focuses on specific part of buying process which is tested in depth. This test focus defines, where the test case file is placed inside the shop-area-driven test case package structure of the test suite. All tests cover a wide variety of different test pathes and are build up on script modules.
+#### Modules
 
-Each test consists of a test setup (ensuring that all preconditions are met), a test scope (focusing on all relevant testing steps) and a test teardown (cleaning up of all changed data in your browser and reversing the state of the shop system to its origin).
+A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.
 
-### Modules
+#### Special Modules > Valdiation
 
-A module is script containing commands and comments. Each module interacts with elements of the webpahe. Thus all modules are packaged by their belonging webpage. Each module can be reused by different tests. 
+Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
 
-All modules are named with "M" as first letter but to clearify the structure even further we decided to outline special modules:
+#### Special Modules > Flow
 
-__Validation -__ Very important to the testing is the validation of webpage elements and dynamic data. These modules evalute via assertion that a fit criterion is meet. To make this clear we decided to name these modules with "V" fo validation as first letter.
+Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow.
+In contrast to the single steps the achivied specific goal at the end of the process is only of importance. Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
 
-__Flow -__ Sometimes you have a very long setup procedure that you want to mask when you open a test inside of XLT Script Developer. FOr example you need to create an account or add several products to cart before the actual beginning of your test scope. Obviously the needed steps cover several webpages or longer processes but are tieght closly together by their objective. We decided to consolidate these steps into flow modules and mark them with an "F" as first letter. Each flow may use several modules from different pages to achieve a distinct objective. A flow has defined starting and end point. To make it is as easy as possible a flow should start and end at the same page. The starting point defines the first word of it's name and the script location inside the package structure.
+### Test Suite Development Guide
 
-### Structure
+##### Simulate a shopping process
+
+While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`, for later. Thus the shops asks you to `create an account`, which you will to save your wish. Now you may leave the shop until your next visit.
+
+##### Building the according test
+
+Following this simple step-by-step guide you may to easily implement  yout own test case:
+
+- 1. Create a new test and write a (informal) list of short steps describing the simulated process.
+- 2. Insert comment lines in the test with steps aggregated by their interacted pages.
+- 3. Drag and drop the needed form the according page packages in the project tree
+- 4. Configure your needed test data and dynamic variables.
+
+After you have repeatedly done steps 3 and 4 you should by able to run your own first test. Congratulations and enjoy!
+
+### Test Suite Styleguide
+
+The following rules where quite consequently applied to form a solid structure and define consistent descriptions and comments and establish a naming scheme for folders, packages and files.
+
+#### Project Tree
 
     .
     |-- bin                                # executables
@@ -103,18 +118,7 @@ __Flow -__ Sometimes you have a very long setup procedure that you want to mask 
 - **check**: mark checkboxes.
 - **store**: store values from a page for following validations.
 
-### Guide
-
-__Scenario -__ While shopping with your web browser at a shop you may change product attributes like color, size and quantity at a specific ProductDetailPage via clicking menu items or typing values inside of input fields.
-
-With **XLT Script Developer** Firefox extension and **XLT SiteGenesis-Community-TestSuite** framework from GitHub it is easy to create test cases for the described scenario by following this short **step-by-step guide**:
-
-- **Identify** the workflow you want to simulate by making an informal list of page interactions.
-- **Search** for all interactions in the according modules inside of the test suite.
-- **Create** a new testcase and drag and drop the needed scripts form pageflow and modules packages in the fitting order into the testcase and specify all needed variables. You may also add local variables at the test package by right-clicking the tests packages and select "Manage Test Data".
-- **Run** your tests as often as you like and enjoy the automized test execution with a warm cup of coffee and fluffy feeling of happiness!
-
-### Examples
+### Test Suite Examples
 
 In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
 
