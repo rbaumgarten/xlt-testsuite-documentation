@@ -23,9 +23,9 @@ All planned features are publicly tracked as [GitHub issues](https://github.com/
 
 ## Test Suite Setup Guide 
 
-### XLT Script Developer
+The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. For further help please visit [XLT Online](https://lab.xceptance.de/releases/xlt/latest/):
 
-The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or to run the test suite with the __XLT Framework__ and WebDrivers:
+### XLT Script Developer
 
 #### Prerequisites
 
@@ -59,8 +59,6 @@ The following prerequisites and installation steps are needed to run the test su
 - Run test as JUnit test (default configuration: Firefox WebDriver).
 - Adapt WebDriver configurations in `project.properties` if you like.
 
-For further information please visit [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).
-
 ## Test Suite Metadata
 
 - Name: SiteGenesis-Community-TestSuite
@@ -75,3 +73,4 @@ For further information please visit [XLT Online](https://lab.xceptance.de/relea
 - René Schwietzke, Xceptance Software Technologies GmbH
 - Robert Baumgarten, Xceptance Software Technologies GmbH
 - Benjamin Nothdurft, Xceptance Software Technologies GmbH
+- your name here ;-)
