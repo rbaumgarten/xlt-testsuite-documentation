@@ -81,10 +81,10 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Files
 
-- Tests: `T{ShopArea}{TestScope}_{interaction}`
-- Modules: `M{Page}_[PagePart]_{interaction}`
-- Special Modules > Validation: `V{Page}_[PagePart]_{interaction}`
-- Special Modules > Flow: `F_{StartPage}_{process}`
+- Tests: `T{ShopArea}{TestScope}_{executeInteractionName}`
+- Modules: `M{Page}_[PagePart]_{executeInteractionName}`
+- Special Modules > Validation: `V{Page}_[PagePart]_{executeInteractionName}`
+- Special Modules > Flow: `F_{StartPage}_{executeProcessName}`
 
 #### Parameters
 
