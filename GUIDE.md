@@ -16,7 +16,7 @@ Following this simple step-by-step guide you may to easily implement  yout own t
 - **Drag and drop** the needed modules form the modules packages in the project tree. 
 - **Configure** specific `test data` and dynamic variables for `modules`.
 
- Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
+Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
 ### Test Suite Style Guidelines
 
