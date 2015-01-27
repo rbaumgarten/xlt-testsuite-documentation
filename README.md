@@ -15,7 +15,7 @@ This test suite is based on testing the storefront of the demo shop __Demandware
 
 ## Test Suite Documentation
 
-For an extended test suite description please visit the [generated documentation](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) by the **XLT ScriptDoc** tool.
+Please visit the generated [ScriptDoc documentation](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) for extended information.
 
 ## Test Suite Backlog
 
