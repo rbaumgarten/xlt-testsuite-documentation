@@ -10,7 +10,7 @@ This test suite is based on the demo shop __Demandware__ __SiteGenesis__ but the
 
 - Demonstration of test automation and test suite structuring.
 - Entry point for test development with fast learning curve.
-- Reuse of collected best practises in other (existing) projectss.
+- Reuse of collected best practises in other (existing) projects.
 - Initial test suite to automate new shops based on SiteGenesis.
 
 ## Test Suite Description
