@@ -93,23 +93,18 @@ Sites-SiteGenesis-Site) v15.1.0.14 or higher
     |-- xlt-scriptdeveloper.properties     # XLT settings
     \-- global_testdata.properties         # global testdata properties
 
-#### Tests
+### Tests
 
 The aim of our test set is to cover standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closely a test even focuses on a specific part of the buying process which is tested in depth. This test focus describes several shop area in the package structrue in which tests are ordered. 
 
 All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of changed data in your browser and reversing the state of the shop system to its origin).
 
-#### Modules
+### Modules
 
 A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.
 
-#### Validation Modules
-
-Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
-
-#### Flow Modules
-
-Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
+- Validation Modules: Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
+- Flow Modules: Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
 
 ## Test Suite Metadata
 
