@@ -74,17 +74,17 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Packages
 
-- Tests: `tests.{area}`
-- Modules: `modules.pages.[area].{currentpage}`
-- Special Modules > global : `modules.global.[area]`
-- Special Modules > helper : `modules.helper.[area]`
+- Tests: `tests.{shoparea}`
+- Modules: `modules.pages.[shoparea].{currentpage}`
+- Special Modules > global : `modules.global.[shoparea]`
+- Special Modules > helper : `modules.helper.[shoparea]`
 
 #### Files
 
-- Tests: `{TAreaTestscope}`
-- Modules: `M{Page}.[Pagepart].{Interaction}`
-- Special Modules > Flows: `F{Page}{Processfocus}`
-- Special Modules > Validation: `V{Page}.[Pagepart].{Interaction}`
+- Tests: `T{ShopArea}{TestScope}`
+- Modules: `M{Page}_[PagePart]_{PageInteraction}`
+- Special Modules > Validation: `V{Page}_[PagePart]_{PageInteraction}`
+- Special Modules > Flows: `F_{StartPage}_{ProcessFlow}`
 
 #### Users
 
