@@ -86,13 +86,20 @@ The following styling rules where quite consequently applied to form a solid str
 - Special Modules > Validation: `V{Page}_[PagePart]_{interaction}`
 - Special Modules > Flow: `F_{StartPage}_{process}`
 
+#### Parameters
+
+- Module Parameters (types, used as input): `InTypeNameSubname`
+- Module Parameters (types, used output): `OutTypeNameSubname`
+
 #### Variables
 
-- Test Data (defined inside): `OUT_NAME_SUBNAME`
-- Test Data (defined outside): `IN_NAME_SUBNAME` 
-- Module Parameters (used as input): `InNameSubname`
-- Module Parameters (used output): `OutNameSubname`
+- Variables: `typeNameSubname`
 - Dynamic Variables: `typeNameSubname`
+
+#### Constants
+
+- Test Data (constants, defined inside): `OUT_TYPE_NAME_SUBNAME`
+- Test Data (constants, defined outside): `IN_TYPE_NAME_SUBNAME` 
 
 #### Users
 
