@@ -62,8 +62,6 @@ Sites-SiteGenesis-Site) v15.1.0.14 or higher
 
 ## Test Suite Structure
 
-#### Project Tree
-
     .
     |-- bin                                # executables
     |-- config                             # IDE configuration
