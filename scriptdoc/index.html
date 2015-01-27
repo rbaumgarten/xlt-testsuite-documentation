@@ -119,7 +119,7 @@
                   <div class="suite-description">
 
 
-                          <h3 id="testsuitestructure">Test Suite Structure</h3>
+<h3 id="testsuitestructure">Test Suite Structure</h3>
 
 <h4 id="tests">Tests</h4>
 
@@ -142,34 +142,26 @@ In contrast to the single steps the achivied specific goal at the end of the pro
 
 <h3 id="testsuitedevelopmentguide">Test Suite Development Guide</h3>
 
-<h5 id="simulateashoppingprocess">Simulate a shopping process</h5>
+<p>This short paragraph may help you in buildiung your first own tests. Enjoy the comfort of the provided modules!</p>
+
+<h4 id="simulateashoppingprocess">Simulate a shopping process</h4>
 
 <p>While shopping with your web browser you may browse the <code>catalog</code>, end up on a <code>productdetailpage</code>, change details like <code>color</code>, <code>size</code> and <code>quantity</code>, and may decide to add the product to <code>wishlist</code>, for later. Thus the shops asks you to <code>create an account</code>, which you will to save your wish. Now you may leave the shop until your next visit.</p>
 
-<h5 id="buildingtheaccordingtest">Building the according test</h5>
+<h4 id="buildingtheaccordingtest">Building the according test</h4>
 
 <p>Following this simple step-by-step guide you may to easily implement yout own test case:</p>
 
-<ul>
-<li><ol>
-<li>Create a new test and write a (informal) list of short steps describing the simulated process.</li>
-</ol></li>
-<li><ol>
-<li>Insert comment lines in the test with steps aggregated by their interacted pages.</li>
-</ol></li>
-<li><ol>
-<li>Drag and drop the needed form the according page packages in the project tree</li>
-</ol></li>
-<li><ol>
-<li>Configure your needed test data and dynamic variables.</li>
-</ol></li>
-</ul>
+<p><strong>1. Create</strong> a new test and write a (informal) list of short steps describing the simulated process.<br/>
+<strong>2. Insert</strong> comment lines in the test with steps aggregated by their interacted pages.<br/>
+<strong>3. Drag</strong> and drop the needed form the according page packages in the project tree<br/>
+<strong>4. Configure</strong> your needed test data and dynamic variables.</p>
 
-<p>After you have repeatedly done steps 3 and 4 you should by able to run your own first test. Congratulations and enjoy!</p>
+<p>Congratulations, you may <strong>run your first own test now</strong> (after several iterations over steps 3 and 4).</p>
 
 <h3 id="testsuitestyleguide">Test Suite Styleguide</h3>
 
-<p>The following rules where quite consequently applied to form a solid structure and define consistent descriptions and comments and establish a naming scheme for folders, packages and files.</p>
+<p>The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments and establish a naming scheme for folders, packages and files. The elaborately discussed style guide may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.</p>
 
 <h4 id="projecttree">Project Tree</h4>
 
@@ -208,8 +200,8 @@ In contrast to the single steps the achivied specific goal at the end of the pro
 <ul>
 <li>Tests: <code>tests.{area}</code></li>
 <li>Modules: <code>modules.pages.[area].{currentpage}</code></li>
-<li>Modules &gt; global : <code>modules.global.[area]</code></li>
-<li>Modules &gt; helper : <code>modules.helper.[area]</code></li>
+<li>Special Modules &gt; global : <code>modules.global.[area]</code></li>
+<li>Special Modules &gt; helper : <code>modules.helper.[area]</code></li>
 </ul>
 
 <h4 id="files">Files</h4>
@@ -262,10 +254,10 @@ In contrast to the single steps the achivied specific goal at the end of the pro
 
 <h3 id="testsuiteexamples">Test Suite Examples</h3>
 
-<p>In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.</p>
+<p>Following is a short list of advanced scripting examples and showcases (e.g. for string operations by utilization of regular expressions):</p>
 
-<ul>
-<li><p>FSearchAddProductToCart: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.</p></li>
+<ol>
+<li><p><code>FSearchAddProductToCart</code>: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.</p></li>
 <li><p>Remove trailing whitespace (ex: totals shipping) </p>
 
 <pre><code>storeEval('&quot;${block_totals_shipping}&quot;.trim()','${totals_shipping}')
@@ -297,9 +289,11 @@ assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
 
 <pre><code>assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 </code></pre></li>
-</ul>
+</ol>
 
 <h3 id="references">References</h3>
+
+<p>This is just a list of pointers to other uselful resources:</p>
 
 <h4 id="xceptance">Xceptance</h4>
 

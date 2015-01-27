@@ -21,24 +21,26 @@ In contrast to the single steps the achivied specific goal at the end of the pro
 
 ### Test Suite Development Guide
 
-##### Simulate a shopping process
+This short paragraph may help you in buildiung your first own tests. Enjoy the comfort of the provided modules!
+
+#### Simulate a shopping process
 
 While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`, for later. Thus the shops asks you to `create an account`, which you will to save your wish. Now you may leave the shop until your next visit.
 
-##### Building the according test
+#### Building the according test
 
 Following this simple step-by-step guide you may to easily implement  yout own test case:
 
-- 1. Create a new test and write a (informal) list of short steps describing the simulated process.
-- 2. Insert comment lines in the test with steps aggregated by their interacted pages.
-- 3. Drag and drop the needed form the according page packages in the project tree
-- 4. Configure your needed test data and dynamic variables.
+**1. Create** a new test and write a (informal) list of short steps describing the simulated process.
+**2. Insert** comment lines in the test with steps aggregated by their interacted pages.
+**3. Drag** and drop the needed form the according page packages in the project tree
+**4. Configure** your needed test data and dynamic variables.
 
-After you have repeatedly done steps 3 and 4 you should by able to run your own first test. Congratulations and enjoy!
+ Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
 ### Test Suite Styleguide
 
-The following rules where quite consequently applied to form a solid structure and define consistent descriptions and comments and establish a naming scheme for folders, packages and files.
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments and establish a naming scheme for folders, packages and files. The elaborately discussed style guide may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.
 
 #### Project Tree
 
@@ -75,8 +77,8 @@ The following rules where quite consequently applied to form a solid structure a
 
 - Tests: `tests.{area}`
 - Modules: `modules.pages.[area].{currentpage}`
-- Modules > global : `modules.global.[area]`
-- Modules > helper : `modules.helper.[area]`
+- Special Modules > global : `modules.global.[area]`
+- Special Modules > helper : `modules.helper.[area]`
 
 #### Files
 
@@ -120,42 +122,44 @@ The following rules where quite consequently applied to form a solid structure a
 
 ### Test Suite Examples
 
-In the following there are several scripting examples to showcase possible ways for parameter handling and pattern matching strategies for string operations by utilization of regular expressions.
+Following is a short list of advanced scripting examples and showcases (e.g. for string operations by utilization of regular expressions):
 
-- FSearchAddProductToCart: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.
+1. `FSearchAddProductToCart`: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.
 
-- Remove trailing whitespace (ex: totals shipping)  
+2. Remove trailing whitespace (ex: totals shipping)  
 
         storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
 
-- Substring inclusive until last character (ex: creditcard number)  
+3. Substring inclusive until last character (ex: creditcard number)  
 
         storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
 
--  Substring exclusive until first occurence of character (ex: shipping method label)  
+4. Substring exclusive until first occurence of character (ex: shipping method label)  
 
         storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
         storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
         storeEval('"${shipping_method_label}".replace(/\:.*$/,"")', '${shipping_method_name')
 
-- Convert full english month name to number with two digits (ex: helper module)  
+5. Convert full english month name to number with two digits (ex: helper module)  
 
         storeEval('("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)', '$(month_number)');
 
-- Pattern matching for order date and order number (ex: order confirmation summary)  
+6. Pattern matching for order date and order number (ex: order confirmation summary)  
 
         assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');   
         assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
 
-- Pattern matching for uppercased words by css (ex: column or navigation headers)  
+7. Pattern matching for uppercased words by css (ex: column or navigation headers)  
 
         assertText('css=#main .label .capitalized', 'regexpi:CaseInsensitive HEADER')
 
-- Pattern matching for any substring with asterisk (ex: shipping address)  
+8. Pattern matching for any substring with asterisk (ex: shipping address)  
 
         assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 
 ### References
+
+This is just a list of pointers to other uselful resources:
 
 #### Xceptance
 
