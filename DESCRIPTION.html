@@ -15,7 +15,7 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 </style>
 
 </head>
-<body class="normal firstload">
+<body class="normal">
   <div id="wrapper">
       <h3 id="testsuitestructure">Test Suite Structure</h3>
 
@@ -35,7 +35,7 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 
 <h4 id="specialmodulesflow">Special Modules &gt; Flow</h4>
 
-<p>Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.</p>
+<p>Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.</p>
 
 <h3 id="testsuitedevelopmentguide">Test Suite Development Guide</h3>
 
@@ -43,16 +43,16 @@ body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,A
 
 <h4 id="simulateashoppingprocess">Simulate a shopping process</h4>
 
-<p>While shopping with your web browser you may browse the <code>catalog</code>, end up on a <code>productdetailpage</code>, change details like <code>color</code>, <code>size</code> and <code>quantity</code>, and may decide to add the product to <code>wishlist</code>, for later. Thus the shops asks you to <code>create an account</code>, which you will to save your wish. Now you may leave the shop until your next visit.</p>
+<p>While shopping with your web browser you may browse the <code>catalog</code>, end up on a <code>productdetailpage</code>, change details like <code>color</code>, <code>size</code> and <code>quantity</code>, and may decide to add the product to <code>wishlist</code>. Therefor the shop might ask you to <code>create an account</code>, which you will to save your wish for later. Now you may leave the shop until your next visit.</p>
 
-<h4 id="buildingtheaccordingtest">Building the according test</h4>
+<h4 id="buildingthecorrespondingtestcase">Building the corresponding test case</h4>
 
 <p>Following this simple step-by-step guide you may to easily implement yout own test case:</p>
 
-<p><strong>1. Create</strong> a new test and write a (informal) list of short steps describing the simulated process.<br/>
-<strong>2. Insert</strong> comment lines in the test with steps aggregated by their interacted pages.<br/>
-<strong>3. Drag and drop</strong> the needed form the according page packages in the project tree.<br/>
-<strong>4. Configure</strong> your needed test data and dynamic variables.</p>
+<p><strong>1. Create</strong> a new <code>test case</code> and write an informal list of short steps describing the simulated process.<br/>
+<strong>2. Insert</strong> <code>comment</code> lines in the <code>test case</code> with steps descriptions aggregated by their interacted <code>pages</code>.<br/>
+<strong>3. Drag and drop</strong> the needed modules form the <code>modules</code> packages in the project tree.<br/>
+<strong>4. Configure</strong> your needed <code>test data</code> at the <code>test case</code> and <code>dynamic variables</code> in the used <code>modules</code>.</p>
 
 <p>Congratulations, you may <strong>run your first own test now</strong> (after several iterations over steps 3 and 4).</p>
 
