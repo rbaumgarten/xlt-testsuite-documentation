@@ -89,7 +89,7 @@ The following styling rules where quite consequently applied to form a solid str
 #### Parameters
 
 - Module Parameters (types, used as input): `InTypeNameSubname`
-- Module Parameters (types, used output): `OutTypeNameSubname`
+- Module Parameters (types, used as output): `OutTypeNameSubname`
 
 #### Variables
 
