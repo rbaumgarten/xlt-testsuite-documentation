@@ -12,9 +12,9 @@ While shopping with your web browser you may browse the `catalog`, end up on a `
 Following this simple step-by-step guide you may to easily implement  yout own test case:
 
 1. **Create** a new `test case` and write an informal list of short steps describing the simulated process.
-- **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
-- **Drag and drop** the needed modules form the modules packages in the project tree. 
-- **Configure** specific `test data` and dynamic variables for `modules`.
+2. **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
+3. **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
+4. **Configure** specific `test data` and dynamic variables for `modules`.
 
 Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
