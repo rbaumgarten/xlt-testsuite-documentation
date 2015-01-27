@@ -16,7 +16,7 @@ Validation of webpage elements and dynamic data is a very essential part of test
 
 #### Special Modules > Flow
 
-Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. In contrast to the taken singular steps the achieved specific goal at the end of the process is only of importance. Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
+Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemmented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
 
 ### Test Suite Development Guide
 
@@ -37,9 +37,9 @@ Following this simple step-by-step guide you may to easily implement  yout own t
 
  Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
-### Test Suite Styleguide
+### Test Suite Style Guidelines
 
-The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guide may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.
 
 #### Project Tree
 
