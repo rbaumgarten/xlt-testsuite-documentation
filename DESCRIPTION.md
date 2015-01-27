@@ -49,8 +49,8 @@ The following styling rules where quite consequently applied to form a solid str
     |   \-- data                           # test data dictionaries
     |       \-- default                    
     |-- scripts
-    |   |-- modules.helper                 # basic scripts
-    |   |-- modules.pages                  # scripts for specific pages
+    |   |-- modules/helper                 # basic scripts
+    |   |-- modules/pages                  # scripts for specific pages
     |   |   |-- account                    # scripts on Account pages
     |   |   |-- cart                       # scripts on Cart page
     |   |   |-- catalog                    # scripts on Catalog pages
