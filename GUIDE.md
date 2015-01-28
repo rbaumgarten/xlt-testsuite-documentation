@@ -20,7 +20,7 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 ### Test Suite Style Guidelines
 
-The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Naming parts written in `{}` are required. Naming parts written in `[]` are optional.) 
 
 #### Packages
 
@@ -31,17 +31,17 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Files
 
-- Tests: `T{ShopArea}{TestScope}_{interactionName}`
-- Modules: `M{Page}_[PagePart]_{interactionName}`
-- Special Modules > Validation: `V{Page}_[PagePart]_{interactionName}`
-- Special Modules > Flow: `F_{StartPage}_{interactionProcessName}`
+- Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
+- Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
+- Special Modules > Validation: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
+- Special Modules > Flow: `F_{StartPage}_{interaction}{Name}[Subname]`
 
 #### Variables
 
-- Module Parameters (used as input): `TypeNameSubname`
-- Module Parameters (used as output): `TypeNameSubnameOut`
-- Test Data: `type_name_subname` 
-- Dynamic Variables: `type_name_subname`
+- Module Parameters (used as input): `M{{Name}[Subname]`
+- Module Parameters (used as output): `M{Name}[Subname]{Store}`
+- Test Data: `{name}_[subname]` 
+- Dynamic Variables: `{name}_[subname]`
 
 #### Pages
 
