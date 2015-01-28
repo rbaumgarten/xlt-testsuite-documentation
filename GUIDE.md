@@ -31,10 +31,10 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Files
 
-- Tests: `T{ShopArea}{TestScope}_{executeInteractionName}`
-- Modules: `M{Page}_[PagePart]_{executeInteractionName}`
-- Special Modules > Validation: `V{Page}_[PagePart]_{executeInteractionName}`
-- Special Modules > Flow: `F_{StartPage}_{executeProcessName}`
+- Tests: `T{ShopArea}{TestScope}_{interactionName}`
+- Modules: `M{Page}_[PagePart]_{interactionName}`
+- Special Modules > Validation: `V{Page}_[PagePart]_{interactionName}`
+- Special Modules > Flow: `F_{StartPage}_{interactionProcessName}`
 
 #### Variables
 
