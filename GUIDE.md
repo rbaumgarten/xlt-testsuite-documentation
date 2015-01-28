@@ -76,6 +76,10 @@ XLT interactions:
 - **store**: store text or values from a page for following validations.
 - **validate**: verify and assert values, parameters or elements.
 
+Flow interactions:
+
+- **flow**: flow to process several modules.
+
 #### Users
 
 - **Customer**: registered user with account.
