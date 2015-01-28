@@ -65,20 +65,17 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Interactions
 
-- **go to**: navigate to a page
-- **continue**: save entered data an go to next page
-- **submit**: save and send entered data from (several) pages
-- **order**: purchase or buy products.
-- **set color**: select product color
-- **set size**: select product size
-- **set quantity**: enter product quantity
-- **add to cart**: puts product in cart.
-- **add to wishlist**: putproduct to wishlist.
-- **validate**: verify and assert values, parameters or elements.
-- **enter**: enter parameters or values in input fields;
-- **select**: choose from radio buttons.
+Common UI interactions:
+
+- **click**: click a button or link.
+- **select**: select form dropdown menus or radio buttons.
 - **check**: mark checkboxes.
-- **store**: store values from a page for following validations.
+- **enter**: enter text or values in input fields.
+
+XLT interactions:
+
+- **store**: store text or values from a page for following validations.
+- **validate**: verify and assert values, parameters or elements.
 
 ### Test Suite Examples
 
