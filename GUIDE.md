@@ -47,11 +47,6 @@ The following styling rules where quite consequently applied to form a solid str
 - Final Variables (constants): `TYPE_NAME_SUBNAME`
 - Test Data (final, constants): `DATA_TYPE_NAME_SUBNAME` 
 
-#### Users
-
-- **Customer**: registered user with account.
-- **Guest**: unregistered user without account.
-
 #### Pages
 
 - **Homepage**: main landing page.
@@ -65,7 +60,7 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Interactions
 
-Common UI interactions:
+UI interactions:
 
 - **click**: click a button or link.
 - **select**: select form dropdown menus or radio buttons.
@@ -76,6 +71,11 @@ XLT interactions:
 
 - **store**: store text or values from a page for following validations.
 - **validate**: verify and assert values, parameters or elements.
+
+#### Users
+
+- **Customer**: registered user with account.
+- **Guest**: unregistered user without account.
 
 ### Test Suite Examples
 
