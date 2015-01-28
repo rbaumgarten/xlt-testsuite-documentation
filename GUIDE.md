@@ -38,8 +38,8 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Variables
 
-- Module Parameters (used as input): `M{{Name}[Subname]`
-- Module Parameters (used as output): `M{Name}[Subname]{Store}`
+- Module Parameters (used as input): `{Name}[Subname]`
+- Module Parameters (used as output): `{Name}[Subname]_store`
 - Test Data: `{name}_[subname]` 
 - Dynamic Variables: `{name}_[subname]`
 
