@@ -38,14 +38,17 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Parameters
 
-- Module Parameters (types, used as input): `TypeNameSubname`
-- Module Parameters (types, used as output): `ReturnTypeNameSubname`
+- Module Parameters (used as input): `TypeNameSubname`
+- Module Parameters (used as output): `TypeNameSubnameOut`
+
+#### Test Data and Dynamic Variables
+
+- Test Data: `type_name_subname` 
 
 #### Variables
 
-- Dynamic Variables: `typeNameSubname`
-- Final Variables (constants): `TYPE_NAME_SUBNAME`
-- Test Data (final, constants): `DATA_TYPE_NAME_SUBNAME` 
+- Dynamic Variables: `type_name_subname`
+
 
 #### Pages
 
@@ -66,6 +69,7 @@ UI interactions:
 - **select**: select form dropdown menus or radio buttons.
 - **check**: mark checkboxes.
 - **enter**: enter text or values in input fields.
+- **hover**: mouse over a link to open js menu etc.
 
 XLT interactions:
 
