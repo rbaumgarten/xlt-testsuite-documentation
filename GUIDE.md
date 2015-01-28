@@ -36,19 +36,12 @@ The following styling rules where quite consequently applied to form a solid str
 - Special Modules > Validation: `V{Page}_[PagePart]_{executeInteractionName}`
 - Special Modules > Flow: `F_{StartPage}_{executeProcessName}`
 
-#### Parameters
+#### Variables
 
 - Module Parameters (used as input): `TypeNameSubname`
 - Module Parameters (used as output): `TypeNameSubnameOut`
-
-#### Test Data and Dynamic Variables
-
 - Test Data: `type_name_subname` 
-
-#### Variables
-
 - Dynamic Variables: `type_name_subname`
-
 
 #### Pages
 
