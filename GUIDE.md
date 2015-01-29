@@ -20,7 +20,7 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 ### Test Suite Style Guidelines
 
-The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs.
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Naming parts written in `{}` are required. Naming parts written in `[]` are optional.) 
 
 #### Packages
 
@@ -31,26 +31,17 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Files
 
-- Tests: `T{ShopArea}{TestScope}_{executeInteractionName}`
-- Modules: `M{Page}_[PagePart]_{executeInteractionName}`
-- Special Modules > Validation: `V{Page}_[PagePart]_{executeInteractionName}`
-- Special Modules > Flow: `F_{StartPage}_{executeProcessName}`
-
-#### Parameters
-
-- Module Parameters (types, used as input): `TypeNameSubname`
-- Module Parameters (types, used as output): `ReturnTypeNameSubname`
+- Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
+- Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
+- Special Modules > Validation: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
+- Special Modules > Flow: `F_{StartPage}_{interaction}{Name}[Subname]`
 
 #### Variables
 
-- Dynamic Variables: `typeNameSubname`
-- Final Variables (constants): `TYPE_NAME_SUBNAME`
-- Test Data (final, constants): `DATA_TYPE_NAME_SUBNAME` 
-
-#### Users
-
-- **Customer**: registered user with account.
-- **Guest**: unregistered user without account.
+- Module Parameters (used as input): `{Name}[Subname]`
+- Module Parameters (used as output): `{Name}[Subname]_store`
+- Test Data: `{name}_[subname]` 
+- Dynamic Variables: `{name}_[subname]`
 
 #### Pages
 
@@ -65,20 +56,27 @@ The following styling rules where quite consequently applied to form a solid str
 
 #### Interactions
 
-- **go to**: navigate to a page
-- **continue**: save entered data an go to next page
-- **submit**: save and send entered data from (several) pages
-- **order**: purchase or buy products.
-- **set color**: select product color
-- **set size**: select product size
-- **set quantity**: enter product quantity
-- **add to cart**: puts product in cart.
-- **add to wishlist**: putproduct to wishlist.
-- **validate**: verify and assert values, parameters or elements.
-- **enter**: enter parameters or values in input fields;
-- **select**: choose from radio buttons.
+UI interactions:
+
+- **click**: click a button or link.
+- **select**: select form dropdown menus or radio buttons.
 - **check**: mark checkboxes.
-- **store**: store values from a page for following validations.
+- **enter**: enter text or values in input fields.
+- **hover**: mouse over a link to open js menu etc.
+
+XLT interactions:
+
+- **store**: store text or values from a page for following validations.
+- **validate**: verify and assert values, parameters or elements.
+
+Flow interactions:
+
+- **flow**: flow to process several modules.
+
+#### Users
+
+- **Customer**: registered user with account.
+- **Guest**: unregistered user without account.
 
 ### Test Suite Examples
 
