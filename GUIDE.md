@@ -70,16 +70,18 @@ This short introduction outlines the process of test suite development on the fo
 
 ### Step 1: Define a Desired Business Process
 
-While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`. Therefor the shop might ask you to `create an account`, which you will to save your wish for later. Now you may leave the shop until your next visit.
+Think about the business process you want to simulate and then define it. An example written on a sheet of paper:
+
+> Start `session` and go to a `category` at the `catalog`. Click a `product` and end up on a `productdetailpage`. Change product details like `color`, `size` and `quantity` and decide to add the product to `wish list`. The shop will ask to `create an account`. Enter `profile` data and submit. Validate that `product` is saved in `wish list`. Leave the shop until your next visit and end the `session`.
 
 ### Step 2: Build the Corresponding Test Case
 
-Following this simple step-by-step guide you may to easily implement  yout own test case:
+By following these test development steps you may to easily implement your own test case:
 
-2.1. **Create** a new `test case` and write an informal list of short steps describing the simulated process.
-2.2. **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
-2.3. **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
-2.4. **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
+- **Create** a new `test case` and write an informal list of short steps describing the simulated process.
+- **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
+- **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
+- **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
 
 Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
