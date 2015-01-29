@@ -68,13 +68,13 @@ This section defines the element names which are part of the naming scheme of pa
 
 This short introduction outlines the process of test suite development on the foundation of the provided modules. It may help you to build your first own tests. Basically there are two major steps. The first step is to define a desired business process on a **sheet of paper** (requirements engineering). The second step is to actually build the corresponding test case and needed modules in **XLT Script Developer** (test development).
 
-### Step 1: Define a Desired Business Process
+#### Step 1: Define a Desired Business Process
 
 Think about the business process you want to simulate and then define it. An example written on a **sheet of paper**:
 
 > Start a `session` and go to a `category` at the `catalog`. Click a `product` and end up on a `productdetailpage`. Change product details like `color`, `size` and `quantity` and decide to add the product to `wish list`. The shop will ask to `create an account`. Enter `profile` data and submit. Validate that `product` with selected details like `color`, `size` and `quantity` is saved in `wish list`. Leave the shop until your next visit and end the `session`.
 
-### Step 2: Build the Corresponding Test Case
+#### Step 2: Build the Corresponding Test Case
 
 By following these development steps you may implement your own test case in **XLT Script Developer**:
 
