@@ -56,126 +56,74 @@
     </div>
 
     <div id="main" class="row">
-      <div id="content-root" class="root-left-padding">
-          <div class="section" id="general">
-              <div class="section-title">
-                                            <h1>General Information</h1>
-              </div><!-- /.section-title -->
-              <div class="section-content">
-                  <div class="suite-name grey lighten-3 z-depth-1"> SiteGenesis-Community-TestSuite
-                  </div>
-                  <div id="statistics" class="row">
-                                  <div class="col s12 m6 l3">
-                                    <div class="card blue lighten-1">
-                                      <div class="card-content white-text center">
-                                        <span class="card-title">14</span>
-                                        <p>Testcase Scripts</p>
-                                      </div><!-- /.card-content -->
-                                    </div><!-- /.card -->
-                                  </div><!-- /.col -->
-                                  <div class="col s12 m6 l3">
-                                    <div class="card blue lighten-1">
-                                      <div class="card-content white-text center">
-                                        <span class="card-title">177</span>
-                                        <p>Script Modules</p>
-                                      </div><!-- /.card-content -->
-                                    </div><!-- /.card -->
-                                  </div><!-- /.col -->
-                                  <div class="col s12 m6 l3">
-                                    <div class="card blue lighten-1">
-                                      <div class="card-content white-text center">
-                                        <span class="card-title">0</span>
-                                        <p>Java Modules</p>
-                                      </div><!-- /.card-content -->
-                                    </div><!-- /.card -->
-                                  </div><!-- /.col -->
-                                  <div class="col s12 m6 l3">
-                                    <div class="card blue lighten-1">
-                                      <div class="card-content white-text center">
-                                        <span class="card-title">30</span>
-                                        <p>Script Packages</p>
-                                      </div><!-- /.card-content -->
-                                    </div><!-- /.card -->
-                                  </div><!-- /.col -->
-                                  <div class="col s12 m6 l3">
-                                    <div class="card blue lighten-1">
-                                      <div class="card-content white-text center">
-                                        <span class="card-title">6</span>
-                                        <p>Scripts per Package</p>
-                                      </div><!-- /.card-content -->
-                                    </div><!-- /.card -->
-                                  </div><!-- /.col -->
-                                  <div class="col s12 m6 l3">
-                                    <div class="card blue lighten-1">
-                                      <div class="card-content white-text center">
-                                        <span class="card-title">24</span>
-                                        <p>Steps per Test</p>
-                                      </div><!-- /.card-content -->
-                                    </div><!-- /.card -->
-                                  </div><!-- /.col -->
-                  </div><!-- /.row -->
+            <div id="content-root" class="root-left-padding">
+    <div class="section" id="general">
+        <div class="section-title">
+            <h1>General Information</h1>
+        </div><!-- /.section-title -->
+        <div class="section-content">
+            <div class="suite-name grey lighten-3 z-depth-1">
+                SiteGenesis-Community-TestSuite
+            </div>
 
-                  <!-- suite description -->
-                  <div class="suite-description">
+            <div id="statistics" class="row">
+  <div class="col s12 m6 l3">
+    <div class="card blue lighten-1">
+      <div class="card-content white-text center">
+        <span class="card-title">19</span>
+        <p>Testcase Scripts</p>
+      </div><!-- /.card-content -->
+    </div><!-- /.card -->
+  </div><!-- /.col -->
+  <div class="col s12 m6 l3">
+    <div class="card blue lighten-1">
+      <div class="card-content white-text center">
+        <span class="card-title">207</span>
+        <p>Script Modules</p>
+      </div><!-- /.card-content -->
+    </div><!-- /.card -->
+  </div><!-- /.col -->
+  <div class="col s12 m6 l3">
+    <div class="card blue lighten-1">
+      <div class="card-content white-text center">
+        <span class="card-title">0</span>
+        <p>Java Modules</p>
+      </div><!-- /.card-content -->
+    </div><!-- /.card -->
+  </div><!-- /.col -->
+  <div class="col s12 m6 l3">
+    <div class="card blue lighten-1">
+      <div class="card-content white-text center">
+        <span class="card-title">36</span>
+        <p>Script Packages</p>
+      </div><!-- /.card-content -->
+    </div><!-- /.card -->
+  </div><!-- /.col -->
+  <div class="col s12 m6 l3">
+    <div class="card blue lighten-1">
+      <div class="card-content white-text center">
+        <span class="card-title">6</span>
+        <p>Scripts per Package</p>
+      </div><!-- /.card-content -->
+    </div><!-- /.card -->
+  </div><!-- /.col -->
+  <div class="col s12 m6 l3">
+    <div class="card blue lighten-1">
+      <div class="card-content white-text center">
+        <span class="card-title">24</span>
+        <p>Steps per Test</p>
+      </div><!-- /.card-content -->
+    </div><!-- /.card -->
+  </div><!-- /.col -->
+            </div><!-- /.row -->
+            
+        </div><!-- /.section-content -->
+    </div><!-- /.section -->
 
-<h3 id="testsuitestructure">Test Suite Structure</h3>
-
-<h4 id="projecttree">Project Tree</h4>
-
-<pre><code>.  
-|-- bin                                # executables  
-|-- config                             # IDE configuration  
-|   \-- data                           # test data dictionaries  
-|       \-- default  
-|-- scripts  
-|   |-- modules/helper                 # basic scripts  
-|   |-- modules/pages                  # scripts for specific pages  
-|   |   |-- account                    # scripts on Account pages  
-|   |   |-- cart                       # scripts on Cart page  
-|   |   |-- catalog                    # scripts on Catalog pages  
-|   |   |-- checkout                   # scripts on Checkout pages  
-|   |   |-- homepage                   # scripts on Homepage  
-|   |   |-- minicart                   # scripts on MiniCart popup  
-|   |   |-- productdetailpage          # scripts on ProductDetailPage  
-|   |   \-- search                     # scripts for Searching  
-|   \-- tests  
-|       |-- account                    # tests for Account pages  
-|       |-- cart                       # tests for Cart page  
-|       |-- catalog                    # tests for Catalog pages  
-|       |-- checkout                   # tests for Checkout pages  
-|       \-- search                     # tests for Searches  
-|-- src  
-|   \-- tests                          # XLT java wrapper classes  
-|-- build.properties                   # XLT ant build properties  
-|-- build.xml                          # XLT ant build configuration  
-|-- xlt-scriptdeveloper.properties     # XLT settings  
-\-- global_testdata.properties         # global testdata properties
-</code></pre>
-
-<h4 id="tests">Tests</h4>
-
-<p>The aim of our test set is to cover standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closely a test even focuses on a specific part of the buying process which is tested in depth. This test focus describes several shop area in the package structrue in which tests are ordered. </p>
-
-<p>All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of changed data in your browser and reversing the state of the shop system to its origin).</p>
-
-<h4 id="modules">Modules</h4>
-
-<p>A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.</p>
-
-<h4 id="specialmodulesvalidation">Validation Modules</h4>
-
-<p>Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).</p>
-
-<h4 id="specialmodulesflow">Flow  Modules</h4>
-
-<p>Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.</p>
-
-
-                </div><!-- /.suite description -->
-              </div><!-- /.section-content -->
-          </div><!-- /.section -->
-      </div>
+    
+            </div>
     </div><!-- /main -->
+
 </div><!-- /.container -->
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>

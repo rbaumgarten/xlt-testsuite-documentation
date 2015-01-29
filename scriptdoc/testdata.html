@@ -116,16 +116,36 @@
                 <td class="value">CA</td>
             </tr>
             <tr>
+                <td class="key">catalog_color_name</td>
+                <td class="value">Blue</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_cvn_amex</td>
+                <td class="value">1234</td>
+            </tr>
+            <tr>
                 <td class="key">credit_card_cvn_visa</td>
                 <td class="value">123</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_month_amex</td>
+                <td class="value">April</td>
             </tr>
             <tr>
                 <td class="key">credit_card_month_visa</td>
                 <td class="value">August</td>
             </tr>
             <tr>
+                <td class="key">credit_card_number_amex</td>
+                <td class="value">340000000000009</td>
+            </tr>
+            <tr>
                 <td class="key">credit_card_number_visa</td>
                 <td class="value">4111111111111111</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_owner_amex</td>
+                <td class="value">Jane Doe</td>
             </tr>
             <tr>
                 <td class="key">credit_card_owner_visa</td>
@@ -136,16 +156,28 @@
                 <td class="value">Credit Card</td>
             </tr>
             <tr>
+                <td class="key">credit_card_type_amex</td>
+                <td class="value">American Express</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_type_short_amex</td>
+                <td class="value">Amex</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_type_short_visa</td>
+                <td class="value">Visa</td>
+            </tr>
+            <tr>
                 <td class="key">credit_card_type_visa</td>
                 <td class="value">Visa</td>
             </tr>
             <tr>
-                <td class="key">credit_card_year_visa</td>
-                <td class="value">2016</td>
+                <td class="key">credit_card_year_amex</td>
+                <td class="value">2019</td>
             </tr>
             <tr>
-                <td class="key">email</td>
-                <td class="value">${RANDOM.String(16)}@varmail.com</td>
+                <td class="key">credit_card_year_visa</td>
+                <td class="value">2016</td>
             </tr>
             <tr>
                 <td class="key">firstname</td>
@@ -154,10 +186,6 @@
             <tr>
                 <td class="key">lastname</td>
                 <td class="value">Buyer</td>
-            </tr>
-            <tr>
-                <td class="key">password</td>
-                <td class="value">${RANDOM.String(16)}</td>
             </tr>
             <tr>
                 <td class="key">pattern_order_date</td>
@@ -281,7 +309,7 @@
             </tr>
             <tr>
                 <td class="key">storefront_url</td>
-                <td class="value">http://dev01-lab04b-dw.demandware.net/on/demandware.store/Sites-SiteGenesis-Site</td>
+                <td class="value">http://dev02-lab02b-dw.demandware.net/on/demandware.store/Sites-SiteGenesis-Site</td>
             </tr>
         </tbody>
     </table>
@@ -293,6 +321,8 @@
     <h4>modules</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.global</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    <h4>modules.global.headerfooternav</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.global.minicart</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
@@ -306,11 +336,15 @@
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.account.login</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    <h4>modules.pages.account.menu</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.account.orderhistory</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.account.paymentsettings</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.account.personaldata</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    <h4>modules.pages.account.wishlist</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.cart</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
@@ -318,13 +352,15 @@
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.checkout</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    <h4>modules.pages.checkout.login</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.checkout.steps</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.checkout.steps.billing</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
-    <h4>modules.pages.checkout.steps.confirmation</h4>
+    <h4>modules.pages.checkout.steps.boxes</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
-    <h4>modules.pages.checkout.steps.navbox</h4>
+    <h4>modules.pages.checkout.steps.confirmation</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>modules.pages.checkout.steps.placeorder</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
@@ -339,12 +375,6 @@
     <h4>tests</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>tests.account</h4>
-    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
-    <h4>tests.browse</h4>
-    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
-    <h4>tests.cart</h4>
-    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
-    <h4>tests.checkout</h4>
     <table>
         <thead>
             <tr>
@@ -381,8 +411,95 @@
                 <td class="key">credit_card_year_visa</td>
                 <td class="value">2016</td>
             </tr>
+            <tr>
+                <td class="key">firstname</td>
+                <td class="value">John</td>
+            </tr>
+            <tr>
+                <td class="key">lastname</td>
+                <td class="value">Buyer</td>
+            </tr>
         </tbody>
     </table>
+    <h4>tests.cart</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    <h4>tests.catalog</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    <h4>tests.checkout</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="key">credit_card_cvn_amex</td>
+                <td class="value">1234</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_cvn_visa</td>
+                <td class="value">123</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_month_amex</td>
+                <td class="value">April</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_month_visa</td>
+                <td class="value">August</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_number_amex</td>
+                <td class="value">340000000000009</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_number_visa</td>
+                <td class="value">4111111111111111</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_owner_amex</td>
+                <td class="value">Jane Doe</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_owner_visa</td>
+                <td class="value">John Buyer</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_payment_method_name</td>
+                <td class="value">Credit Card</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_type_amex</td>
+                <td class="value">American Express</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_type_short_amex</td>
+                <td class="value">Amex</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_type_short_visa</td>
+                <td class="value">Visa</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_type_visa</td>
+                <td class="value">Visa</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_year_amex</td>
+                <td class="value">2019</td>
+            </tr>
+            <tr>
+                <td class="key">credit_card_year_visa</td>
+                <td class="value">2016</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>tests.homepage</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    <h4>tests.minicart</h4>
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     <h4>tests.search</h4>
     <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
             </div>
