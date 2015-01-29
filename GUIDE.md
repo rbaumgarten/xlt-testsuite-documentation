@@ -1,49 +1,35 @@
+# SiteGenesis-Community-TestSuite
 
-### Test Suite Development Guide
-
-This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!
-
-#### Simulate a desired shopping process
-
-While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`. Therefor the shop might ask you to `create an account`, which you will to save your wish for later. Now you may leave the shop until your next visit.
-
-#### Build the corresponding test case
-
-Following this simple step-by-step guide you may to easily implement  yout own test case:
-
-1. **Create** a new `test case` and write an informal list of short steps describing the simulated process.
-2. **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
-3. **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
-4. **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
-
-Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
-
-### Test Suite Style Guidelines
+## Test Suite Naming Conventions
 
 The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Naming parts written in `{}` are required. Naming parts written in `[]` are optional.) 
 
-#### Packages
+### Packages (Folders)
 
 - Tests: `tests.{shoparea}`
 - Modules: `modules.pages.[shoparea].{currentpage}`
 - Special Modules > global : `modules.global.[shoparea]`
 - Special Modules > helper : `modules.helper.[shoparea]`
 
-#### Files
+### Files
 
 - Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
 - Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Special Modules > Validation: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Special Modules > Flow: `F_{StartPage}_{interaction}{Name}[Subname]`
 
-#### Variables
+### Variables
 
 - Module Parameters (used as input): `{Name}[Subname]`
 - Module Parameters (used as output): `{Name}[Subname]_store`
 - Test Data: `{name}_[subname]` 
 - Dynamic Variables: `{name}_[subname]`
 
-#### Pages
+### Naming Elements
+
+The next paragraphes define the element name scheme of which packages, files and variables consit of.
+
+#### Naming of Page Elements
 
 - **Homepage**: main landing page.
 - **Search**: search box and search result page.
@@ -54,9 +40,7 @@ The following styling rules where quite consequently applied to form a solid str
 - **Checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
 - **Account**: account page, my account.
 
-#### Interactions
-
-UI interactions:
+#### Naming of UI Interaction Elements
 
 - **click**: click a button or link.
 - **select**: select form dropdown menus or radio buttons.
@@ -64,21 +48,40 @@ UI interactions:
 - **enter**: enter text or values in input fields.
 - **hover**: mouse over a link to open js menu etc.
 
-XLT interactions:
+#### Naming of XLT Interaction Elements
 
 - **store**: store text or values from a page for following validations.
 - **validate**: verify and assert values, parameters or elements.
 
-Flow interactions:
+#### Naming of Flow Interaction Elements
 
 - **flow**: flow to process several modules.
 
-#### Users
+#### Naming of User Elements
 
 - **Customer**: registered user with account.
 - **Guest**: unregistered user without account.
 
-### Test Suite Examples
+## Test Suite Development Guide
+
+This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!
+
+### Simulate a Desired Business Process
+
+While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`. Therefor the shop might ask you to `create an account`, which you will to save your wish for later. Now you may leave the shop until your next visit.
+
+### Build the Corresponding Test Case
+
+Following this simple step-by-step guide you may to easily implement  yout own test case:
+
+1. **Create** a new `test case` and write an informal list of short steps describing the simulated process.
+2. **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
+3. **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
+4. **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
+
+Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
+
+## Test Suite Examples
 
 Following is a short list of advanced scripting examples and showcases (e.g. for string operations by utilization of regular expressions):
 
@@ -115,30 +118,30 @@ Following is a short list of advanced scripting examples and showcases (e.g. for
 
         assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 
-### Resources
+## Resources
 
 Here are some pointers to other helpful resources for test development:
 
-#### Xceptance
+### Xceptance
 
 - [Xceptance](https://www.xceptance.de/en/)
 - [Xceptance Blog](http://blog.xceptance.com/)
 - Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
 - Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
 
-#### XLT
+### XLT
 
 - XLT [Main](https://www.xceptance.de/en/xlt/)
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
 - XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
 - XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 
-#### Demandware
+### Demandware
 
 - [Demandware](http://www.demandware.com/)
 - Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
 
-#### W3C
+### W3C
 
 - W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
 - W3C [DOM TR](http://www.w3.org/TR/dom/)
@@ -148,7 +151,7 @@ Here are some pointers to other helpful resources for test development:
 - W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
 - W3C [XML Portal](http://www.w3.org/standards/xml/)
 
-#### W3Schools
+### W3Schools
 
 - W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
 - W3Schools [HTML](http://www.w3schools.com/html/)
@@ -156,7 +159,7 @@ Here are some pointers to other helpful resources for test development:
 - W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
-#### Other
+### Other
 
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
