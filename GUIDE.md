@@ -66,20 +66,20 @@ This section defines the element names which are part of the naming scheme of pa
 
 ## Test Suite Development
 
-This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!
+This short introduction outlines the process of test suite development on the foundation of the provided modules. It may help you to build your first own tests. Basically there are two major steps. The first step is to define a desired business process (requirements engineering). The second step is to actually build the corresponding test case and needed modules in XLT Script Developer (test development).
 
-### Simulate a Desired Business Process
+### Step 1: Define a Desired Business Process
 
 While shopping with your web browser you may browse the `catalog`, end up on a `productdetailpage`, change details like `color`, `size` and `quantity`, and may decide to add the product to `wishlist`. Therefor the shop might ask you to `create an account`, which you will to save your wish for later. Now you may leave the shop until your next visit.
 
-### Build the Corresponding Test Case
+### Step 2: Build the Corresponding Test Case
 
 Following this simple step-by-step guide you may to easily implement  yout own test case:
 
-1. **Create** a new `test case` and write an informal list of short steps describing the simulated process.
-2. **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
-3. **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
-4. **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
+2.1. **Create** a new `test case` and write an informal list of short steps describing the simulated process.
+2.2. **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
+2.3. **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
+2.4. **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
 
 Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
