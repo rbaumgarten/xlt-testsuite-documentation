@@ -25,11 +25,11 @@ The following styling rules where quite consequently applied to form a solid str
 - Test Data: `{name}_[subname]` 
 - Dynamic Variables: `{name}_[subname]`
 
-### Naming Elements
+### Elements
 
-The next paragraphes define the element name scheme of which packages, files and variables consit of.
+This section defines the element names which are part of the naming scheme of packages, files and variables.
 
-#### Naming of Page Elements
+**Page Elements**
 
 - **Homepage**: main landing page.
 - **Search**: search box and search result page.
@@ -40,7 +40,7 @@ The next paragraphes define the element name scheme of which packages, files and
 - **Checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
 - **Account**: account page, my account.
 
-#### Naming of UI Interaction Elements
+**UI Interaction Elements**
 
 - **click**: click a button or link.
 - **select**: select form dropdown menus or radio buttons.
@@ -48,16 +48,16 @@ The next paragraphes define the element name scheme of which packages, files and
 - **enter**: enter text or values in input fields.
 - **hover**: mouse over a link to open js menu etc.
 
-#### Naming of XLT Interaction Elements
+**XLT Interaction Elements**
 
 - **store**: store text or values from a page for following validations.
 - **validate**: verify and assert values, parameters or elements.
 
-#### Naming of Flow Interaction Elements
+**Flow Interaction Elements**
 
 - **flow**: flow to process several modules.
 
-#### Naming of User Elements
+**User Elements**
 
 - **Customer**: registered user with account.
 - **Guest**: unregistered user without account.
