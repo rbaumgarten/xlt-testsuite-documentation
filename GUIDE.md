@@ -4,28 +4,28 @@
 
 The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Element names written in `{}` are required. Element names written in `[]` are optional.) 
 
-### Packages (Folders)
+### Naming of Packages (Folders)
 
 - Tests: `tests.{shoparea}`
 - Modules: `modules.pages.[shoparea].{currentpage}`
 - Special Modules > global : `modules.global.[shoparea]`
 - Special Modules > helper : `modules.helper.[shoparea]`
 
-### Files
+### Naming of Files
 
 - Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
 - Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Special Modules > Validation: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Special Modules > Flow: `F_{StartPage}_{interaction}{Name}[Subname]`
 
-### Variables
+### Naming of Variables
 
 - Module Parameters (used as input): `{Name}[Subname]`
 - Module Parameters (used as output): `{Name}[Subname]_store`
 - Test Data: `{name}_[subname]` 
 - Dynamic Variables: `{name}_[subname]`
 
-### Elements
+### Element Names
 
 This section defines the element names which are part of the naming scheme of packages, files and variables.
 
