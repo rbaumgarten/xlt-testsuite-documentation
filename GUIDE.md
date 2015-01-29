@@ -1,4 +1,6 @@
-# SiteGenesis-Community-TestSuite
+# Guide to SiteGenesis-Community-TestSuite
+
+This document describes the used test suite naming conventions, gives a short introduction to test suite development and shows some test suite examples. The last part contains some pointers to various helpful resources on other websites. 
 
 ## Test Suite Naming Conventions
 
@@ -62,7 +64,7 @@ This section defines the element names which are part of the naming scheme of pa
 - **Customer**: registered user with account.
 - **Guest**: unregistered user without account.
 
-## Test Suite Development Guide
+## Test Suite Development
 
 This development guide may help you to build your first own tests. Enjoy the comfort of the provided modules!
 
