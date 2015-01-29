@@ -72,7 +72,7 @@ This short introduction outlines the process of test suite development on the fo
 
 Think about the business process you want to simulate and then define it. An example written on a sheet of paper:
 
-> Start `session` and go to a `category` at the `catalog`. Click a `product` and end up on a `productdetailpage`. Change product details like `color`, `size` and `quantity` and decide to add the product to `wish list`. The shop will ask to `create an account`. Enter `profile` data and submit. Validate that `product` is saved in `wish list`. Leave the shop until your next visit and end the `session`.
+> Start a `session` and go to a `category` at the `catalog`. Click a `product` and end up on a `productdetailpage`. Change product details like `color`, `size` and `quantity` and decide to add the product to `wish list`. The shop will ask to `create an account`. Enter `profile` data and submit. Validate that `product` is saved in `wish list`. Leave the shop until your next visit and end the `session`.
 
 ### Step 2: Build the Corresponding Test Case
 
