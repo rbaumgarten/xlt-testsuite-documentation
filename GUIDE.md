@@ -76,7 +76,7 @@ Think about the business process you want to simulate and then define it. An exa
 
 ### Step 2: Build the Corresponding Test Case
 
-By following these development steps you may implement your own test case in *XLT Script Developer**:
+By following these development steps you may implement your own test case in **XLT Script Developer**:
 
 - **Create** a new `test case` and write an informal list of short steps describing the simulated process.
 - **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
