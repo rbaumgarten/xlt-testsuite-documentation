@@ -2,7 +2,7 @@
 
 ## Test Suite Naming Conventions
 
-The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Naming parts written in `{}` are required. Naming parts written in `[]` are optional.) 
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Element names written in `{}` are required. Element names written in `[]` are optional.) 
 
 ### Packages (Folders)
 
