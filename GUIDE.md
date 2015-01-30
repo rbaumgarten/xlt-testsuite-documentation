@@ -87,9 +87,25 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 ## Test Suite Examples
 
-Following are some examples (ex.) of module commands used for text operations, text matching or text conversion.
+Following are some examples (ex.) of module commands used for text matching, text operations or text conversion.
+
+#### Text Matching Examples
+
+
+| Command       | Target                                                | Value                                 |
+| :------------ | :---------------------------------------------------- | :------------------------------------ |
+|               | _ex. Order date pattern matching_                     |                                       |
+| assertText    | css=#main .order-date .value                          | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
+|               | _ex. Order number pattern matching_                   |                                       |
+| assertText    | css=#main .order-number .value                        | regexp:00[0-9]{6}                     |
+|               | _ex. Insensitive pattern matching_                    |                                       |
+| assertText    | css=#main .label .capitalized                         | regexpi:CaseInsensitive HEADER        |
+|               | _ex. Match inner substring_                           |                                       |
+| assertText    | css=#main .shipping-address .city-state-postal        | \*${state}\*                          |
+
 
 #### Text Operation Examples
+
 
 | Command       | Target                                                | Value                                 |
 | :------------ | :---------------------------------------------------- | :------------------------------------ |
@@ -101,21 +117,6 @@ Following are some examples (ex.) of module commands used for text operations, t
 | storeEval     | "${label}".slice(0, "${label}".indexOf(‘:’)           | ${shipping_method_name')              |
 | storeEval     | "${shipping_method_label}".match(/[^:]*/)             | ${shipping_method_name}               |
 | storeEval     | "${shipping_method_label}".replace(/\:.*$/,"")        | ${shipping_method_name}               |
-
-
-
-#### Text Matching Examples
-
-| Command       | Target                                                | Value                                 |
-| :------------ | :---------------------------------------------------- | :------------------------------------ |
-|               | _ex. Order date pattern matching_                     |                                       |
-| assertText    | css=#main .order-date .value                          | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
-|               | _ex. Order number pattern matching_                   |                                       |
-| assertText    | css=#main .order-number .value                        | regexp:00[0-9]{6}                     |
-|               | _ex. Insensitive pattern matching_                    |                                       |
-| assertText    | css=#main .label .capitalized                         | regexpi:CaseInsensitive HEADER        |
-|               | _ex. Match inner substring_                           |                                       |
-| assertText    | css=#main .shipping-address .city-state-postal        | \*${state}\*                            |   
 
 
 #### Text Conversion Examples
