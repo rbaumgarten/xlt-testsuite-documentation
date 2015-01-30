@@ -2,16 +2,16 @@
 
 # SiteGenesis-Community-TestSuite
 
-The test suite focuses on functional frontend blackbox regression testing. It was build and may be run with the __XLT Script Developer__ in Firefox and the __XLT Framework__ by orchestrating different WebDrivers. 
+The test suite focuses on functional frontend testing. It was build and may be run with __XLT Script Developer__ in Firefox or the __XLT Framework__ by orchestrating different WebDrivers. 
 
-As there are already many complex test suites (including some for SiteGenesis) we realized it is time to build a small and clearly structured test suite to showcase best practises with a well-defined set of tests. Thus the project idea is to collect experiences, consolidate knowledge and share ideas of testing practises. 
+As test suites sometimes tend to become complex and hard to maintain we realized it is time to build a clearly structured test suite with a well-defined set of tests. Thus the project idea is to collect experiences, consolidate knowledge and share ideas of testing practises. 
 
 This test suite is based on testing the storefront of the demo shop __Demandware__ __SiteGenesis__ but the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well. Everybody is invited to use it, learn from it, improve it and adapt it to their needs. Possible purposes encompass:
 
+- Initial test suite to automate new shops based on SiteGenesis.
 - Demonstration of test automation and test suite structuring.
 - Entry point for test development with fast learning curve.
 - Reuse of collected best practises in other (existing) projects.
-- Initial test suite to automate new shops based on SiteGenesis.
 
 ## Test Suite Documentation
 
@@ -23,37 +23,36 @@ All planned features are publicly tracked as [GitHub issues](https://github.com/
 
 ## Test Suite Setup
 
-The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. For further help on setup and configuration please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/):
+The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. (For further help please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).)
 
-### XLT Script Developer
+### [XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)
 
 #### Prerequisites
 
-- XLT&reg; Script Developer v4.5.0 or higher: [Download](https://www.xceptance.com/en/xlt/download.html)
-- [Demandware](http://www.demandware.com/) [SiteGenesis](ttp://www.demandware.com/on/demandware.store/
-Sites-SiteGenesis-Site) v15.1.0.14 or higher
-- Firefox
+- Firefox 17 (or higher)
+- XLT&reg; Script Developer v4.5.0 (or higher)
+- As sytem under test (SUT): Default shop system  [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) v15.1.0.14 (or higher) sold separately by [Demandware](http://www.demandware.com/)
 
 #### Installation
 
-- [Download](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/archive/master.zip) and unzip this test suite in a directory of your choice.
+- [Download XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)  and unzip this test suite in a directory of your choice. (__Important notice:__Please only use the version from our company website and __not__ the outdated version from Firefox Add-ons directory.)
 - Install Firefox add-on `XLT Script Developer`.
 - Open `Tools > XLT Script Developer` in Firefox.
 - Import this test suite by clicking the `folder` icon above the navigation panel.
-- `XLT Scipt Developer > Manage Global Test Data` set the **SiteGenesis** `storefront_url`.
-- Open a test case in the navigaton panel and click replay button in toolbar.
+- Set the `storefront_url` of the **SiteGenesis** system under test in `XLT Scipt Developer > Manage Global Test Data`.
+- Open a test case in the navigaton panel and click the replay button in the toolbar.
 
-### XLT Framework
+### [XLT Framework](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-4.4.5.zip)
 
 #### Prerequisites
 
-- XLT&reg; Framework v4.5.0 or higher: [Download](https://www.xceptance.com/en/xlt/download.html)
-- JDK
+- XLT&reg; Framework v4.5.0 (or higher)
+- JDK 7 Update 75 (or higher)
 - Java IDE (e.g. Eclipse, IDEA, NetBeans)
 
 #### Installation
 
-- [Download](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/archive/master.zip) and unzip this test suite in a directory of your choice.
+- [Download XLT Framework](https://www.xceptance.com/en/xlt/download.html) and unzip this test suite in a directory of your choice.
 - Import test suite as new Java project (with JDK runtime).
 - Import XLT libraries.
 - Edit configuration see below.
@@ -88,22 +87,24 @@ Sites-SiteGenesis-Site) v15.1.0.14 or higher
     |   \-- tests                          # XLT java wrapper classes
     |-- build.properties                   # XLT ant build properties
     |-- build.xml                          # XLT ant build configuration
-    |-- xlt-scriptdeveloper.properties     # XLT settings
+    |-- xlt-scriptdeveloper.properties     # XLT Script Developer settings
     \-- global_testdata.properties         # global testdata properties
 
-### Tests
+### Tests (named T...)
 
-The aim of our test set is to cover standard functions of the shop system. Every test simulates a shopping behaviour of a customer. Regarded closely a test even focuses on a specific part of the buying process which is tested in depth. This test focus describes several shop area in the package structrue in which tests are ordered. 
+The aim of our test set is to cover standard functions of the shop system. Every test simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. 
 
-All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of changed data in your browser and reversing the state of the shop system to its origin).
+All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of browser data).
 
-### Modules
+### Modules (named M...)
 
-A script module contains actions, commands and comments. Each module interacts with elements of ta specifc webpage. Thus it makes sense to structured them by their accordnig pages. Each module can be reused by different tests.
+A script module contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
 
-__Validation Modules__: Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
+__Validation Modules__ (named V...): Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
 
-__Flow Modules__: Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and may enable a compact test case structure (implemented in setup, scope or teardown). Examples: Add any basic product to cart, Create any new customer, Add any address to a customer, Check order status in order history.
+__Flow Modules__ (named F...): Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
+
+There are also some global modules (for intactions with elements in header, footer or naviagtion) and helper modules (enabling text conversions for example).
 
 ## Test Suite Metadata
 
