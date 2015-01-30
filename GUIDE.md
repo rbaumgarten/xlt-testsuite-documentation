@@ -126,9 +126,9 @@ _ex. Convert full english month name to number with two digits_
 - __Target:__  `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`
 - __Value:__ `$(month_number)`
 
-## Resources
+## Additional Resources
 
-Here are some pointers to other helpful resources for test development.
+Here are some links to other helpful resources for test development.
 
 ### Xceptance
 
@@ -168,7 +168,7 @@ Here are some pointers to other helpful resources for test development.
 - W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
-### Other
+### Other Links
 
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
