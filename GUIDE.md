@@ -112,9 +112,9 @@ Following are some examples (ex.) of module commands used for text operations, t
 | assertText    | css=#main .order-date .value                          | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
 |               | _ex. Order number pattern matching_                   |                                       |
 | assertText    | css=#main .order-number .value                        | regexp:00[0-9]{6}                     |
-|               | _ex. Capitalized label pattern matching_              |                                       |
+|               | _ex. Insensitive pattern matching_                    |                                       |
 | assertText    | css=#main .label .capitalized                         | regexpi:CaseInsensitive HEADER        |
-|               | _ex. Match inner substring with asterisks_            |                                       |
+|               | _ex. Match inner substring_                           |                                       |
 | assertText    | css=#main .shipping-address .city-state-postal        | \*${state}\*                            |   
 
 
