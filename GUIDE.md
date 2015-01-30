@@ -104,7 +104,7 @@ Following are some examples (ex.) of module commands used for text operations, t
 
 
 
-#### Pattern Matching Examples
+#### Text Matching Examples
 
 | Command       | Target                                                | Value                                 |
 | :------------ | :---------------------------------------------------- | :------------------------------------ |
