@@ -87,9 +87,9 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 ## Test Suite Examples
 
-Following is a short list of advanced scripting examples and showcases (e.g. for string operations by utilization of regular expressions):
+Following are some examples of module commands used for text operations, text matching or date operations.
 
-#### String Operation Examples
+#### Text Operation Examples
 
 | Command       | Target                                                | Value                                 |
 | :------------ | :---------------------------------------------------- | :------------------------------------ |
