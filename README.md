@@ -61,6 +61,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 ## Test Suite Structure
 
+
     .
     |-- bin                                # executables
     |-- config                             # IDE configuration
@@ -90,15 +91,24 @@ The following prerequisites and installation steps are needed to run the test su
     |-- xlt-scriptdeveloper.properties     # XLT Script Developer settings
     \-- global_testdata.properties         # global testdata properties
 
-### Tests (named T...)
 
-The aim of our test set is to cover standard functions of the shop system. Every test simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. 
+### [Test Data](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/testdata.html)
 
-All tests cover a wide variety of different test pathes and are build up on script modules. Each test consists of test setup (ensuring that all preconditions are met), test scope (focusing on all relevant testing steps) and test teardown (cleaning up of browser data).
+As input a test can use test data placed in seperate files on global, package or test layer. Test data defined inside - at the test case - overwrites test data from outside (anti-hierachical handling).
 
-### Modules (named M...)
+### [Packages](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/packages.html)
 
-A script module contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
+Inside of XLT Script Developer packages form the main tree strucutre of the test suite. At the file system they are represent as folders. Each package may consists of other subpackages (layers) and contains test cases, script modules or Java modules.
+
+### [Tests](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/tests.html)
+
+Every test (named T...) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. The aim of our test set is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes.
+
+A test is build up on script modules. Each test consists of test setup (ensuring preconditions), test scope (focusing on relevant test steps) and test teardown (cleaning up of browser data).
+
+### [Modules](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/modules.html)
+
+A module contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
 
 __Validation Modules__ (named V...): Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
 
