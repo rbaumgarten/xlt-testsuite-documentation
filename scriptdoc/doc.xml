@@ -101,19 +101,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -285,11 +277,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -362,19 +355,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -441,11 +426,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -542,19 +528,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -627,11 +605,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -717,19 +696,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -816,11 +787,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -873,19 +845,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -917,11 +881,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -1007,19 +972,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -1059,28 +1016,8 @@
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.account.paymentsettings.VAccount_PaymentSettings_validateEmptyCreditCardList</name>
-          <description>Validate empty credit card list.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.account.addressbook.MAccount_AddressBook_clickCreateNewAddress</name>
-          <description>Click create new address.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.account.addressbook.VAccount_AddressBook_validateDialog</name>
-          <description>Validate address details dialog.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_clickCancel</name>
-          <description>Click cancel data in address details dialog.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.account.paymentsettings.VAccount_PaymentSettings_validateEmptyCreditCardList</name>
-          <description>Validate empty credit card list.</description>
+          <name>modules.pages.account.addressbook.VAccount_AddressBook_validateEmptyAddressList</name>
+          <description>Validate empty address list.</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -1247,11 +1184,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -1259,28 +1197,27 @@
         <string>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_clickCreate</string>
         <string>modules.pages.account.addressbook.MAccount_AddressBook_clickDeleteAddress</string>
         <string>modules.pages.account.addressbook.MAccount_AddressBook_clickCreateNewAddress</string>
+        <string>modules.pages.account.addressbook.VAccount_AddressBook_validateDialog</string>
         <string>modules.pages.homepage.FHomepage_flowToCreateNewAccount</string>
+        <string>modules.pages.account.addressbook.VAccount_AddressBook_validatePage</string>
         <string>modules.pages.account.addressbook.MAccount_AddressBook_clickMakeDefaultAddress</string>
+        <string>modules.pages.account.addressbook.VAccount_AddressBook_validateEmptyAddressList</string>
+        <string>modules.pages.account.addressbook.VAccount_AddressBook_validateAddress</string>
         <string>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_clickApply</string>
         <string>modules.pages.account.VAccount_validateNav</string>
         <string>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_enterAddress</string>
         <string>modules.global.headerfooternav.MGlobal_Header_clickGoToAccountMenuViaCustomerName</string>
-        <string>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_clickCancel</string>
-        <string>modules.global.headerfooternav.MGlobal_Header_clickLogoutViaNotCustomerName</string>
-        <string>modules.pages.account.addressbook.MAccount_AddressBook_clickEditAddress</string>
-        <string>modules.pages.account.addressbook.VAccount_AddressBook_validateDialog</string>
-        <string>modules.pages.account.addressbook.VAccount_AddressBook_validatePage</string>
-        <string>modules.pages.account.addressbook.VAccount_AddressBook_validateEmptyAddressList</string>
-        <string>modules.pages.account.addressbook.VAccount_AddressBook_validateAddress</string>
         <string>modules.pages.account.menu.MAccount_Menu_clickGoToAddressBook</string>
+        <string>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_clickCancel</string>
         <string>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_clickDelete</string>
+        <string>modules.global.headerfooternav.MGlobal_Header_clickLogoutViaNotCustomerName</string>
         <string>modules.pages.homepage.FHomepage_flowToLoginAccount</string>
         <string>modules.helper.MHelper_Profile_generateRandomEmail</string>
         <string>modules.helper.MHelper_Profile_generateRandomPassword</string>
         <string>modules.helper.FHelper_Session_flowToStartSession</string>
+        <string>modules.pages.account.addressbook.MAccount_AddressBook_clickEditAddress</string>
         <string>modules.helper.FHelper_Session_flowToEndSession</string>
         <string>modules.pages.account.addressbook.VAccount_AddressBook_validateAddressDefault</string>
-        <string>modules.pages.account.paymentsettings.VAccount_PaymentSettings_validateEmptyCreditCardList</string>
       </calls>
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m>
@@ -1462,19 +1399,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -1531,11 +1460,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -1656,19 +1586,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -1845,11 +1767,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -1909,19 +1832,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -1948,11 +1863,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -2095,19 +2011,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -2438,11 +2346,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -2718,19 +2627,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -2762,11 +2663,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -2808,19 +2710,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -2841,11 +2735,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -2884,19 +2779,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -2918,11 +2805,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -2967,19 +2855,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -3001,11 +2881,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -3067,19 +2948,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -3173,11 +3046,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -3258,19 +3132,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -3302,11 +3168,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -3381,19 +3248,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -3541,11 +3400,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -3769,19 +3629,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -4121,7 +3973,7 @@
 - Start on account menu
 - Go to address book
 - Validate address
-- Go account menu</description>
+- End on account menu</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -4131,7 +3983,7 @@
 - Start on account menu
 - Go to address book
 - Validate address
-- Go account menu</description>
+- End on account menu</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -4163,11 +4015,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -4446,19 +4299,11 @@
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -4547,11 +4392,12 @@
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -4709,19 +4555,11 @@ Executable with:
           <name>modules.helper.FHelper_Session_flowToStartSession</name>
           <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -5014,11 +4852,12 @@ Executable with:
           <name>modules.helper.FHelper_Session_flowToEndSession</name>
           <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
@@ -7067,11 +6906,12 @@ Executable with:
     <module>
       <description>Flow to end session.
 
-- Start on Homepage
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Close homepage
-- End on Homepage (Closed browser tab)</description>
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- (Closed browser tab)</description>
       <name>modules.helper.FHelper_Session_flowToEndSession</name>
       <external-parameters/>
       <steps>
@@ -8195,19 +8035,11 @@ Executable with:
     <module>
       <description>Flow to start session.
 
-# Start
-
-- Open browser tab
-
-# Flow 
-
-- Global &gt; Open homepage
-- Browser &gt; Delete cookies
-- Global &gt; Open homepage
-
-# End
-
-- Homepage</description>
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
       <name>modules.helper.FHelper_Session_flowToStartSession</name>
       <external-parameters>
         <entry>
@@ -8356,7 +8188,7 @@ Executable with:
 - Start on account menu
 - Go to address book
 - Validate address
-- Go account menu</description>
+- End on account menu</description>
       <name>modules.pages.account.menu.FAccount_Menu_flowToValidateAddress</name>
       <external-parameters/>
       <steps>
