@@ -63,6 +63,7 @@
 <ul class="sidebar">
 <li><a href="#test_tests.account.TAccountAddressBookAddEditRemoveAddresses">TAccountAddressBookAddEditRemoveAddresses</a></li>
 <li><a href="#test_tests.account.TAccountLoginEmptyPassword">TAccountLoginEmptyPassword</a></li>
+<li><a href="#test_tests.account.TAccountLoginInvalidPassword">TAccountLoginInvalidPassword</a></li>
 <li><a href="#test_tests.account.TAccountPaymentSettingsAddEditRemoveCreditCards">TAccountPaymentSettingsAddEditRemoveCreditCards</a></li>
 <li><a href="#test_tests.account.TAccountPersonalDataRegisterProfile">TAccountPersonalDataRegisterProfile</a></li>
 <li><a href="#test_tests.account.TAccountPersonalDataUpdateProfile">TAccountPersonalDataUpdateProfile</a></li>
@@ -788,7 +789,7 @@ Dynamic Variables</h3>
     </div><!-- /.tags -->
     
     <div class="description">
-    	<p>Test login with empty password. </p>
+    	<p>Test login without password.</p>
 <h1 id="1-setup-and-preparation">1. Setup and preparation</h1>
 <ul>
 <li>Start session, open homepage and delete all visible cookies</li>
@@ -796,9 +797,10 @@ Dynamic Variables</h3>
 </ul>
 <h1 id="2-scope-of-test">2. Scope of test</h1>
 <ul>
-<li>Go to login via global link in the header</li>
-<li>Attempt login with empty password</li>
-<li>Validate error message</li>
+<li>Click login link in the header and go to the login page</li>
+<li>Enter username, leave password empty and try to login</li>
+<li>Validate login page</li>
+<li>Validate present error message element</li>
 </ul>
 <h1 id="3-clean-up">3. Clean up</h1>
 <ul>
@@ -892,20 +894,10 @@ Steps</h3>
         </li><!-- /.step -->
         <li data-disabled="false" class="step step-module">
             <div class="step-name">
-            <a href="modules.html#mod_modules.pages.account.login.VAccount_Login_validatePage">modules.pages.account.login.VAccount_Login_validatePage</a>
+            <a href="modules.html#mod_modules.pages.account.login.VAccount_Login_ValidatePage">modules.pages.account.login.VAccount_Login_ValidatePage</a>
             </div>
             <div class="step-description">
-                <p>Validate account login page.</p>
-
-            </div><!-- /.step-description -->
-        </li><!-- /.step -->
-        <li data-disabled="false" class="step step-module">
-            <div class="step-name">
-            <a href="modules.html#mod_modules.pages.account.login.VAccount_Login_validiateErrorMessage">modules.pages.account.login.VAccount_Login_validiateErrorMessage</a>
-            </div>
-            <div class="step-description">
-                <p>Valdiate error message after login with false profile data.</p>
-
+                
             </div><!-- /.step-description -->
         </li><!-- /.step -->
         <li data-disabled="false" class="step step-module">
@@ -962,6 +954,220 @@ Defined Outside</h4>
             </tr>
             <tr>
                 <td class="key">email</td>
+                <td class="value">N/A</td>
+            </tr>
+            <tr>
+                <td class="key">lastname</td>
+                <td class="value">Buyer</td>
+            </tr>
+        </tbody>
+    </table>
+    </div><!-- /.data-table -->
+
+            </div><!-- /.data -->
+
+            <div class="vars">
+                <h3 >
+Dynamic Variables</h3>
+
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+            </div><!-- /.vars -->
+              
+           </div><!-- /.collapsible-body -->
+          <div class="collapsible-header button"><i class="mdi-navigation-expand-more"></i>More</div>
+
+       </div><!-- /.collapsible -->
+</div><!-- /.row -->
+
+<div class="row">
+<h2 data-disabled="false" id="test_tests.account.TAccountLoginInvalidPassword">
+        <span class="smaller">tests.account</span>
+        TAccountLoginInvalidPassword 
+</h2>
+
+
+    <div class="tags">
+    </div><!-- /.tags -->
+    
+    <div class="description">
+    	<p>Test login using an invalid password.</p>
+<h1 id="1-setup-and-preparation">1. Setup and preparation</h1>
+<ul>
+<li>Start session, open homepage and delete all visible cookies</li>
+<li>Create new account with profile data</li>
+</ul>
+<h1 id="2-scope-of-test">2. Scope of test</h1>
+<ul>
+<li>Click login link in the header and go to the login page</li>
+<li>Enter username, invalid password and try to login</li>
+<li>Validate login page</li>
+<li>Validate error message</li>
+</ul>
+<h1 id="3-clean-up">3. Clean up</h1>
+<ul>
+<li>End session and clean up created cookies</li>
+</ul>
+
+    </div><!-- /.description -->
+    
+    <div class="collapsible">
+          <div class="collapsible-body">
+
+              <div class="steps">
+                <h3 >
+Steps</h3>
+
+    <ol class="step-list">
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            </div>
+            <div class="step-description">
+                <p>Generate random email.</p>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            </div>
+            <div class="step-description">
+                <p>Generate random password.</p>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            </div>
+            <div class="step-description">
+                <p>Generate random password.</p>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.helper.FHelper_Session_flowToStartSession">modules.helper.FHelper_Session_flowToStartSession</a>
+            </div>
+            <div class="step-description">
+                <p>Flow to start session.</p>
+<h1 id="start">Start</h1>
+<ul>
+<li>Open browser tab</li>
+</ul>
+<h1 id="flow">Flow</h1>
+<ul>
+<li>Global &gt; Open homepage</li>
+<li>Browser &gt; Delete cookies</li>
+<li>Global &gt; Open homepage</li>
+</ul>
+<h1 id="end">End</h1>
+<ul>
+<li>Homepage</li>
+</ul>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.pages.homepage.FHomepage_flowToCreateNewAccount">modules.pages.homepage.FHomepage_flowToCreateNewAccount</a>
+            </div>
+            <div class="step-description">
+                <p>Flow to create a new customer with profile data.</p>
+<ul>
+<li>Start on homepagee</li>
+<li>Create account via glaobal register in header</li>
+<li>Validate profile data</li>
+<li>Logout via global header link</li>
+<li>End on homepage</li>
+</ul>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Header_clickLogin">modules.global.headerfooternav.MGlobal_Header_clickLogin</a>
+            </div>
+            <div class="step-description">
+                <p>Click login in header.</p>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.pages.account.login.MAccount_Login_enterClickReturningCustomer">modules.pages.account.login.MAccount_Login_enterClickReturningCustomer</a>
+            </div>
+            <div class="step-description">
+                <p>Enter email and wrong password.</p>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.pages.account.login.VAccount_Login_ValidatePage">modules.pages.account.login.VAccount_Login_ValidatePage</a>
+            </div>
+            <div class="step-description">
+                
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.helper.FHelper_Session_flowToEndSession">modules.helper.FHelper_Session_flowToEndSession</a>
+            </div>
+            <div class="step-description">
+                <p>Flow to end session.</p>
+<ul>
+<li>Start on Homepage</li>
+<li>Global &gt; Open homepage</li>
+<li>Browser &gt; Delete cookies</li>
+<li>Global &gt; Close homepage</li>
+<li>End on Homepage (Closed browser tab)</li>
+</ul>
+
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+    </ol><!-- /.step-list -->
+              </div><!-- /.steps -->
+              
+    
+            <div class="data">
+                <h3 >
+Test Data</h3>
+
+
+    <h4 >
+Defined Inside</h4>
+
+    <div class="data-table">
+    <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div><!-- ./data-table -->
+
+    <h4 >
+Defined Outside</h4>
+
+    <div class="data-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="key">firstname</td>
+                <td class="value">John</td>
+            </tr>
+            <tr>
+                <td class="key">password_02</td>
+                <td class="value">N/A</td>
+            </tr>
+            <tr>
+                <td class="key">email</td>
+                <td class="value">N/A</td>
+            </tr>
+            <tr>
+                <td class="key">password_01</td>
                 <td class="value">N/A</td>
             </tr>
             <tr>
@@ -3297,29 +3503,10 @@ Steps</h3>
         </li><!-- /.step -->
         <li data-disabled="false" class="step step-module">
             <div class="step-name">
-            <a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickColorPosition">modules.pages.catalog.MCatalog_Refinement_clickColorPosition</a>
+            <a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_ClickColorPosition">modules.pages.catalog.MCatalog_Refinement_ClickColorPosition</a>
             </div>
             <div class="step-description">
-                <p>Click color via position.</p>
-
-            </div><!-- /.step-description -->
-        </li><!-- /.step -->
-        <li data-disabled="false" class="step step-module">
-            <div class="step-name">
-            <a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickColorPosition">modules.pages.catalog.MCatalog_Refinement_clickColorPosition</a>
-            </div>
-            <div class="step-description">
-                <p>Click color via position.</p>
-
-            </div><!-- /.step-description -->
-        </li><!-- /.step -->
-        <li data-disabled="false" class="step step-module">
-            <div class="step-name">
-            <a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickColorPosition">modules.pages.catalog.MCatalog_Refinement_clickColorPosition</a>
-            </div>
-            <div class="step-description">
-                <p>Click color via position.</p>
-
+                
             </div><!-- /.step-description -->
         </li><!-- /.step -->
         <li data-disabled="false" class="step step-module">
@@ -3333,11 +3520,27 @@ Steps</h3>
         </li><!-- /.step -->
         <li data-disabled="false" class="step step-module">
             <div class="step-name">
+            <a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_ClickColorPosition">modules.pages.catalog.MCatalog_Refinement_ClickColorPosition</a>
+            </div>
+            <div class="step-description">
+                
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
             <a href="modules.html#mod_modules.pages.catalog.VCatalog_validateColorNameSelected">modules.pages.catalog.VCatalog_validateColorNameSelected</a>
             </div>
             <div class="step-description">
                 <p>Validiate color is selected by name.</p>
 
+            </div><!-- /.step-description -->
+        </li><!-- /.step -->
+        <li data-disabled="false" class="step step-module">
+            <div class="step-name">
+            <a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_ClickColorPosition">modules.pages.catalog.MCatalog_Refinement_ClickColorPosition</a>
+            </div>
+            <div class="step-description">
+                
             </div><!-- /.step-description -->
         </li><!-- /.step -->
         <li data-disabled="false" class="step step-module">

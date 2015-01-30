@@ -2658,6 +2658,134 @@
       <baseUrl></baseUrl>
     </testcase>
     <testcase disabled="false">
+      <description>Test login using an invalid password.
+
+# 1. Setup and preparation 
+
+- Start session, open homepage and delete all visible cookies
+- Create new account with profile data
+
+# 2. Scope of test
+
+- Click login link in the header and go to the login page
+- Enter username, invalid password and try to login
+- Validate login page
+- Validate error message
+
+# 3. Clean up
+
+- End session and clean up created cookies</description>
+      <name>tests.account.TAccountLoginInvalidPassword</name>
+      <external-parameters>
+        <entry>
+          <string>firstname</string>
+          <string>John</string>
+        </entry>
+        <entry>
+          <string>password_02</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>email</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>password_01</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>lastname</string>
+          <string>Buyer</string>
+        </entry>
+      </external-parameters>
+      <steps>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Profile_generateRandomEmail</name>
+          <description>Generate random email.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Profile_generateRandomPassword</name>
+          <description>Generate random password.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Profile_generateRandomPassword</name>
+          <description>Generate random password.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToStartSession</name>
+          <description>Flow to start session.
+
+# Start
+
+- Open browser tab
+
+# Flow 
+
+- Global &gt; Open homepage
+- Browser &gt; Delete cookies
+- Global &gt; Open homepage
+
+# End
+
+- Homepage</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.homepage.FHomepage_flowToCreateNewAccount</name>
+          <description>Flow to create a new customer with profile data.
+
+- Start on homepagee
+- Create account via glaobal register in header
+- Validate profile data
+- Logout via global header link
+- End on homepage</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.global.headerfooternav.MGlobal_Header_clickLogin</name>
+          <description>Click login in header.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.account.login.MAccount_Login_enterClickReturningCustomer</name>
+          <description>Enter email and wrong password.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.account.login.VAccount_Login_ValidatePage</name>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToEndSession</name>
+          <description>Flow to end session.
+
+- Start on Homepage
+- Global &gt; Open homepage
+- Browser &gt; Delete cookies
+- Global &gt; Close homepage
+- End on Homepage (Closed browser tab)</description>
+          <moduleCall>true</moduleCall>
+        </step>
+      </steps>
+      <calls>
+        <string>modules.global.headerfooternav.MGlobal_Header_clickLogin</string>
+        <string>modules.pages.account.login.MAccount_Login_enterClickReturningCustomer</string>
+        <string>modules.helper.MHelper_Profile_generateRandomEmail</string>
+        <string>modules.helper.MHelper_Profile_generateRandomPassword</string>
+        <string>modules.helper.FHelper_Session_flowToStartSession</string>
+        <string>modules.pages.homepage.FHomepage_flowToCreateNewAccount</string>
+        <string>modules.helper.FHelper_Session_flowToEndSession</string>
+        <string>modules.pages.account.login.VAccount_Login_ValidatePage</string>
+      </calls>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <baseUrl></baseUrl>
+    </testcase>
+    <testcase disabled="false">
       <description>Test browse hompage with basic functions.
 
 # 1. Setup and preparation
@@ -2990,18 +3118,7 @@
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</name>
-          <description>Click color via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</name>
-          <description>Click color via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</name>
-          <description>Click color via position.</description>
+          <name>modules.pages.catalog.MCatalog_Refinement_ClickColorPosition</name>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -3010,8 +3127,16 @@
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
+          <name>modules.pages.catalog.MCatalog_Refinement_ClickColorPosition</name>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
           <name>modules.pages.catalog.VCatalog_validateColorNameSelected</name>
           <description>Validiate color is selected by name.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MCatalog_Refinement_ClickColorPosition</name>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -3059,10 +3184,10 @@
       <calls>
         <string>modules.pages.catalog.MCatalog_Refinement_clickClearColorList</string>
         <string>modules.pages.catalog.VCatalog_validateColorNameSelected</string>
+        <string>modules.pages.catalog.MCatalog_Refinement_ClickColorPosition</string>
         <string>modules.pages.catalog.VCatalog_validateColorNameUnselected</string>
         <string>modules.pages.catalog.VCatalog_validateEmptyColorList</string>
         <string>modules.pages.catalog.VCatalog_validatePage</string>
-        <string>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</string>
         <string>modules.pages.catalog.MCatalog_Refinement_clickColorName</string>
         <string>modules.pages.catalog.MGlobal_clickGoToCategoryPage</string>
         <string>modules.global.headerfooternav.VGlobal_validateHeaderFooterNav</string>
@@ -3082,7 +3207,7 @@
       <baseUrl></baseUrl>
     </testcase>
     <testcase disabled="false">
-      <description>Test login with empty password. 
+      <description>Test login without password.
 
 # 1. Setup and preparation 
 
@@ -3091,9 +3216,10 @@
 
 # 2. Scope of test
 
-- Go to login via global link in the header
-- Attempt login with empty password
-- Validate error message
+- Click login link in the header and go to the login page
+- Enter username, leave password empty and try to login
+- Validate login page
+- Validate present error message element
 
 # 3. Clean up
 
@@ -3169,13 +3295,7 @@
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.account.login.VAccount_Login_validatePage</name>
-          <description>Validate account login page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.account.login.VAccount_Login_validiateErrorMessage</name>
-          <description>Valdiate error message after login with false profile data.</description>
+          <name>modules.pages.account.login.VAccount_Login_ValidatePage</name>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -3197,9 +3317,8 @@
         <string>modules.helper.MHelper_Profile_generateRandomPassword</string>
         <string>modules.helper.FHelper_Session_flowToStartSession</string>
         <string>modules.pages.homepage.FHomepage_flowToCreateNewAccount</string>
-        <string>modules.pages.account.login.VAccount_Login_validiateErrorMessage</string>
-        <string>modules.pages.account.login.VAccount_Login_validatePage</string>
         <string>modules.helper.FHelper_Session_flowToEndSession</string>
+        <string>modules.pages.account.login.VAccount_Login_ValidatePage</string>
       </calls>
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
@@ -4477,7 +4596,7 @@ Executable with:
 
 | Firefox Script Developer | Firefox Webdriver | Chrome Webdriver |
 |:-:|:-:|:-:|
-| x  | x | x |
+| x | x | x |
 
 # 1. Setup and preparation
 
@@ -5189,41 +5308,6 @@ Executable with:
         <m class="empty-map"/>
       </test-data>
       <used>true</used>
-    </module>
-    <module>
-      <description>Click random color.</description>
-      <name>modules.pages.catalog.MCatalog_Refinement_clickColorRandom</name>
-      <external-parameters>
-        <entry>
-          <string>catalog_colors_random_position</string>
-          <null/>
-        </entry>
-      </external-parameters>
-      <steps>
-        <step disabled="false">
-          <name>Catalog_Refinement_ClickColorRandom</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.helper.MHelper_Number_generateRandomFromRange</name>
-          <description>Generate random number from given range maximum.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</name>
-          <description>Click color via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-      </steps>
-      <calls>
-        <string>modules.helper.MHelper_Number_generateRandomFromRange</string>
-        <string>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</string>
-      </calls>
-      <test-data class="java.util.Collections$UnmodifiableMap">
-        <m class="empty-map"/>
-      </test-data>
-      <parameter name="MOutputRandomColorName" description="output for random color name"/>
-      <used>false</used>
     </module>
     <module>
       <description>Enter data in credit card details dialog.</description>
@@ -6615,6 +6699,41 @@ Executable with:
       <used>true</used>
     </module>
     <module>
+      <description>Click random color.</description>
+      <name>modules.pages.catalog.MCatalog_Refinement_ClickColorRandom</name>
+      <external-parameters>
+        <entry>
+          <string>catalog_colors_random_position</string>
+          <null/>
+        </entry>
+      </external-parameters>
+      <steps>
+        <step disabled="false">
+          <name>Catalog_Refinement_ClickColorRandom</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Number_generateRandomFromRange</name>
+          <description>Generate random number from given range maximum.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</name>
+          <description>Click color via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+      </steps>
+      <calls>
+        <string>modules.helper.MHelper_Number_generateRandomFromRange</string>
+        <string>modules.pages.catalog.MCatalog_Refinement_clickColorPosition</string>
+      </calls>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <parameter name="MOutputRandomColorName" description="output for random color name"/>
+      <used>false</used>
+    </module>
+    <module>
       <description>Validate payment credit card.</description>
       <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePaymentCreditCard</name>
       <external-parameters>
@@ -7325,6 +7444,7 @@ Executable with:
       <parameter name="MInputPosition" description="position"/>
       <parameter name="MInputCreditCardOwner" description="credit card owner"/>
       <parameter name="MInputCreditCardType" description="credit card type"/>
+      <parameter name="MInputCreditCardTypeShort" description="credit card type short"/>
       <parameter name="MInputCreditCardNumber" description="credit card number"/>
       <parameter name="MInputCreditCardMonth" description="credit card month"/>
       <parameter name="MInputCreditCardYear" description="credit card year"/>
@@ -8092,7 +8212,7 @@ Executable with:
       <external-parameters>
         <entry>
           <string>storefront_url</string>
-          <string>http://dev02-lab02b-dw.demandware.net/on/demandware.store/Sites-SiteGenesis-Site</string>
+          <string>http://dev01-lab04b-dw.demandware.net/on/demandware.store/Sites-SiteGenesis-Site</string>
         </entry>
       </external-parameters>
       <steps>
@@ -8824,7 +8944,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <used>true</used>
+      <used>false</used>
     </module>
     <module>
       <description>Click articles link in search results page.</description>
@@ -9715,7 +9835,7 @@ Executable with:
     </entry>
     <entry>
       <string>storefront_url</string>
-      <string>http://dev02-lab02b-dw.demandware.net/on/demandware.store/Sites-SiteGenesis-Site</string>
+      <string>http://dev01-lab04b-dw.demandware.net/on/demandware.store/Sites-SiteGenesis-Site</string>
     </entry>
   </global-testdata>
 </testsuite>
