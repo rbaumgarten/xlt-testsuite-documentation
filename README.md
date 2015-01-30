@@ -23,7 +23,7 @@ All planned features are publicly tracked as [GitHub issues](https://github.com/
 
 ## Test Suite Setup
 
-The following prerequisites and installation steps are needed to run the test suite with the __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. (For further help please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).)
+The following prerequisites and installation steps are needed to run the test suite with __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. (For further help please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).)
 
 ### [XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)
 
@@ -52,7 +52,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Installation
 
-- [Download XLT Framework](https://www.xceptance.com/en/xlt/download.html) and unzip this test suite in a directory of your choice.
+- [Download the XLT Framework](https://www.xceptance.com/en/xlt/download.html) and unzip this test suite in a directory of your choice.
 - Import test suite as new Java project (with JDK runtime).
 - Import XLT libraries.
 - Edit configuration see below.
