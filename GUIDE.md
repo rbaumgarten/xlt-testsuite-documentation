@@ -128,7 +128,7 @@ _ex. Convert full english month name to number with two digits_
 
 ## Resources
 
-Here are some pointers to other helpful resources for test development:
+Here are some pointers to other helpful resources for test development.
 
 ### Xceptance
 
