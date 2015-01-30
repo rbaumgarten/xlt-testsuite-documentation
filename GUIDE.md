@@ -1,4 +1,4 @@
-# SiteGenesis-Community-TestSuite Guide
+# Guide To SiteGenesis-Community-TestSuite 
 
 This document describes the used test suite naming conventions, gives a short introduction to test suite development and shows some test suite examples. The last part contains some pointers to various helpful resources on other websites. 
 
@@ -79,8 +79,8 @@ Think about the business process you want to simulate and then define it. An exa
 By following these development steps you may implement your own test case in **XLT Script Developer**:
 
 - **Create** a new `test case` and write an informal list of short steps describing the simulated process.
-- **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
-- **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
+- **Insert** `comment` lines in the `test case` with step descriptions aggregated by their interacted `pages`.
+- **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test`. 
 - **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
 
 Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
@@ -89,38 +89,45 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 Following is a short list of advanced scripting examples and showcases (e.g. for string operations by utilization of regular expressions):
 
-1. `FSearchAddProductToCart`: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.
+#### String Operation Examples
 
-2. Remove trailing whitespace (ex: totals shipping)  
+| Command       | Target                                                | Value                                 |
+| :------------ | :---------------------------------------------------- | :------------------------------------ |
+|               | _ex. Remove trailing whitespace_                      |                                       |
+| storeEval     | "${block_totals_shipping}".trim()                     | ${totals_shipping}                    |
+|               | _ex. Substring inclusive until last character_        |                                       |
+| storeEval     | "${credit_card_number}".substring(12,16)              | ${credit_card_last_four_digits}       |
+|               | _ex. Substring exclusive until first occurence_       |                                       |
+| storeEval     | "${label}".slice(0, "${label}".indexOf(‘:’)           | ${shipping_method_name')              |
+| storeEval     | "${shipping_method_label}".match(/[^:]*/)             | ${shipping_method_name}               |
+| storeEval     | "${shipping_method_label}".replace(/\:.*$/,"")        | ${shipping_method_name}               |
 
-        storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
 
-3. Substring inclusive until last character (ex: creditcard number)  
 
-        storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
+#### Pattern Matching Examples
 
-4. Substring exclusive until first occurence of character (ex: shipping method label)  
+| Command       | Target                                                | Value                                 |
+| :------------ | :---------------------------------------------------- | :------------------------------------ |
+|               | _ex. Order date pattern matching_                     |                                       |
+| assertText    | css=#main .order-date .value                          | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
+|               | _ex. Order date pattern matching_                     |                                       |
+| assertText    | css=#main .order-date .value                          | regexp:00[0-9]{6}                     |
+|               | _ex. Capitalized label pattern matching_              |                                       |
+| assertText    | css=#main .label .capitalized                         | regexpi:CaseInsensitive HEADER        |
+|               | _ex. Match inner substring with asterisks_            |                                       |
+| assertText    | css=#main .shipping-address .city-state-postal        | \*${state}\*                            |   
 
-        storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
-        storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
-        storeEval('"${shipping_method_label}".replace(/\:.*$/,"")', '${shipping_method_name')
 
-5. Convert full english month name to number with two digits (ex: helper module)  
+#### Date Operation Examples
 
-        storeEval('("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)', '$(month_number)');
+_ex. Convert full english month name to number with two digits_  
 
-6. Pattern matching for order date and order number (ex: order confirmation summary)  
+- __Command:__ `storeEval`  
+- __Target:__  
 
-        assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');   
-        assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
+    ("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)
 
-7. Pattern matching for uppercased words by css (ex: column or navigation headers)  
-
-        assertText('css=#main .label .capitalized', 'regexpi:CaseInsensitive HEADER')
-
-8. Pattern matching for any substring with asterisk (ex: shipping address)  
-
-        assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
+- __Value:__ `$(month_number)`
 
 ## Resources
 
@@ -139,6 +146,7 @@ Here are some pointers to other helpful resources for test development:
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
 - XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
 - XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
+- Descriptions and Commments: [GitHub Markup](https://github.com/github/markup/tree/master#html-sanitization), [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
 ### Demandware
 
@@ -168,4 +176,3 @@ Here are some pointers to other helpful resources for test development:
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
 - Ant [Manual](https://ant.apache.org/manual/running.html)
-- [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
