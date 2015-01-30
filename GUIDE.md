@@ -123,10 +123,7 @@ Following are some examples of module commands used for text operations, text ma
 _ex. Convert full english month name to number with two digits_  
 
 - __Command:__ `storeEval`  
-- __Target:__  
-
-    ("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)
-
+- __Target:__  `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`
 - __Value:__ `$(month_number)`
 
 ## Resources
