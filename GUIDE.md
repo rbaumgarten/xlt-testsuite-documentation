@@ -87,7 +87,7 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 ## Test Suite Examples
 
-Following are some examples (ex.) of module commands used for text operations, text matching or date operations.
+Following are some examples (ex.) of module commands used for text operations, text matching or text conversion.
 
 #### Text Operation Examples
 
@@ -118,7 +118,7 @@ Following are some examples (ex.) of module commands used for text operations, t
 | assertText    | css=#main .shipping-address .city-state-postal        | \*${state}\*                            |   
 
 
-#### Date Operation Examples
+#### Text Conversion Examples
 
 _ex. Convert full english month name to number with two digits_  
 
