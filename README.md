@@ -104,7 +104,7 @@ __Validation Modules__ (named V...): Validation of webpage elements and dynamic 
 
 __Flow Modules__ (named F...): Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
 
-There are also some global modules (for intactions with elements in header, footer or naviagtion) and helper modules (enabling text conversions for example).
+There are also some global modules (for interactions with elements in header, footer or naviagtion) and helper modules (enabling text conversions for example).
 
 ## Test Suite Metadata
 
