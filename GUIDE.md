@@ -87,7 +87,7 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 ## Test Suite Examples
 
-Following are some examples of module commands used for text operations, text matching or date operations.
+Following are some examples (ex.) of module commands used for text operations, text matching or date operations.
 
 #### Text Operation Examples
 
