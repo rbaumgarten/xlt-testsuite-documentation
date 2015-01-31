@@ -31,7 +31,7 @@ The following styling rules where quite consequently applied to form a solid str
 
 This section defines the element names which are part of the naming scheme of packages, files and variables.
 
-**Area and Page Elements**
+**Area and Pages**
 
 - **Homepage**: main landing page.
 - **Search**: search box and search results page.
@@ -42,7 +42,7 @@ This section defines the element names which are part of the naming scheme of pa
 - **Checkout**: checkout pages with shipping, billing, place orde and order confirmation.
 - **Account**: account page also known as my account.
 
-**Interaction Elements**
+**Interactions**
 
 - **click**: click a button or link.
 - **select**: select form dropdown menus or radio buttons.
@@ -53,7 +53,7 @@ This section defines the element names which are part of the naming scheme of pa
 - **validate**: verify and assert values, parameters or elements.
 - **flow**: flow to process several modules.
 
-**Name or Subname Elements**
+**Name or Subnames**
 
 - **Customer**: registered user with account.
 - **Guest**: unregistered user without account.
