@@ -9,7 +9,7 @@ The project idea is to collect experiences, consolidate knowledge and share idea
 - Initial test suite to automate new shops based on SiteGenesis.
 - Entry point for test development with fast learning curve.
 - Demonstration of test automation and test suite structuring.
-- Reuse of collected best practises in other (existing) projects.
+- Reuse of contained best practises in other (existing) projects.
 
 ## Test Suite Documentation
 
