@@ -98,7 +98,7 @@ As input a test can use test data placed in seperate files on global, package or
 
 ### [Packages](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/packages.html)
 
-Inside of XLT Script Developer packages form the main tree structure of the test suite. At the file system they are represent as folders. Each package may consists of other subpackages (layers) and contains test cases (named `tests.subpackage`, script modules (named `modules.subpackage`) or optional Java modules.
+Inside of XLT Script Developer packages form the main tree structure of the test suite. At the file system they are represent as folders. Each package may consists of other subpackages (layers) and contains test cases (named `tests.subpackage`), script modules (named `modules.subpackage`) or optional Java modules.
 
 ### [Tests](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/tests.html)
 
