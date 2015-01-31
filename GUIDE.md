@@ -34,13 +34,13 @@ This section defines the element names which are part of the naming scheme of pa
 **Area and Page Elements**
 
 - **Homepage**: main landing page.
-- **Search**: search box and search result page.
+- **Search**: search box and search results page.
 - **Catalog**: catalog page, product grid/listing/overview page (PGP/PLP/POP).
 - **ProductDetailPage**: product detail page (PDP).
-- **MiniCart**: minicart pop up.
+- **MiniCart**: minicart pop up in global header.
 - **Cart**: cart page.
-- **Checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
-- **Account**: account page, my account.
+- **Checkout**: checkout pages with shipping, billing, place orde and order confirmation.
+- **Account**: account page also known as my account.
 
 **Interaction Elements**
 
