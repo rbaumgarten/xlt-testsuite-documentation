@@ -24,8 +24,8 @@ The following styling rules where quite consequently applied to form a solid str
 - __Modules__: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - __Validation Modules__: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - __Flow Modules__: `F_{StartPage}_{interaction}{Name}[Subname]`
-- __Module Parameters (used as input)__: `[m|v|f]{Name}[Subname]`
-- __Module Parameters (used as output)__: `[m|v|f]{Name}[Subname]_toStore`
+- __Module Parameters: `[m|v|f]{Name}[Subname]`
+- __Module Parameters to store as Text: `[m|v|f]{Name}[Subname]_storeAsText`
 
 ### Element Names
 
