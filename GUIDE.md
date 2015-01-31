@@ -31,7 +31,7 @@ The following styling rules where quite consequently applied to form a solid str
 
 This section defines the element names which are part of the naming scheme of packages, files and variables.
 
-**Page Elements**
+**Area and Page Elements**
 
 - **Homepage**: main landing page.
 - **Search**: search box and search result page.
@@ -53,7 +53,7 @@ This section defines the element names which are part of the naming scheme of pa
 - **validate**: verify and assert values, parameters or elements.
 - **flow**: flow to process several modules.
 
-**User Elements**
+**Users**
 
 - **Customer**: registered user with account.
 - **Guest**: unregistered user without account.
