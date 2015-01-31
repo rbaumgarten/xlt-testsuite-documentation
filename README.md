@@ -6,10 +6,10 @@ The test suite focuses on functional frontend testing. It was build and may be r
 
 The project idea is to collect experiences, consolidate knowledge and share ideas of testing practises. Although this test suite is based on testing the storefront of the demo shop __Demandware__ __SiteGenesis__ the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well. Everybody is invited to use it, learn from it, improve it and adapt it to their needs. Possible purposes include:
 
-- Initial test suite to automate new shops based on SiteGenesis.
-- Entry point for test development with fast learning curve.
-- Demonstration of test automation and test suite structuring.
-- Reuse of contained best practises in other (existing) projects.
+- Initial test suite to automate new shops based on SiteGenesis
+- Entry point for test development with fast learning curve
+- Demonstration of test automation and test suite structuring
+- Reuse of contained best practises in other (existing) projects
 
 ## Test Suite Documentation
 
