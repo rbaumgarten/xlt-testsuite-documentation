@@ -29,7 +29,7 @@ The following styling rules where quite consequently applied to form a solid str
 
 ### Element Names
 
-This section defines the element names which are part of the naming scheme of packages, files and variables.
+This section defines the element names which are part of the naming scheme of packages, tests and modules.
 
 **Area and Pages**
 
