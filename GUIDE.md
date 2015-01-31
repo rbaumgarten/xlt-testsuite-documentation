@@ -42,21 +42,15 @@ This section defines the element names which are part of the naming scheme of pa
 - **Checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
 - **Account**: account page, my account.
 
-**UI Interaction Elements**
+**Interaction Elements**
 
 - **click**: click a button or link.
 - **select**: select form dropdown menus or radio buttons.
 - **check**: mark checkboxes.
 - **enter**: enter text or values in input fields.
 - **hover**: mouse over a link to open js menu etc.
-
-**XLT Interaction Elements**
-
 - **store**: store text or values from a page for following validations.
 - **validate**: verify and assert values, parameters or elements.
-
-**Flow Interaction Elements**
-
 - **flow**: flow to process several modules.
 
 **User Elements**
