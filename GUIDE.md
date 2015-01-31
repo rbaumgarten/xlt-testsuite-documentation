@@ -33,30 +33,30 @@ This section defines the element names which are part of the naming scheme of pa
 
 **{Area} and {Page}**
 
-- **Homepage**: main landing page.
-- **Search**: search box and search results page.
-- **Catalog**: catalog page, product grid/listing/overview page (PGP/PLP/POP).
-- **ProductDetailPage**: product detail page (PDP).
-- **MiniCart**: minicart pop up in global header.
-- **Cart**: cart page.
-- **Checkout**: checkout pages with shipping, billing, place orde and order confirmation.
-- **Account**: account page also known as my account.
+- `Homepage`: main landing page.
+- `Search`: search box and search results page.
+- `Catalog`: catalog page, product grid/listing/overview page (PGP/PLP/POP).
+- `ProductDetailPage`: product detail page (PDP).
+- `MiniCart`: minicart pop up in global header.
+- `Cart`: cart page.
+- `Checkout`: checkout pages with shipping, billing, place orde and order confirmation.
+- `Account`: account page also known as my account.
 
 **{interaction}**
 
-- **click**: click a button or link.
-- **select**: select form dropdown menus or radio buttons.
-- **check**: mark checkboxes.
-- **enter**: enter text or values in input fields.
-- **hover**: mouse over a link to open js menu etc.
-- **store**: store text or values from a page for following validations.
-- **validate**: verify and assert values, parameters or elements.
-- **flow**: flow to process several modules.
+- `click`: click a button or link.
+- `select`: select form dropdown menus or radio buttons.
+- `check`: mark checkboxes.
+- `enter`: enter text or values in input fields.
+- `hover`: mouse over a link to open js menu etc.
+- `store`: store text or values from a page for following validations.
+- `validate`: verify and assert values, parameters or elements.
+- `flow`: flow to process several modules.
 
 **{Name} or [Subname]**
 
-- **Customer**: registered user with account.
-- **Guest**: unregistered user without account.
+- `Customer`: registered user with account.
+- `Guest`: unregistered user without account.
 
 ## Test Suite Development
 
