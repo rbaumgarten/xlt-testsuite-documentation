@@ -25,7 +25,7 @@ The following styling rules where quite consequently applied to form a solid str
 - Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Flow Modules: `F_{StartPage}_{interaction}{Name}[Subname]`
 - Module Parameters (used as input): `[m|v|f]{Name}[Subname]`
-- Module Parameters (used as output): `[m|v|f]{Name}[Subname]_store`
+- Module Parameters (used as output): `[m|v|f]{Name}[Subname]_toStore`
 
 ### Element Names
 
