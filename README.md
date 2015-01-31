@@ -49,9 +49,11 @@ The following prerequisites and installation steps are needed to run the test su
 - Run test as JUnit test (default configuration: Firefox WebDriver).
 - Adapt WebDriver configurations in `project.properties` if you like.
 
-## Test Suite Structure
+## Test Suite Documentation
 
-Please visit the generated ScriptDoc for extended information on test data, packages, test cases and modules. The provided Guide delivers instructions for test suite development, conventions for test suite styling and pointers to other helpful resources.
+Please visit the generated [ScriptDoc](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) for extended information on test data, packages, test cases and modules. The provided [Guide](https://github.com/dataduke/xlt-testsuite-documentation/blob/gh-pages/GUIDE.md) delivers instructions for test suite development, conventions for test suite styling and pointers to other helpful resources. All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
+
+### Structure 
 
     .
     |-- bin                                # executables
@@ -106,10 +108,6 @@ __Validation Modules__ (named `V...`): Validation of webpage elements and dynami
 __Flow Modules__ (named `F...`): Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
 
 There are also some global modules (for interactions with elements in header, footer or naviagtion) and helper modules (enabling text conversions for example).
-
-## Test Suite Backlog
-
-All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
 
 ## Test Suite Metadata
 
