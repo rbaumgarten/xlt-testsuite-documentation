@@ -1,6 +1,6 @@
 <a href="http://github.com/dataduke/xlt-testsuite-documentation/blob/master/LICENSE.md" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT-license badge"></a>
 
-# SiteGenesis-Community-TestSuite
+# Readme To SiteGenesis-Community-TestSuite
 
 The test suite focuses on functional frontend testing. It was build and may be run with __XLT Script Developer__ in Firefox or the __XLT Framework__ by orchestrating different WebDrivers. As test suites sometimes tend to become complex and hard to maintain we realized it is time to build a clearly structured test suite with a well-defined set of tests. 
 
