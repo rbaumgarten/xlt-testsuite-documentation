@@ -51,7 +51,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 ## Test Suite Documentation
 
-Please visit the generated [ScriptDoc](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) for extended information on test data, packages, test cases and modules. The provided [Guide](https://github.com/dataduke/xlt-testsuite-documentation/blob/gh-pages/GUIDE.md) delivers instructions for test suite development, conventions for test suite styling and pointers to other helpful resources. All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
+This secition gives a small introduction to the test suite structure. Please visit the generated [ScriptDoc](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) for extended information on test data, packages, test cases and modules. The provided [Guide](https://github.com/dataduke/xlt-testsuite-documentation/blob/gh-pages/GUIDE.md) delivers instructions for test suite development, conventions for test suite styling and pointers to other helpful resources. All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
 
 ### [General Structure](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html)
 
