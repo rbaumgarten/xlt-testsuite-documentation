@@ -55,6 +55,8 @@ This section gives a small introduction to the test suite structure. Please visi
 
 ### [General](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html)
 
+We have alreadey build a __foundation__ of over 200 modules structured in in over 30 packages. Our __core test set__ still has just over 20 tests based on empirical knowledge form our daily buisness project. The aim is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes. The modules can be used as buliding bricks to enlarge the test set quickly. 
+
     .
     |-- bin                                # executables
     |-- config                             # IDE configuration
@@ -96,8 +98,6 @@ __Packages__ form the main tree structure of the test suite. Each package may co
 ### [Tests](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/tests.html)
 
 A __Test Case__ or short __test__ (named `T...`) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. A test is build up on script modules. Each test consists of test setup (ensuring preconditions), test scope (focusing on relevant test steps) and test teardown (cleaning up of browser data). 
-
-The aim of our test set is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes.
 
 ### [Modules](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/modules.html)
 
