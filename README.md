@@ -25,7 +25,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Installation
 
-- [Download XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)  and unzip this test suite in a directory of your choice. (__Important notice:__Please only use the version from our company website and __not__ the outdated version from Firefox Add-ons directory.)
+- [Download XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)  and unzip this test suite in a directory of your choice. (__Caution:__ Please only download the version from our company website and not the outdated version from Firefox Add-ons repositories.)
 - Install Firefox add-on `XLT Script Developer`.
 - Open `Tools > XLT Script Developer` in Firefox.
 - Import this test suite by clicking the `folder` icon above the navigation panel.
