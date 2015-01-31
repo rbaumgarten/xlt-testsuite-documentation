@@ -29,7 +29,7 @@ The following prerequisites and installation steps are needed to run the test su
 - Install Firefox add-on `XLT Script Developer`.
 - Open `Tools > XLT Script Developer` in Firefox.
 - Import this test suite by clicking the `folder` icon above the navigation panel.
-- Set the `storefront_url` of the **SiteGenesis** system under test in `XLT Scipt Developer > Manage Global Test Data`.
+- Set the `storefront_url` of the shop system under test in `XLT Scipt Developer > Manage Global Test Data`.
 - Open a test case in the navigaton panel and click the replay button in the toolbar.
 
 ### [XLT Framework](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-4.4.5.zip)
