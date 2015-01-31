@@ -9,16 +9,16 @@ The following styling rules where quite consequently applied to form a solid str
 ### Naming of Packages (Folders)
 
 - Tests: `tests.{shoparea}`
-- Modules: `modules.pages.[shoparea].{currentpage}`
-- Special Modules > global : `modules.global.[shoparea]`
-- Special Modules > helper : `modules.helper.[shoparea]`
+- Modules on Pages: `modules.pages.[shoparea].{currentpage}`
+- Modules at Global Elements: `modules.global.[shoparea]`
+- Helper Modules: `modules.helper.[shoparea]`
 
 ### Naming of Files
 
 - Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
 - Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Special Modules > Validation: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Special Modules > Flow: `F_{StartPage}_{interaction}{Name}[Subname]`
+- Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
+- Flow Modules: `F_{StartPage}_{interaction}{Name}[Subname]`
 
 ### Naming of Variables
 
