@@ -98,17 +98,17 @@ As input a test can use test data placed in seperate files on global, package or
 
 ### [Packages](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/packages.html)
 
-Inside of XLT Script Developer packages form the main tree structure of the test suite. At the file system they are represent as folders. Each package may consists of other subpackages (layers) and contains test cases (named `tests.subpackage`), script modules (named `modules.subpackage`) or optional Java modules.
+__Packages__ form the main tree structure of the test suite. Each package may consists of other subpackages (layers) and contains test cases (named `tests.subpackage`), script modules (named `modules.subpackage`) or optional Java modules. The file system implements them as folders. 
 
 ### [Tests](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/tests.html)
 
-Every test (named `T...`) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. The aim of our test set is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes.
+Every __test case__ or short _test_ (named `T...`) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. The aim of our test set is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes.
 
 A test is build up on script modules. Each test consists of test setup (ensuring preconditions), test scope (focusing on relevant test steps) and test teardown (cleaning up of browser data).
 
 ### [Modules](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/modules.html)
 
-A module (named `M...`) contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
+A __script module__ or short __module__ (named `M...`), contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
 
 __Validation Modules__ (named `V...`): Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
 
