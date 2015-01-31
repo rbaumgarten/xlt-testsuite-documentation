@@ -8,24 +8,24 @@ The following styling rules where quite consequently applied to form a solid str
 
 ### Naming of Packages (Folders)
 
-- Tests: `tests.{shoparea}`
+- Test in Shop Areas: `tests.{shoparea}`
 - Modules on Pages: `modules.pages.[shoparea].{currentpage}`
 - Modules at Global Elements: `modules.global.[shoparea]`
 - Helper Modules: `modules.helper.[shoparea]`
 
-### Naming of Files
+### Naming of Tests
 
 - Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
+- Test Data: `d{Name}[Subname]` 
+- Dynamic Variables: `{name}[Subname]`
+
+### Naming of Modules
+
 - Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Flow Modules: `F_{StartPage}_{interaction}{Name}[Subname]`
-
-### Naming of Variables
-
-- Module Parameters (used as input): `{Name}[Subname]`
-- Module Parameters (used as output): `{Name}[Subname]_store`
-- Test Data: `{name}_[subname]` 
-- Dynamic Variables: `{name}_[subname]`
+- Module Parameters (used as input): `[m|v|f]{Name}[Subname]`
+- Module Parameters (used as output): `[m|v|f]{Name}[Subname]_store`
 
 ### Element Names
 
