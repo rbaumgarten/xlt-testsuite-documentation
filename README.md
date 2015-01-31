@@ -13,7 +13,7 @@ The project idea is to collect experiences, consolidate knowledge and share idea
 
 ## Test Suite Setup
 
-The following prerequisites and installation steps are needed to run the test suite with __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. (For further help please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).)
+The following prerequisites and installation steps are needed to run the test suite with __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. For further help please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).
 
 ### [XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)
 
