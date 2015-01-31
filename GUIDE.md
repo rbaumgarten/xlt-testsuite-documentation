@@ -8,24 +8,24 @@ The following styling rules where quite consequently applied to form a solid str
 
 ### Names of Packages (Folders)
 
-- Test in Shop Areas: `tests.{shoparea}`
-- Modules on Pages: `modules.pages.[shoparea].{currentpage}`
-- Modules at Global Elements: `modules.global.[shoparea]`
-- Helper Modules: `modules.helper.[shoparea]`
+- __Packages for Tests in Shop Areas__: `tests.{shoparea}`
+- __Packages for Modules on Pages__: `modules.pages.{subpage}`
+- __Packages for Modules at Global Elements__: `modules.global.[shoparea]`
+- __Packages for Helper Modules__: `modules.helper.[shoparea]`
 
 ### Names of Tests
 
-- Tests: `T{Area}{TestScope}_{interaction}{Name}[Subname]`
-- Test Data: `d{Name}[Subname]` 
-- Dynamic Variables: `{name}[Subname]`
+- __Tests__: `T{Area}{TestScope}_{interaction}{Name}[Subname]`
+- __Test Data__: `d{Name}[Subname]` 
+- __Dynamic Variables__: `{name}[Subname]`
 
 ### Names of Modules
 
-- Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Flow Modules: `F_{StartPage}_{interaction}{Name}[Subname]`
-- Module Parameters (used as input): `[m|v|f]{Name}[Subname]`
-- Module Parameters (used as output): `[m|v|f]{Name}[Subname]_toStore`
+- __Modules__: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
+- __Validation Modules__: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
+- __Flow Modules__: `F_{StartPage}_{interaction}{Name}[Subname]`
+- __Module Parameters (used as input)__: `[m|v|f]{Name}[Subname]`
+- __Module Parameters (used as output)__: `[m|v|f]{Name}[Subname]_toStore`
 
 ### Element Names
 
