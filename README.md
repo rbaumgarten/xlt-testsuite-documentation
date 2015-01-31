@@ -101,7 +101,7 @@ A test is build up on script modules. Each test consists of test setup (ensuring
 
 ### [Modules](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/modules.html)
 
-A __script module__ or short __module__ (named `M...`), contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
+A __Script Module__ or short __Module__ (named `M...`), contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
 
 __Validation Modules__ (named `V...`): Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
 
