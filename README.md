@@ -98,21 +98,21 @@ As input a test can use test data placed in seperate files on global, package or
 
 ### [Packages](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/packages.html)
 
-Inside of XLT Script Developer packages form the main tree structure of the test suite. At the file system they are represent as folders. Each package may consists of other subpackages (layers) and contains test cases, script modules or Java modules.
+Inside of XLT Script Developer packages form the main tree structure of the test suite. At the file system they are represent as folders. Each package may consists of other subpackages (layers) and contains test cases (named `tests.subpackage`, script modules (named `modules.subpackage`) or optional Java modules.
 
 ### [Tests](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/tests.html)
 
-Every test (named T...) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. The aim of our test set is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes.
+Every test (named `T...`) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. The aim of our test set is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes.
 
 A test is build up on script modules. Each test consists of test setup (ensuring preconditions), test scope (focusing on relevant test steps) and test teardown (cleaning up of browser data).
 
 ### [Modules](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/modules.html)
 
-A module contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
+A module (named `M...`) contains actions, commands and comments. Most modules interact with elements of a specifc webpage. Thus it makes sense to structured them by their according pages. Each module can be reused by different tests.
 
-__Validation Modules__ (named V...): Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
+__Validation Modules__ (named `V...`): Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evalute that a needed fit criterion is met (mostly via assertions).
 
-__Flow Modules__ (named F...): Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
+__Flow Modules__ (named `F...`): Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
 
 There are also some global modules (for interactions with elements in header, footer or naviagtion) and helper modules (enabling text conversions for example).
 
