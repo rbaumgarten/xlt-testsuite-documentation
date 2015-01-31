@@ -15,7 +15,7 @@ The following styling rules where quite consequently applied to form a solid str
 
 ### Names of Tests
 
-- Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
+- Tests: `T{Area}{TestScope}_{interaction}{Name}[Subname]`
 - Test Data: `d{Name}[Subname]` 
 - Dynamic Variables: `{name}[Subname]`
 
@@ -53,7 +53,7 @@ This section defines the element names which are part of the naming scheme of pa
 - **validate**: verify and assert values, parameters or elements.
 - **flow**: flow to process several modules.
 
-**Users**
+**Name or Subname Elements**
 
 - **Customer**: registered user with account.
 - **Guest**: unregistered user without account.
