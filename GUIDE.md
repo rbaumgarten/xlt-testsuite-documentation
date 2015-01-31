@@ -8,16 +8,16 @@ The following styling rules where quite consequently applied to form a solid str
 
 ### Names of Packages (Folders)
 
-- __Packages for Tests in Shop Areas__: `tests.{shoparea}`
-- __Packages for Modules on Pages__: `modules.pages.{subpage}`
-- __Packages for Modules at Global Elements__: `modules.global.[shoparea]`
-- __Packages for Helper Modules__: `modules.helper.[shoparea]`
+- __Packages__ for Tests in Shop Areas: `tests.{shoparea}`
+- __Packages__ for Modules on Pages: `modules.pages.{subpage}`
+- __Packages__ for Modules at Global Elements: `modules.global.[shoparea]`
+- __Packages__ for Helper Modules: `modules.helper.[shoparea]`
 
 ### Names of Tests
 
 - __Tests__: `T{Area}{TestScope}_{interaction}{Name}[Subname]`
 - __Test Data__: `d{Name}[Subname]` 
-- __Dynamic Variables__: `{name}[Subname]`
+- Dynamic Variables: `{name}[Subname]`
 
 ### Names of Modules
 
@@ -25,7 +25,7 @@ The following styling rules where quite consequently applied to form a solid str
 - __Validation Modules__: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - __Flow Modules__: `F_{StartPage}_{interaction}{Name}[Subname]`
 - __Module Parameters__: `[m|v|f]{Name}[Subname]`
-- __Module Parameters to store as Text__: `[m|v|f]{Name}[Subname]_storeAsText`
+- __Module Parameters__ to store as Text: `[m|v|f]{Name}[Subname]_storeAsText`
 
 ### Element Names
 
