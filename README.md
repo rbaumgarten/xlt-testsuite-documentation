@@ -55,7 +55,7 @@ This section gives a small introduction to the test suite structure. Please visi
 
 ### [General](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html)
 
-We have alreadey build a __foundation__ of over __200 modules__ structured in over __30 packages__. Our __test set__ core still has just over __20 tests__ based on empirical knowledge form our daily buisness projects. The aim is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes. The modules can be used as buliding bricks to enlarge the current test set quickly. 
+We have already build a __foundation__ of over __200 modules__ structured in over __30 packages__. Our __test set__ core still has just over __20 tests__ based on empirical knowledge form our daily buisness projects. The aim is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes. The modules can be used as buliding bricks to enlarge the current test set quickly. 
 
     .
     |-- bin                                # executables
