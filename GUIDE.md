@@ -6,20 +6,20 @@ This document describes the used test suite naming conventions, gives a short in
 
 The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Element names written in `{}` are required. Element names written in `[]` are optional.) 
 
-### Naming of Packages (Folders)
+### Names of Packages (Folders)
 
 - Test in Shop Areas: `tests.{shoparea}`
 - Modules on Pages: `modules.pages.[shoparea].{currentpage}`
 - Modules at Global Elements: `modules.global.[shoparea]`
 - Helper Modules: `modules.helper.[shoparea]`
 
-### Naming of Tests
+### Names of Tests
 
 - Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
 - Test Data: `d{Name}[Subname]` 
 - Dynamic Variables: `{name}[Subname]`
 
-### Naming of Modules
+### Names of Modules
 
 - Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
 - Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
