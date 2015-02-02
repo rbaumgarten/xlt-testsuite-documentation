@@ -67,12 +67,12 @@ We have already build a __foundation__ of over __200 modules__ structured in ove
     |   |   \-- minicart                   # scripts for minicart elements in header
     |   |-- modules/helper                 # scripts for auxiliary services
     |   |-- modules/pages                  # scripts for specific pages
-    |   |   |-- account                    # scripts on account pages
-    |   |   |-- cart                       # scripts on cart page
-    |   |   |-- catalog                    # scripts on catalog pages
-    |   |   |-- checkout                   # scripts on checkout pages
-    |   |   |-- homepage                   # scripts on homepage
-    |   |   |-- productdetailpage          # scripts on productdetailpages
+    |   |   |-- account                    # scripts for account pages
+    |   |   |-- cart                       # scripts for cart page
+    |   |   |-- catalog                    # scripts for catalog pages
+    |   |   |-- checkout                   # scripts for checkout pages
+    |   |   |-- homepage                   # scripts for homepage
+    |   |   |-- productdetailpage          # scripts for productdetailpages
     |   |   \-- search                     # scripts for search and search result pages
     |   \-- tests
     |       |-- account                    # tests for account area
