@@ -81,7 +81,7 @@ Congratulations, you may **run your first own test now** (after several iteratio
 
 ## Test Suite Examples
 
-Following are some examples (ex.) of module commands used for text matching, text operations or text conversion.
+Following are some examples (ex.) of module commands used for text matching, text operation or text conversion.
 
 #### Text Matching
 
