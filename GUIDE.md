@@ -45,7 +45,7 @@ This section defines the element names which are part of the naming scheme of pa
 **{interaction}**
 
 - `click`: click a button or link.
-- `select`: select form dropdown menus or radio buttons.
+- `select`: select from dropdown menus or radio buttons.
 - `check`: mark checkboxes.
 - `enter`: enter text or values in input fields.
 - `hover`: mouse over a link to open js menu etc.
