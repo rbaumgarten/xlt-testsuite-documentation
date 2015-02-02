@@ -129,14 +129,14 @@ _ex. Convert full english month name to number with two digits_
 
 Here are some links to other helpful resources for test development.
 
-### Xceptance
+#### Xceptance
 
 - [Xceptance](https://www.xceptance.de/en/)
 - [Xceptance Blog](http://blog.xceptance.com/)
 - Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
 - Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
 
-### XLT
+#### XLT
 
 - XLT [Main](https://www.xceptance.de/en/xlt/)
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
@@ -144,12 +144,12 @@ Here are some links to other helpful resources for test development.
 - XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 - XLT Descriptions & Comments: [GitHub Markup](https://github.com/github/markup/tree/master#html-sanitization), [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
-### Demandware
+#### Demandware
 
 - [Demandware](http://www.demandware.com/)
 - Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
 
-### W3C
+#### W3C
 
 - W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
 - W3C [DOM TR](http://www.w3.org/TR/dom/)
@@ -159,7 +159,7 @@ Here are some links to other helpful resources for test development.
 - W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
 - W3C [XML Portal](http://www.w3.org/standards/xml/)
 
-### W3Schools
+#### W3Schools
 
 - W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
 - W3Schools [HTML](http://www.w3schools.com/html/)
@@ -167,7 +167,7 @@ Here are some links to other helpful resources for test development.
 - W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
-### Other Links
+#### Other
 
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
