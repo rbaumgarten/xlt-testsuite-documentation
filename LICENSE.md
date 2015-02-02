@@ -1,5 +1,3 @@
-<a href="http://github.com/dataduke/xlt-testsuite-documentation/blob/master/LICENSE.md" target="_blank"><img src="http://img.shields.io/badge/License-MIT-blue.svg" alt="MIT-license badge"></a>
-
 The MIT License (MIT)
 
 Copyright (c) 2015 Xceptance GmbH
