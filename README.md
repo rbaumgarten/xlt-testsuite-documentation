@@ -1,4 +1,4 @@
-# Readme To SiteGenesis-Community-TestSuite
+# Readme to SiteGenesis-Community-TestSuite
 
 The test suite focuses on functional frontend testing. It was build and may be run with __XLT Script Developer__ in Firefox or the __XLT Framework__ by orchestrating different WebDrivers. As test suites sometimes tend to become complex and hard to maintain we realized it is time to build a clearly structured test suite with a well-defined set of tests. 
 
