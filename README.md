@@ -62,22 +62,26 @@ We have already build a __foundation__ of over __200 modules__ structured in ove
     |   \-- data                           # test data dictionaries
     |       \-- default                    
     |-- scripts
-    |   |-- modules/helper                 # basic scripts
+    |   |-- modules/global                 # scripts for global elements
+    |   |   |-- headerfooternav            # scripts for header, footer, nav elements
+    |   |   \-- minicart                   # scripts for minicart elements in header
+    |   |-- modules/helper                 # scripts for auxiliary services
     |   |-- modules/pages                  # scripts for specific pages
-    |   |   |-- account                    # scripts on Account pages
-    |   |   |-- cart                       # scripts on Cart page
-    |   |   |-- catalog                    # scripts on Catalog pages
-    |   |   |-- checkout                   # scripts on Checkout pages
-    |   |   |-- homepage                   # scripts on Homepage
-    |   |   |-- minicart                   # scripts on MiniCart popup
-    |   |   |-- productdetailpage          # scripts on ProductDetailPage
-    |   |   \-- search                     # scripts for Searching
+    |   |   |-- account                    # scripts on account pages
+    |   |   |-- cart                       # scripts on cart page
+    |   |   |-- catalog                    # scripts on catalog pages
+    |   |   |-- checkout                   # scripts on checkout pages
+    |   |   |-- homepage                   # scripts on homepage
+    |   |   |-- productdetailpage          # scripts on productdetailpages
+    |   |   \-- search                     # scripts for search and search result pages
     |   \-- tests
-    |       |-- account                    # tests for Account pages
-    |       |-- cart                       # tests for Cart page
-    |       |-- catalog                    # tests for Catalog pages
-    |       |-- checkout                   # tests for Checkout pages
-    |       \-- search                     # tests for Searches
+    |       |-- account                    # tests for account area
+    |       |-- cart                       # tests for cart area
+    |       |-- catalog                    # tests for catalog area
+    |       |-- checkout                   # tests for checkout area
+    |       |-- homepage                   # tests for homepage area
+    |       |-- minicart                   # tests for minicart area
+    |       \-- search                     # tests for search area
     |-- src
     |   \-- tests                          # XLT java wrapper classes
     |-- build.properties                   # XLT ant build properties
@@ -106,7 +110,7 @@ __Validation Modules__ (named `V...`): Validation of webpage elements and dynami
 
 __Flow Modules__ (named `F...`): Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
 
-There are also some __global modules__ (for interactions with elements in header, footer or nav) and __helper modules__ (enabling text conversions for example).
+There are also several __global modules__ for interactions with elements in header, footer or nav (placed at `modules.global`) and some __helper modules__ for converting text, generating random values and other auxiliaries (placed in `modules.helper`).
 
 ## Test Suite Metadata
 
