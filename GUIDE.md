@@ -1,4 +1,4 @@
-# Guide To SiteGenesis-Community-TestSuite 
+# Guide to SiteGenesis-Community-TestSuite 
 
 This document describes the used test suite naming conventions, gives a short introduction to test suite development and shows some test suite examples. The last part contains some pointers to various helpful resources on other websites. 
 
