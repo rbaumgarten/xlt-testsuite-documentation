@@ -4,28 +4,33 @@ This document describes the defined test suite naming conventions, gives a short
 
 ## Test Suite Naming Conventions
 
-The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for packages, tests and modules and. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Names written in `{}` are required. Names written in `[]` are optional. Names written with `|` are alternated.) 
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for packages, tests and modules and. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Names written in `{}` are required. Names written in `[]` are optional.) 
 
-### Names of Packages
+### Naming of Packages
 
-- __Packages__ for Tests in Shop Areas: `tests.{shoparea}`
-- __Packages__ for Modules on Pages: `modules.pages.{subpage}`
-- __Packages__ for Modules at Global Elements: `modules.global.[shoparea]`
-- __Packages__ for Helper Modules: `modules.helper.[shoparea]`
+- __Packages__ for Tests in Shop Areas: `tests.{area}`
+- __Packages__ for Modules on Pages: `modules.pages.{page}`
+- __Packages__ for Modules at Global Elements: `modules.global.[area]`
+- __Packages__ for Helper Modules: `modules.helper.[area]`
 
-### Names of Tests
+### Naming of Tests
 
-- __Tests__: `T{Area}{TestScope}_{interaction}{Name}[Subname]`
-- __Test Data__: `d{Name}[Subname]` 
-- Dynamic Variables: `{name}[Subname]`
+- __Tests__: `T{Area}{TestScope}_{interaction}{Name}`
 
-### Names of Modules
+### Naming of Modules
 
-- __Modules__: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Flow Modules: `F_{StartPage}_{interaction}{Name}[Subname]`
-- Module Parameters: `[m|v|f]{Name}[Subname]`
-- Module Parameters to store as Text: `[m|v|f]{Name}[Subname]_storeAsText`
+- __Modules__: `M{Page}_[PagePart]_{interaction}{Name}`
+- Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}`
+- Flow Modules: `F_{StartPage}_{interaction}{Name}`
+
+### Naming of Variables
+
+Variable names are written in `camelCase` notation starting with a lowercase letter.
+
+- __Test Data__: `{name}` 
+- Dynamic Variables: `{name}`
+- Module Parameters: `{name}`
+- Module Parameters (variable name only): `{name}_varName`
 
 ### Element Names
 
@@ -53,7 +58,7 @@ This section defines the element names which are part of the naming scheme of pa
 - `validate`: verify and assert values, parameters or elements.
 - `flow`: flow to process several modules.
 
-**{Name} or [Subname]**
+**{Name} or {name}**
 
 - `Customer`: registered user with account.
 - `Guest`: unregistered user without account.
