@@ -142,6 +142,10 @@ _ex. Remove trailing whitespace_
 
 _ex. Convert full english month name to number with two digits_  
 
+| Command       | Target                                              | Value                                   |
+| :------------ | :-------------------------------------------------- | :-------------------------------------- |
+| storeEval     | ("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)         | ${monthNumber}                          |
+
 __Command:__ `storeEval`    
 __Target:__  `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`  
 __Value:__ `$(month_number)`  
