@@ -134,7 +134,7 @@ _ex. Substring exclusive until first occurence (three different ways)_
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
-| `storeEval`   | `"${sMlabel}".slice(0, "${sMlabel}".indexOf(‘:’)`   | `shippingMethodName`                      |
+| `storeEval`   | `"${sMLabel}".slice(0, "${sMLabel}".indexOf(‘:’)`   | `shippingMethodName`                      |
 | `storeEval`   | `"${shippingMethodLabel}".match(/[^:]*/)`           | `shippingMethodName`                      |
 | `storeEval`   | `"${shippingMethodLabel}".replace(/\:.*$/,"")`      | `shippingMethodName`                      |
 
