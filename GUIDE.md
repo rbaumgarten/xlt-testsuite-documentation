@@ -94,7 +94,7 @@ _ex. Order date pattern matching_
 
 | Command       | Target                                              | Value                                   |
 | :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| assertText    | css=#main .order-date .value                        | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
+| `assertText`    | css=#main .order-date .value                        | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
 
 _ex. Order number pattern matching_ 
 
