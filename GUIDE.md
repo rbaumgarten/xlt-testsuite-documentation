@@ -90,25 +90,25 @@ Following are some examples (ex.) of module commands used for text matching, tex
 
 #### Text Matching
 
-- _ex. Order date pattern matching_ 
+_ex. Order date pattern matching_ 
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
 | `assertText`  | `css=#main .order-date .value`                      | `regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}` |
 
-- _ex. Order number pattern matching_ 
+_ex. Order number pattern matching_ 
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
 | `assertText`  | `css=#main .order-number .value`                    | `regexp:00[0-9]{6}`                       |
 
-- _ex. Insensitive pattern matching_ 
+_ex. Insensitive pattern matching_ 
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
 | `assertText`  | `css=#main .label .capitalized`                     | `regexpi:CaseInsensitive TITEL Title`     |
 
-- _ex. Match inner substring_ 
+_ex. Match inner substring_ 
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
@@ -116,21 +116,21 @@ Following are some examples (ex.) of module commands used for text matching, tex
 
 #### Text Operation
 
-- _ex. Remove trailing whitespace_ 
+_ex. Remove trailing whitespace_ 
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
 | `storeEval`   | `"${blockTotalsShipping}".trim()`                   | `totalsShipping`                          |
 
 
-- _ex. Substring inclusive until last character_ 
+_ex. Substring inclusive until last character_ 
  
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
 | `storeEval`   | `"${creditCardNumber}".substring(12,16)`            | `creditCardLastFourDigits`                |
 
 
-- _ex. Substring exclusive until first occurence (three different ways)_
+_ex. Substring exclusive until first occurence (three different ways)_
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
@@ -140,7 +140,7 @@ Following are some examples (ex.) of module commands used for text matching, tex
 
 #### Text Conversion
 
-- _ex. Convert full english month name to number with two digits_  
+_ex. Convert full english month name to number with two digits_  
 
 | Command       | Target                                              | Value                                    |
 | :------------ | :-------------------------------------------------- | :--------------------------------------- |
