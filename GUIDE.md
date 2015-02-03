@@ -92,63 +92,63 @@ Following are some examples (ex.) of module commands used for text matching, tex
 
 _ex. Order date pattern matching_ 
 
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| `assertText`    | css=#main .order-date .value                        | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .order-date .value`                      | `regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}` |
 
 _ex. Order number pattern matching_ 
 
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| assertText    | css=#main .order-number .value                      | regexp:00[0-9]{6}                       |
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .order-number .value`                    | `regexp:00[0-9]{6}`                       |
 
 _ex. Insensitive pattern matching_ 
 
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| assertText    | css=#main .label .capitalized                       | regexpi:CaseInsensitive HEADER          |
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .label .capitalized`                     | `regexpi:CaseInsensitive TITEL Title`     |
 
 _ex. Match inner substring_ 
 
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| assertText    | css=#main .shipping-address .city-state-postal      | \*${state}\*                            |
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .shipping-address .city-state-postal`    | `*${state}*`                              |
 
 #### Text Operation
 
 _ex. Remove trailing whitespace_ 
 
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| storeEval     | "${blockTotalsShipping}".trim()                     | ${totalsShipping}                       |
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `storeEval`   | `"${blockTotalsShipping}".trim()`                   | `totalsShipping`                          |
 
 
  _ex. Substring inclusive until last character_ 
  
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| storeEval     | "${creditCardNumber}".substring(12,16)              | ${creditCardLastFourDigits}             |
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `storeEval`   | `"${creditCardNumber}".substring(12,16)`            | `creditCardLastFourDigits`                |
 
 
  _ex. Substring exclusive until first occurence (three different ways)_
 
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| storeEval     | "${label}".slice(0, "${label}".indexOf(‘:’)         | ${shippingMethodName}                   |
-| storeEval     | "${shippingMethodLabel}".match(/[^:]*/)             | ${shippingMethodName}                   |
-| storeEval     | "${shippingMethodLabel}".replace(/\:.*$/,"")        | ${shippingMethodName}                   |
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `storeEval`   | `"${sMlabel}".slice(0, "${sMlabel}".indexOf(‘:’)`   | `shippingMethodName`                      |
+| `storeEval`   | `"${shippingMethodLabel}".match(/[^:]*/)`           | `shippingMethodName`                      |
+| `storeEval`   | `"${shippingMethodLabel}".replace(/\:.*$/,"")`      | `shippingMethodName`                      |
 
 #### Text Conversion
 
 _ex. Convert full english month name to number with two digits_  
 
-| Command       | Target                                              | Value                                   |
-| :------------ | :-------------------------------------------------- | :-------------------------------------- |
-| storeEval     | ("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)         | ${monthNumber}                          |
+| Command       | Target                                              | Value                                    |
+| :------------ | :-------------------------------------------------- | :--------------------------------------- |
+| `storeEval`   | `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)` | `monthNumber`                  |
 
 __Command:__ `storeEval`    
 __Target:__  `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`  
-__Value:__ `$(month_number)`  
+__Value:__ `${monthNumber}`  
 
 ## Additional Resources
 
