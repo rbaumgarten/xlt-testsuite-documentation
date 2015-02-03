@@ -102,11 +102,11 @@ _ex. Order number pattern matching_
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
 | `assertText`  | `css=#main .order-number .value`                    | `regexp:00[0-9]{6}`                       |
 
-_ex. Insensitive pattern matching_ 
+_ex. Case insensitive pattern matching_ 
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
-| `assertText`  | `css=#main .label .capitalized`                     | `regexpi:CaseInsensitive TITEL Title`     |
+| `assertText`  | `css=#main .label .capitalized`                     | `regexpi:LOWERCASE uppercase Ignored `    |
 
 _ex. Match inner substring_ 
 
