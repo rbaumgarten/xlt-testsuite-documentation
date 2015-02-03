@@ -90,18 +90,30 @@ Following are some examples (ex.) of module commands used for text matching, tex
 
 #### Text Matching
 
+_ex. Order date pattern matching_ 
+
+| Command       | Target                                              | Value                                   |
+| :------------ | :-------------------------------------------------- | :-------------------------------------- |
+| assertText    | css=#main .order-date .value                        | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
+
+_ex. Order number pattern matching_ 
 
 | Command       | Target                                                | Value                                 |
 | :------------ | :---------------------------------------------------- | :------------------------------------ |
-|               | _ex. Order date pattern matching_                     |                                       |
-| assertText    | css=#main .order-date .value                          | regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4} |
-|               | _ex. Order number pattern matching_                   |                                       |
 | assertText    | css=#main .order-number .value                        | regexp:00[0-9]{6}                     |
-|               | _ex. Insensitive pattern matching_                    |                                       |
+
+_ex. Insensitive pattern matching_ 
+
+| Command       | Target                                                | Value                                 |
+| :------------ | :---------------------------------------------------- | :------------------------------------ |
 | assertText    | css=#main .label .capitalized                         | regexpi:CaseInsensitive HEADER        |
+
+_ex. Match inner substring_ 
+
+| Command       | Target                                                | Value                                 |
+| :------------ | :---------------------------------------------------- | :------------------------------------ |
 |               | _ex. Match inner substring_                           |                                       |
 | assertText    | css=#main .shipping-address .city-state-postal        | \*${state}\*                          |
-
 
 #### Text Operation
 
