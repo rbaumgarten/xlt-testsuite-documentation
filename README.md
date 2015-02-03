@@ -92,7 +92,7 @@ We have already build a __foundation__ of over __200 modules__ structured in ove
 
 ### [Test Data](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/testdata.html)
 
-__Test Data__ or short __Data__ can be placed on global, package, module or test layer. Test data defined inside - at the test case - overwrites test data from outside (antihierarchical handling).
+__Test Data__ or short __Data__ can be placed on global, package, module or test layer. Test data defined at a lower layer overwrites test data defined at a higher level (antihierarchical handling).
 
 ### [Packages](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/packages.html)
 
