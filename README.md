@@ -17,8 +17,8 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Prerequisites
 
-- Firefox 17 (or higher)
-- XLT&reg; Script Developer v4.5.0 (or higher)
+- Firefox 31.0 (or higher)
+- XLT&reg; Script Developer 4.5.0 (or higher)
 - As system under test (SUT) the demo shop system  [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) v15.1.0.14 (or higher) sold separately by [Demandware](http://www.demandware.com/) needs to be setup.
 
 #### Installation
