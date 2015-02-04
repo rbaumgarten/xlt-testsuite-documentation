@@ -2874,12 +2874,12 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentCreditCard</name>
+          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard</name>
           <description>Validate payment credit card.</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentTotal</name>
+          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderTotals</name>
           <description>Validate order totals.</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -2994,9 +2994,9 @@ Executable with:
         <string>modules.pages.checkout.steps.shipping.VCheckout_Shipping_validatePage</string>
         <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateShippingProductColorSize</string>
         <string>modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validateProductBasicDetails</string>
+        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard</string>
         <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateShippingProductBasicDetails</string>
         <string>modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_checkUseAsBillingAddress</string>
-        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentTotal</string>
         <string>modules.pages.account.menu.FAccount_Menu_flowToValidateProfile</string>
         <string>modules.pages.account.menu.VAccount_Menu_validateCustomerName</string>
         <string>modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validatePage</string>
@@ -3012,9 +3012,9 @@ Executable with:
         <string>modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateProductBasicDetails</string>
         <string>modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateOrderSubtotal</string>
         <string>modules.pages.checkout.steps.boxes.MCheckout_BoxOrderSummary_storeOrderTotals</string>
+        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderTotals</string>
         <string>modules.pages.checkout.login.VCheckout_Login_validatePage</string>
         <string>modules.pages.checkout.steps.shipping.MCheckout_Shipping_clickContinue</string>
-        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentCreditCard</string>
         <string>modules.pages.checkout.steps.placeorder.MCheckout_PlaceOrder_clickSubmit</string>
         <string>modules.helper.MHelper_Profile_generateRandomPassword</string>
         <string>modules.helper.FHelper_Session_flowToStartSession</string>
@@ -4528,12 +4528,12 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentCreditCard</name>
+          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard</name>
           <description>Validate payment credit card.</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentTotal</name>
+          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderTotals</name>
           <description>Validate order totals.</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -4594,11 +4594,11 @@ Executable with:
         <string>modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition</string>
         <string>modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validateProductBasicDetails</string>
         <string>modules.pages.homepage.FHomepage_flowToCheckOrderStatus</string>
+        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard</string>
         <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateShippingProductBasicDetails</string>
         <string>modules.pages.cart.MCart_storeOrderSubtotal</string>
         <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateBillingAddress</string>
         <string>modules.pages.search.FSearch_flowToAddProductToCart</string>
-        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentTotal</string>
         <string>modules.pages.homepage.FHomepage_flowToCreateNewAccount</string>
         <string>modules.pages.checkout.steps.billing.MCheckout_Billing_clickContinue</string>
         <string>modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validateTotals</string>
@@ -4617,6 +4617,7 @@ Executable with:
         <string>modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_selectSavedAddress</string>
         <string>modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateOrderSubtotal</string>
         <string>modules.pages.checkout.steps.boxes.MCheckout_BoxOrderSummary_storeOrderTotals</string>
+        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderTotals</string>
         <string>modules.pages.checkout.login.VCheckout_Login_validatePage</string>
         <string>modules.pages.checkout.steps.shipping.VCheckout_Shipping_validateCheckedValues</string>
         <string>modules.pages.checkout.steps.billing.MCheckout_BillingPayment_selectSavedCreditCard</string>
@@ -4624,7 +4625,6 @@ Executable with:
         <string>modules.pages.checkout.steps.shipping.MCheckout_Shipping_clickContinue</string>
         <string>modules.pages.checkout.steps.billing.MCheckout_BillingPayment_enterCreditCardCVN</string>
         <string>modules.pages.checkout.steps.shipping.VCheckout_ShippingMethod_validatePrice</string>
-        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentCreditCard</string>
         <string>modules.pages.checkout.steps.confirmation.MCheckout_Confirmation_storeOrder</string>
         <string>modules.pages.checkout.steps.placeorder.MCheckout_PlaceOrder_clickSubmit</string>
         <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderInformation</string>
@@ -6081,12 +6081,12 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentCreditCard</name>
+          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard</name>
           <description>Validate payment credit card.</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentTotal</name>
+          <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderTotals</name>
           <description>Validate order totals.</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -6233,8 +6233,8 @@ Executable with:
         <string>modules.pages.checkout.steps.shipping.VCheckout_Shipping_validatePage</string>
         <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateShippingProductColorSize</string>
         <string>modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validateProductBasicDetails</string>
+        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard</string>
         <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateShippingProductBasicDetails</string>
-        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentTotal</string>
         <string>modules.pages.account.menu.FAccount_Menu_flowToValidateProfile</string>
         <string>modules.pages.account.menu.VAccount_Menu_validateCustomerName</string>
         <string>modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validatePage</string>
@@ -6253,9 +6253,9 @@ Executable with:
         <string>modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateProductBasicDetails</string>
         <string>modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateOrderSubtotal</string>
         <string>modules.pages.checkout.steps.boxes.MCheckout_BoxOrderSummary_storeOrderTotals</string>
+        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderTotals</string>
         <string>modules.pages.checkout.login.VCheckout_Login_validatePage</string>
         <string>modules.pages.checkout.steps.shipping.MCheckout_Shipping_clickContinue</string>
-        <string>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentCreditCard</string>
         <string>modules.pages.checkout.steps.placeorder.MCheckout_PlaceOrder_clickSubmit</string>
         <string>modules.helper.MHelper_Profile_generateRandomPassword</string>
         <string>modules.helper.FHelper_Session_flowToStartSession</string>
@@ -6875,12 +6875,12 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePaymentCreditCard</name>
+          <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validateCreditCard</name>
           <description>Validate payment credit card.</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePaymentTotal</name>
+          <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validateOrderTotals</name>
           <description>Validate order totals.</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -6902,9 +6902,9 @@ Executable with:
       <calls>
         <string>modules.pages.account.login.MAccount_Login_enterClickGoToCheckOrderStatus</string>
         <string>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validateOrderInformation</string>
-        <string>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePaymentTotal</string>
+        <string>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validateOrderTotals</string>
+        <string>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validateCreditCard</string>
         <string>modules.global.headerfooternav.MGlobal_Header_clickLogin</string>
-        <string>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePaymentCreditCard</string>
         <string>modules.pages.account.orderhistory.MAccount_OrderHistory_OrderSummary_clickReturnToShopping</string>
         <string>modules.pages.account.login.VAccount_Login_validatePage</string>
         <string>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePage</string>
@@ -7296,57 +7296,6 @@ Executable with:
         <m class="empty-map"/>
       </test-data>
       <parameter name="MCartRow" description=""/>
-      <used>true</used>
-    </module>
-    <module>
-      <description>Validate payment credit card.</description>
-      <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentCreditCard</name>
-      <external-parameters>
-        <entry>
-          <string>credit_card_number_last_four_digits</string>
-          <null/>
-        </entry>
-        <entry>
-          <string>credit_card_month_number_short</string>
-          <null/>
-        </entry>
-        <entry>
-          <string>credit_card_month_number</string>
-          <null/>
-        </entry>
-      </external-parameters>
-      <steps>
-        <step disabled="false">
-          <name>modules.helper.MHelper_Number_convertNumberToLastFourDigits</name>
-          <description>Convert credit card number to last four digits only.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
-          <description>Convert month name into month number (for english locale only).</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.helper.MHelper_Number_convertNumberToTwoDigitsLength</name>
-          <description>Convert input number to two digit number (with leading zero if necessary).</description>
-          <moduleCall>true</moduleCall>
-        </step>
-      </steps>
-      <calls>
-        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
-        <string>modules.helper.MHelper_Number_convertNumberToLastFourDigits</string>
-        <string>modules.helper.MHelper_Number_convertNumberToTwoDigitsLength</string>
-      </calls>
-      <test-data class="java.util.Collections$UnmodifiableMap">
-        <m class="empty-map"/>
-      </test-data>
-      <parameter name="paymentMethod" description="payment method"/>
-      <parameter name="creditCardOwner" description="credit card owner"/>
-      <parameter name="creditCardTypeShort" description="credit card type short"/>
-      <parameter name="creditCardNumber" description="credit card number"/>
-      <parameter name="creditCardMonth" description="credit card month"/>
-      <parameter name="creditCardYear" description="credit card year"/>
-      <parameter name="paymentAmount" description="payment amount"/>
       <used>true</used>
     </module>
     <module>
@@ -7904,7 +7853,58 @@ Executable with:
     </module>
     <module>
       <description>Validate payment credit card.</description>
-      <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePaymentCreditCard</name>
+      <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validateCreditCard</name>
+      <external-parameters>
+        <entry>
+          <string>credit_card_number_last_four_digits</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>credit_card_month_number_short</string>
+          <null/>
+        </entry>
+        <entry>
+          <string>credit_card_month_number</string>
+          <null/>
+        </entry>
+      </external-parameters>
+      <steps>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Number_convertNumberToLastFourDigits</name>
+          <description>Convert credit card number to last four digits only.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
+          <description>Convert month name into month number (for english locale only).</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Number_convertNumberToTwoDigitsLength</name>
+          <description>Convert input number to two digit number (with leading zero if necessary).</description>
+          <moduleCall>true</moduleCall>
+        </step>
+      </steps>
+      <calls>
+        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
+        <string>modules.helper.MHelper_Number_convertNumberToLastFourDigits</string>
+        <string>modules.helper.MHelper_Number_convertNumberToTwoDigitsLength</string>
+      </calls>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <parameter name="paymentMethod" description="payment method"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
+      <parameter name="paymentAmount" description="payment amount"/>
+      <used>true</used>
+    </module>
+    <module>
+      <description>Validate payment credit card.</description>
+      <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard</name>
       <external-parameters>
         <entry>
           <string>credit_card_number_last_four_digits</string>
@@ -7962,21 +7962,6 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <used>true</used>
-    </module>
-    <module>
-      <description>Validate order totals.</description>
-      <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validatePaymentTotal</name>
-      <external-parameters/>
-      <steps/>
-      <calls/>
-      <test-data class="java.util.Collections$UnmodifiableMap">
-        <m class="empty-map"/>
-      </test-data>
-      <parameter name="orderSubtotal" description="order subtotal"/>
-      <parameter name="orderShipping" description="order shipping"/>
-      <parameter name="orderSalesTax" description="order sales tax"/>
-      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
@@ -8164,6 +8149,21 @@ Executable with:
       <parameter name="giftYesNo" description="yes or no"/>
       <parameter name="giftOptionalMessage" description="message with max. 250 characters"/>
       <used>false</used>
+    </module>
+    <module>
+      <description>Validate order totals.</description>
+      <name>modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderTotals</name>
+      <external-parameters/>
+      <steps/>
+      <calls/>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <parameter name="orderSubtotal" description="order subtotal"/>
+      <parameter name="orderShipping" description="order shipping"/>
+      <parameter name="orderSalesTax" description="order sales tax"/>
+      <parameter name="orderTotal" description="order total"/>
+      <used>true</used>
     </module>
     <module>
       <description>Click continue to next step.</description>
@@ -9921,21 +9921,6 @@ Executable with:
       <used>true</used>
     </module>
     <module>
-      <description>Validate order totals.</description>
-      <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validatePaymentTotal</name>
-      <external-parameters/>
-      <steps/>
-      <calls/>
-      <test-data class="java.util.Collections$UnmodifiableMap">
-        <m class="empty-map"/>
-      </test-data>
-      <parameter name="orderSubtotal" description="order subtotal"/>
-      <parameter name="orderShipping" description="order shipping"/>
-      <parameter name="orderSalesTax" description="order sales tax"/>
-      <parameter name="orderTotal" description="order total"/>
-      <used>true</used>
-    </module>
-    <module>
       <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
       <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
       <external-parameters/>
@@ -10243,6 +10228,21 @@ Executable with:
       <parameter name="productNumber" description="product number"/>
       <parameter name="productQuantity" description="product quantity"/>
       <parameter name="productPriceSales" description="product price sales"/>
+      <used>true</used>
+    </module>
+    <module>
+      <description>Validate order totals.</description>
+      <name>modules.pages.account.orderhistory.VAccount_OrderHistory_OrderSummary_validateOrderTotals</name>
+      <external-parameters/>
+      <steps/>
+      <calls/>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <parameter name="orderSubtotal" description="order subtotal"/>
+      <parameter name="orderShipping" description="order shipping"/>
+      <parameter name="orderSalesTax" description="order sales tax"/>
+      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
