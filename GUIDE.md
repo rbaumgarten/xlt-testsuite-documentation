@@ -82,7 +82,7 @@ By following these development steps you may implement your own test case in **X
 - **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test`. 
 - **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
 
-Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
+Congratulations, you may **run your first own test now**.
 
 ## Test Suite Examples
 
