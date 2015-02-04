@@ -1,68 +1,67 @@
-# SiteGenesis-Community-TestSuite Guide
+# Guide to SiteGenesis-Community-TestSuite 
 
-This document describes the used test suite naming conventions, gives a short introduction to test suite development and shows some test suite examples. The last part contains some pointers to various helpful resources on other websites. 
+This document describes the defined test suite naming conventions, gives a short introduction to test suite development and shows some test suite examples. The last part contains some pointers to various helpful resources on other websites. 
 
 ## Test Suite Naming Conventions
 
-The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for folders, packages and files. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Element names written in `{}` are required. Element names written in `[]` are optional.) 
+The following styling rules where quite consequently applied to form a solid structure and define consistent descriptions and comments as well as establish a naming scheme for packages, tests and modules and. The elaborately discussed style guidelines may serve as a loose pointer to build your uniform test suite or be completely adapted to your needs. (Names written in `{}` are required. Names written in `[]` are optional.) 
 
-### Naming of Packages (Folders)
+### Naming of Packages
 
-- Tests: `tests.{shoparea}`
-- Modules: `modules.pages.[shoparea].{currentpage}`
-- Special Modules > global : `modules.global.[shoparea]`
-- Special Modules > helper : `modules.helper.[shoparea]`
+- __Packages__ for Tests in Shop Areas: `tests.{area}`
+- __Packages__ for Modules on Pages: `modules.pages.{page}`
+- __Packages__ for Modules at Global Elements: `modules.global.[area]`
+- __Packages__ for Helper Modules: `modules.helper.[area]`
 
-### Naming of Files
+### Naming of Tests
 
-- Tests: `T{ShopArea}{TestScope}_{interaction}{Name}[Subname]`
-- Modules: `M{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Special Modules > Validation: `V{Page}_[PagePart]_{interaction}{Name}[Subname]`
-- Special Modules > Flow: `F_{StartPage}_{interaction}{Name}[Subname]`
+- __Tests__: `T{Area}{TestScope}_{interaction}{Name}`
+
+### Naming of Modules
+
+- __Modules__: `M{Page}_[PagePart]_{interaction}{Name}`
+- Validation Modules: `V{Page}_[PagePart]_{interaction}{Name}`
+- Flow Modules: `F_{StartPage}_{interaction}{Name}`
 
 ### Naming of Variables
 
-- Module Parameters (used as input): `{Name}[Subname]`
-- Module Parameters (used as output): `{Name}[Subname]_store`
-- Test Data: `{name}_[subname]` 
-- Dynamic Variables: `{name}_[subname]`
+Variable names are written in `camelCase` notation starting with a lowercase letter.
+
+- __Test Data__: `{name}` 
+- Dynamic Variables: `{name}`
+- Module Parameters: `{name}`
+- Module Parameters (variable name only): `{name}_varName`
 
 ### Element Names
 
-This section defines the element names which are part of the naming scheme of packages, files and variables.
+This section defines the element names which are part of the naming scheme of packages, tests and modules.
 
-**Page Elements**
+**{Area} and {Page}**
 
-- **Homepage**: main landing page.
-- **Search**: search box and search result page.
-- **Catalog**: catalog page, product grid/listing/overview page (PGP/PLP/POP).
-- **ProductDetailPage**: product detail page (PDP).
-- **MiniCart**: minicart pop up.
-- **Cart**: cart page.
-- **Checkout**: checkout pages and steps: addresses (shipping/billing), payement, order submit.
-- **Account**: account page, my account.
+- `Homepage`: main landing page.
+- `Search`: search box and search results page.
+- `Catalog`: catalog page, product grid/listing/overview page (PGP/PLP/POP).
+- `ProductDetailPage`: product detail page (PDP).
+- `MiniCart`: minicart pop up in global header.
+- `Cart`: cart page.
+- `Checkout`: checkout pages with shipping, billing, place orde and order confirmation.
+- `Account`: account page also known as my account.
 
-**UI Interaction Elements**
+**{interaction}**
 
-- **click**: click a button or link.
-- **select**: select form dropdown menus or radio buttons.
-- **check**: mark checkboxes.
-- **enter**: enter text or values in input fields.
-- **hover**: mouse over a link to open js menu etc.
+- `click`: click a button or link.
+- `select`: select from dropdown menus or radio buttons.
+- `check`: mark checkboxes.
+- `enter`: enter text or values in input fields.
+- `hover`: mouse over a link to open js menu etc.
+- `store`: store text or values from a page for following validations.
+- `validate`: verify and assert values, parameters or elements.
+- `flow`: flow to process several modules.
 
-**XLT Interaction Elements**
+**{Name} or {name}**
 
-- **store**: store text or values from a page for following validations.
-- **validate**: verify and assert values, parameters or elements.
-
-**Flow Interaction Elements**
-
-- **flow**: flow to process several modules.
-
-**User Elements**
-
-- **Customer**: registered user with account.
-- **Guest**: unregistered user without account.
+- `Customer`: registered user with account.
+- `Guest`: unregistered user without account.
 
 ## Test Suite Development
 
@@ -74,78 +73,106 @@ Think about the business process you want to simulate and then define it. An exa
 
 > Start a `session` and go to a `category` at the `catalog`. Click a `product` and end up on a `productdetailpage`. Change product details like `color`, `size` and `quantity` and decide to add the product to `wish list`. The shop will ask to `create an account`. Enter `profile` data and submit. Validate that `product` with selected details like `color`, `size` and `quantity` is saved in `wish list`. Leave the shop until your next visit and end the `session`.
 
-#### Step 2: Build the Corresponding Test Case
+####  Step 2: Build the Corresponding Test Case
 
 By following these development steps you may implement your own test case in **XLT Script Developer**:
 
 - **Create** a new `test case` and write an informal list of short steps describing the simulated process.
-- **Insert** `comment` lines in the `test case` with steps descriptions aggregated by their interacted `pages`.
-- **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test` file. 
+- **Insert** `comment` lines in the `test case` with step descriptions aggregated by their interacted `pages`.
+- **Drag and drop** the needed `modules` from the `pages` packages in the project tree into the `test`. 
 - **Configure** specific `test data` at the `test case` and dynamic variables for used `modules`.
 
 Congratulations, you may **run your first own test now** (after several iterations over steps 3 and 4).
 
 ## Test Suite Examples
 
-Following is a short list of advanced scripting examples and showcases (e.g. for string operations by utilization of regular expressions):
+Following are some examples (ex.) of module commands used for text matching, text operation or text conversion.
 
-1. `FSearchAddProductToCart`: In this flow product quantity is specified as input and output parameter. The reason for this is that the used module to store all product details is also used in other context.
+#### Text Matching
 
-2. Remove trailing whitespace (ex: totals shipping)  
+_ex. Order date pattern matching_ 
 
-        storeEval('"${block_totals_shipping}".trim()','${totals_shipping}')
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .order-date .value`                      | `regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}` |
 
-3. Substring inclusive until last character (ex: creditcard number)  
+_ex. Order number pattern matching_ 
 
-        storeEval('"${creditcard_number}".substring(12,16)','$'{creditcard_last_four_digits})
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .order-number .value`                    | `regexp:00[0-9]{6}`                       |
 
-4. Substring exclusive until first occurence of character (ex: shipping method label)  
+_ex. Case insensitive pattern matching_ 
 
-        storeEval('"${shipping_method_label}".slice(0, "${shipping_method_label}".indexOf(‘:’)', '${shipping_method_name')
-        storeEval('"${shipping_method_label}".match(/[^:]*/)', '${shipping_method_name')
-        storeEval('"${shipping_method_label}".replace(/\:.*$/,"")', '${shipping_method_name')
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .label .capitalized`                     | `regexpi:LOWERCASE uppercase Ignored `    |
 
-5. Convert full english month name to number with two digits (ex: helper module)  
+_ex. Match inner substring_ 
 
-        storeEval('("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)', '$(month_number)');
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `assertText`  | `css=#main .shipping-address .city-state-postal`    | `*${state}*`                              |
 
-6. Pattern matching for order date and order number (ex: order confirmation summary)  
+#### Text Operation
 
-        assertText('css=#main .order-date .value','regexp:[A-Z][a-z]{2} [0-9]{2}, [0-9]{4}');   
-        assertText('css=#main .order-number .value','regexp:00[0-9]{6}');
+_ex. Remove trailing whitespace_ 
 
-7. Pattern matching for uppercased words by css (ex: column or navigation headers)  
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `storeEval`   | `"${blockTotalsShipping}".trim()`                   | `totalsShipping`                          |
 
-        assertText('css=#main .label .capitalized', 'regexpi:CaseInsensitive HEADER')
 
-8. Pattern matching for any substring with asterisk (ex: shipping address)  
+_ex. Substring inclusive until last character_ 
+ 
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `storeEval`   | `"${creditCardNumber}".substring(12,16)`            | `creditCardLastFourDigits`                |
 
-        assertText('css=#main .shipping-address .city-state-postal', '*${state}*')
 
-## Resources
+_ex. Substring exclusive until first occurence (three different ways)_
 
-Here are some pointers to other helpful resources for test development:
+| Command       | Target                                              | Value                                     |
+| :------------ | :-------------------------------------------------- | :---------------------------------------- |
+| `storeEval`   | `"${sMLabel}".slice(0, "${sMLabel}".indexOf(‘:’)`   | `shippingMethodName`                      |
+| `storeEval`   | `"${shippingMethodLabel}".match(/[^:]*/)`           | `shippingMethodName`                      |
+| `storeEval`   | `"${shippingMethodLabel}".replace(/\:.*$/,"")`      | `shippingMethodName`                      |
 
-### Xceptance
+#### Text Conversion
+
+_ex. Convert full english month name to number with two digits_  
+
+| Command       | Target                                              | Value                                    |
+| :------------ | :-------------------------------------------------- | :--------------------------------------- |
+| `storeEval`   | see target below                                    | `monthNumber`                            |
+
+__Target:__  `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`  
+
+## Additional Resources
+
+Here are some links to other helpful resources for test development.
+
+#### Xceptance
 
 - [Xceptance](https://www.xceptance.de/en/)
 - [Xceptance Blog](http://blog.xceptance.com/)
 - Xceptance Blog: [Test Automation for Demandware SiteGenesis with XLT](http://blog.xceptance.com/2012/10/27/test-automation-for-demandware-sitegenesis-with-xlt/)
 - Xceptance Blog: [Use XLT with Sauce Labs and BrowserStack](http://blog.xceptance.com/2014/03/12/use-xlt-with-sauce-labs-and-browserstack/)
 
-### XLT
+#### XLT
 
 - XLT [Main](https://www.xceptance.de/en/xlt/)
 - XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
 - XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
 - XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
+- XLT Descriptions & Comments: [GitHub Markup](https://github.com/github/markup/tree/master#html-sanitization), [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
-### Demandware
+#### Demandware
 
 - [Demandware](http://www.demandware.com/)
 - Demandware [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) (Default Shop Implementation)
 
-### W3C
+#### W3C
 
 - W3C All Standards and Drafts [Technical Reports](http://www.w3.org/TR/)
 - W3C [DOM TR](http://www.w3.org/TR/dom/)
@@ -155,7 +182,7 @@ Here are some pointers to other helpful resources for test development:
 - W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
 - W3C [XML Portal](http://www.w3.org/standards/xml/)
 
-### W3Schools
+#### W3Schools
 
 - W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
 - W3Schools [HTML](http://www.w3schools.com/html/)
@@ -163,9 +190,8 @@ Here are some pointers to other helpful resources for test development:
 - W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
 - W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
 
-### Other
+#### Other
 
 - Selenium [Docs](http://docs.seleniumhq.org/docs/), [RegEx](http://docs.seleniumhq.org/docs/02_selenium_ide.jsp#regular-expression-patterns)
 - RegEx [Quickstart](http://www.rexegg.com/regex-quickstart.html)
 - Ant [Manual](https://ant.apache.org/manual/running.html)
-- [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
