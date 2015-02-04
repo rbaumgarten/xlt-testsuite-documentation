@@ -3694,6 +3694,10 @@ Executable with:
           <null/>
         </entry>
         <entry>
+          <string>storefront_currency</string>
+          <string>$</string>
+        </entry>
+        <entry>
           <string>product_01_price_sales</string>
           <null/>
         </entry>
@@ -6597,9 +6601,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
+      <parameter name="storefrontCurrency" description="storefront currency"/>
       <parameter name="productQuantity" description="product quantity"/>
       <parameter name="productPriceNumber" description="product price number"/>
-      <parameter name="shopCurrency" description="shop currency"/>
       <parameter name="productTotalPrice_varName" description="product total price as var name"/>
       <used>true</used>
     </module>
@@ -7106,8 +7110,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="productColor" description="product color"/>
-      <parameter name="productSize" description="product size"/>
+      <parameter name="productColor_varName" description="product color as var name"/>
+      <parameter name="productSize_varName" description="product size as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -7847,7 +7851,7 @@ Executable with:
           </entry>
         </m>
       </test-data>
-      <parameter name="randomEmail_varName" description="randowm email"/>
+      <parameter name="randomEmail_varName" description="random email as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -8437,10 +8441,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="productName" description="product name"/>
-      <parameter name="productNumber" description="product numbe"/>
-      <parameter name="productPriceSales" description="product sales price"/>
-      <parameter name="productQuantity" description="product quantity"/>
+      <parameter name="productName_varName" description="product name as var name"/>
+      <parameter name="productNumber_varName" description="product numbe as var name"/>
+      <parameter name="productPriceSales_varName" description="product sales price as var name"/>
+      <parameter name="productQuantity_varName" description="product quantity as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -9328,7 +9332,7 @@ Executable with:
         <m class="empty-map"/>
       </test-data>
       <parameter name="cartRow" description="cart row"/>
-      <parameter name="productPriceTotal" description="product price total"/>
+      <parameter name="productPriceTotal_varName" description="product price total as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -9371,6 +9375,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
+      <parameter name="storefrontCurrency" description="storefront currency"/>
       <parameter name="productOneQuantity" description="product one quantity"/>
       <parameter name="productOnePriceNumber" description="product one price number"/>
       <parameter name="productTwoQuantity" description="product two quantity"/>
