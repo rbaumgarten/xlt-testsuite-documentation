@@ -656,6 +656,7 @@
 
 - Logout using the global link in the header
 - End session and clean up created cookies</description>
+      <tags>smoke</tags>
       <name>tests.account.TAccountAddressBookAddEditRemoveAddresses</name>
       <external-parameters>
         <entry>
@@ -1146,6 +1147,7 @@
 # 3. Clean up
 
 - End session and clean up created cookies</description>
+      <tags>smoke</tags>
       <name>tests.catalog.TCatalogOptionSelectItemsPerPage</name>
       <external-parameters>
         <entry>
@@ -1404,143 +1406,6 @@
       <baseUrl></baseUrl>
     </testcase>
     <testcase disabled="false">
-      <description>Test validate pages of category level 1.
-
-# 1. Setup and preparation
-
-- Start session, open homepage and delete all visible cookies
-
-# 2. Scope of test
-
-- Go to all pages of category level 1
-- Validate all pages
-
-# 3. Clean up
-
-- End session and clean up created cookies</description>
-      <name>tests.catalog.TCatalogValidatePageCategoryLevel1</name>
-      <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>modules.helper.FHelper_Session_flowToStartSession</name>
-          <description>Flow to start session.
-
-- Start with open browser tab
-- Open homepage
-- Delete cookies
-- Open homepage
-- End on homepage</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
-          <description>Click and go to category level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
-          <description>Click and go to category level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
-          <description>Click and go to category level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
-          <description>Click and go to category level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
-          <description>Click and go to category level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
-          <description>Click and go to category level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.helper.FHelper_Session_flowToEndSession</name>
-          <description>Flow to end session.
-
-- Start on homepage
-- Open homepage
-- Delete cookies
-- Close homepage
-- End on homepage 
-- Close browser tab (optional)</description>
-          <moduleCall>true</moduleCall>
-        </step>
-      </steps>
-      <calls>
-        <string>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</string>
-        <string>modules.pages.catalog.VCatalog_validatePage</string>
-        <string>modules.helper.FHelper_Session_flowToStartSession</string>
-        <string>modules.helper.FHelper_Session_flowToEndSession</string>
-      </calls>
-      <test-data class="java.util.Collections$UnmodifiableMap">
-        <m class="empty-map"/>
-      </test-data>
-      <baseUrl></baseUrl>
-    </testcase>
-    <testcase disabled="false">
       <description>Test search for no products found.
 
 # 1. Setup and preparation
@@ -1641,6 +1506,7 @@
 
 - End session and clean up created cookies
 </description>
+      <tags>smoke</tags>
       <name>tests.catalog.TCatalogRefinementSelectRemoveColors</name>
       <external-parameters>
         <entry>
@@ -1856,6 +1722,7 @@
 
 - Logout using the global link in the header
 - End session and clean up created cookies</description>
+      <tags>smoke</tags>
       <name>tests.account.TAccountPaymentSettingsAddEditRemoveCreditCards</name>
       <external-parameters>
         <entry>
@@ -2407,6 +2274,7 @@
 # 3. Clean up
 
 - End session and clean up created cookies</description>
+      <tags>smoke</tags>
       <name>tests.catalog.TCatalogOptionSelectSortBy</name>
       <external-parameters>
         <entry>
@@ -2650,364 +2518,6 @@
       <baseUrl></baseUrl>
     </testcase>
     <testcase disabled="false">
-      <description>Test validate pages of category level 2.
-
-# 1. Setup and preparation
-
-- Start session, open homepage and delete all visible cookies
-
-# 2. Scope of test
-
-- Go to all pages of category level 2
-- Validate all pages
-
-# 3. Clean up
-
-- End session and clean up created cookies</description>
-      <name>tests.catalog.TCatalogValidatePageCategoryLevel2</name>
-      <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>modules.helper.FHelper_Session_flowToStartSession</name>
-          <description>Flow to start session.
-
-- Start with open browser tab
-- Open homepage
-- Delete cookies
-- Open homepage
-- End on homepage</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
-          <description>Click and go to category at level 2 nested in level 1 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.helper.FHelper_Session_flowToEndSession</name>
-          <description>Flow to end session.
-
-- Start on homepage
-- Open homepage
-- Delete cookies
-- Close homepage
-- End on homepage 
-- Close browser tab (optional)</description>
-          <moduleCall>true</moduleCall>
-        </step>
-      </steps>
-      <calls>
-        <string>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</string>
-        <string>modules.pages.catalog.VCatalog_validatePage</string>
-        <string>modules.helper.FHelper_Session_flowToStartSession</string>
-        <string>modules.helper.FHelper_Session_flowToEndSession</string>
-      </calls>
-      <test-data class="java.util.Collections$UnmodifiableMap">
-        <m class="empty-map"/>
-      </test-data>
-      <baseUrl></baseUrl>
-    </testcase>
-    <testcase disabled="false">
-      <description>Test validate pages of category level 3.
-
-# 1. Setup and preparation
-
-- Start session, open homepage and delete all visible cookies
-
-# 2. Scope of test
-
-- Go to all pages of category level 3
-- Validate all pages
-
-# 3. Clean up
-
-- End session and clean up created cookies</description>
-      <name>tests.catalog.TCatalogValidatePageCategoryLevel3</name>
-      <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>modules.helper.FHelper_Session_flowToStartSession</name>
-          <description>Flow to start session.
-
-- Start with open browser tab
-- Open homepage
-- Delete cookies
-- Open homepage
-- End on homepage</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>GoToCategoryPage</name>
-          <moduleCall>false</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
-          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.pages.catalog.VCatalog_validatePage</name>
-          <description>Validiate catalog page.</description>
-          <moduleCall>true</moduleCall>
-        </step>
-        <step disabled="false">
-          <name>modules.helper.FHelper_Session_flowToEndSession</name>
-          <description>Flow to end session.
-
-- Start on homepage
-- Open homepage
-- Delete cookies
-- Close homepage
-- End on homepage 
-- Close browser tab (optional)</description>
-          <moduleCall>true</moduleCall>
-        </step>
-      </steps>
-      <calls>
-        <string>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</string>
-        <string>modules.pages.catalog.VCatalog_validatePage</string>
-        <string>modules.helper.FHelper_Session_flowToStartSession</string>
-        <string>modules.helper.FHelper_Session_flowToEndSession</string>
-      </calls>
-      <test-data class="java.util.Collections$UnmodifiableMap">
-        <m class="empty-map"/>
-      </test-data>
-      <baseUrl></baseUrl>
-    </testcase>
-    <testcase disabled="false">
       <description>Test guest checkout with one variation product with color and size, one address and visa. 
 Executable with:
 
@@ -3043,6 +2553,10 @@ Executable with:
           <string>John</string>
         </entry>
         <entry>
+          <string>storefront_order_date_pattern</string>
+          <string>[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</string>
+        </entry>
+        <entry>
           <string>order_number</string>
           <null/>
         </entry>
@@ -3057,10 +2571,6 @@ Executable with:
         <entry>
           <string>product_color</string>
           <null/>
-        </entry>
-        <entry>
-          <string>storefront_order_date</string>
-          <string>[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</string>
         </entry>
         <entry>
           <string>product_name</string>
@@ -3087,10 +2597,6 @@ Executable with:
           <null/>
         </entry>
         <entry>
-          <string>storefront_order_number</string>
-          <string>00[0-9]{6}</string>
-        </entry>
-        <entry>
           <string>order_sales_tax</string>
           <null/>
         </entry>
@@ -3101,6 +2607,10 @@ Executable with:
         <entry>
           <string>order_subtotal</string>
           <null/>
+        </entry>
+        <entry>
+          <string>storefront_order_number_pattern</string>
+          <string>00[0-9]{6}</string>
         </entry>
         <entry>
           <string>email</string>
@@ -4500,6 +4010,7 @@ Executable with:
 # 3. Clean up
 
 - End session and clean up created cookies</description>
+      <tags>smoke</tags>
       <name>tests.search.TSearchResultsValidateArticles</name>
       <external-parameters/>
       <steps>
@@ -4619,16 +4130,16 @@ Executable with:
           <null/>
         </entry>
         <entry>
+          <string>storefront_order_date_pattern</string>
+          <string>[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</string>
+        </entry>
+        <entry>
           <string>order_number</string>
           <null/>
         </entry>
         <entry>
           <string>order_shipping</string>
           <null/>
-        </entry>
-        <entry>
-          <string>storefront_order_date</string>
-          <string>[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</string>
         </entry>
         <entry>
           <string>lastname</string>
@@ -4645,10 +4156,6 @@ Executable with:
         <entry>
           <string>product_01_name</string>
           <null/>
-        </entry>
-        <entry>
-          <string>storefront_order_number</string>
-          <string>00[0-9]{6}</string>
         </entry>
         <entry>
           <string>order_sales_tax</string>
@@ -4669,6 +4176,10 @@ Executable with:
         <entry>
           <string>order_subtotal</string>
           <null/>
+        </entry>
+        <entry>
+          <string>storefront_order_number_pattern</string>
+          <string>00[0-9]{6}</string>
         </entry>
         <entry>
           <string>email</string>
@@ -5303,6 +4814,7 @@ Executable with:
 # 3. Clean up
 
 - End session and clean up created cookies</description>
+      <tags>negative</tags>
       <name>tests.account.TAccountLoginInvalidPassword</name>
       <external-parameters>
         <entry>
@@ -5418,6 +4930,338 @@ Executable with:
       <baseUrl></baseUrl>
     </testcase>
     <testcase disabled="false">
+      <description>Test validate pages of category level 3.
+
+# 1. Setup and preparation
+
+- Start session, open homepage and delete all visible cookies
+
+# 2. Scope of test
+
+- Go to all pages of category level 3
+- Validate all pages
+
+# 3. Clean up
+
+- End session and clean up created cookies</description>
+      <tags>smoke</tags>
+      <name>tests.catalog.TCatalogValidatePagesCategoryLevel3</name>
+      <external-parameters/>
+      <steps>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToStartSession</name>
+          <description>Flow to start session.
+
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</name>
+          <description>Click and go to category at level 3 nested in level 1 and level 2 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToEndSession</name>
+          <description>Flow to end session.
+
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- Close browser tab (optional)</description>
+          <moduleCall>true</moduleCall>
+        </step>
+      </steps>
+      <calls>
+        <string>modules.pages.catalog.MGlobal_clickGoToCategoryLevel3</string>
+        <string>modules.pages.catalog.VCatalog_validatePage</string>
+        <string>modules.helper.FHelper_Session_flowToStartSession</string>
+        <string>modules.helper.FHelper_Session_flowToEndSession</string>
+      </calls>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <baseUrl></baseUrl>
+    </testcase>
+    <testcase disabled="false">
+      <description>Test validate pages of category level 1.
+
+# 1. Setup and preparation
+
+- Start session, open homepage and delete all visible cookies
+
+# 2. Scope of test
+
+- Go to all pages of category level 1
+- Validate all pages
+
+# 3. Clean up
+
+- End session and clean up created cookies</description>
+      <tags>smoke</tags>
+      <name>tests.catalog.TCatalogValidatePagesCategoryLevel1</name>
+      <external-parameters/>
+      <steps>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToStartSession</name>
+          <description>Flow to start session.
+
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
+          <description>Click and go to category level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
+          <description>Click and go to category level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
+          <description>Click and go to category level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
+          <description>Click and go to category level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
+          <description>Click and go to category level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</name>
+          <description>Click and go to category level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToEndSession</name>
+          <description>Flow to end session.
+
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- Close browser tab (optional)</description>
+          <moduleCall>true</moduleCall>
+        </step>
+      </steps>
+      <calls>
+        <string>modules.pages.catalog.MGlobal_clickGoToCategoryLevel1</string>
+        <string>modules.pages.catalog.VCatalog_validatePage</string>
+        <string>modules.helper.FHelper_Session_flowToStartSession</string>
+        <string>modules.helper.FHelper_Session_flowToEndSession</string>
+      </calls>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <baseUrl></baseUrl>
+    </testcase>
+    <testcase disabled="false">
       <description>Test search for single product result.
 
 # 1. Setup and preparation
@@ -5498,6 +5342,172 @@ Executable with:
       <baseUrl></baseUrl>
     </testcase>
     <testcase disabled="false">
+      <description>Test validate pages of category level 2.
+
+# 1. Setup and preparation
+
+- Start session, open homepage and delete all visible cookies
+
+# 2. Scope of test
+
+- Go to all pages of category level 2
+- Validate all pages
+
+# 3. Clean up
+
+- End session and clean up created cookies</description>
+      <tags>smoke</tags>
+      <name>tests.catalog.TCatalogValidatePagesCategoryLevel2</name>
+      <external-parameters/>
+      <steps>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToStartSession</name>
+          <description>Flow to start session.
+
+- Start with open browser tab
+- Open homepage
+- Delete cookies
+- Open homepage
+- End on homepage</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>GoToCategoryPage</name>
+          <moduleCall>false</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</name>
+          <description>Click and go to category at level 2 nested in level 1 via position.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.pages.catalog.VCatalog_validatePage</name>
+          <description>Validiate catalog page.</description>
+          <moduleCall>true</moduleCall>
+        </step>
+        <step disabled="false">
+          <name>modules.helper.FHelper_Session_flowToEndSession</name>
+          <description>Flow to end session.
+
+- Start on homepage
+- Open homepage
+- Delete cookies
+- Close homepage
+- End on homepage 
+- Close browser tab (optional)</description>
+          <moduleCall>true</moduleCall>
+        </step>
+      </steps>
+      <calls>
+        <string>modules.pages.catalog.MGlobal_clickGoToCategoryLevel2</string>
+        <string>modules.pages.catalog.VCatalog_validatePage</string>
+        <string>modules.helper.FHelper_Session_flowToStartSession</string>
+        <string>modules.helper.FHelper_Session_flowToEndSession</string>
+      </calls>
+      <test-data class="java.util.Collections$UnmodifiableMap">
+        <m class="empty-map"/>
+      </test-data>
+      <baseUrl></baseUrl>
+    </testcase>
+    <testcase disabled="false">
       <description>Test login without password.
 
 # 1. Setup and preparation 
@@ -5515,6 +5525,7 @@ Executable with:
 # 3. Clean up
 
 - End session and clean up created cookies</description>
+      <tags>negative</tags>
       <name>tests.account.TAccountLoginEmptyPassword</name>
       <external-parameters>
         <entry>
@@ -5674,16 +5685,16 @@ Executable with:
           <null/>
         </entry>
         <entry>
+          <string>storefront_order_date_pattern</string>
+          <string>[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</string>
+        </entry>
+        <entry>
           <string>order_number</string>
           <null/>
         </entry>
         <entry>
           <string>order_shipping</string>
           <null/>
-        </entry>
-        <entry>
-          <string>storefront_order_date</string>
-          <string>[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</string>
         </entry>
         <entry>
           <string>product_02_size</string>
@@ -5710,10 +5721,6 @@ Executable with:
           <null/>
         </entry>
         <entry>
-          <string>storefront_order_number</string>
-          <string>00[0-9]{6}</string>
-        </entry>
-        <entry>
           <string>product_02_color</string>
           <null/>
         </entry>
@@ -5732,6 +5739,10 @@ Executable with:
         <entry>
           <string>order_subtotal</string>
           <null/>
+        </entry>
+        <entry>
+          <string>storefront_order_number_pattern</string>
+          <string>00[0-9]{6}</string>
         </entry>
         <entry>
           <string>email</string>
@@ -6433,8 +6444,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MEmail" description="email"/>
-      <parameter name="MPassword" description="password"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
       <used>true</used>
     </module>
     <module>
@@ -6482,12 +6493,7 @@ Executable with:
       <description>Click apply data in address details dialog.</description>
       <name>modules.pages.account.addressbook.MAccount_AddressBook_Dialog_clickApply</name>
       <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>Account_AddressBook_Dialog_ClickApply</name>
-          <moduleCall>false</moduleCall>
-        </step>
-      </steps>
+      <steps/>
       <calls/>
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
@@ -6503,9 +6509,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderNumber" description="order number"/>
-      <parameter name="MOrderEmail" description="order email"/>
-      <parameter name="MBillingPostalCode" description="postal code"/>
+      <parameter name="orderNumber" description="order number"/>
+      <parameter name="orderEmail" description="order email"/>
+      <parameter name="billingPostalCode" description="billing postal code"/>
       <used>true</used>
     </module>
     <module>
@@ -6539,7 +6545,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
+      <parameter name="cartRow" description="cart row"/>
       <used>true</used>
     </module>
     <module>
@@ -6562,11 +6568,11 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCreditCardOwner" description="credit card owner"/>
-      <parameter name="MCreditCardType" description="credit card type"/>
-      <parameter name="MCreditCardNumber" description="credit card number"/>
-      <parameter name="MCreditCardMonth" description="credit card month"/>
-      <parameter name="MCreditCardYear" description="credit card year"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardType" description="credit card type"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
       <used>true</used>
     </module>
     <module>
@@ -6578,8 +6584,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductPriceTotal" description="product price total"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productPriceTotal" description="product price total"/>
       <used>true</used>
     </module>
     <module>
@@ -6765,16 +6771,16 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputCartRow" description="input for cart row"/>
-      <parameter name="MInputProductNumber" description="input for product number"/>
-      <parameter name="MInputProductQuantity" description="input for product quantity"/>
-      <parameter name="MOutputProductName" description="input for product name"/>
-      <parameter name="MOuputProductNumber" description="input for product number"/>
-      <parameter name="MOutputProductColor" description="input for product color"/>
-      <parameter name="MOutputProductSize" description="input for product size"/>
-      <parameter name="MOutputProductQuantity" description="input for product quantity"/>
-      <parameter name="MOutputProductPriceSales" description="input for product price sales"/>
-      <parameter name="MOutputProductPriceTotal" description="input for product price total"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productNumber" description="product number"/>
+      <parameter name="productQuantity" description="product quantity"/>
+      <parameter name="productName_varName" description="product name as var name"/>
+      <parameter name="productNumber_varName" description="product number as var name"/>
+      <parameter name="productColor_varName" description="product color as var name"/>
+      <parameter name="productSize_varName" description="product size as var name"/>
+      <parameter name="productQuantity_varName" description="product quantity as var name"/>
+      <parameter name="productPriceSales_varName" description="product price sales as var name"/>
+      <parameter name="productPriceTotal_varName" description="product price total as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -6813,7 +6819,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MProductPosition" description="product position"/>
+      <parameter name="position" description="position"/>
       <used>false</used>
     </module>
     <module>
@@ -6904,40 +6910,40 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputOrderNumber" description="input for order number"/>
-      <parameter name="MInputOrderDate" description="input for order date"/>
-      <parameter name="MInputOrderEmail" description="input for order email"/>
-      <parameter name="MInputBillingPostalCode" description="input for billing postal code"/>
-      <parameter name="MInputBillingFirstname" description="input for billing firstname"/>
-      <parameter name="MInputBillingLastname" description="input for billing lastname"/>
-      <parameter name="MInputBillingAddress1" description="input for billing address1"/>
-      <parameter name="MInputBillingAddress2" description="input for billing address2"/>
-      <parameter name="MInputBillingCity" description="input for billing city"/>
-      <parameter name="MInputBillingStatesStateShort" description="input for billing states state short"/>
-      <parameter name="MInputBillingCountry" description="input for billing country"/>
-      <parameter name="MInputBillingPhone" description="input for billing phone"/>
-      <parameter name="MInputPaymentMethod" description="input for payment amount"/>
-      <parameter name="MInputCreditCardOwner" description="input for credit card owner"/>
-      <parameter name="MInputCreditCardTypeShort" description="input for credit card type short"/>
-      <parameter name="MInputCreditCardNumber" description="input for credit card number"/>
-      <parameter name="MInputCreditCardMonth" description="input for credit card month"/>
-      <parameter name="MInputCreditCardYear" description="input for credit card year"/>
-      <parameter name="MInputPaymentAmount" description="input for payment amount"/>
-      <parameter name="MInputOrderSubtotal" description="input for order subtotal"/>
-      <parameter name="MInputOrderShipping" description="input for order shipping"/>
-      <parameter name="MInputOrderSalesTax" description="input for order sales tax"/>
-      <parameter name="MInputOrderTotal" description="input for order total"/>
-      <parameter name="MInputShippingFirstname" description="input for shipping firstname"/>
-      <parameter name="MInputShippingLastname" description="input for shipping lastname"/>
-      <parameter name="MInputShippingAddress1" description="input for shipping address1"/>
-      <parameter name="MInputShippingAddress2" description="input for shipping address2"/>
-      <parameter name="MInputShippingCity" description="input for shipping city"/>
-      <parameter name="MInputShippingStatesStateShort" description="input for shipping states state short"/>
-      <parameter name="MInputShippingPostalCode" description="input for shipping postal code"/>
-      <parameter name="MInputShippingCountry" description="input for shipping country"/>
-      <parameter name="MInputShippingPhone" description="input for shipping phone"/>
-      <parameter name="MInputShippingMethodName" description="input for shipping method name"/>
-      <parameter name="MInputShippingStatus" description="input for shipping status"/>
+      <parameter name="orderNumber" description="order number"/>
+      <parameter name="orderDate" description="order date"/>
+      <parameter name="orderEmail" description="order email"/>
+      <parameter name="billingPostalCode" description="billing postal code"/>
+      <parameter name="billingFirstname" description="billing firstname"/>
+      <parameter name="billingLastname" description="billing lastname"/>
+      <parameter name="billingAddress1" description="billing address1"/>
+      <parameter name="billingAddress2" description="billing address2"/>
+      <parameter name="billingCity" description="billing city"/>
+      <parameter name="billingStatesStateShort" description="billing states state short"/>
+      <parameter name="billingCountry" description="billing country"/>
+      <parameter name="billingPhone" description="billing phone"/>
+      <parameter name="paymentMethod" description="payment amount"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
+      <parameter name="paymentAmount" description="payment amount"/>
+      <parameter name="orderSubtotal" description="order subtotal"/>
+      <parameter name="orderShipping" description="order shipping"/>
+      <parameter name="orderSalesTax" description="order sales tax"/>
+      <parameter name="orderTotal" description="order total"/>
+      <parameter name="shippingFirstname" description="shipping firstname"/>
+      <parameter name="shippingLastname" description="shipping lastname"/>
+      <parameter name="shippingAddress1" description="shipping address1"/>
+      <parameter name="shippingAddress2" description="shipping address2"/>
+      <parameter name="shippingCity" description="shipping city"/>
+      <parameter name="shippingStatesStateShort" description="shipping states state short"/>
+      <parameter name="shippingPostalCode" description="shipping postal code"/>
+      <parameter name="shippingCountry" description="shipping country"/>
+      <parameter name="shippingPhone" description="shipping phone"/>
+      <parameter name="shippingMethodName" description="shipping method name"/>
+      <parameter name="shippingStatus" description="shipping status"/>
       <used>true</used>
     </module>
     <module>
@@ -6960,15 +6966,15 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MBillingFirstname" description="billing firstname"/>
-      <parameter name="MBillingLastname" description="billing lastname"/>
-      <parameter name="MBillingAddress1" description="billing address1"/>
-      <parameter name="MBillingAddress2" description="billing address2"/>
-      <parameter name="MBillingCity" description="billing city"/>
-      <parameter name="MBillingStatesStateShort" description="billing states state short"/>
-      <parameter name="MBillingPostalCode" description="billing postal code"/>
-      <parameter name="MBillingCountry" description="billing country"/>
-      <parameter name="MBillingPhone" description="billing phone"/>
+      <parameter name="billingFirstname" description="billing firstname"/>
+      <parameter name="billingLastname" description="billing lastname"/>
+      <parameter name="billingAddress1" description="billing address1"/>
+      <parameter name="billingAddress2" description="billing address2"/>
+      <parameter name="billingCity" description="billing city"/>
+      <parameter name="billingStatesStateShort" description="billing states state short"/>
+      <parameter name="billingPostalCode" description="billing postal code"/>
+      <parameter name="billingCountry" description="billing country"/>
+      <parameter name="billingPhone" description="billing phone"/>
       <used>true</used>
     </module>
     <module>
@@ -7031,14 +7037,14 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MBillingFirstname" description="firstname"/>
-      <parameter name="MBillingLastname" description="lastname"/>
-      <parameter name="MBillingAddress1" description="address1"/>
-      <parameter name="MBillingAddress2" description="address2"/>
-      <parameter name="MBillingCountry" description="country"/>
-      <parameter name="MBillingStatesStateShort" description="states state short"/>
-      <parameter name="MBillingCity" description="city"/>
-      <parameter name="MBillingPostal" description="postal"/>
+      <parameter name="billingFirstname" description="firstname"/>
+      <parameter name="billingLastname" description="lastname"/>
+      <parameter name="billingAddress1" description="address1"/>
+      <parameter name="billingAddress2" description="address2"/>
+      <parameter name="billingCountry" description="country"/>
+      <parameter name="billingStatesStateShort" description="states state short"/>
+      <parameter name="billingCity" description="city"/>
+      <parameter name="billingPostal" description="postal"/>
       <used>true</used>
     </module>
     <module>
@@ -7084,10 +7090,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MEmail" description="email"/>
-      <parameter name="MPassword" description="password"/>
-      <parameter name="MFirstname" description="firstname"/>
-      <parameter name="MLastname" description="lastname"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
       <used>true</used>
     </module>
     <module>
@@ -7100,8 +7106,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOutputProductColor" description="output for product color"/>
-      <parameter name="MOutputProductSize" description="output for product size"/>
+      <parameter name="productColor" description="product color"/>
+      <parameter name="productSize" description="product size"/>
       <used>true</used>
     </module>
     <module>
@@ -7124,17 +7130,17 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingFirstname" description="firstname"/>
-      <parameter name="MShippingLastname" description="lastname"/>
-      <parameter name="MShippingAddress1" description="address1"/>
-      <parameter name="MShippingAddress2" description="address2"/>
-      <parameter name="MShippingCity" description="city"/>
-      <parameter name="MShippingStatesStateShort" description="states state short"/>
-      <parameter name="MShippingPostalCode" description="postal code"/>
-      <parameter name="MShippingCountry" description="country"/>
-      <parameter name="MShippingPhone" description="phone"/>
-      <parameter name="MShippingMethodName" description="shipping method name"/>
-      <parameter name="MShippingStatus" description="shipping status"/>
+      <parameter name="shippingFirstname" description="firstname"/>
+      <parameter name="shippingLastname" description="lastname"/>
+      <parameter name="shippingAddress1" description="address1"/>
+      <parameter name="shippingAddress2" description="address2"/>
+      <parameter name="shippingCity" description="city"/>
+      <parameter name="shippingStatesStateShort" description="states state short"/>
+      <parameter name="shippingPostalCode" description="postal code"/>
+      <parameter name="shippingCountry" description="country"/>
+      <parameter name="shippingPhone" description="phone"/>
+      <parameter name="shippingMethodName" description="shipping method name"/>
+      <parameter name="shippingStatus" description="shipping status"/>
       <used>true</used>
     </module>
     <module>
@@ -7157,10 +7163,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MMiniCartRow" description="mini cart row"/>
-      <parameter name="MProductName" description="product name"/>
-      <parameter name="MProductQuantity" description="product quantity"/>
-      <parameter name="MProductPriceTotal" description="product price total"/>
+      <parameter name="miniCartRow" description="mini cart row"/>
+      <parameter name="productName" description="product name"/>
+      <parameter name="productQuantity" description="product quantity"/>
+      <parameter name="productPriceTotal" description="product price total"/>
       <used>true</used>
     </module>
     <module>
@@ -7205,12 +7211,12 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPosition" description="position"/>
-      <parameter name="MCreditCardOwner" description="credit card owner"/>
-      <parameter name="MCreditCardTypeShort" description="credit card type short"/>
-      <parameter name="MCreditCardNumber" description="credit card number"/>
-      <parameter name="MCreditCardMonth" description="credit card month"/>
-      <parameter name="MCreditCardYear" description="credit card year"/>
+      <parameter name="position" description="position"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
       <used>true</used>
     </module>
     <module>
@@ -7330,13 +7336,13 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPaymentMethod" description="payment method"/>
-      <parameter name="MCreditCardOwner" description="credit card owner"/>
-      <parameter name="MCreditCardTypeShort" description="credit card type short"/>
-      <parameter name="MCreditCardNumber" description="credit card number"/>
-      <parameter name="MCreditCardMonth" description="credit card month"/>
-      <parameter name="MCreditCardYear" description="credit card year"/>
-      <parameter name="MPaymentAmount" description="payment amount"/>
+      <parameter name="paymentMethod" description="payment method"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
+      <parameter name="paymentAmount" description="payment amount"/>
       <used>true</used>
     </module>
     <module>
@@ -7348,7 +7354,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MWishListRow" description=""/>
+      <parameter name="wishListRow" description=""/>
       <used>true</used>
     </module>
     <module>
@@ -7388,7 +7394,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderNumber" description="order number"/>
+      <parameter name="orderNumber" description="order number"/>
       <used>true</used>
     </module>
     <module>
@@ -7400,9 +7406,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MMiniCartRow" description="mini cart row"/>
-      <parameter name="MProductColor" description="product color"/>
-      <parameter name="MProductSize" description="product size"/>
+      <parameter name="miniCartRow" description="mini cart row"/>
+      <parameter name="productColor" description="product color"/>
+      <parameter name="productSize" description="product size"/>
       <used>true</used>
     </module>
     <module>
@@ -7426,7 +7432,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOutputOrderSubtotal" description="output for order subtotal"/>
+      <parameter name="orderSubtotal" description="order subtotal"/>
       <used>true</used>
     </module>
     <module>
@@ -7498,10 +7504,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputFirstname" description="input for firstname"/>
-      <parameter name="MInputLastname" description="input for lastname"/>
-      <parameter name="MInputEmail" description="input for email"/>
-      <parameter name="MInputPassword" description="input for password"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
       <used>true</used>
     </module>
     <module>
@@ -7513,7 +7519,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MProductQuantity" description="product quantity"/>
+      <parameter name="productQuantity" description="product quantity"/>
       <used>true</used>
     </module>
     <module>
@@ -7575,12 +7581,7 @@ Executable with:
       <description>Click product color by given count number.</description>
       <name>modules.pages.productdetailpage.MProductDetailPage_clickColorPosition</name>
       <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>ClickColorViaPosition</name>
-          <moduleCall>false</moduleCall>
-        </step>
-      </steps>
+      <steps/>
       <calls/>
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
@@ -7647,12 +7648,7 @@ Executable with:
       <description>Go to gift registry on account menu.</description>
       <name>modules.pages.account.menu.MAccount_Menu_clickGoToGiftRegistry</name>
       <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>ClickOnGiftRegistries</name>
-          <moduleCall>false</moduleCall>
-        </step>
-      </steps>
+      <steps/>
       <calls/>
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
@@ -7668,7 +7664,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MEmail" description="email"/>
+      <parameter name="email" description="email"/>
       <used>true</used>
     </module>
     <module>
@@ -7724,11 +7720,11 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCreditCardTypeShort" description="credit card type short"/>
-      <parameter name="MCreditCardOwner" description="credit card owner"/>
-      <parameter name="MCreditCardNumber" description="credit card number"/>
-      <parameter name="MCreditCardMonth" description="credit card month"/>
-      <parameter name="MCreditCardYear" description="credit card year"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
       <used>true</used>
     </module>
     <module>
@@ -7779,12 +7775,12 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputPosition" description="input for position"/>
-      <parameter name="MInputCreditCardOwner" description="input for credit card owner"/>
-      <parameter name="MInputCreditCardTypeShort" description="input for credit card type short"/>
-      <parameter name="MInputCreditCardNumber" description="input for credit card number"/>
-      <parameter name="MInputCreditCardMonth" description="input for credit card month"/>
-      <parameter name="MInputCreditCardYear" description="input for credit card year"/>
+      <parameter name="position" description="position"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
       <used>true</used>
     </module>
     <module>
@@ -7809,8 +7805,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderNumber" description="order number"/>
-      <parameter name="MOrderDate" description="order date"/>
+      <parameter name="orderNumber" description="order number"/>
+      <parameter name="orderDate" description="order date"/>
       <used>true</used>
     </module>
     <module>
@@ -7833,8 +7829,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderDatePattern" description=""/>
-      <parameter name="MOrderNumberPattern" description=""/>
+      <parameter name="orderDatePattern" description="order date pattern"/>
+      <parameter name="orderNumberPattern" description="order number pattern"/>
       <used>true</used>
     </module>
     <module>
@@ -7874,7 +7870,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPosition" description="position"/>
+      <parameter name="position" description="position"/>
       <used>true</used>
     </module>
     <module>
@@ -7886,7 +7882,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="filterPosition" description="filter position"/>
+      <parameter name="position" description="position"/>
       <used>true</used>
     </module>
     <module>
@@ -7898,8 +7894,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MEmail" description="email"/>
-      <parameter name="MPassword" description="password"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
       <used>true</used>
     </module>
     <module>
@@ -7944,13 +7940,13 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPaymentMethod" description="payment method"/>
-      <parameter name="MCreditCardOwner" description="credit card owner"/>
-      <parameter name="MCreditCardTypeShort" description="credit card type short"/>
-      <parameter name="MCreditCardNumber" description="credit card number"/>
-      <parameter name="MCreditCardMonth" description="credit card month"/>
-      <parameter name="MCreditCardYear" description="credit card year"/>
-      <parameter name="MPaymentAmount" description="payment amount"/>
+      <parameter name="paymentMethod" description="payment method"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
+      <parameter name="paymentAmount" description="payment amount"/>
       <used>true</used>
     </module>
     <module>
@@ -7973,10 +7969,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderSubtotal" description="order subtotal"/>
-      <parameter name="MOrderShipping" description="order shipping"/>
-      <parameter name="MOrderSalesTax" description="order sales tax"/>
-      <parameter name="MOrderTotal" description="order total"/>
+      <parameter name="orderSubtotal" description="order subtotal"/>
+      <parameter name="orderShipping" description="order shipping"/>
+      <parameter name="orderSalesTax" description="order sales tax"/>
+      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
@@ -7988,7 +7984,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPosition" description="position"/>
+      <parameter name="position" description="position"/>
       <used>true</used>
     </module>
     <module>
@@ -8083,18 +8079,18 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputPosition" description="input for position"/>
-      <parameter name="MInputAddressTitle" description="input for address title"/>
-      <parameter name="MInputFirstname" description="input for firstname"/>
-      <parameter name="MInputLastname" description="input for lastname"/>
-      <parameter name="MInputAddress1" description="input for address1"/>
-      <parameter name="MInputAddress2" description="input for address2"/>
-      <parameter name="MInputCountry" description="input for country"/>
-      <parameter name="MInputStatesState" description="input for states state"/>
-      <parameter name="MInputStatesStateShort" description="input for states state short"/>
-      <parameter name="MInputCity" description="input for city"/>
-      <parameter name="MInputPostalCode" description="input for postal code"/>
-      <parameter name="MInputPhone" description="input for phone"/>
+      <parameter name="position" description="position"/>
+      <parameter name="addressTitle" description="address title"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="address1" description="address1"/>
+      <parameter name="address2" description="address2"/>
+      <parameter name="country" description="country"/>
+      <parameter name="statesState" description="states state"/>
+      <parameter name="statesStateShort" description="states state short"/>
+      <parameter name="city" description="city"/>
+      <parameter name="postalCode" description="postal code"/>
+      <parameter name="phone" description="phone"/>
       <used>true</used>
     </module>
     <module>
@@ -8139,8 +8135,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductQuantity" description="product quantity"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productQuantity" description="product quantity"/>
       <used>true</used>
     </module>
     <module>
@@ -8161,8 +8157,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MGiftYesNo" description="yes or no"/>
-      <parameter name="MGiftOptionalMessage" description="message with max. 250 characters"/>
+      <parameter name="giftYesNo" description="yes or no"/>
+      <parameter name="giftOptionalMessage" description="message with max. 250 characters"/>
       <used>false</used>
     </module>
     <module>
@@ -8185,7 +8181,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MProductNumber" description="product number"/>
+      <parameter name="productNumber" description="product number"/>
       <used>true</used>
     </module>
     <module>
@@ -8254,7 +8250,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPosition" description="position"/>
+      <parameter name="position" description="position"/>
       <used>true</used>
     </module>
     <module>
@@ -8344,14 +8340,14 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputCartRow" description="input for cart row"/>
-      <parameter name="MInputProductNumber" description="input for product number"/>
-      <parameter name="MInputProductQuantity" description="input for product quantity"/>
-      <parameter name="MOutputProductName" description="output for product name"/>
-      <parameter name="MOutputProductNumber" description="output for product number"/>
-      <parameter name="MOutputProductQuantity" description="output for product quantity"/>
-      <parameter name="MOutputProductPriceSales" description="output for product price sales"/>
-      <parameter name="MOutputProductPriceTotal" description="output for price total"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productNumber" description="product number"/>
+      <parameter name="productQuantity" description="product quantity"/>
+      <parameter name="productName_varName" description="product name as var name"/>
+      <parameter name="productNumber_varName" description="product number as var name"/>
+      <parameter name="productQuantity_varName" description="product quantity as var name"/>
+      <parameter name="productPriceSales_varName" description="product price sales as var name"/>
+      <parameter name="productPriceTotal_varName" description="price total as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -8403,9 +8399,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MFirstname" description="firstname"/>
-      <parameter name="MLastname" description="lastname"/>
-      <parameter name="MEmail" description="email"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="email" description="email"/>
       <used>true</used>
     </module>
     <module>
@@ -8441,10 +8437,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOutputProductName" description="output for product name"/>
-      <parameter name="MOutputProductNumber" description="output for product numbe"/>
-      <parameter name="MOutputProductPriceSales" description="output for product sales price"/>
-      <parameter name="MOutputProductQuantity" description="output for product quantity"/>
+      <parameter name="productName" description="product name"/>
+      <parameter name="productNumber" description="product numbe"/>
+      <parameter name="productPriceSales" description="product sales price"/>
+      <parameter name="productQuantity" description="product quantity"/>
       <used>true</used>
     </module>
     <module>
@@ -8456,7 +8452,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPosition" description="position"/>
+      <parameter name="position" description="position"/>
       <used>true</used>
     </module>
     <module>
@@ -8575,13 +8571,13 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputPosition" description="position"/>
-      <parameter name="MInputCreditCardOwner" description="credit card owner"/>
-      <parameter name="MInputCreditCardType" description="credit card type"/>
-      <parameter name="MInputCreditCardTypeShort" description="credit card type short"/>
-      <parameter name="MInputCreditCardNumber" description="credit card number"/>
-      <parameter name="MInputCreditCardMonth" description="credit card month"/>
-      <parameter name="MInputCreditCardYear" description="credit card year"/>
+      <parameter name="position" description="position"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardType" description="credit card type"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
       <used>true</used>
     </module>
     <module>
@@ -8641,8 +8637,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingMethodPosition" description="shipping method position"/>
-      <parameter name="MShippingMethodPrice" description="shipping method price"/>
+      <parameter name="shippingMethodPosition" description="shipping method position"/>
+      <parameter name="shippingMethodPrice" description="shipping method price"/>
       <used>true</used>
     </module>
     <module>
@@ -8665,10 +8661,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MFirstname" description="firstname"/>
-      <parameter name="MLastname" description="lastname"/>
-      <parameter name="MEmail" description="email"/>
-      <parameter name="MPassword" description="password"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
       <used>true</used>
     </module>
     <module>
@@ -8680,8 +8676,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MEmail" description="email"/>
-      <parameter name="MPassword" description="password"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
       <used>true</used>
     </module>
     <module>
@@ -8722,8 +8718,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputEmail" description="input for email"/>
-      <parameter name="MInputPassword" description="input for password"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
       <used>true</used>
     </module>
     <module>
@@ -8769,11 +8765,11 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingMethodName" description="shipping method name"/>
-      <parameter name="MOrderSubtotal" description="order subtotal"/>
-      <parameter name="MOrderShipping" description="order shipping"/>
-      <parameter name="MOrderSalesTax" description="order sales tax"/>
-      <parameter name="MOrderTotal" description="order total"/>
+      <parameter name="shippingMethodName" description="shipping method name"/>
+      <parameter name="orderSubtotal" description="order subtotal"/>
+      <parameter name="orderShipping" description="order shipping"/>
+      <parameter name="orderSalesTax" description="order sales tax"/>
+      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
@@ -8796,17 +8792,17 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingFirstname" description="firstname"/>
-      <parameter name="MShippingLastname" description="lastname"/>
-      <parameter name="MShippingAddress1" description="address1"/>
-      <parameter name="MShippingAddress2" description="address2"/>
-      <parameter name="MShippingCity" description="city"/>
-      <parameter name="MShippingStatesStateShort" description="states state short"/>
-      <parameter name="MShippingPostalCode" description="postal code"/>
-      <parameter name="MShippingCountry" description="country"/>
-      <parameter name="MShippingPhone" description="phone"/>
-      <parameter name="MShippingMethodName" description="shipping method name"/>
-      <parameter name="MShippingStatus" description="shipping status"/>
+      <parameter name="shippingFirstname" description="firstname"/>
+      <parameter name="shippingLastname" description="lastname"/>
+      <parameter name="shippingAddress1" description="address1"/>
+      <parameter name="shippingAddress2" description="address2"/>
+      <parameter name="shippingCity" description="city"/>
+      <parameter name="shippingStatesStateShort" description="states state short"/>
+      <parameter name="shippingPostalCode" description="postal code"/>
+      <parameter name="shippingCountry" description="country"/>
+      <parameter name="shippingPhone" description="phone"/>
+      <parameter name="shippingMethodName" description="shipping method name"/>
+      <parameter name="shippingStatus" description="shipping status"/>
       <used>true</used>
     </module>
     <module>
@@ -8818,9 +8814,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductColor" description="product color"/>
-      <parameter name="MProductSize" description="product size"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productColor" description="product color"/>
+      <parameter name="productSize" description="product size"/>
       <used>true</used>
     </module>
     <module>
@@ -8863,11 +8859,11 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductName" description="product name"/>
-      <parameter name="MProductSku" description="product sku"/>
-      <parameter name="MProductQuantity" description="product quantity"/>
-      <parameter name="MProductPriceTotal" description="product price total"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productName" description="product name"/>
+      <parameter name="productSku" description="product sku"/>
+      <parameter name="productQuantity" description="product quantity"/>
+      <parameter name="productPriceTotal" description="product price total"/>
       <used>true</used>
     </module>
     <module>
@@ -8879,11 +8875,11 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductName" description="product name"/>
-      <parameter name="MProductNumber" description="product number"/>
-      <parameter name="MProductQuantity" description="product quantity"/>
-      <parameter name="MProductPriceTotal" description="product price total"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productName" description="product name"/>
+      <parameter name="productNumber" description="product number"/>
+      <parameter name="productQuantity" description="product quantity"/>
+      <parameter name="productPriceTotal" description="product price total"/>
       <used>true</used>
     </module>
     <module>
@@ -8917,9 +8913,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MFirstname" description="firstname"/>
-      <parameter name="MLastname" description="lastname"/>
-      <parameter name="MEmail" description="email"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="email" description="email"/>
       <used>true</used>
     </module>
     <module>
@@ -8965,9 +8961,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputFirstname" description="input for firstname"/>
-      <parameter name="MInputLastname" description="input for lastname"/>
-      <parameter name="MInputEmail" description="input for email"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="email" description="email"/>
       <used>true</used>
     </module>
     <module>
@@ -8979,7 +8975,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MSearchString" description="search string with no results"/>
+      <parameter name="searchText" description="search text with no results"/>
       <used>true</used>
     </module>
     <module>
@@ -8991,8 +8987,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MFirstname" description="firstname"/>
-      <parameter name="MLastname" description="lastname"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
       <used>true</used>
     </module>
     <module>
@@ -9041,16 +9037,16 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MAddressTitle" description="address title"/>
-      <parameter name="MFirstname" description="firstname"/>
-      <parameter name="MLastname" description="lastname"/>
-      <parameter name="MAddress1" description="address1"/>
-      <parameter name="MAddress2" description="address2"/>
-      <parameter name="MCountry" description="country"/>
-      <parameter name="MStatesState" description="states state"/>
-      <parameter name="MCity" description="city"/>
-      <parameter name="MPostalCode" description="postal code"/>
-      <parameter name="MPhone" description="phone"/>
+      <parameter name="addressTitle" description="address title"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="address1" description="address1"/>
+      <parameter name="address2" description="address2"/>
+      <parameter name="country" description="country"/>
+      <parameter name="statesState" description="states state"/>
+      <parameter name="city" description="city"/>
+      <parameter name="postalCode" description="postal code"/>
+      <parameter name="phone" description="phone"/>
       <used>true</used>
     </module>
     <module>
@@ -9103,12 +9099,12 @@ Executable with:
           </entry>
         </m>
       </test-data>
-      <parameter name="MCreditCardOwner" description="credit card owner"/>
-      <parameter name="MCreditCardType" description="credit card type"/>
-      <parameter name="MCreditCardNumber" description="credit card number"/>
-      <parameter name="MCreditCardMonth" description="credit card month"/>
-      <parameter name="MCreditCardYear" description="credit card year"/>
-      <parameter name="MCreditCardCvn" description="credit card cvn"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardType" description="credit card type"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
+      <parameter name="creditCardCvn" description="credit card cvn"/>
       <used>true</used>
     </module>
     <module>
@@ -9120,15 +9116,15 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingFirstname" description="firstname"/>
-      <parameter name="MShippingLastname" description="lastname"/>
-      <parameter name="MShippingAddress1" description="address1"/>
-      <parameter name="MShippingAddress2" description="address2"/>
-      <parameter name="MShippingCountry" description="country"/>
-      <parameter name="MShippingStatesStateShort" description="states state short"/>
-      <parameter name="MShippingCity" description="city"/>
-      <parameter name="MShippingPostal" description="postal"/>
-      <parameter name="MShippingMethodName" description="method name"/>
+      <parameter name="shippingFirstname" description="firstname"/>
+      <parameter name="shippingLastname" description="lastname"/>
+      <parameter name="shippingAddress1" description="address1"/>
+      <parameter name="shippingAddress2" description="address2"/>
+      <parameter name="shippingCountry" description="country"/>
+      <parameter name="shippingStatesStateShort" description="states state short"/>
+      <parameter name="shippingCity" description="city"/>
+      <parameter name="shippingPostal" description="postal"/>
+      <parameter name="shippingMethodName" description="method name"/>
       <used>true</used>
     </module>
     <module>
@@ -9153,12 +9149,12 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPosition" description="position"/>
-      <parameter name="MOrderNumber" description="order number"/>
-      <parameter name="MOrderDate" description="order date"/>
-      <parameter name="MShippingFirstname" description="shipping firstname"/>
-      <parameter name="MShippingLastname" description="shipping lastname"/>
-      <parameter name="MOrderTotal" description="order total"/>
+      <parameter name="position" description="position"/>
+      <parameter name="orderNumber" description="order number"/>
+      <parameter name="orderDate" description="order date"/>
+      <parameter name="shippingFirstname" description="shipping firstname"/>
+      <parameter name="shippingLastname" description="shipping lastname"/>
+      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
@@ -9205,7 +9201,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderSubtotal" description="order subtotal"/>
+      <parameter name="orderSubtotal" description="order subtotal"/>
       <used>true</used>
     </module>
     <module>
@@ -9240,9 +9236,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductColor" description="product color"/>
-      <parameter name="MProductSize" description="product size"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productColor" description="product color"/>
+      <parameter name="productSize" description="product size"/>
       <used>true</used>
     </module>
     <module>
@@ -9331,37 +9327,27 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputCartRow" description="input for cart row"/>
-      <parameter name="MOutputProductPriceTotal" description="output for product price total"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productPriceTotal" description="product price total"/>
       <used>true</used>
     </module>
     <module>
       <description>Click product size by given count number.</description>
       <name>modules.pages.productdetailpage.MProductDetailPage_clickSizePosition</name>
       <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>ProductDetailPage_setSizePosition</name>
-          <moduleCall>false</moduleCall>
-        </step>
-      </steps>
+      <steps/>
       <calls/>
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MProductSizePosition" description="product size position"/>
+      <parameter name="productSizePosition" description="product size position"/>
       <used>true</used>
     </module>
     <module>
       <description>Go to wish list on account menu.</description>
       <name>modules.pages.account.menu.MAccount_Menu_clickGoToWishList</name>
       <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>ClickOnWishList</name>
-          <moduleCall>false</moduleCall>
-        </step>
-      </steps>
+      <steps/>
       <calls/>
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
@@ -9415,7 +9401,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingMethodPositon" description="shipping method position"/>
+      <parameter name="shippingMethodPositon" description="shipping method position"/>
       <used>true</used>
     </module>
     <module>
@@ -9477,17 +9463,17 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputPosition" description="input for position"/>
-      <parameter name="MInputAddressTitle" description="input for address title"/>
-      <parameter name="MInputFirstname" description="input for firstname"/>
-      <parameter name="MInputLastname" description="input for lastname"/>
-      <parameter name="MInputAddress1" description="input for address1"/>
-      <parameter name="MInputAddress2" description="input for address2"/>
-      <parameter name="MInputCountry" description="input for country"/>
-      <parameter name="MInputStatesStateShort" description="input for states state short"/>
-      <parameter name="MInputCity" description="input for city"/>
-      <parameter name="MInputPostalCode" description="input for postal code"/>
-      <parameter name="MInputPhone" description="input for phone"/>
+      <parameter name="position" description="position"/>
+      <parameter name="addressTitle" description="address title"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="address1" description="address1"/>
+      <parameter name="address2" description="address2"/>
+      <parameter name="country" description="country"/>
+      <parameter name="statesStateShort" description="states state short"/>
+      <parameter name="city" description="city"/>
+      <parameter name="postalCode" description="postal code"/>
+      <parameter name="phone" description="phone"/>
       <used>true</used>
     </module>
     <module>
@@ -9510,15 +9496,15 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MBillingFirstname" description="firstname"/>
-      <parameter name="MBillingLastname" description="lastname"/>
-      <parameter name="MBillingAddress1" description="address1"/>
-      <parameter name="MBillingAddress2" description="address2"/>
-      <parameter name="MBillingCity" description="city"/>
-      <parameter name="MBillingStatesStateShort" description="states state short"/>
-      <parameter name="MBillingPostalCode" description="postal code"/>
-      <parameter name="MBillingCountry" description="country"/>
-      <parameter name="MBillingPhone" description="phone"/>
+      <parameter name="billingFirstname" description="billing firstname"/>
+      <parameter name="billingLastname" description="billing lastname"/>
+      <parameter name="billingAddress1" description="billing address1"/>
+      <parameter name="billingAddress2" description="billing address2"/>
+      <parameter name="billingCity" description="billing city"/>
+      <parameter name="billingStatesStateShort" description="billing states state short"/>
+      <parameter name="billingPostalCode" description="billing postal code"/>
+      <parameter name="billingCountry" description="billing country"/>
+      <parameter name="billingPhone" description="billing phone"/>
       <used>true</used>
     </module>
     <module>
@@ -9542,10 +9528,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderSubtotal" description="order shipping"/>
-      <parameter name="MOrderShipping" description="order shipping"/>
-      <parameter name="MOrderSalesTax" description="order sales tax"/>
-      <parameter name="MOrderTotal" description="order total"/>
+      <parameter name="orderSubtotal" description="order shipping"/>
+      <parameter name="orderShipping" description="order shipping"/>
+      <parameter name="orderSalesTax" description="order sales tax"/>
+      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
@@ -9609,10 +9595,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputFirstname" description="input for firstname"/>
-      <parameter name="MInputLastname" description="input for lastname"/>
-      <parameter name="MInputEmail" description="input for email"/>
-      <parameter name="MInputPassword" description="input for password"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="email" description="email"/>
+      <parameter name="password" description="password"/>
       <used>true</used>
     </module>
     <module>
@@ -9677,9 +9663,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductColor" description="product color"/>
-      <parameter name="MProductSize" description="product size"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productColor" description="product color"/>
+      <parameter name="productSize" description="product size"/>
       <used>true</used>
     </module>
     <module>
@@ -9715,7 +9701,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MWishListRow" description="wishlist row"/>
+      <parameter name="wishListRow" description="wishlist row"/>
       <parameter name="MProductName" description="product name"/>
       <parameter name="MProductNumber" description="product number"/>
       <parameter name="MProductQuantity" description="product quantity"/>
@@ -9770,12 +9756,12 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MInputPosition" description="input for position"/>
-      <parameter name="MInputOrderNumber" description="input for order number"/>
-      <parameter name="MInputOrderDate" description="input for order date"/>
-      <parameter name="MInputShippingFirstname" description="input for shipping firstname"/>
-      <parameter name="MInputShippingLastname" description="input for shipping lastname"/>
-      <parameter name="MInputOrderTotal" description="input for order total"/>
+      <parameter name="position" description="position"/>
+      <parameter name="orderNumber" description="order number"/>
+      <parameter name="orderDate" description="order date"/>
+      <parameter name="shippingFirstname" description="shipping firstname"/>
+      <parameter name="shippingLastname" description="shipping lastname"/>
+      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
@@ -9787,7 +9773,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingAddressTitle" description="shipping address title"/>
+      <parameter name="shippingAddressTitle" description="shipping address title"/>
       <used>true</used>
     </module>
     <module>
@@ -9799,9 +9785,9 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShipphingUseAsBillingAddress" description="true, false"/>
-      <parameter name="MShippingIsGift" description="yes, no"/>
-      <parameter name="MShippingMethodPosition" description="1, 2, 3, 4"/>
+      <parameter name="shipphingUseAsBillingAddress" description="true, false"/>
+      <parameter name="shippingIsGift" description="yes, no"/>
+      <parameter name="shippingMethodPosition" description="1, 2, 3, 4"/>
       <used>true</used>
     </module>
     <module>
@@ -9813,17 +9799,17 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPosition" description="position"/>
-      <parameter name="MAddressTitle" description="addresstitle"/>
-      <parameter name="MFirstname" description="firstname"/>
-      <parameter name="MLastname" description="lastname"/>
-      <parameter name="MAddress1" description="address1"/>
-      <parameter name="MAddress2" description="address2"/>
-      <parameter name="MCountry" description="country"/>
-      <parameter name="MStatesStateShort" description="states state short"/>
-      <parameter name="MCity" description="city"/>
-      <parameter name="MPostalCode" description="postal code"/>
-      <parameter name="MPhone" description="phone"/>
+      <parameter name="position" description="position"/>
+      <parameter name="addressTitle" description="addresstitle"/>
+      <parameter name="firstname" description="firstname"/>
+      <parameter name="lastname" description="lastname"/>
+      <parameter name="address1" description="address1"/>
+      <parameter name="address2" description="address2"/>
+      <parameter name="country" description="country"/>
+      <parameter name="statesStateShort" description="states state short"/>
+      <parameter name="city" description="city"/>
+      <parameter name="postalCode" description="postal code"/>
+      <parameter name="phone" description="phone"/>
       <used>true</used>
     </module>
     <module>
@@ -9866,8 +9852,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOutputOrderNumber" description="output for order number"/>
-      <parameter name="MOutputOrderDate" description="output for order date"/>
+      <parameter name="orderNumber_varName" description="order number as var name"/>
+      <parameter name="orderDate_varName" description="order date as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -9890,8 +9876,8 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductQuantity" description="product quantity"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productQuantity" description="product quantity"/>
       <used>true</used>
     </module>
     <module>
@@ -9914,7 +9900,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MSearch" description="search text"/>
+      <parameter name="searchText" description="search text"/>
       <used>true</used>
     </module>
     <module>
@@ -9926,7 +9912,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderSubtotal" description="order subtotal"/>
+      <parameter name="orderSubtotal" description="order subtotal"/>
       <used>true</used>
     </module>
     <module>
@@ -9938,10 +9924,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MOrderSubtotal" description="order subtotal"/>
-      <parameter name="MOrderShipping" description="order shipping"/>
-      <parameter name="MOrderSalesTax" description="order sales tax"/>
-      <parameter name="MOrderTotal" description="order total"/>
+      <parameter name="orderSubtotal" description="order subtotal"/>
+      <parameter name="orderShipping" description="order shipping"/>
+      <parameter name="orderSalesTax" description="order sales tax"/>
+      <parameter name="orderTotal" description="order total"/>
       <used>true</used>
     </module>
     <module>
@@ -9992,15 +9978,15 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingFirstname" description="firstname"/>
-      <parameter name="MShippingLastname" description="lastname"/>
-      <parameter name="MShippingAddress1" description="address1"/>
-      <parameter name="MShippingAddress2" description="address2"/>
-      <parameter name="MShippingCountry" description="country"/>
-      <parameter name="MShippingStatesState" description="states state"/>
-      <parameter name="MShippingCity" description="city"/>
-      <parameter name="MShippingPostalCode" description="postal code"/>
-      <parameter name="MShippingPhone" description="phone"/>
+      <parameter name="shippingFirstname" description="shipping firstname"/>
+      <parameter name="shippingLastname" description="shipping lastname"/>
+      <parameter name="shippingAddress1" description="shipping address1"/>
+      <parameter name="shippingAddress2" description="shipping address2"/>
+      <parameter name="shippingCountry" description="shipping country"/>
+      <parameter name="shippingStatesState" description="shipping states state"/>
+      <parameter name="shippingCity" description="shipping city"/>
+      <parameter name="shippingPostalCode" description="shipping postal code"/>
+      <parameter name="shippingPhone" description="shipping phone"/>
       <used>true</used>
     </module>
     <module>
@@ -10024,15 +10010,15 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MBillingFirstname" description="firstname"/>
-      <parameter name="MBillingLastname" description="lastname"/>
-      <parameter name="MBillingAddress1" description="address1"/>
-      <parameter name="MBillingAddress2" description="address2"/>
-      <parameter name="MBillingCountry" description="country"/>
-      <parameter name="MBillingStatesState" description="states state"/>
-      <parameter name="MBillingCity" description="city"/>
-      <parameter name="MBillingPostalCode" description="postal code"/>
-      <parameter name="MBillingPhone" description="phone"/>
+      <parameter name="billingFirstname" description="firstname"/>
+      <parameter name="billingLastname" description="lastname"/>
+      <parameter name="billingAddress1" description="address1"/>
+      <parameter name="billingAddress2" description="address2"/>
+      <parameter name="billingCountry" description="country"/>
+      <parameter name="billingStatesState" description="states state"/>
+      <parameter name="billingCity" description="city"/>
+      <parameter name="billingPostalCode" description="postal code"/>
+      <parameter name="billingPhone" description="phone"/>
       <used>true</used>
     </module>
     <module>
@@ -10055,7 +10041,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MSearchString" description="search string"/>
+      <parameter name="searchText" description="search text"/>
       <used>true</used>
     </module>
     <module>
@@ -10139,13 +10125,13 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MPaymentMethodName" description="payment method name"/>
-      <parameter name="MCreditCardOwner" description="credit card owner"/>
-      <parameter name="MCreditCardTypeShort" description="credit card type short"/>
-      <parameter name="MCreditCardNumber" description="credit card number"/>
-      <parameter name="MCreditCardMonth" description="credit card month"/>
-      <parameter name="MCreditCardYear" description="credit card year"/>
-      <parameter name="MPaymentAmount" description="payment amount"/>
+      <parameter name="paymentMethodName" description="payment method name"/>
+      <parameter name="creditCardOwner" description="credit card owner"/>
+      <parameter name="creditCardTypeShort" description="credit card type short"/>
+      <parameter name="creditCardNumber" description="credit card number"/>
+      <parameter name="creditCardMonth" description="credit card month"/>
+      <parameter name="creditCardYear" description="credit card year"/>
+      <parameter name="paymentAmount" description="payment amount"/>
       <used>true</used>
     </module>
     <module>
@@ -10168,10 +10154,10 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MShippingMethodName" description="shipping method name"/>
-      <parameter name="MOutputOrderShipping" description="output for order shipping"/>
-      <parameter name="MOutputOrderSalesTax" description="output for order sales tax"/>
-      <parameter name="MOutputOrderTotal" description="output for order total"/>
+      <parameter name="shippingMethodName" description="shipping method name"/>
+      <parameter name="orderShipping_varName" description="order shipping as var name"/>
+      <parameter name="orderSalesTax_varName" description="order sales tax as var name"/>
+      <parameter name="orderTotal_varName" description="order total as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -10224,7 +10210,7 @@ Executable with:
           </entry>
         </m>
       </test-data>
-      <parameter name="MCreditCardCvn" description="credit card cvn"/>
+      <parameter name="creditCardCvn" description="credit card cvn"/>
       <used>true</used>
     </module>
     <module>
@@ -10247,11 +10233,11 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MCartRow" description="cart row"/>
-      <parameter name="MProductName" description="product name"/>
-      <parameter name="MProductNumber" description="product number"/>
-      <parameter name="MProductQuantity" description="product quantity"/>
-      <parameter name="MProductPriceSales" description="product price sales"/>
+      <parameter name="cartRow" description="cart row"/>
+      <parameter name="productName" description="product name"/>
+      <parameter name="productNumber" description="product number"/>
+      <parameter name="productQuantity" description="product quantity"/>
+      <parameter name="productPriceSales" description="product price sales"/>
       <used>true</used>
     </module>
     <module>
@@ -10298,7 +10284,7 @@ Executable with:
       <test-data class="java.util.Collections$UnmodifiableMap">
         <m class="empty-map"/>
       </test-data>
-      <parameter name="MBillingAddressTitle" description="billing address title"/>
+      <parameter name="billingAddressTitle" description="billing address title"/>
       <used>true</used>
     </module>
     <module>
@@ -10892,15 +10878,15 @@ Executable with:
       <string>$</string>
     </entry>
     <entry>
-      <string>storefront_order_date</string>
+      <string>storefront_order_date_pattern</string>
       <string>[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</string>
     </entry>
     <entry>
-      <string>storefront_order_number</string>
+      <string>storefront_order_number_pattern</string>
       <string>00[0-9]{6}</string>
     </entry>
     <entry>
-      <string>storefront_price</string>
+      <string>storefront_price_pattern</string>
       <string>[$] [0-9]*[.,]*[0-9]*{3}[.,]*[0-9]+{3}[.,][0-9]{2}</string>
     </entry>
     <entry>

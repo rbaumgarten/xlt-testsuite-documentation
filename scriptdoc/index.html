@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/custom.css">
     
-    <!-- Font -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'> -->
-    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'> -->
 
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,107 +27,81 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="header row">
+  <header>
+    <div class="container">
+      <div class="header row">
         <nav class="navbar">
-            <div class="navbar-wrapper">
-                <ul class="left">
-                    <li>
-                        <a class="button active" href="index.html">General</a>
-                    </li>
-                    <li>
-                        <a class="button " href="testdata.html">Test Data</a>
-                    </li>
-                    <li>
-                        <a class="button " href="packages.html">Packages</a>
-                    </li>
-                    <li>
-                        <a class="button " href="tests.html">Tests</a>
-                    </li>
-                    <li>
-                        <a class="button " href="modules.html">Modules</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="navbar-wrapper">
+            <ul class="left">
+              <li><a class="button active" href="index.html">Overview</a></li>
+              <li><a class="button" href="testdata.html">Test Data</a></li>
+              <li><a class="button" href="packages.html">Packages</a></li>
+              <li><a class="button" href="tests.html">Tests</a></li>
+              <li><a class="button" href="modules.html">Modules</a></li>
+            </ul>
+          </div>
         </nav>
-    </div>
+      </div><!-- /.header.row -->
+    </div><!-- /.container -->
+  </header><!-- /header -->
 
-    <div id="main" class="row">
-            <div id="content-root" class="root-left-padding">
-    <div class="section" id="general">
-        <div class="section-title">
-            <h1>General Information</h1>
-        </div><!-- /.section-title -->
-        <div class="section-content">
-            <div class="suite-name grey lighten-3 z-depth-1">
-                SiteGenesis-Community-TestSuite
-            </div>
+  <main>
+    <div class="container">
+      <div id="main" class="row">
+              <div id="content-root" class="root-left-padding">
+  <div class="section" id="general">
+    <div class="section-title">
+      <h1>General Information</h1>
+    </div><!-- /.section-title -->
+    <div class="section-content">
+      <div class="suite-name grey lighten-3 z-depth-1">SiteGenesis-Community-TestSuite</div>
 
-            <div id="statistics" class="row">
-  <div class="col s12 m6 l3">
-    <div class="card blue lighten-1">
+      <div id="statistics">
+        <div class="row">
+  <div class="col l3 m6 s12">
+    <div class="card teal lighten-1">
       <div class="card-content white-text center">
         <span class="card-title">25</span>
-        <p>Testcase Scripts</p>
+        <p>Test Case Scripts</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
   </div><!-- /.col -->
-  <div class="col s12 m6 l3">
-    <div class="card blue lighten-1">
+  <div class="col l3 m6 s12">
+    <div class="card teal lighten-1">
       <div class="card-content white-text center">
         <span class="card-title">207</span>
         <p>Script Modules</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
   </div><!-- /.col -->
-  <div class="col s12 m6 l3">
-    <div class="card blue lighten-1">
+  <div class="col l3 m6 s12">
+    <div class="card teal lighten-1">
       <div class="card-content white-text center">
         <span class="card-title">0</span>
         <p>Java Modules</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
   </div><!-- /.col -->
-  <div class="col s12 m6 l3">
-    <div class="card blue lighten-1">
+  <div class="col l3 m6 s12">
+    <div class="card teal lighten-1">
       <div class="card-content white-text center">
         <span class="card-title">36</span>
         <p>Script Packages</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
   </div><!-- /.col -->
-  <div class="col s12 m6 l3">
-    <div class="card blue lighten-1">
-      <div class="card-content white-text center">
-        <span class="card-title">6</span>
-        <p>Scripts per Package</p>
-      </div><!-- /.card-content -->
-    </div><!-- /.card -->
-  </div><!-- /.col -->
-  <div class="col s12 m6 l3">
-    <div class="card blue lighten-1">
-      <div class="card-content white-text center">
-        <span class="card-title">28</span>
-        <p>Steps per Test</p>
-      </div><!-- /.card-content -->
-    </div><!-- /.card -->
-  </div><!-- /.col -->
-            </div><!-- /.row -->
-            
-        </div><!-- /.section-content -->
-    </div><!-- /.section -->
-
+        </div><!-- /.row -->
+      </div><!-- /statistics -->
+    </div><!-- /.section-content -->
+  </div><!-- /.section -->
     
-            </div>
-    </div><!-- /main -->
+              </div>
+      </div><!-- /#main -->
+    </div><!-- /.container -->
+  </main><!-- /main -->
 
-</div><!-- /.container -->
-
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/scriptdoc.js"></script>
-    
-    
-<div id="footer">
-    <div class="footer-copy">&copy;&nbsp;2015 Xceptance Software Technologies</div>
-</div><!-- /footer -->
-
+  <footer>    
+    <div id="footer">
+      <div class="container">
+        <div class="row red darken-4 z-depth-1">
+          <div class="footer-copy white-text">Generated with Xceptance LoadTest<sup>&reg;</sup>&nbsp;<span class="product-version">
