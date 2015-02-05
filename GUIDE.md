@@ -28,9 +28,9 @@ The following styling rules where quite consequently applied to form a solid str
 Variable names are written in `camelCase` notation starting with a lowercase letter.
 
 - __Test Data__: `{name}` 
-- Dynamic Variables: `{name}`
+- Dynamic Variables: `{name}_varDynamic`
 - Module Parameters: `{name}`
-- Module Parameters (variable name only): `{name}_varName`
+- Module Parameters (with needed assignment as variable name): `{name}_varName`
 
 ### Element Names
 
@@ -62,6 +62,7 @@ This section defines the element names which are part of the naming scheme of pa
 
 - `Customer`: registered user with account.
 - `Guest`: unregistered user without account.
+- `ProductNumber`: product sku.
 
 ## Test Suite Development
 
