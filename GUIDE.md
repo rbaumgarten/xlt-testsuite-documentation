@@ -62,7 +62,7 @@ This section defines the element names which are part of the naming scheme of pa
 
 - `Customer`: registered user with account.
 - `Guest`: unregistered user without account.
-- `ProductNumber`: product sku.
+- `ProductNumber`: product stock keeping unit (SKU).
 
 ## Test Suite Development
 
