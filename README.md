@@ -17,8 +17,8 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Prerequisites
 
-- Firefox 17 (or higher)
-- XLT&reg; Script Developer v4.5.0 (or higher)
+- Firefox 31.0 (or higher)
+- XLT&reg; Script Developer 4.5.0 (or higher)
 - As system under test (SUT) the demo shop system  [SiteGenesis](http://www.demandware.com/on/demandware.store/Sites-SiteGenesis-Site) v15.1.0.14 (or higher) sold separately by [Demandware](http://www.demandware.com/) needs to be setup.
 
 #### Installation
@@ -50,7 +50,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 ## Test Suite Structure
 
-This section gives a small introduction to the test suite structure. Please visit the generated [ScriptDoc](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) for extended information on test data, packages, test cases and modules. The provided [Guide](https://github.com/dataduke/xlt-testsuite-documentation/blob/gh-pages/GUIDE.md) delivers instructions for test suite development, conventions for test suite styling and pointers to other helpful resources. All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
+This section gives a small introduction to the test suite structure. Please visit the generated [ScriptDoc](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html) for extended information on test data, packages, test cases and modules. The provided [Guide](https://github.com/dataduke/xlt-testsuite-documentation/blob/gh-pages/GUIDE.md) delivers conventions for test suite namings, instructions for test suite development, examples of test suite commands and links to additional resources. All planned features are publicly tracked as [GitHub issues](https://github.com/Xceptance/SiteGenesis-Community-TestSuite/issues). Feel free to add feature requests!
 
 ### [General](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html)
 
