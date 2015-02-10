@@ -649,19 +649,11 @@
       <name>tests.account.TAccountAddressBookAddEditRemoveAddresses</name>
       <external-parameters>
         <entry>
-          <string>firstname</string>
-          <null/>
-        </entry>
-        <entry>
           <string>email_varDynamic</string>
           <null/>
         </entry>
         <entry>
           <string>password_varDynamic</string>
-          <null/>
-        </entry>
-        <entry>
-          <string>lastname</string>
           <null/>
         </entry>
       </external-parameters>
@@ -3640,11 +3632,11 @@ Executable with:
           <null/>
         </entry>
         <entry>
-          <string>productPriceSales_01_varDynamic</string>
+          <string>productQuantity_varDynamic</string>
           <null/>
         </entry>
         <entry>
-          <string>productQuantity_varDynamic</string>
+          <string>productPriceSales_varDynamic</string>
           <null/>
         </entry>
       </external-parameters>
