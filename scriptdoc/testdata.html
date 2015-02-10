@@ -93,40 +93,48 @@
         <td class="value">701643107827</td>
       </tr>
       <tr>
-        <td class="key">storefrontDefault_currency</td>
-        <td class="value">$</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontDefault_shippingIsGift</td>
-        <td class="value">no</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontDefault_shippingMethodPosition</td>
-        <td class="value">1</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontDefault_shippingStatus</td>
-        <td class="value">Not Shipped</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontDefault_shippingUsAsBillingAddress</td>
-        <td class="value">true</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontDefault_url</td>
-        <td class="value">Caution: Please set your url in test data at package tests (this xml file is in .gitignore)</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontPattern_orderDate</td>
+        <td class="key">storefront_orderDatePattern</td>
         <td class="value">[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</td>
       </tr>
       <tr>
-        <td class="key">storefrontPattern_orderNumber</td>
+        <td class="key">storefront_orderNumberPattern</td>
         <td class="value">00[0-9]{6}</td>
       </tr>
       <tr>
-        <td class="key">storefrontPattern_price</td>
-        <td class="value">[$] [0-9]*[.,]*[0-9]*{3}[.,]*[0-9]+{3}[.,][0-9]{2}</td>
+        <td class="key">storefront_priceCurrency</td>
+        <td class="value">$</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_priceDecimalMark</td>
+        <td class="value">.</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_priceDigitGroupSeparators</td>
+        <td class="value">,</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_pricePattern</td>
+        <td class="value">${storefront_priceCurrency} [0-9]*[${storefront_priceDigitGroupSeparators}]*[0-9]*{3}[${storefront_priceDigitGroupSeparators}]*[0-9]*{3}[${storefront_priceDigitGroupSeparators}]*[0-9]+{3}${storefront_priceDecimalMark}[0-9]{2}</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingAddress_isGift</td>
+        <td class="value">no</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingAddress_useAsBillingAddress</td>
+        <td class="value">true</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingMethod_position</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingStatus</td>
+        <td class="value">Not Shipped</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_url</td>
+        <td class="value">Caution: Please set storefront url! You may edit test data at package tests (which will be ignored at commits via .gitignore)</td>
       </tr>
     </tbody>
   </table>
@@ -303,168 +311,152 @@
     </thead>
     <tbody>
       <tr>
-        <td class="key">billingAddress1</td>
+        <td class="key">billingAddress_address1</td>
         <td class="value">Middlefield Rd</td>
       </tr>
       <tr>
-        <td class="key">billingAddress2</td>
+        <td class="key">billingAddress_address2</td>
         <td class="value">1941</td>
       </tr>
       <tr>
-        <td class="key">billingAddressTitle</td>
-        <td class="value">Palo-Alto</td>
-      </tr>
-      <tr>
-        <td class="key">billingCity</td>
+        <td class="key">billingAddress_city</td>
         <td class="value">Palo Alto</td>
       </tr>
       <tr>
-        <td class="key">billingCountry</td>
+        <td class="key">billingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">billingFirstname</td>
+        <td class="key">billingAddress_firstname</td>
         <td class="value">John</td>
       </tr>
       <tr>
-        <td class="key">billingLastname</td>
+        <td class="key">billingAddress_lastname</td>
         <td class="value">Buyer</td>
       </tr>
       <tr>
-        <td class="key">billingPhone</td>
+        <td class="key">billingAddress_phone</td>
         <td class="value">781-391-6642</td>
       </tr>
       <tr>
-        <td class="key">billingPostalCode</td>
+        <td class="key">billingAddress_postalCode</td>
         <td class="value">94301</td>
       </tr>
       <tr>
-        <td class="key">billingStatesState</td>
+        <td class="key">billingAddress_statesState</td>
         <td class="value">California</td>
       </tr>
       <tr>
-        <td class="key">billingStatesStateShort</td>
+        <td class="key">billingAddress_statesStateShort</td>
         <td class="value">CA</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeAmex</td>
+        <td class="key">billingAddress_title</td>
+        <td class="value">Palo*Alto</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_cvn_typeAmex</td>
         <td class="value">1234</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeVisa</td>
+        <td class="key">creditCard_cvn_typeVisa</td>
         <td class="value">123</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeAmex</td>
+        <td class="key">creditCard_month_typeAmex</td>
         <td class="value">April</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeVisa</td>
+        <td class="key">creditCard_month_typeVisa</td>
         <td class="value">August</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeAmex</td>
+        <td class="key">creditCard_number_typeAmex</td>
         <td class="value">340000000000009</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeVisa</td>
+        <td class="key">creditCard_number_typeVisa</td>
         <td class="value">4111111111111111</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeAmex</td>
+        <td class="key">creditCard_owner_typeAmex</td>
         <td class="value">Jane Doe</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeVisa</td>
+        <td class="key">creditCard_owner_typeVisa</td>
         <td class="value">John Buyer</td>
       </tr>
       <tr>
-        <td class="key">creditCardTypeShort_typeAmex</td>
-        <td class="value">Amex</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardTypeShort_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeAmex</td>
-        <td class="value">American Express</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeAmex</td>
-        <td class="value">2019</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeVisa</td>
-        <td class="value">2016</td>
-      </tr>
-      <tr>
-        <td class="key">creditCard_paymentMethodName</td>
+        <td class="key">creditCard_paymentName</td>
         <td class="value">Credit Card</td>
       </tr>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
+        <td class="key">creditCard_typeShort_typeAmex</td>
+        <td class="value">Amex</td>
       </tr>
       <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
+        <td class="key">creditCard_typeShort_typeVisa</td>
+        <td class="value">Visa</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress1</td>
+        <td class="key">creditCard_type_typeAmex</td>
+        <td class="value">American Express</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_type_typeVisa</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeAmex</td>
+        <td class="value">2019</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeVisa</td>
+        <td class="value">2016</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_address1</td>
         <td class="value">Spring St</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress2</td>
+        <td class="key">shippingAddress_address2</td>
         <td class="value">6</td>
       </tr>
       <tr>
-        <td class="key">shippingAddressTitle</td>
+        <td class="key">shippingAddress_city</td>
         <td class="value">Cambridge</td>
       </tr>
       <tr>
-        <td class="key">shippingCity</td>
-        <td class="value">Cambridge</td>
-      </tr>
-      <tr>
-        <td class="key">shippingCountry</td>
+        <td class="key">shippingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">shippingFirstname</td>
+        <td class="key">shippingAddress_firstname</td>
         <td class="value">Jane</td>
       </tr>
       <tr>
-        <td class="key">shippingLastname</td>
+        <td class="key">shippingAddress_lastname</td>
         <td class="value">Doe</td>
       </tr>
       <tr>
-        <td class="key">shippingMethodName</td>
-        <td class="value">Ground</td>
-      </tr>
-      <tr>
-        <td class="key">shippingMethodPosition</td>
-        <td class="value">1</td>
-      </tr>
-      <tr>
-        <td class="key">shippingPhone</td>
+        <td class="key">shippingAddress_phone</td>
         <td class="value">781-391-6666</td>
       </tr>
       <tr>
-        <td class="key">shippingPostalCode</td>
+        <td class="key">shippingAddress_postalCode</td>
         <td class="value">02142</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesState</td>
+        <td class="key">shippingAddress_statesState</td>
         <td class="value">Massachusetts</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesStateShort</td>
+        <td class="key">shippingAddress_statesStateShort</td>
         <td class="value">MA</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_title</td>
+        <td class="value">Cambridge</td>
       </tr>
     </tbody>
   </table>
@@ -491,168 +483,160 @@
     </thead>
     <tbody>
       <tr>
-        <td class="key">billingAddress1</td>
+        <td class="key">billingAddress_address1</td>
         <td class="value">Middlefield Rd</td>
       </tr>
       <tr>
-        <td class="key">billingAddress2</td>
+        <td class="key">billingAddress_address2</td>
         <td class="value">1941</td>
       </tr>
       <tr>
-        <td class="key">billingAddressTitle</td>
-        <td class="value">Palo-Alto</td>
-      </tr>
-      <tr>
-        <td class="key">billingCity</td>
+        <td class="key">billingAddress_city</td>
         <td class="value">Palo Alto</td>
       </tr>
       <tr>
-        <td class="key">billingCountry</td>
+        <td class="key">billingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">billingFirstname</td>
+        <td class="key">billingAddress_firstname</td>
         <td class="value">John</td>
       </tr>
       <tr>
-        <td class="key">billingLastname</td>
+        <td class="key">billingAddress_lastname</td>
         <td class="value">Buyer</td>
       </tr>
       <tr>
-        <td class="key">billingPhone</td>
+        <td class="key">billingAddress_phone</td>
         <td class="value">781-391-6642</td>
       </tr>
       <tr>
-        <td class="key">billingPostalCode</td>
+        <td class="key">billingAddress_postalCode</td>
         <td class="value">94301</td>
       </tr>
       <tr>
-        <td class="key">billingStatesState</td>
+        <td class="key">billingAddress_statesState</td>
         <td class="value">California</td>
       </tr>
       <tr>
-        <td class="key">billingStatesStateShort</td>
+        <td class="key">billingAddress_statesStateShort</td>
         <td class="value">CA</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeAmex</td>
+        <td class="key">billingAddress_title</td>
+        <td class="value">Palo*Alto</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_cvn_typeAmex</td>
         <td class="value">1234</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeVisa</td>
+        <td class="key">creditCard_cvn_typeVisa</td>
         <td class="value">123</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeAmex</td>
+        <td class="key">creditCard_month_typeAmex</td>
         <td class="value">April</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeVisa</td>
+        <td class="key">creditCard_month_typeVisa</td>
         <td class="value">August</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeAmex</td>
+        <td class="key">creditCard_number_typeAmex</td>
         <td class="value">340000000000009</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeVisa</td>
+        <td class="key">creditCard_number_typeVisa</td>
         <td class="value">4111111111111111</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeAmex</td>
+        <td class="key">creditCard_owner_typeAmex</td>
         <td class="value">Jane Doe</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeVisa</td>
+        <td class="key">creditCard_owner_typeVisa</td>
         <td class="value">John Buyer</td>
       </tr>
       <tr>
-        <td class="key">creditCardTypeShort_typeAmex</td>
-        <td class="value">Amex</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardTypeShort_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeAmex</td>
-        <td class="value">American Express</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeAmex</td>
-        <td class="value">2019</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeVisa</td>
-        <td class="value">2016</td>
-      </tr>
-      <tr>
-        <td class="key">creditCard_paymentMethodName</td>
+        <td class="key">creditCard_paymentName</td>
         <td class="value">Credit Card</td>
       </tr>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
+        <td class="key">creditCard_typeShort_typeAmex</td>
+        <td class="value">Amex</td>
       </tr>
       <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
+        <td class="key">creditCard_typeShort_typeVisa</td>
+        <td class="value">Visa</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress1</td>
+        <td class="key">creditCard_type_typeAmex</td>
+        <td class="value">American Express</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_type_typeVisa</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeAmex</td>
+        <td class="value">2019</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeVisa</td>
+        <td class="value">2016</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_address1</td>
         <td class="value">Spring St</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress2</td>
+        <td class="key">shippingAddress_address2</td>
         <td class="value">6</td>
       </tr>
       <tr>
-        <td class="key">shippingAddressTitle</td>
+        <td class="key">shippingAddress_city</td>
         <td class="value">Cambridge</td>
       </tr>
       <tr>
-        <td class="key">shippingCity</td>
-        <td class="value">Cambridge</td>
-      </tr>
-      <tr>
-        <td class="key">shippingCountry</td>
+        <td class="key">shippingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">shippingFirstname</td>
+        <td class="key">shippingAddress_firstname</td>
         <td class="value">Jane</td>
       </tr>
       <tr>
-        <td class="key">shippingLastname</td>
+        <td class="key">shippingAddress_lastname</td>
         <td class="value">Doe</td>
       </tr>
       <tr>
-        <td class="key">shippingMethodName</td>
-        <td class="value">Ground</td>
-      </tr>
-      <tr>
-        <td class="key">shippingMethodPosition</td>
-        <td class="value">1</td>
-      </tr>
-      <tr>
-        <td class="key">shippingPhone</td>
+        <td class="key">shippingAddress_phone</td>
         <td class="value">781-391-6666</td>
       </tr>
       <tr>
-        <td class="key">shippingPostalCode</td>
+        <td class="key">shippingAddress_postalCode</td>
         <td class="value">02142</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesState</td>
+        <td class="key">shippingAddress_statesState</td>
         <td class="value">Massachusetts</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesStateShort</td>
+        <td class="key">shippingAddress_statesStateShort</td>
         <td class="value">MA</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_title</td>
+        <td class="value">Cambridge</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_name</td>
+        <td class="value">Ground</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_position</td>
+        <td class="value">1</td>
       </tr>
     </tbody>
   </table>

@@ -61,7 +61,7 @@
 <li><a href="#test_tests.account.TAccountPersonalDataUpdateProfile" title="tests.account.TAccountPersonalDataUpdateProfile">TAccountPersonalDataUpdateProfile</a></li>
 <li><a href="#test_tests.account.TAccountWishListAddRemoveProduct" title="tests.account.TAccountWishListAddRemoveProduct">TAccountWishListAddRemoveProduct</a></li>
 <li><a href="#test_tests.cart.TCartAddRemoveProduct" title="tests.cart.TCartAddRemoveProduct">TCartAddRemoveProduct</a></li>
-<li><a href="#test_tests.cart.TCartRefreshProductsCalculateSums" title="tests.cart.TCartRefreshProductsCalculateSums">TCartRefreshProductsCalculateSums</a></li>
+<li><a href="#test_tests.cart.TCartRefreshProductsCalculateTotals" title="tests.cart.TCartRefreshProductsCalculateTotals">TCartRefreshProductsCalculateTotals</a></li>
 <li><a href="#test_tests.catalog.TCatalogOptionSelectItemsPerPage" title="tests.catalog.TCatalogOptionSelectItemsPerPage">TCatalogOptionSelectItemsPerPage</a></li>
 <li><a href="#test_tests.catalog.TCatalogOptionSelectSortBy" title="tests.catalog.TCatalogOptionSelectSortBy">TCatalogOptionSelectSortBy</a></li>
 <li><a href="#test_tests.catalog.TCatalogRefinementSelectRemoveColors" title="tests.catalog.TCatalogRefinementSelectRemoveColors">TCatalogRefinementSelectRemoveColors</a></li>
@@ -136,7 +136,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -145,7 +145,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -176,7 +176,7 @@ Steps</h3>
           <p>Flow to create a new customer with profile data.</p>
 <ul>
 <li>Start on homepagee</li>
-<li>Create account via glaobal register in header</li>
+<li>Create account via global register in header</li>
 <li>Validate profile data</li>
 <li>Logout via global header link</li>
 <li>End on homepage</li>
@@ -667,40 +667,128 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">shippingAddressTitleMoved</td>
+        <td class="key">phone_02</td>
+        <td class="value">${billingAddress_phone}</td>
+      </tr>
+      <tr>
+        <td class="key">title_03</td>
         <td class="value">Jena</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress1Moved</td>
-        <td class="value">Leutragraben</td>
+        <td class="key">phone_01</td>
+        <td class="value">${shippingAddress_phone}</td>
       </tr>
       <tr>
-        <td class="key">shippingCityMoved</td>
-        <td class="value">Jena</td>
+        <td class="key">title_01</td>
+        <td class="value">${shippingAddress_title}</td>
       </tr>
       <tr>
-        <td class="key">shippingPhoneMoved</td>
-        <td class="value">03641-411111</td>
+        <td class="key">title_02</td>
+        <td class="value">${billingAddress_title}</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress2Moved</td>
-        <td class="value">2</td>
+        <td class="key">statesState_01</td>
+        <td class="value">${shippingAddress_statesState}</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesStateShortMoved</td>
-        <td class="value">OTHER</td>
+        <td class="key">city_01</td>
+        <td class="value">${shippingAddress_city}</td>
       </tr>
       <tr>
-        <td class="key">shippingCountryMoved</td>
-        <td class="value">Germany</td>
+        <td class="key">city_02</td>
+        <td class="value">${billingAddress_city}</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesStateMoved</td>
+        <td class="key">statesState_03</td>
         <td class="value">Other</td>
       </tr>
       <tr>
-        <td class="key">shippingPostalCodeMoved</td>
+        <td class="key">statesState_02</td>
+        <td class="value">${billingAddress_statesState}</td>
+      </tr>
+      <tr>
+        <td class="key">city_03</td>
+        <td class="value">Jena</td>
+      </tr>
+      <tr>
+        <td class="key">phone_03</td>
+        <td class="value">03641-411111</td>
+      </tr>
+      <tr>
+        <td class="key">country_01</td>
+        <td class="value">${shippingAddress_country}</td>
+      </tr>
+      <tr>
+        <td class="key">statesStateShort_03</td>
+        <td class="value">OTHER</td>
+      </tr>
+      <tr>
+        <td class="key">country_02</td>
+        <td class="value">${billingAddress_country}</td>
+      </tr>
+      <tr>
+        <td class="key">statesStateShort_02</td>
+        <td class="value">${billingAddress_statesStateShort}</td>
+      </tr>
+      <tr>
+        <td class="key">statesStateShort_01</td>
+        <td class="value">${shippingAddress_statesStateShort}</td>
+      </tr>
+      <tr>
+        <td class="key">country_03</td>
+        <td class="value">Germany</td>
+      </tr>
+      <tr>
+        <td class="key">lastname_02</td>
+        <td class="value">${billingAddress_lastname}</td>
+      </tr>
+      <tr>
+        <td class="key">address1_01</td>
+        <td class="value">${shippingAddress_address1}</td>
+      </tr>
+      <tr>
+        <td class="key">address1_02</td>
+        <td class="value">${billingAddress_address1}</td>
+      </tr>
+      <tr>
+        <td class="key">address1_03</td>
+        <td class="value">Leutragraben</td>
+      </tr>
+      <tr>
+        <td class="key">lastname_01</td>
+        <td class="value">${shippingAddress_lastname}</td>
+      </tr>
+      <tr>
+        <td class="key">postalCode_03</td>
         <td class="value">07743</td>
+      </tr>
+      <tr>
+        <td class="key">postalCode_01</td>
+        <td class="value">${shippingAddress_postalCode}</td>
+      </tr>
+      <tr>
+        <td class="key">postalCode_02</td>
+        <td class="value">${billingAddress_postalCode}</td>
+      </tr>
+      <tr>
+        <td class="key">firstname_02</td>
+        <td class="value">${billingAddress_firstname}</td>
+      </tr>
+      <tr>
+        <td class="key">firstname_01</td>
+        <td class="value">${shippingAddress_firstname}</td>
+      </tr>
+      <tr>
+        <td class="key">address2_01</td>
+        <td class="value">${shippingAddress_address2}</td>
+      </tr>
+      <tr>
+        <td class="key">address2_02</td>
+        <td class="value">${billingAddress_address2}</td>
+      </tr>
+      <tr>
+        <td class="key">address2_03</td>
+        <td class="value">2</td>
       </tr>
     </tbody>
   </table>
@@ -719,107 +807,19 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">shipping_address_title</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
         <td class="key">firstname</td>
-        <td class="value">John</td>
-      </tr>
-      <tr>
-        <td class="key">billing_phone</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_city</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_phone</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_postal_code</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_firstname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address1</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">email</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_lastname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address2</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_states_state</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_country</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_states_state</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_lastname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billingAddressTitle</td>
-        <td class="value">Palo-Alto</td>
       </tr>
       <tr>
         <td class="key">lastname</td>
-        <td class="value">Buyer</td>
-      </tr>
-      <tr>
-        <td class="key">billing_city</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_address2</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_address1</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_states_state_short</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_firstname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_country</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_states_state_short</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_postal_code</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -885,7 +885,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -894,7 +894,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -925,7 +925,7 @@ Steps</h3>
           <p>Flow to create a new customer with profile data.</p>
 <ul>
 <li>Start on homepagee</li>
-<li>Create account via glaobal register in header</li>
+<li>Create account via global register in header</li>
 <li>Validate profile data</li>
 <li>Logout via global header link</li>
 <li>End on homepage</li>
@@ -1013,7 +1013,28 @@ Test Data</h3>
 Defined Inside</h4>
 
   <div class="data-table">
-  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">firstname</td>
+        <td class="value">${billingAddress_firstname}</td>
+      </tr>
+      <tr>
+        <td class="key">passwordEmpty</td>
+        <td class="value"></td>
+      </tr>
+      <tr>
+        <td class="key">lastname</td>
+        <td class="value">${billingAddress_lastname}</td>
+      </tr>
+    </tbody>
+  </table>
   </div><!-- ./data-table -->
 
   <h4 >
@@ -1029,20 +1050,12 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">email</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
       </tr>
     </tbody>
   </table>
@@ -1107,7 +1120,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -1116,7 +1129,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -1147,7 +1160,7 @@ Steps</h3>
           <p>Flow to create a new customer with profile data.</p>
 <ul>
 <li>Start on homepagee</li>
-<li>Create account via glaobal register in header</li>
+<li>Create account via global register in header</li>
 <li>Validate profile data</li>
 <li>Logout via global header link</li>
 <li>End on homepage</li>
@@ -1244,8 +1257,16 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
+        <td class="key">firstname</td>
+        <td class="value">${billingAddress_firstname}</td>
+      </tr>
+      <tr>
         <td class="key">passwordInvalid</td>
         <td class="value">ThisPasswordIsInvalid</td>
+      </tr>
+      <tr>
+        <td class="key">lastname</td>
+        <td class="value">${billingAddress_lastname}</td>
       </tr>
     </tbody>
   </table>
@@ -1264,20 +1285,12 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">email</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
       </tr>
     </tbody>
   </table>
@@ -1346,7 +1359,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -1355,7 +1368,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -1386,7 +1399,7 @@ Steps</h3>
           <p>Flow to create a new customer with profile data.</p>
 <ul>
 <li>Start on homepagee</li>
-<li>Create account via glaobal register in header</li>
+<li>Create account via global register in header</li>
 <li>Validate profile data</li>
 <li>Logout via global header link</li>
 <li>End on homepage</li>
@@ -1732,7 +1745,72 @@ Test Data</h3>
 Defined Inside</h4>
 
   <div class="data-table">
-  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">type_01</td>
+        <td class="value">${creditCard_type_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">number_01</td>
+        <td class="value">${creditCard_number_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">type_02</td>
+        <td class="value">${creditCard_type_typeAmex}</td>
+      </tr>
+      <tr>
+        <td class="key">firstname</td>
+        <td class="value">${billingAddress_firstname}</td>
+      </tr>
+      <tr>
+        <td class="key">owner_01</td>
+        <td class="value">${creditCard_owner_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">lastname</td>
+        <td class="value">${billingAddress_lastname}</td>
+      </tr>
+      <tr>
+        <td class="key">owner_02</td>
+        <td class="value">${creditCard_owner_typeAmex}</td>
+      </tr>
+      <tr>
+        <td class="key">number_02</td>
+        <td class="value">${creditCard_number_typeAmex}</td>
+      </tr>
+      <tr>
+        <td class="key">year_02</td>
+        <td class="value">${creditCard_year_typeAmex}</td>
+      </tr>
+      <tr>
+        <td class="key">year_01</td>
+        <td class="value">${creditCard_year_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">typeShort_01</td>
+        <td class="value">${creditCard_typeShort_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">typeShort_02</td>
+        <td class="value">${creditCard_typeShort_typeAmex}</td>
+      </tr>
+      <tr>
+        <td class="key">month_01</td>
+        <td class="value">${creditCard_month_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">month_02</td>
+        <td class="value">${creditCard_month_typeAmex}</td>
+      </tr>
+    </tbody>
+  </table>
   </div><!-- ./data-table -->
 
   <h4 >
@@ -1748,67 +1826,11 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_number_amex</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">credit_card_type_visa</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_owner_amex</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_year_amex</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_type_short_amex</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_month_visa</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_owner_visa</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_type_short_visa</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_number_visa</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_month_amex</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_year_visa</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_type_amex</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">email</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -1875,7 +1897,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -1884,7 +1906,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -2113,7 +2135,24 @@ Test Data</h3>
 Defined Inside</h4>
 
   <div class="data-table">
-  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">firstname</td>
+        <td class="value">${billingAddress_firstname}</td>
+      </tr>
+      <tr>
+        <td class="key">lastname</td>
+        <td class="value">${billingAddress_lastname}</td>
+      </tr>
+    </tbody>
+  </table>
   </div><!-- ./data-table -->
 
   <h4 >
@@ -2129,20 +2168,12 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">email</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
       </tr>
     </tbody>
   </table>
@@ -2209,7 +2240,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -2218,7 +2249,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -2227,7 +2258,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -2258,7 +2289,7 @@ Steps</h3>
           <p>Flow to create a new customer with profile data.</p>
 <ul>
 <li>Start on homepagee</li>
-<li>Create account via glaobal register in header</li>
+<li>Create account via global register in header</li>
 <li>Validate profile data</li>
 <li>Logout via global header link</li>
 <li>End on homepage</li>
@@ -2444,20 +2475,20 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">lastname01</td>
-        <td class="value">${lastname}</td>
-      </tr>
-      <tr>
-        <td class="key">lastname02</td>
+        <td class="key">lastname_02</td>
         <td class="value">Müller</td>
       </tr>
       <tr>
-        <td class="key">firstname02</td>
+        <td class="key">firstname_02</td>
         <td class="value">Jörg</td>
       </tr>
       <tr>
-        <td class="key">firstname01</td>
-        <td class="value">${firstname}</td>
+        <td class="key">firstname_01</td>
+        <td class="value">${billingAddress_firstname}</td>
+      </tr>
+      <tr>
+        <td class="key">lastname_01</td>
+        <td class="value">${billingAddress_lastname}</td>
       </tr>
     </tbody>
   </table>
@@ -2476,15 +2507,15 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">password</td>
+        <td class="key">email_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">email_01</td>
+        <td class="key">email_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">email_02</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -2555,7 +2586,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -2564,7 +2595,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -2595,7 +2626,7 @@ Steps</h3>
           <p>Flow to create a new customer with profile data.</p>
 <ul>
 <li>Start on homepagee</li>
-<li>Create account via glaobal register in header</li>
+<li>Create account via global register in header</li>
 <li>Validate profile data</li>
 <li>Logout via global header link</li>
 <li>End on homepage</li>
@@ -2790,8 +2821,16 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">productNumber_01</td>
-        <td class="value">${productTypeOptionProduct}</td>
+        <td class="key">firstname</td>
+        <td class="value">${billingAddress_firstname}</td>
+      </tr>
+      <tr>
+        <td class="key">productNumber</td>
+        <td class="value">${productNumber_typeOptionProduct}</td>
+      </tr>
+      <tr>
+        <td class="key">lastname</td>
+        <td class="value">${billingAddress_lastname}</td>
       </tr>
     </tbody>
   </table>
@@ -2810,36 +2849,28 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">product_01_quantity</td>
+        <td class="key">productName_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
+        <td class="key">productNumber_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_01_name</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_01_price_sales</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">email</td>
+        <td class="key">productPriceSales_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_01_number</td>
+        <td class="key">productQuantity_varDynamic</td>
         <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
       </tr>
     </tbody>
   </table>
@@ -3057,11 +3088,11 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">productQuantity_01</td>
+        <td class="key">productQuantity</td>
         <td class="value">1</td>
       </tr>
       <tr>
-        <td class="key">productNumber_01</td>
+        <td class="key">productNumber</td>
         <td class="value">${productNumber_typeProduct}</td>
       </tr>
     </tbody>
@@ -3081,23 +3112,23 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">productQuantity_01_varDynamic</td>
+        <td class="key">productName_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">productPriceTotal_01_varDynamic</td>
+        <td class="key">productNumber_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">productName_01_varDynamic</td>
+        <td class="key">productPriceTotal_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">productNumber_01_varDynamic</td>
+        <td class="key">productQuantity_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">productPriceSales_01_varDynamic</td>
+        <td class="key">productPriceSales_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -3120,9 +3151,9 @@ Dynamic Variables</h3>
 </div><!-- /.row -->
 
 <div class="row">
-<h2 data-disabled="false" id="test_tests.cart.TCartRefreshProductsCalculateSums" class="light-blue darken-4 white-text">
+<h2 data-disabled="false" id="test_tests.cart.TCartRefreshProductsCalculateTotals" class="light-blue darken-4 white-text">
       <span class="smaller">tests.cart</span>
-    TCartRefreshProductsCalculateSums
+    TCartRefreshProductsCalculateTotals
 </h2>
 
 
@@ -3258,19 +3289,10 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Price_convertPriceToNumber">modules.helper.MHelper_Price_convertPriceToNumber</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Product_calculateProductPriceTotal">modules.helper.MHelper_Product_calculateProductPriceTotal</a>
         </div>
         <div class="step-description">
-          <p>Convert price into clean number by removing currency and replacing delimiters (e.g. &quot;,&quot; with &quot;.&quot;).</p>
-
-        </div><!-- /.step-description -->
-      </li><!-- /.step -->
-      <li data-disabled="false" class="step step-module">
-        <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Price_calculateTotalProductPrice">modules.helper.MHelper_Price_calculateTotalProductPrice</a>
-        </div>
-        <div class="step-description">
-          <p>Calculate total price based on clean product price and format it including currency: total = price * quantity.</p>
+          <p>Calculate product total price (based on: price sales x quantity = price total).</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -3303,35 +3325,35 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-action">
         <div class="step-name">
-            ViewCartAndCalculateSums
+            ViewCartAndCalculateTotals
         </div>
         <div class="step-description">
         </div><!-- /.step-description -->
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Price_convertPriceToNumber">modules.helper.MHelper_Price_convertPriceToNumber</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Product_calculateProductPriceTotal">modules.helper.MHelper_Product_calculateProductPriceTotal</a>
         </div>
         <div class="step-description">
-          <p>Convert price into clean number by removing currency and replacing delimiters (e.g. &quot;,&quot; with &quot;.&quot;).</p>
+          <p>Calculate product total price (based on: price sales x quantity = price total).</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Price_calculateTotalProductPrice">modules.helper.MHelper_Price_calculateTotalProductPrice</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsQuantity">modules.helper.MHelper_Product_calculateTotalsQuantity</a>
         </div>
         <div class="step-description">
-          <p>Calculate total price based on clean product price and format it including currency: total = price * quantity.</p>
+          <p>Calculate totals quantity of two products (based on:  quantity 01 + quantity 02 = totals quantity).</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Price_calculateSumsTotalsPriceQuantity">modules.helper.MHelper_Price_calculateSumsTotalsPriceQuantity</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsSubtotal">modules.helper.MHelper_Product_calculateTotalsSubtotal</a>
         </div>
         <div class="step-description">
-          <p>Calculate total quantity and formated subtotal of two products.</p>
+          <p>Calculate totals subtotal of two products (based on: price 01 x quantity 01 + price 02 x quantity 02  = totals subtotal).</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -3398,25 +3420,34 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Price_calculateTotalProductPrice">modules.helper.MHelper_Price_calculateTotalProductPrice</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Product_calculateProductPriceTotal">modules.helper.MHelper_Product_calculateProductPriceTotal</a>
         </div>
         <div class="step-description">
-          <p>Calculate total price based on clean product price and format it including currency: total = price * quantity.</p>
+          <p>Calculate product total price (based on: price sales x quantity = price total).</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Price_calculateSumsTotalsPriceQuantity">modules.helper.MHelper_Price_calculateSumsTotalsPriceQuantity</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsQuantity">modules.helper.MHelper_Product_calculateTotalsQuantity</a>
         </div>
         <div class="step-description">
-          <p>Calculate total quantity and formated subtotal of two products.</p>
+          <p>Calculate totals quantity of two products (based on:  quantity 01 + quantity 02 = totals quantity).</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderItems">modules.global.minicart.VGlobal_MiniCart_validateHeaderItems</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsSubtotal">modules.helper.MHelper_Product_calculateTotalsSubtotal</a>
+        </div>
+        <div class="step-description">
+          <p>Calculate totals subtotal of two products (based on: price 01 x quantity 01 + price 02 x quantity 02  = totals subtotal).</p>
+
+        </div><!-- /.step-description -->
+      </li><!-- /.step -->
+      <li data-disabled="false" class="step step-module">
+        <div class="step-name">
+            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals">modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals</a>
         </div>
         <div class="step-description">
           <p>Validate minicart on homepage with item count and total price in header details .</p>
@@ -3486,7 +3517,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderItems">modules.global.minicart.VGlobal_MiniCart_validateHeaderItems</a>
+            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals">modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals</a>
         </div>
         <div class="step-description">
           <p>Validate minicart on homepage with item count and total price in header details .</p>
@@ -3585,19 +3616,19 @@ Defined Inside</h4>
     <tbody>
       <tr>
         <td class="key">productNumber_01</td>
-        <td class="value">${productNumber_typeOptionProduct}</td>
+        <td class="value">${productNumber_typeProduct}</td>
       </tr>
       <tr>
         <td class="key">productNumber_02</td>
-        <td class="value">${productNumber_typeVariationProductColorSizeSalePrice}</td>
+        <td class="value">${productNumber_typeVariationProductColorSizeSalesPrice}</td>
       </tr>
       <tr>
         <td class="key">productQuantity_02</td>
-        <td class="value">3</td>
+        <td class="value">2</td>
       </tr>
       <tr>
         <td class="key">productQuantity_01</td>
-        <td class="value">2</td>
+        <td class="value">1</td>
       </tr>
     </tbody>
   </table>
@@ -3616,19 +3647,19 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">product_01_quantity</td>
+        <td class="key">productNumber_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_02_clean_price_sales</td>
+        <td class="key">productPriceTotal_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">productPriceSalesNumber_01_varDynamic</td>
+        <td class="key">totalsQuantity_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_01_price_sales</td>
+        <td class="key">productName_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
@@ -3636,56 +3667,40 @@ Defined Outside</h4>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_02_number</td>
+        <td class="key">storefront_priceDigitGroupSeparators</td>
+        <td class="value">,</td>
+      </tr>
+      <tr>
+        <td class="key">productPriceTotal_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_01_number</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">total_product_quantity</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">productPriceSales_01</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_01_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_price_sales</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_calculated_total_price</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_01_calculated_total_price</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_01_clean_price_sales</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_quantity</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontDefault_currency</td>
+        <td class="key">storefront_priceCurrency</td>
         <td class="value">$</td>
       </tr>
       <tr>
-        <td class="key">total_product_price</td>
+        <td class="key">productNumber_01_varDynamic</td>
         <td class="value na">N/A</td>
+      </tr>
+      <tr>
+        <td class="key">totalsSubtotal_varDynamic</td>
+        <td class="value na">N/A</td>
+      </tr>
+      <tr>
+        <td class="key">productName_01_varDynamic</td>
+        <td class="value na">N/A</td>
+      </tr>
+      <tr>
+        <td class="key">productQuantity_02_varDynamic</td>
+        <td class="value na">N/A</td>
+      </tr>
+      <tr>
+        <td class="key">productPriceSales_02_varDynamic</td>
+        <td class="value na">N/A</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_priceDecimalMark</td>
+        <td class="value">.</td>
       </tr>
     </tbody>
   </table>
@@ -3699,7 +3714,7 @@ Dynamic Variables</h3>
 
           <ul class="square">
               <li>productQuantity_01_varDynamic</li>
-              <li>product_02_quantity</li>
+              <li>productQuantity_02_varDynamic</li>
           </ul>
       </div><!-- /.vars -->
               
@@ -4007,28 +4022,28 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">itemsPerPageLabel12</td>
-        <td class="value">12</td>
-      </tr>
-      <tr>
-        <td class="key">itemsPerPageLabel24</td>
-        <td class="value">24</td>
-      </tr>
-      <tr>
-        <td class="key">itemsPerPageLabel36</td>
-        <td class="value">36</td>
-      </tr>
-      <tr>
-        <td class="key">itemsPerPageLabelViewAll</td>
+        <td class="key">itemsPerPageLabel_ViewAll</td>
         <td class="value">View All (*)</td>
       </tr>
       <tr>
-        <td class="key">itemsPerPageLabel48</td>
+        <td class="key">itemsPerPageLabel_36</td>
+        <td class="value">36</td>
+      </tr>
+      <tr>
+        <td class="key">itemsPerPagePosition</td>
+        <td class="value">3</td>
+      </tr>
+      <tr>
+        <td class="key">itemsPerPageLabel_48</td>
         <td class="value">48</td>
       </tr>
       <tr>
-        <td class="key">itemsPerPagePositionOne</td>
-        <td class="value">3</td>
+        <td class="key">itemsPerPageLabel_12</td>
+        <td class="value">12</td>
+      </tr>
+      <tr>
+        <td class="key">itemsPerPageLabel_24</td>
+        <td class="value">24</td>
       </tr>
     </tbody>
   </table>
@@ -4047,11 +4062,11 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">itemsPerPageLabelOne</td>
+        <td class="key">itemsPerPageLabel_random</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">itemsPerPageLabelTwo</td>
+        <td class="key">itemsPerPageLabel</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -4446,39 +4461,39 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">sortByLabelBrand</td>
-        <td class="value">Brand</td>
-      </tr>
-      <tr>
-        <td class="key">sortByPositionOne</td>
-        <td class="value">3</td>
-      </tr>
-      <tr>
-        <td class="key">sortByLabelTopSellers</td>
-        <td class="value">Top Sellers</td>
-      </tr>
-      <tr>
-        <td class="key">sortByLabelMostPopular</td>
-        <td class="value">Most Popular</td>
-      </tr>
-      <tr>
-        <td class="key">sortByLabelNameAToZ</td>
-        <td class="value">Product Name A - Z</td>
-      </tr>
-      <tr>
-        <td class="key">sortByLabelBestMatches</td>
+        <td class="key">sortByLabel_bestMatches</td>
         <td class="value">Best Matches</td>
       </tr>
       <tr>
-        <td class="key">sortByLabelNameZToA</td>
-        <td class="value">Product Name Z - A</td>
-      </tr>
-      <tr>
-        <td class="key">sortByLabelPriceLowToHigh</td>
+        <td class="key">sortByLabel_priceLowToHigh</td>
         <td class="value">Price Low To High</td>
       </tr>
       <tr>
-        <td class="key">sortByLabelPriceHighToLow</td>
+        <td class="key">sortByLabel_productNameZToA</td>
+        <td class="value">Product Name Z - A</td>
+      </tr>
+      <tr>
+        <td class="key">sortByLabel_topSellers</td>
+        <td class="value">Top Sellers</td>
+      </tr>
+      <tr>
+        <td class="key">sortByPosition</td>
+        <td class="value">3</td>
+      </tr>
+      <tr>
+        <td class="key">sortByLabel_productNameAToZ</td>
+        <td class="value">Product Name A - Z</td>
+      </tr>
+      <tr>
+        <td class="key">sortByLabel_brand</td>
+        <td class="value">Brand</td>
+      </tr>
+      <tr>
+        <td class="key">sortByLabel_mostPopular</td>
+        <td class="value">Most Popular</td>
+      </tr>
+      <tr>
+        <td class="key">sortByLabel_priceHighToLow</td>
         <td class="value">Price High To Low</td>
       </tr>
     </tbody>
@@ -4498,11 +4513,11 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">sortByLabelOne</td>
+        <td class="key">sortByLabel_random</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">sortByLabelTwo</td>
+        <td class="key">sortByLabel</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -4832,19 +4847,19 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">colorPositionTwo</td>
-        <td class="value">5</td>
-      </tr>
-      <tr>
-        <td class="key">colorPositionOne</td>
-        <td class="value">1</td>
-      </tr>
-      <tr>
-        <td class="key">colorLabelBlue</td>
+        <td class="key">colorLabel_blue</td>
         <td class="value">Blue</td>
       </tr>
       <tr>
-        <td class="key">colorPositionThree</td>
+        <td class="key">colorPosition_01</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">colorPosition_02</td>
+        <td class="value">5</td>
+      </tr>
+      <tr>
+        <td class="key">colorPosition_03</td>
         <td class="value">9</td>
       </tr>
     </tbody>
@@ -4864,15 +4879,15 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">colorLabelTwo</td>
+        <td class="key">colorLabel_03</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">colorLabelOne</td>
+        <td class="key">colorLabel_02</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">colorLabelThree</td>
+        <td class="key">colorLabel_01</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -5890,7 +5905,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -5899,7 +5914,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -6067,7 +6082,7 @@ Steps</h3>
             <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_enterAddress">modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_enterAddress</a>
         </div>
         <div class="step-description">
-          <p>Enter data on billing page.</p>
+          <p>Enter address data on shipping page.</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -6082,7 +6097,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition">modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition</a>
+            <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition">modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition</a>
         </div>
         <div class="step-description">
           <p>Check shipping method via position.</p>
@@ -6191,7 +6206,7 @@ Steps</h3>
             <a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_enterCreditCard">modules.pages.checkout.steps.billing.MCheckout_BillingPayment_enterCreditCard</a>
         </div>
         <div class="step-description">
-          <p>Enter credit card in payment on billing page.</p>
+          <p>Enter credit card data in payment on billing page.</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -6509,40 +6524,84 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">creditCardOwner</td>
-        <td class="value">${creditCardOwner_typeVisa}</td>
+        <td class="key">owner</td>
+        <td class="value">${creditCard_owner_typeVisa}</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber</td>
-        <td class="value">${creditCardNumber_typeVisa}</td>
+        <td class="key">country</td>
+        <td class="value">${billingAddress_country}</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth</td>
-        <td class="value">${creditCardMonth_typeVisa}</td>
+        <td class="key">firstname</td>
+        <td class="value">${billingAddress_firstname}</td>
       </tr>
       <tr>
-        <td class="key">productNumber_01</td>
+        <td class="key">typeShort</td>
+        <td class="value">${creditCard_typeShort_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">address2</td>
+        <td class="value">${billingAddress_address2}</td>
+      </tr>
+      <tr>
+        <td class="key">city</td>
+        <td class="value">${billingAddress_city}</td>
+      </tr>
+      <tr>
+        <td class="key">year</td>
+        <td class="value">${creditCard_year_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">address1</td>
+        <td class="value">${billingAddress_address1}</td>
+      </tr>
+      <tr>
+        <td class="key">postalCode</td>
+        <td class="value">${billingAddress_postalCode}</td>
+      </tr>
+      <tr>
+        <td class="key">productNumber</td>
         <td class="value">${productNumber_typeVariationProductColorSizeListPriceOnly}</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn</td>
-        <td class="value">${creditCardCvn_typeVisa}</td>
+        <td class="key">type</td>
+        <td class="value">${creditCard_type_typeVisa}</td>
       </tr>
       <tr>
-        <td class="key">creditCardTypeShort</td>
-        <td class="value">${creditCardTypeShort_typeVisa}</td>
+        <td class="key">statesStateShort</td>
+        <td class="value">${billingAddress_statesStateShort}</td>
       </tr>
       <tr>
-        <td class="key">creditCardType</td>
-        <td class="value">${creditCardType_typeVisa}</td>
+        <td class="key">lastname</td>
+        <td class="value">${billingAddress_lastname}</td>
       </tr>
       <tr>
-        <td class="key">creditCardYear</td>
-        <td class="value">${creditCardYear_typeVisa}</td>
+        <td class="key">number</td>
+        <td class="value">${creditCard_number_typeVisa}</td>
       </tr>
       <tr>
-        <td class="key">productQuantity_01</td>
+        <td class="key">productQuantity</td>
         <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">month</td>
+        <td class="value">${creditCard_month_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">phone</td>
+        <td class="value">${billingAddress_phone}</td>
+      </tr>
+      <tr>
+        <td class="key">cvn</td>
+        <td class="value">${creditCard_cvn_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">statesState</td>
+        <td class="value">${billingAddress_statesState}</td>
+      </tr>
+      <tr>
+        <td class="key">paymentName</td>
+        <td class="value">${creditCard_paymentName}</td>
       </tr>
     </tbody>
   </table>
@@ -6561,167 +6620,91 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_number</td>
+        <td class="key">productName_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">credit_card_type_short</td>
+        <td class="key">productColor_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">credit_card_cvn</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_city</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_number</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_us_as_billing_address_default</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_phone</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_method_position</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_shipping</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_method_position_default</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_quantity</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontPattern_orderDate</td>
-        <td class="value">[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</td>
-      </tr>
-      <tr>
-        <td class="key">product_price_total</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_method_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_sales_tax</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_month</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_firstname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_lastname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">email</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_payment_method_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_states_state</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_owner</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_status_default</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_size</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_color</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontPattern_orderNumber</td>
+        <td class="key">storefront_orderNumberPattern</td>
         <td class="value">00[0-9]{6}</td>
       </tr>
       <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
+        <td class="key">storefront_shippingAddress_useAsBillingAddress</td>
+        <td class="value">true</td>
       </tr>
       <tr>
-        <td class="key">shipping_is_gift_default</td>
+        <td class="key">orderDate_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_date</td>
+        <td class="key">totalsTotal</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">credit_card_type</td>
+        <td class="key">storefront_shippingStatus</td>
+        <td class="value">Not Shipped</td>
+      </tr>
+      <tr>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">credit_card_year</td>
+        <td class="key">storefront_orderDatePattern</td>
+        <td class="value">[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingMethod_position</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">totalsSalesTax</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_address2</td>
+        <td class="key">productNumber_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_address1</td>
+        <td class="key">shippingMethod_position</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_name</td>
+        <td class="value">Ground</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingAddress_isGift</td>
+        <td class="value">no</td>
+      </tr>
+      <tr>
+        <td class="key">orderNumber_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_total</td>
+        <td class="key">totalSubtotal_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_subtotal</td>
+        <td class="key">totalsShipping</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_country</td>
+        <td class="key">productSize_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_states_state_short</td>
+        <td class="key">productPriceTotal_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_postal_code</td>
+        <td class="key">productQuantity_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -6799,7 +6782,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -6808,7 +6791,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -7041,7 +7024,7 @@ Steps</h3>
             <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_enterAddress">modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_enterAddress</a>
         </div>
         <div class="step-description">
-          <p>Enter data on billing page.</p>
+          <p>Enter address data on shipping page.</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -7056,7 +7039,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition">modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition</a>
+            <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition">modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition</a>
         </div>
         <div class="step-description">
           <p>Check shipping method via position.</p>
@@ -7174,7 +7157,7 @@ Steps</h3>
             <a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingAddress_enterAddress">modules.pages.checkout.steps.billing.MCheckout_BillingAddress_enterAddress</a>
         </div>
         <div class="step-description">
-          <p>Enter data on billing page.</p>
+          <p>Enter address data on billing page.</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -7201,7 +7184,7 @@ Steps</h3>
             <a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_enterCreditCard">modules.pages.checkout.steps.billing.MCheckout_BillingPayment_enterCreditCard</a>
         </div>
         <div class="step-description">
-          <p>Enter credit card in payment on billing page.</p>
+          <p>Enter credit card data in payment on billing page.</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -7582,48 +7565,48 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">creditCardOwner</td>
-        <td class="value">${creditCardOwner_typeVisa}</td>
+        <td class="key">creditCard_year</td>
+        <td class="value">${creditCard_year_typeVisa}</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber</td>
-        <td class="value">${creditCardNumber_typeVisa}</td>
+        <td class="key">creditCard_number</td>
+        <td class="value">${creditCard_number_typeVisa}</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth</td>
-        <td class="value">${creditCardMonth_typeVisa}</td>
+        <td class="key">creditCard_typeShort</td>
+        <td class="value">${creditCard_typeShort_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_cvn</td>
+        <td class="value">${creditCard_cvn_typeVisa}</td>
       </tr>
       <tr>
         <td class="key">productNumber_01</td>
         <td class="value">${productNumber_typeVariationProductColorSizeListPriceOnly}</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn</td>
-        <td class="value">${creditCardCvn_typeVisa}</td>
+        <td class="key">creditCard_owner</td>
+        <td class="value">${creditCard_owner_typeVisa}</td>
       </tr>
       <tr>
         <td class="key">productNumber_02</td>
-        <td class="value">${productNumber_typeVariationProductColorSizeSalePrice}</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType</td>
-        <td class="value">${creditCardType_typeVisa}</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardTypeShort</td>
-        <td class="value">${creditCardTypeShort_typeVisa}</td>
+        <td class="value">${productNumber_typeVariationProductColorSizeSalesPrice}</td>
       </tr>
       <tr>
         <td class="key">productQuantity_02</td>
         <td class="value">2</td>
       </tr>
       <tr>
-        <td class="key">creditCardYear</td>
-        <td class="value">${creditCardYear_typeVisa}</td>
-      </tr>
-      <tr>
         <td class="key">productQuantity_01</td>
         <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_month</td>
+        <td class="value">${creditCard_month_typeVisa}</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_type</td>
+        <td class="value">${creditCard_type_typeVisa}</td>
       </tr>
     </tbody>
   </table>
@@ -7642,200 +7625,192 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">product_01_size</td>
+        <td class="key">productPriceTotal_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_city</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_method_position</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_shipping</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontPattern_orderDate</td>
-        <td class="value">[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</td>
-      </tr>
-      <tr>
-        <td class="key">password</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_01_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_method_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_color</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_sales_tax</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address1</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_lastname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address2</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_01_price_total</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_price_total</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_states_state</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_status_default</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_lastname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address_title</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_size</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontPattern_orderNumber</td>
-        <td class="value">00[0-9]{6}</td>
-      </tr>
-      <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
-      </tr>
-      <tr>
-        <td class="key">billing_city</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_states_state_short</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_total</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_firstname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_subtotal</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_country</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_postal_code</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_address_title</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">firstname</td>
+        <td class="key">billingAddress_firstname</td>
         <td class="value">John</td>
       </tr>
       <tr>
-        <td class="key">billing_phone</td>
+        <td class="key">shippingAddress_phone</td>
+        <td class="value">781-391-6666</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_title</td>
+        <td class="value">Palo*Alto</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_country</td>
+        <td class="value">United States</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_country</td>
+        <td class="value">United States</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_phone</td>
+        <td class="value">781-391-6642</td>
+      </tr>
+      <tr>
+        <td class="key">orderDate_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_number</td>
+        <td class="key">storefront_shippingStatus</td>
+        <td class="value">Not Shipped</td>
+      </tr>
+      <tr>
+        <td class="key">productName_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_us_as_billing_address_default</td>
+        <td class="key">billingAddress_statesState</td>
+        <td class="value">California</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_lastname</td>
+        <td class="value">Doe</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_city</td>
+        <td class="value">Cambridge</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_firstname</td>
+        <td class="value">Jane</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingMethod_position</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">productColor_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_phone</td>
+        <td class="key">shippingAddress_address2</td>
+        <td class="value">6</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_address1</td>
+        <td class="value">Spring St</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_postalCode</td>
+        <td class="value">94301</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_address1</td>
+        <td class="value">Middlefield Rd</td>
+      </tr>
+      <tr>
+        <td class="key">productName_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_method_position_default</td>
+        <td class="key">shippingAddress_statesStateShort</td>
+        <td class="value">MA</td>
+      </tr>
+      <tr>
+        <td class="key">productSize_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_01_color</td>
+        <td class="key">billingAddress_address2</td>
+        <td class="value">1941</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_statesState</td>
+        <td class="value">Massachusetts</td>
+      </tr>
+      <tr>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">billing_postal_code</td>
+        <td class="key">storefront_orderNumberPattern</td>
+        <td class="value">00[0-9]{6}</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingAddress_useAsBillingAddress</td>
+        <td class="value">true</td>
+      </tr>
+      <tr>
+        <td class="key">totalsSubtotal</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_firstname</td>
+        <td class="key">productSize_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">email</td>
+        <td class="key">totalsTotal</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">credit_card_payment_method_name</td>
+        <td class="key">password_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">billing_country</td>
+        <td class="key">billingAddress_lastname</td>
+        <td class="value">Buyer</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_statesStateShort</td>
+        <td class="value">CA</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_orderDatePattern</td>
+        <td class="value">[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</td>
+      </tr>
+      <tr>
+        <td class="key">productPriceTotal_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">billing_states_state</td>
+        <td class="key">totalsSalesTax</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_is_gift_default</td>
+        <td class="key">shippingAddress_title</td>
+        <td class="value">Cambridge</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_position</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_name</td>
+        <td class="value">Ground</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingAddress_isGift</td>
+        <td class="value">no</td>
+      </tr>
+      <tr>
+        <td class="key">orderNumber_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_date</td>
+        <td class="key">shippingAddress_postalCode</td>
+        <td class="value">02142</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_city</td>
+        <td class="value">Palo Alto</td>
+      </tr>
+      <tr>
+        <td class="key">totalsShipping</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_address2</td>
+        <td class="key">productColor_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_address1</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_states_state_short</td>
-        <td class="value na">N/A</td>
+        <td class="key">creditCard_paymentName</td>
+        <td class="value">Credit Card</td>
       </tr>
     </tbody>
   </table>
@@ -7907,7 +7882,7 @@ Steps</h3>
   <ol class="step-list">
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">modules.helper.MHelper_Profile_generateRandomEmail</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">modules.helper.MHelper_Random_generateEmail</a>
         </div>
         <div class="step-description">
           <p>Generate random email.</p>
@@ -7916,7 +7891,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">modules.helper.MHelper_Profile_generateRandomPassword</a>
+            <a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">modules.helper.MHelper_Random_generatePassword</a>
         </div>
         <div class="step-description">
           <p>Generate random password.</p>
@@ -7947,7 +7922,7 @@ Steps</h3>
           <p>Flow to create a new customer with profile data.</p>
 <ul>
 <li>Start on homepagee</li>
-<li>Create account via glaobal register in header</li>
+<li>Create account via global register in header</li>
 <li>Validate profile data</li>
 <li>Logout via global header link</li>
 <li>End on homepage</li>
@@ -8203,7 +8178,16 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition">modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition</a>
+            <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_validateAddress">modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_validateAddress</a>
+        </div>
+        <div class="step-description">
+          <p>Validate address data on shipping page.</p>
+
+        </div><!-- /.step-description -->
+      </li><!-- /.step -->
+      <li data-disabled="false" class="step step-module">
+        <div class="step-name">
+            <a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition">modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition</a>
         </div>
         <div class="step-description">
           <p>Check shipping method via position.</p>
@@ -8309,6 +8293,15 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
+            <a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingAddress_validateAddress">modules.pages.checkout.steps.billing.MCheckout_BillingAddress_validateAddress</a>
+        </div>
+        <div class="step-description">
+          <p>Validate address data on billing page.</p>
+
+        </div><!-- /.step-description -->
+      </li><!-- /.step -->
+      <li data-disabled="false" class="step step-module">
+        <div class="step-name">
             <a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_checkCreditCard">modules.pages.checkout.steps.billing.MCheckout_BillingPayment_checkCreditCard</a>
         </div>
         <div class="step-description">
@@ -8331,6 +8324,15 @@ Steps</h3>
         </div>
         <div class="step-description">
           <p>Enter credit card cvn in payment on billing page.</p>
+
+        </div><!-- /.step-description -->
+      </li><!-- /.step -->
+      <li data-disabled="false" class="step step-module">
+        <div class="step-name">
+            <a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_validateCreditCard">modules.pages.checkout.steps.billing.MCheckout_BillingPayment_validateCreditCard</a>
+        </div>
+        <div class="step-description">
+          <p>Validate credit card data in payment on billing page.</p>
 
         </div><!-- /.step-description -->
       </li><!-- /.step -->
@@ -8589,48 +8591,56 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">creditCardOwner</td>
-        <td class="value">${creditCardOwner_typeAmex}</td>
+        <td class="key">firstname</td>
+        <td class="value">${billingAddress_firstname}</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber</td>
-        <td class="value">${creditCardNumber_typeAmex}</td>
+        <td class="key">creditCard_number</td>
+        <td class="value">${creditCard_number_typeAmex}</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth</td>
-        <td class="value">${creditCardMonth_typeAmex}</td>
+        <td class="key">creditCard_typeShort</td>
+        <td class="value">${creditCard_typeShort_typeAmex}</td>
       </tr>
       <tr>
-        <td class="key">productNumber_01</td>
-        <td class="value">${productNumber_typeProduct}</td>
+        <td class="key">creditCard_cvn</td>
+        <td class="value">${creditCard_cvn_typeAmex}</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn</td>
-        <td class="value">${creditCardCvn_typeAmex}</td>
-      </tr>
-      <tr>
-        <td class="key">productNumber_02</td>
-        <td class="value">${productNumber_typeOptionProduct}</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType</td>
-        <td class="value">${creditCardType_typeAmex}</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardTypeShort</td>
-        <td class="value">${creditCardTypeShort_typeAmex}</td>
+        <td class="key">creditCard_owner</td>
+        <td class="value">${creditCard_owner_typeAmex}</td>
       </tr>
       <tr>
         <td class="key">productQuantity_02</td>
         <td class="value">4</td>
       </tr>
       <tr>
-        <td class="key">creditCardYear</td>
-        <td class="value">${creditCardYear_typeAmex}</td>
-      </tr>
-      <tr>
         <td class="key">productQuantity_01</td>
         <td class="value">2</td>
+      </tr>
+      <tr>
+        <td class="key">lastname</td>
+        <td class="value">${billingAddress_lastname}</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_type</td>
+        <td class="value">${creditCard_type_typeAmex}</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year</td>
+        <td class="value">${creditCard_year_typeAmex}</td>
+      </tr>
+      <tr>
+        <td class="key">productNumber_01</td>
+        <td class="value">${productNumber_typeProduct}</td>
+      </tr>
+      <tr>
+        <td class="key">productNumber_02</td>
+        <td class="value">${productNumber_typeOptionProduct}</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_month</td>
+        <td class="value">${creditCard_month_typeAmex}</td>
       </tr>
     </tbody>
   </table>
@@ -8649,188 +8659,188 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">shipping_address_title</td>
+        <td class="key">productPriceTotal_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">product_01_quantity</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">firstname</td>
+        <td class="key">billingAddress_firstname</td>
         <td class="value">John</td>
       </tr>
       <tr>
-        <td class="key">billing_phone</td>
+        <td class="key">shippingAddress_phone</td>
+        <td class="value">781-391-6666</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_title</td>
+        <td class="value">Palo*Alto</td>
+      </tr>
+      <tr>
+        <td class="key">productQuantity_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_city</td>
+        <td class="key">totalsTotal_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_number</td>
+        <td class="key">shippingAddress_country</td>
+        <td class="value">United States</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_country</td>
+        <td class="value">United States</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_phone</td>
+        <td class="value">781-391-6642</td>
+      </tr>
+      <tr>
+        <td class="key">orderDate_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_phone</td>
+        <td class="key">storefront_shippingStatus</td>
+        <td class="value">Not Shipped</td>
+      </tr>
+      <tr>
+        <td class="key">productName_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_us_as_billing_address_default</td>
+        <td class="key">billingAddress_statesState</td>
+        <td class="value">California</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_lastname</td>
+        <td class="value">Doe</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_city</td>
+        <td class="value">Cambridge</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_firstname</td>
+        <td class="value">Jane</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingMethod_position</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">productNumber_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_method_position</td>
+        <td class="key">shippingAddress_address2</td>
+        <td class="value">6</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_address1</td>
+        <td class="value">Spring St</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_postalCode</td>
+        <td class="value">94301</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_address1</td>
+        <td class="value">Middlefield Rd</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_statesStateShort</td>
+        <td class="value">MA</td>
+      </tr>
+      <tr>
+        <td class="key">productName_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_shipping</td>
+        <td class="key">billingAddress_address2</td>
+        <td class="value">1941</td>
+      </tr>
+      <tr>
+        <td class="key">totalsSalesTax_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">storefrontPattern_orderDate</td>
-        <td class="value">[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</td>
+        <td class="key">shippingAddress_statesState</td>
+        <td class="value">Massachusetts</td>
       </tr>
       <tr>
-        <td class="key">password</td>
+        <td class="key">email_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">billing_postal_code</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_01_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_method_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_sales_tax</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_quantity</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_firstname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address1</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">email</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_lastname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address2</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">credit_card_payment_method_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_01_price_total</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_states_state</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_price_total</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_status_default</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_country</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_states_state</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_lastname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_address_title</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">storefrontPattern_orderNumber</td>
+        <td class="key">storefront_orderNumberPattern</td>
         <td class="value">00[0-9]{6}</td>
       </tr>
       <tr>
-        <td class="key">lastname</td>
+        <td class="key">storefront_shippingAddress_useAsBillingAddress</td>
+        <td class="value">true</td>
+      </tr>
+      <tr>
+        <td class="key">password_varDynamic</td>
+        <td class="value na">N/A</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_lastname</td>
         <td class="value">Buyer</td>
       </tr>
       <tr>
-        <td class="key">shipping_is_gift_default</td>
+        <td class="key">billingAddress_statesStateShort</td>
+        <td class="value">CA</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_orderDatePattern</td>
+        <td class="value">[A-Z][a-z]{2} [0-9]{1,2}, [0-9]{4}</td>
+      </tr>
+      <tr>
+        <td class="key">totalsShipping_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">billing_city</td>
+        <td class="key">productPriceTotal_01_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">order_date</td>
+        <td class="key">shippingAddress_title</td>
+        <td class="value">Cambridge</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_position</td>
+        <td class="value">1</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_name</td>
+        <td class="value">Ground</td>
+      </tr>
+      <tr>
+        <td class="key">storefront_shippingAddress_isGift</td>
+        <td class="value">no</td>
+      </tr>
+      <tr>
+        <td class="key">orderNumber_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_address2</td>
+        <td class="key">shippingAddress_postalCode</td>
+        <td class="value">02142</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_city</td>
+        <td class="value">Palo Alto</td>
+      </tr>
+      <tr>
+        <td class="key">totalsSubtotal_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">shipping_address1</td>
+        <td class="key">productQuantity_02_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">billing_states_state_short</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">product_02_name</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">billing_firstname</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_total</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">order_subtotal</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_country</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_states_state_short</td>
-        <td class="value na">N/A</td>
-      </tr>
-      <tr>
-        <td class="key">shipping_postal_code</td>
-        <td class="value na">N/A</td>
+        <td class="key">creditCard_paymentName</td>
+        <td class="value">Credit Card</td>
       </tr>
     </tbody>
   </table>
@@ -9132,7 +9142,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderItems">modules.global.minicart.VGlobal_MiniCart_validateHeaderItems</a>
+            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals">modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals</a>
         </div>
         <div class="step-description">
           <p>Validate minicart on homepage with item count and total price in header details .</p>
@@ -9252,7 +9262,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderItems">modules.global.minicart.VGlobal_MiniCart_validateHeaderItems</a>
+            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals">modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals</a>
         </div>
         <div class="step-description">
           <p>Validate minicart on homepage with item count and total price in header details .</p>
@@ -9329,7 +9339,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderItems">modules.global.minicart.VGlobal_MiniCart_validateHeaderItems</a>
+            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals">modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals</a>
         </div>
         <div class="step-description">
           <p>Validate minicart on homepage with item count and total price in header details .</p>
@@ -9615,7 +9625,7 @@ Steps</h3>
       </li><!-- /.step -->
       <li data-disabled="false" class="step step-module">
         <div class="step-name">
-            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderItems">modules.global.minicart.VGlobal_MiniCart_validateHeaderItems</a>
+            <a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals">modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals</a>
         </div>
         <div class="step-description">
           <p><strong>Caution:</strong> Browser window needs to be 1200 pixels wide to show totals subtotal in header.</p>
@@ -9731,11 +9741,11 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">productQuantity_01</td>
+        <td class="key">productQuantity</td>
         <td class="value">1</td>
       </tr>
       <tr>
-        <td class="key">productNumber_01</td>
+        <td class="key">productNumber</td>
         <td class="value">${productNumber_typeProduct}</td>
       </tr>
     </tbody>
@@ -9755,15 +9765,15 @@ Defined Outside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">productQuantity_01_varDynamic</td>
+        <td class="key">productName_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">productPriceTotal_01_varDynamic</td>
+        <td class="key">productPriceTotal_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
       <tr>
-        <td class="key">productName_01_varDynamic</td>
+        <td class="key">productQuantity_varDynamic</td>
         <td class="value na">N/A</td>
       </tr>
     </tbody>
@@ -9931,7 +9941,7 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">searchText_01</td>
+        <td class="key">searchText</td>
         <td class="value">${searchText_articlesContent}</td>
       </tr>
     </tbody>
@@ -10089,7 +10099,7 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">searchText_01</td>
+        <td class="key">searchText</td>
         <td class="value">${searchText_noContent}</td>
       </tr>
     </tbody>
@@ -10274,7 +10284,7 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">searchText_01</td>
+        <td class="key">searchText</td>
         <td class="value">${searchText_categoryName}</td>
       </tr>
     </tbody>
@@ -10432,7 +10442,7 @@ Defined Inside</h4>
     </thead>
     <tbody>
       <tr>
-        <td class="key">searchText_01</td>
+        <td class="key">searchText</td>
         <td class="value">${searchText_productNumber}</td>
       </tr>
     </tbody>

@@ -300,7 +300,7 @@
     <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateBodySubtotal">VGlobal_MiniCart_validateBodySubtotal</a></li>
     <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateEmpty">VGlobal_MiniCart_validateEmpty</a></li>
     <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeader">VGlobal_MiniCart_validateHeader</a></li>
-    <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderItems">VGlobal_MiniCart_validateHeaderItems</a></li>
+    <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateHeaderTotals">VGlobal_MiniCart_validateHeaderTotals</a></li>
   </ul>
 
       <h4>Java Modules</h4>
@@ -328,16 +328,19 @@
   <ul>
     <li><a href="modules.html#mod_modules.helper.FHelper_Session_flowToEndSession">FHelper_Session_flowToEndSession</a></li>
     <li><a href="modules.html#mod_modules.helper.FHelper_Session_flowToStartSession">FHelper_Session_flowToStartSession</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Date_convertDateNumberLongInDateNumberShort">MHelper_Date_convertDateNumberLongInDateNumberShort</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Date_convertDateNumberLongToDateNumberShort">MHelper_Date_convertDateNumberLongToDateNumberShort</a></li>
     <li><a href="modules.html#mod_modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN">MHelper_Date_convertMonthNameToMonthNumberShortEN</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Number_convertNumberToLastFourDigits">MHelper_Number_convertNumberToLastFourDigits</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Number_convertNumberToTwoDigitsLength">MHelper_Number_convertNumberToTwoDigitsLength</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Number_generateRandomFromRange">MHelper_Number_generateRandomFromRange</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Price_calculateSumsTotalsPriceQuantity">MHelper_Price_calculateSumsTotalsPriceQuantity</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Price_calculateTotalProductPrice">MHelper_Price_calculateTotalProductPrice</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Price_convertPriceToNumber">MHelper_Price_convertPriceToNumber</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomEmail">MHelper_Profile_generateRandomEmail</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Profile_generateRandomPassword">MHelper_Profile_generateRandomPassword</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Number_sliceLastFourDigits">MHelper_Number_sliceLastFourDigits</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Number_sliceLastTwoDigits">MHelper_Number_sliceLastTwoDigits</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Number_splitCCIntoGroups">MHelper_Number_splitCCIntoGroups</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Price_convertPriceToValue">MHelper_Price_convertPriceToValue</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Price_convertValueToPrice">MHelper_Price_convertValueToPrice</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateProductPriceTotal">MHelper_Product_calculateProductPriceTotal</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsQuantity">MHelper_Product_calculateTotalsQuantity</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsSubtotal">MHelper_Product_calculateTotalsSubtotal</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Random_generateEmail">MHelper_Random_generateEmail</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Random_generateNumber">MHelper_Random_generateNumber</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Random_generatePassword">MHelper_Random_generatePassword</a></li>
   </ul>
 
       <h4>Java Modules</h4>
@@ -822,10 +825,12 @@
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingAddress_enterAddress">MCheckout_BillingAddress_enterAddress</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingAddress_enterEmail">MCheckout_BillingAddress_enterEmail</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingAddress_selectSavedAddress">MCheckout_BillingAddress_selectSavedAddress</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingAddress_validateAddress">MCheckout_BillingAddress_validateAddress</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_checkCreditCard">MCheckout_BillingPayment_checkCreditCard</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_enterCreditCard">MCheckout_BillingPayment_enterCreditCard</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_enterCreditCardCVN">MCheckout_BillingPayment_enterCreditCardCVN</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_selectSavedCreditCard">MCheckout_BillingPayment_selectSavedCreditCard</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.MCheckout_BillingPayment_validateCreditCard">MCheckout_BillingPayment_validateCreditCard</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.billing.VCheckout_Billing_validatePage">VCheckout_Billing_validatePage</a></li>
   </ul>
 
@@ -953,13 +958,14 @@
 
       <h4>Script Modules</h4>
   <ul>
-    <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_Shipping_checkIsGift">MCheckout_Shipping_checkIsGift</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_Shipping_clickContinue">MCheckout_Shipping_clickContinue</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_checkAddToAddressBook">MCheckout_ShippingAddress_checkAddToAddressBook</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_checkIsGift">MCheckout_ShippingAddress_checkIsGift</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_checkUseAsBillingAddress">MCheckout_ShippingAddress_checkUseAsBillingAddress</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_enterAddress">MCheckout_ShippingAddress_enterAddress</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_selectSavedAddress">MCheckout_ShippingAddress_selectSavedAddress</a></li>
-    <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkMethodPosition">MCheckout_ShippingMethod_checkMethodPosition</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_validateAddress">MCheckout_ShippingAddress_validateAddress</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition">MCheckout_ShippingMethod_checkPosition</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.VCheckout_Shipping_validateCheckedValues">VCheckout_Shipping_validateCheckedValues</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.VCheckout_Shipping_validatePage">VCheckout_Shipping_validatePage</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.shipping.VCheckout_ShippingMethod_validatePrice">VCheckout_ShippingMethod_validatePrice</a></li>
@@ -1124,168 +1130,152 @@
     </thead>
     <tbody>
       <tr>
-        <td class="key">billingAddress1</td>
+        <td class="key">billingAddress_address1</td>
         <td class="value">Middlefield Rd</td>
       </tr>
       <tr>
-        <td class="key">billingAddress2</td>
+        <td class="key">billingAddress_address2</td>
         <td class="value">1941</td>
       </tr>
       <tr>
-        <td class="key">billingAddressTitle</td>
-        <td class="value">Palo-Alto</td>
-      </tr>
-      <tr>
-        <td class="key">billingCity</td>
+        <td class="key">billingAddress_city</td>
         <td class="value">Palo Alto</td>
       </tr>
       <tr>
-        <td class="key">billingCountry</td>
+        <td class="key">billingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">billingFirstname</td>
+        <td class="key">billingAddress_firstname</td>
         <td class="value">John</td>
       </tr>
       <tr>
-        <td class="key">billingLastname</td>
+        <td class="key">billingAddress_lastname</td>
         <td class="value">Buyer</td>
       </tr>
       <tr>
-        <td class="key">billingPhone</td>
+        <td class="key">billingAddress_phone</td>
         <td class="value">781-391-6642</td>
       </tr>
       <tr>
-        <td class="key">billingPostalCode</td>
+        <td class="key">billingAddress_postalCode</td>
         <td class="value">94301</td>
       </tr>
       <tr>
-        <td class="key">billingStatesState</td>
+        <td class="key">billingAddress_statesState</td>
         <td class="value">California</td>
       </tr>
       <tr>
-        <td class="key">billingStatesStateShort</td>
+        <td class="key">billingAddress_statesStateShort</td>
         <td class="value">CA</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeAmex</td>
+        <td class="key">billingAddress_title</td>
+        <td class="value">Palo*Alto</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_cvn_typeAmex</td>
         <td class="value">1234</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeVisa</td>
+        <td class="key">creditCard_cvn_typeVisa</td>
         <td class="value">123</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeAmex</td>
+        <td class="key">creditCard_month_typeAmex</td>
         <td class="value">April</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeVisa</td>
+        <td class="key">creditCard_month_typeVisa</td>
         <td class="value">August</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeAmex</td>
+        <td class="key">creditCard_number_typeAmex</td>
         <td class="value">340000000000009</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeVisa</td>
+        <td class="key">creditCard_number_typeVisa</td>
         <td class="value">4111111111111111</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeAmex</td>
+        <td class="key">creditCard_owner_typeAmex</td>
         <td class="value">Jane Doe</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeVisa</td>
+        <td class="key">creditCard_owner_typeVisa</td>
         <td class="value">John Buyer</td>
       </tr>
       <tr>
-        <td class="key">creditCardTypeShort_typeAmex</td>
-        <td class="value">Amex</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardTypeShort_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeAmex</td>
-        <td class="value">American Express</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeAmex</td>
-        <td class="value">2019</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeVisa</td>
-        <td class="value">2016</td>
-      </tr>
-      <tr>
-        <td class="key">creditCard_paymentMethodName</td>
+        <td class="key">creditCard_paymentName</td>
         <td class="value">Credit Card</td>
       </tr>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
+        <td class="key">creditCard_typeShort_typeAmex</td>
+        <td class="value">Amex</td>
       </tr>
       <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
+        <td class="key">creditCard_typeShort_typeVisa</td>
+        <td class="value">Visa</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress1</td>
+        <td class="key">creditCard_type_typeAmex</td>
+        <td class="value">American Express</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_type_typeVisa</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeAmex</td>
+        <td class="value">2019</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeVisa</td>
+        <td class="value">2016</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_address1</td>
         <td class="value">Spring St</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress2</td>
+        <td class="key">shippingAddress_address2</td>
         <td class="value">6</td>
       </tr>
       <tr>
-        <td class="key">shippingAddressTitle</td>
+        <td class="key">shippingAddress_city</td>
         <td class="value">Cambridge</td>
       </tr>
       <tr>
-        <td class="key">shippingCity</td>
-        <td class="value">Cambridge</td>
-      </tr>
-      <tr>
-        <td class="key">shippingCountry</td>
+        <td class="key">shippingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">shippingFirstname</td>
+        <td class="key">shippingAddress_firstname</td>
         <td class="value">Jane</td>
       </tr>
       <tr>
-        <td class="key">shippingLastname</td>
+        <td class="key">shippingAddress_lastname</td>
         <td class="value">Doe</td>
       </tr>
       <tr>
-        <td class="key">shippingMethodName</td>
-        <td class="value">Ground</td>
-      </tr>
-      <tr>
-        <td class="key">shippingMethodPosition</td>
-        <td class="value">1</td>
-      </tr>
-      <tr>
-        <td class="key">shippingPhone</td>
+        <td class="key">shippingAddress_phone</td>
         <td class="value">781-391-6666</td>
       </tr>
       <tr>
-        <td class="key">shippingPostalCode</td>
+        <td class="key">shippingAddress_postalCode</td>
         <td class="value">02142</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesState</td>
+        <td class="key">shippingAddress_statesState</td>
         <td class="value">Massachusetts</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesStateShort</td>
+        <td class="key">shippingAddress_statesStateShort</td>
         <td class="value">MA</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_title</td>
+        <td class="value">Cambridge</td>
       </tr>
     </tbody>
   </table>
@@ -1329,7 +1319,7 @@
       <h4>Tests</h4>
   <ul>
     <li><a href="tests.html#test_tests.cart.TCartAddRemoveProduct">TCartAddRemoveProduct</a></li>
-    <li><a href="tests.html#test_tests.cart.TCartRefreshProductsCalculateSums">TCartRefreshProductsCalculateSums</a></li>
+    <li><a href="tests.html#test_tests.cart.TCartRefreshProductsCalculateTotals">TCartRefreshProductsCalculateTotals</a></li>
   </ul>
 
       <h4>Script Modules</h4>
@@ -1387,168 +1377,160 @@
     </thead>
     <tbody>
       <tr>
-        <td class="key">billingAddress1</td>
+        <td class="key">billingAddress_address1</td>
         <td class="value">Middlefield Rd</td>
       </tr>
       <tr>
-        <td class="key">billingAddress2</td>
+        <td class="key">billingAddress_address2</td>
         <td class="value">1941</td>
       </tr>
       <tr>
-        <td class="key">billingAddressTitle</td>
-        <td class="value">Palo-Alto</td>
-      </tr>
-      <tr>
-        <td class="key">billingCity</td>
+        <td class="key">billingAddress_city</td>
         <td class="value">Palo Alto</td>
       </tr>
       <tr>
-        <td class="key">billingCountry</td>
+        <td class="key">billingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">billingFirstname</td>
+        <td class="key">billingAddress_firstname</td>
         <td class="value">John</td>
       </tr>
       <tr>
-        <td class="key">billingLastname</td>
+        <td class="key">billingAddress_lastname</td>
         <td class="value">Buyer</td>
       </tr>
       <tr>
-        <td class="key">billingPhone</td>
+        <td class="key">billingAddress_phone</td>
         <td class="value">781-391-6642</td>
       </tr>
       <tr>
-        <td class="key">billingPostalCode</td>
+        <td class="key">billingAddress_postalCode</td>
         <td class="value">94301</td>
       </tr>
       <tr>
-        <td class="key">billingStatesState</td>
+        <td class="key">billingAddress_statesState</td>
         <td class="value">California</td>
       </tr>
       <tr>
-        <td class="key">billingStatesStateShort</td>
+        <td class="key">billingAddress_statesStateShort</td>
         <td class="value">CA</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeAmex</td>
+        <td class="key">billingAddress_title</td>
+        <td class="value">Palo*Alto</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_cvn_typeAmex</td>
         <td class="value">1234</td>
       </tr>
       <tr>
-        <td class="key">creditCardCvn_typeVisa</td>
+        <td class="key">creditCard_cvn_typeVisa</td>
         <td class="value">123</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeAmex</td>
+        <td class="key">creditCard_month_typeAmex</td>
         <td class="value">April</td>
       </tr>
       <tr>
-        <td class="key">creditCardMonth_typeVisa</td>
+        <td class="key">creditCard_month_typeVisa</td>
         <td class="value">August</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeAmex</td>
+        <td class="key">creditCard_number_typeAmex</td>
         <td class="value">340000000000009</td>
       </tr>
       <tr>
-        <td class="key">creditCardNumber_typeVisa</td>
+        <td class="key">creditCard_number_typeVisa</td>
         <td class="value">4111111111111111</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeAmex</td>
+        <td class="key">creditCard_owner_typeAmex</td>
         <td class="value">Jane Doe</td>
       </tr>
       <tr>
-        <td class="key">creditCardOwner_typeVisa</td>
+        <td class="key">creditCard_owner_typeVisa</td>
         <td class="value">John Buyer</td>
       </tr>
       <tr>
-        <td class="key">creditCardTypeShort_typeAmex</td>
-        <td class="value">Amex</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardTypeShort_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeAmex</td>
-        <td class="value">American Express</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardType_typeVisa</td>
-        <td class="value">Visa</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeAmex</td>
-        <td class="value">2019</td>
-      </tr>
-      <tr>
-        <td class="key">creditCardYear_typeVisa</td>
-        <td class="value">2016</td>
-      </tr>
-      <tr>
-        <td class="key">creditCard_paymentMethodName</td>
+        <td class="key">creditCard_paymentName</td>
         <td class="value">Credit Card</td>
       </tr>
       <tr>
-        <td class="key">firstname</td>
-        <td class="value">John</td>
+        <td class="key">creditCard_typeShort_typeAmex</td>
+        <td class="value">Amex</td>
       </tr>
       <tr>
-        <td class="key">lastname</td>
-        <td class="value">Buyer</td>
+        <td class="key">creditCard_typeShort_typeVisa</td>
+        <td class="value">Visa</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress1</td>
+        <td class="key">creditCard_type_typeAmex</td>
+        <td class="value">American Express</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_type_typeVisa</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeAmex</td>
+        <td class="value">2019</td>
+      </tr>
+      <tr>
+        <td class="key">creditCard_year_typeVisa</td>
+        <td class="value">2016</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_address1</td>
         <td class="value">Spring St</td>
       </tr>
       <tr>
-        <td class="key">shippingAddress2</td>
+        <td class="key">shippingAddress_address2</td>
         <td class="value">6</td>
       </tr>
       <tr>
-        <td class="key">shippingAddressTitle</td>
+        <td class="key">shippingAddress_city</td>
         <td class="value">Cambridge</td>
       </tr>
       <tr>
-        <td class="key">shippingCity</td>
-        <td class="value">Cambridge</td>
-      </tr>
-      <tr>
-        <td class="key">shippingCountry</td>
+        <td class="key">shippingAddress_country</td>
         <td class="value">United States</td>
       </tr>
       <tr>
-        <td class="key">shippingFirstname</td>
+        <td class="key">shippingAddress_firstname</td>
         <td class="value">Jane</td>
       </tr>
       <tr>
-        <td class="key">shippingLastname</td>
+        <td class="key">shippingAddress_lastname</td>
         <td class="value">Doe</td>
       </tr>
       <tr>
-        <td class="key">shippingMethodName</td>
-        <td class="value">Ground</td>
-      </tr>
-      <tr>
-        <td class="key">shippingMethodPosition</td>
-        <td class="value">1</td>
-      </tr>
-      <tr>
-        <td class="key">shippingPhone</td>
+        <td class="key">shippingAddress_phone</td>
         <td class="value">781-391-6666</td>
       </tr>
       <tr>
-        <td class="key">shippingPostalCode</td>
+        <td class="key">shippingAddress_postalCode</td>
         <td class="value">02142</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesState</td>
+        <td class="key">shippingAddress_statesState</td>
         <td class="value">Massachusetts</td>
       </tr>
       <tr>
-        <td class="key">shippingStatesStateShort</td>
+        <td class="key">shippingAddress_statesStateShort</td>
         <td class="value">MA</td>
+      </tr>
+      <tr>
+        <td class="key">shippingAddress_title</td>
+        <td class="value">Cambridge</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_name</td>
+        <td class="value">Ground</td>
+      </tr>
+      <tr>
+        <td class="key">shippingMethod_position</td>
+        <td class="value">1</td>
       </tr>
     </tbody>
   </table>
