@@ -7135,7 +7135,7 @@ Executable with:
       <steps>
         <step disabled="false">
           <name>modules.helper.MHelper_Number_splitCCIntoGroups</name>
-          <description>Splits a credit card into the usual groups of four characters.</description>
+          <description>Split credit card into the usual groups of four characters.</description>
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
@@ -7144,7 +7144,7 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
+          <name>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</name>
           <description>Convert month name into month number (for english locale only).</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -7155,8 +7155,8 @@ Executable with:
         </step>
       </steps>
       <calls>
-        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
         <string>modules.helper.MHelper_Number_splitCCIntoGroups</string>
+        <string>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</string>
         <string>modules.helper.MHelper_Number_sliceLastTwoDigits</string>
         <string>modules.helper.MHelper_Number_sliceLastFourDigits</string>
       </calls>
@@ -7291,6 +7291,30 @@ Executable with:
       <steps/>
       <calls/>
       <test-data/>
+      <used>true</used>
+    </module>
+    <module>
+      <description>Convert date number long (MMM DD, YYYY e.g. Jan 18, 2015) into date number short (M/D/YY  e.g. 1/18/15).</description>
+      <name>modules.helper.MHelper_Date_convertIntoDateNumberShort</name>
+      <external-parameters>
+        <entry>
+          <string>date_month</string>
+          <null/>
+        </entry>
+      </external-parameters>
+      <steps>
+        <step disabled="false">
+          <name>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</name>
+          <description>Convert month name into month number (for english locale only).</description>
+          <moduleCall>true</moduleCall>
+        </step>
+      </steps>
+      <calls>
+        <string>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</string>
+      </calls>
+      <test-data/>
+      <parameter name="dateNumberLong" description="date number long"/>
+      <parameter name="dateNumberShort_varName" description="date number short as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -7574,7 +7598,7 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
+          <name>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</name>
           <description>Convert month name into month number (for english locale only).</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -7585,7 +7609,7 @@ Executable with:
         </step>
       </steps>
       <calls>
-        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
+        <string>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</string>
         <string>modules.helper.MHelper_Number_sliceLastTwoDigits</string>
         <string>modules.helper.MHelper_Number_sliceLastFourDigits</string>
       </calls>
@@ -7688,6 +7712,17 @@ Executable with:
       <used>true</used>
     </module>
     <module>
+      <description>Convert month name into month number (for english locale only).</description>
+      <name>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</name>
+      <external-parameters/>
+      <steps/>
+      <calls/>
+      <test-data/>
+      <parameter name="monthName" description="month name"/>
+      <parameter name="monthNumberShort_varName" description="month number short as var name"/>
+      <used>true</used>
+    </module>
+    <module>
       <description>Click submit profile data.</description>
       <name>modules.pages.account.personaldata.MAccount_PersonalData_clickSubmitProfile</name>
       <external-parameters/>
@@ -7771,7 +7806,7 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
+          <name>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</name>
           <description>Convert month name into month number (for english locale only).</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -7782,7 +7817,7 @@ Executable with:
         </step>
       </steps>
       <calls>
-        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
+        <string>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</string>
         <string>modules.helper.MHelper_Number_sliceLastTwoDigits</string>
         <string>modules.helper.MHelper_Number_sliceLastFourDigits</string>
       </calls>
@@ -7797,7 +7832,7 @@ Executable with:
       <used>true</used>
     </module>
     <module>
-      <description>Splits a credit card into the usual groups of four characters.</description>
+      <description>Split credit card into the usual groups of four characters.</description>
       <name>modules.helper.MHelper_Number_splitCCIntoGroups</name>
       <external-parameters/>
       <steps/>
@@ -7831,7 +7866,7 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
+          <name>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</name>
           <description>Convert month name into month number (for english locale only).</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -7842,7 +7877,7 @@ Executable with:
         </step>
       </steps>
       <calls>
-        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
+        <string>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</string>
         <string>modules.helper.MHelper_Number_sliceLastTwoDigits</string>
         <string>modules.helper.MHelper_Number_sliceLastFourDigits</string>
       </calls>
@@ -7854,30 +7889,6 @@ Executable with:
       <parameter name="month" description="month"/>
       <parameter name="year" description="year"/>
       <parameter name="paymentAmount" description="payment amount"/>
-      <used>true</used>
-    </module>
-    <module>
-      <description>Convert date number long (MMM DD, YYYY e.g. Jan 18, 2015) into date number short (M/D/YY  e.g. 1/18/15).</description>
-      <name>modules.helper.MHelper_Date_convertDateNumberLongToDateNumberShort</name>
-      <external-parameters>
-        <entry>
-          <string>date_month</string>
-          <null/>
-        </entry>
-      </external-parameters>
-      <steps>
-        <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
-          <description>Convert month name into month number (for english locale only).</description>
-          <moduleCall>true</moduleCall>
-        </step>
-      </steps>
-      <calls>
-        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
-      </calls>
-      <test-data/>
-      <parameter name="dateNumberLong" description="date number long"/>
-      <parameter name="dateNumberShort_varName" description="date number short as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -8364,17 +8375,6 @@ Executable with:
       <steps/>
       <calls/>
       <test-data/>
-      <used>true</used>
-    </module>
-    <module>
-      <description>Convert month name into month number (for english locale only).</description>
-      <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
-      <external-parameters/>
-      <steps/>
-      <calls/>
-      <test-data/>
-      <parameter name="monthName" description="month name"/>
-      <parameter name="monthNumberShort_varName" description="month number short as var name"/>
       <used>true</used>
     </module>
     <module>
@@ -8913,13 +8913,13 @@ Executable with:
       </external-parameters>
       <steps>
         <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertDateNumberLongToDateNumberShort</name>
+          <name>modules.helper.MHelper_Date_convertIntoDateNumberShort</name>
           <description>Convert date number long (MMM DD, YYYY e.g. Jan 18, 2015) into date number short (M/D/YY  e.g. 1/18/15).</description>
           <moduleCall>true</moduleCall>
         </step>
       </steps>
       <calls>
-        <string>modules.helper.MHelper_Date_convertDateNumberLongToDateNumberShort</string>
+        <string>modules.helper.MHelper_Date_convertIntoDateNumberShort</string>
       </calls>
       <test-data/>
       <parameter name="position" description="position"/>
@@ -9846,7 +9846,7 @@ Executable with:
           <moduleCall>true</moduleCall>
         </step>
         <step disabled="false">
-          <name>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</name>
+          <name>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</name>
           <description>Convert month name into month number (for english locale only).</description>
           <moduleCall>true</moduleCall>
         </step>
@@ -9857,7 +9857,7 @@ Executable with:
         </step>
       </steps>
       <calls>
-        <string>modules.helper.MHelper_Date_convertMonthNameToMonthNumberShortEN</string>
+        <string>modules.helper.MHelper_Date_convertIntoMonthNumberShortEN</string>
         <string>modules.helper.MHelper_Number_sliceLastTwoDigits</string>
         <string>modules.helper.MHelper_Number_sliceLastFourDigits</string>
       </calls>
