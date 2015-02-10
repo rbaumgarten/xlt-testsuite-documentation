@@ -1125,7 +1125,18 @@
 
 # 3. Clean up
 
-- End session and clean up created cookies</description>
+- End session and clean up created cookies
+
+## Note 
+Executing this test case using script developer leads to the following message: 
+&quot;The following test data placeholders could not be resolved: itemsPerPageCount Replay the script anyway?&quot; 
+
+Please ignore this message, it is a known script developer issue (https://lab.xceptance.de/issues/2349).
+
+
+  
+
+</description>
       <tags>smoke</tags>
       <name>tests.catalog.TCatalogOptionSelectItemsPerPage</name>
       <external-parameters>
@@ -1949,15 +1960,15 @@
       <test-data>
         <entry>
           <string>type_01</string>
-          <string>${creditCard_type_typeVisa}</string>
+          <string>${creditCardVisa_type}</string>
         </entry>
         <entry>
           <string>number_01</string>
-          <string>${creditCard_number_typeVisa}</string>
+          <string>${creditCardVisa_number}</string>
         </entry>
         <entry>
           <string>type_02</string>
-          <string>${creditCard_type_typeAmex}</string>
+          <string>${creditCardAmex_type}</string>
         </entry>
         <entry>
           <string>firstname</string>
@@ -1965,7 +1976,7 @@
         </entry>
         <entry>
           <string>owner_01</string>
-          <string>${creditCard_owner_typeVisa}</string>
+          <string>${creditCardVisa_owner}</string>
         </entry>
         <entry>
           <string>lastname</string>
@@ -1973,35 +1984,35 @@
         </entry>
         <entry>
           <string>owner_02</string>
-          <string>${creditCard_owner_typeAmex}</string>
+          <string>${creditCardAmex_owner}</string>
         </entry>
         <entry>
           <string>number_02</string>
-          <string>${creditCard_number_typeAmex}</string>
+          <string>${creditCardAmex_number}</string>
         </entry>
         <entry>
           <string>year_02</string>
-          <string>${creditCard_year_typeAmex}</string>
+          <string>${creditCardAmex_year}</string>
         </entry>
         <entry>
           <string>year_01</string>
-          <string>${creditCard_year_typeVisa}</string>
+          <string>${creditCardVisa_year}</string>
         </entry>
         <entry>
           <string>typeShort_01</string>
-          <string>${creditCard_typeShort_typeVisa}</string>
+          <string>${creditCardVisa_typeShort}</string>
         </entry>
         <entry>
           <string>typeShort_02</string>
-          <string>${creditCard_typeShort_typeAmex}</string>
+          <string>${creditCardAmex_typeShort}</string>
         </entry>
         <entry>
           <string>month_01</string>
-          <string>${creditCard_month_typeVisa}</string>
+          <string>${creditCardVisa_month}</string>
         </entry>
         <entry>
           <string>month_02</string>
-          <string>${creditCard_month_typeAmex}</string>
+          <string>${creditCardAmex_month}</string>
         </entry>
       </test-data>
       <baseUrl></baseUrl>
@@ -2994,7 +3005,7 @@ Executable with:
       <test-data>
         <entry>
           <string>owner</string>
-          <string>${creditCard_owner_typeVisa}</string>
+          <string>${creditCardVisa_owner}</string>
         </entry>
         <entry>
           <string>country</string>
@@ -3006,7 +3017,7 @@ Executable with:
         </entry>
         <entry>
           <string>typeShort</string>
-          <string>${creditCard_typeShort_typeVisa}</string>
+          <string>${creditCardVisa_typeShort}</string>
         </entry>
         <entry>
           <string>address2</string>
@@ -3018,7 +3029,7 @@ Executable with:
         </entry>
         <entry>
           <string>year</string>
-          <string>${creditCard_year_typeVisa}</string>
+          <string>${creditCardVisa_year}</string>
         </entry>
         <entry>
           <string>address1</string>
@@ -3034,7 +3045,7 @@ Executable with:
         </entry>
         <entry>
           <string>type</string>
-          <string>${creditCard_type_typeVisa}</string>
+          <string>${creditCardVisa_type}</string>
         </entry>
         <entry>
           <string>statesStateShort</string>
@@ -3046,7 +3057,7 @@ Executable with:
         </entry>
         <entry>
           <string>number</string>
-          <string>${creditCard_number_typeVisa}</string>
+          <string>${creditCardVisa_number}</string>
         </entry>
         <entry>
           <string>productQuantity</string>
@@ -3054,7 +3065,7 @@ Executable with:
         </entry>
         <entry>
           <string>month</string>
-          <string>${creditCard_month_typeVisa}</string>
+          <string>${creditCardVisa_month}</string>
         </entry>
         <entry>
           <string>phone</string>
@@ -3062,7 +3073,7 @@ Executable with:
         </entry>
         <entry>
           <string>cvn</string>
-          <string>${creditCard_cvn_typeVisa}</string>
+          <string>${creditCardVisa_cvn}</string>
         </entry>
         <entry>
           <string>statesState</string>
@@ -4727,19 +4738,19 @@ Executable with:
         </entry>
         <entry>
           <string>creditCard_number</string>
-          <string>${creditCard_number_typeAmex}</string>
+          <string>${creditCardAmex_number}</string>
         </entry>
         <entry>
           <string>creditCard_typeShort</string>
-          <string>${creditCard_typeShort_typeAmex}</string>
+          <string>${creditCardAmex_typeShort}</string>
         </entry>
         <entry>
           <string>creditCard_cvn</string>
-          <string>${creditCard_cvn_typeAmex}</string>
+          <string>${creditCardAmex_cvn}</string>
         </entry>
         <entry>
           <string>creditCard_owner</string>
-          <string>${creditCard_owner_typeAmex}</string>
+          <string>${creditCardAmex_owner}</string>
         </entry>
         <entry>
           <string>productQuantity_02</string>
@@ -4755,11 +4766,11 @@ Executable with:
         </entry>
         <entry>
           <string>creditCard_type</string>
-          <string>${creditCard_type_typeAmex}</string>
+          <string>${creditCardAmex_type}</string>
         </entry>
         <entry>
           <string>creditCard_year</string>
-          <string>${creditCard_year_typeAmex}</string>
+          <string>${creditCardAmex_year}</string>
         </entry>
         <entry>
           <string>productNumber_01</string>
@@ -4771,7 +4782,7 @@ Executable with:
         </entry>
         <entry>
           <string>creditCard_month</string>
-          <string>${creditCard_month_typeAmex}</string>
+          <string>${creditCardAmex_month}</string>
         </entry>
       </test-data>
       <baseUrl></baseUrl>
@@ -6261,19 +6272,19 @@ Executable with:
       <test-data>
         <entry>
           <string>creditCard_year</string>
-          <string>${creditCard_year_typeVisa}</string>
+          <string>${creditCardVisa_year}</string>
         </entry>
         <entry>
           <string>creditCard_number</string>
-          <string>${creditCard_number_typeVisa}</string>
+          <string>${creditCardVisa_number}</string>
         </entry>
         <entry>
           <string>creditCard_typeShort</string>
-          <string>${creditCard_typeShort_typeVisa}</string>
+          <string>${creditCardVisa_typeShort}</string>
         </entry>
         <entry>
           <string>creditCard_cvn</string>
-          <string>${creditCard_cvn_typeVisa}</string>
+          <string>${creditCardVisa_cvn}</string>
         </entry>
         <entry>
           <string>productNumber_01</string>
@@ -6281,7 +6292,7 @@ Executable with:
         </entry>
         <entry>
           <string>creditCard_owner</string>
-          <string>${creditCard_owner_typeVisa}</string>
+          <string>${creditCardVisa_owner}</string>
         </entry>
         <entry>
           <string>productNumber_02</string>
@@ -6297,11 +6308,11 @@ Executable with:
         </entry>
         <entry>
           <string>creditCard_month</string>
-          <string>${creditCard_month_typeVisa}</string>
+          <string>${creditCardVisa_month}</string>
         </entry>
         <entry>
           <string>creditCard_type</string>
-          <string>${creditCard_type_typeVisa}</string>
+          <string>${creditCardVisa_type}</string>
         </entry>
       </test-data>
       <baseUrl></baseUrl>
@@ -10194,64 +10205,64 @@ Executable with:
             <string>Palo*Alto</string>
           </entry>
           <entry>
-            <string>creditCard_cvn_typeAmex</string>
+            <string>creditCardAmex_cvn</string>
             <string>1234</string>
           </entry>
           <entry>
-            <string>creditCard_cvn_typeVisa</string>
-            <string>123</string>
-          </entry>
-          <entry>
-            <string>creditCard_month_typeAmex</string>
+            <string>creditCardAmex_month</string>
             <string>April</string>
           </entry>
           <entry>
-            <string>creditCard_month_typeVisa</string>
-            <string>August</string>
-          </entry>
-          <entry>
-            <string>creditCard_number_typeAmex</string>
+            <string>creditCardAmex_number</string>
             <string>340000000000009</string>
           </entry>
           <entry>
-            <string>creditCard_number_typeVisa</string>
-            <string>4111111111111111</string>
-          </entry>
-          <entry>
-            <string>creditCard_owner_typeAmex</string>
+            <string>creditCardAmex_owner</string>
             <string>Jane Doe</string>
           </entry>
           <entry>
-            <string>creditCard_owner_typeVisa</string>
+            <string>creditCardAmex_type</string>
+            <string>American Express</string>
+          </entry>
+          <entry>
+            <string>creditCardAmex_typeShort</string>
+            <string>Amex</string>
+          </entry>
+          <entry>
+            <string>creditCardAmex_year</string>
+            <string>2019</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_cvn</string>
+            <string>123</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_month</string>
+            <string>August</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_number</string>
+            <string>4111111111111111</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_owner</string>
             <string>John Buyer</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_type</string>
+            <string>Visa</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_typeShort</string>
+            <string>Visa</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_year</string>
+            <string>2016</string>
           </entry>
           <entry>
             <string>creditCard_paymentName</string>
             <string>Credit Card</string>
-          </entry>
-          <entry>
-            <string>creditCard_typeShort_typeAmex</string>
-            <string>Amex</string>
-          </entry>
-          <entry>
-            <string>creditCard_typeShort_typeVisa</string>
-            <string>Visa</string>
-          </entry>
-          <entry>
-            <string>creditCard_type_typeAmex</string>
-            <string>American Express</string>
-          </entry>
-          <entry>
-            <string>creditCard_type_typeVisa</string>
-            <string>Visa</string>
-          </entry>
-          <entry>
-            <string>creditCard_year_typeAmex</string>
-            <string>2019</string>
-          </entry>
-          <entry>
-            <string>creditCard_year_typeVisa</string>
-            <string>2016</string>
           </entry>
           <entry>
             <string>shippingAddress_address1</string>
@@ -10442,64 +10453,64 @@ Executable with:
             <string>Palo*Alto</string>
           </entry>
           <entry>
-            <string>creditCard_cvn_typeAmex</string>
+            <string>creditCardAmex_cvn</string>
             <string>1234</string>
           </entry>
           <entry>
-            <string>creditCard_cvn_typeVisa</string>
-            <string>123</string>
-          </entry>
-          <entry>
-            <string>creditCard_month_typeAmex</string>
+            <string>creditCardAmex_month</string>
             <string>April</string>
           </entry>
           <entry>
-            <string>creditCard_month_typeVisa</string>
-            <string>August</string>
-          </entry>
-          <entry>
-            <string>creditCard_number_typeAmex</string>
+            <string>creditCardAmex_number</string>
             <string>340000000000009</string>
           </entry>
           <entry>
-            <string>creditCard_number_typeVisa</string>
-            <string>4111111111111111</string>
-          </entry>
-          <entry>
-            <string>creditCard_owner_typeAmex</string>
+            <string>creditCardAmex_owner</string>
             <string>Jane Doe</string>
           </entry>
           <entry>
-            <string>creditCard_owner_typeVisa</string>
+            <string>creditCardAmex_type</string>
+            <string>American Express</string>
+          </entry>
+          <entry>
+            <string>creditCardAmex_typeShort</string>
+            <string>Amex</string>
+          </entry>
+          <entry>
+            <string>creditCardAmex_year</string>
+            <string>2019</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_cvn</string>
+            <string>123</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_month</string>
+            <string>August</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_number</string>
+            <string>4111111111111111</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_owner</string>
             <string>John Buyer</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_type</string>
+            <string>Visa</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_typeShort</string>
+            <string>Visa</string>
+          </entry>
+          <entry>
+            <string>creditCardVisa_year</string>
+            <string>2016</string>
           </entry>
           <entry>
             <string>creditCard_paymentName</string>
             <string>Credit Card</string>
-          </entry>
-          <entry>
-            <string>creditCard_typeShort_typeAmex</string>
-            <string>Amex</string>
-          </entry>
-          <entry>
-            <string>creditCard_typeShort_typeVisa</string>
-            <string>Visa</string>
-          </entry>
-          <entry>
-            <string>creditCard_type_typeAmex</string>
-            <string>American Express</string>
-          </entry>
-          <entry>
-            <string>creditCard_type_typeVisa</string>
-            <string>Visa</string>
-          </entry>
-          <entry>
-            <string>creditCard_year_typeAmex</string>
-            <string>2019</string>
-          </entry>
-          <entry>
-            <string>creditCard_year_typeVisa</string>
-            <string>2016</string>
           </entry>
           <entry>
             <string>shippingAddress_address1</string>
@@ -10615,7 +10626,7 @@ Executable with:
     </entry>
     <entry>
       <string>productNumber_typeVariationProductColorSizeListPriceOnly</string>
-      <string>701643238088</string>
+      <string>701643238132</string>
     </entry>
     <entry>
       <string>productNumber_typeVariationProductColorSizeSalesPrice</string>
