@@ -147,7 +147,9 @@ _ex. Convert full english month name to number with two digits_
 | :------------ | :-------------------------------------------------- | :--------------------------------------- |
 | `storeEval`   | see target below                                    | `monthNumber`                            |
 
-__Target:__  `("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{MMonthName}")/ 10 + 1)).slice(-2)`  
+__Target:__  
+
+    ("0" + ("January___February__March_____April_____May_______June______July______August____September_October___November__December__".indexOf("@{monthName}")/ 10 + 1)).slice(-2)
 
 ## Additional Resources
 
