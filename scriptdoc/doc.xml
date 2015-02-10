@@ -6644,7 +6644,6 @@ Executable with:
 - Validate product row color and size
 - Store product price total
 - End on cart</description>
-      <tags>output</tags>
       <name>modules.pages.search.FSearch_flowToAddProductWithColorSizeToCart</name>
       <external-parameters/>
       <steps>
@@ -7037,7 +7036,6 @@ Executable with:
     </module>
     <module>
       <description>Store product color and product size attributes of variation products.</description>
-      <tags>output</tags>
       <name>modules.pages.productdetailpage.MProductDetailPage_storeColorSize</name>
       <external-parameters/>
       <steps/>
@@ -8206,7 +8204,6 @@ Executable with:
 - Validate product row basic details
 - Store product price total
 - End on cart</description>
-      <tags>output</tags>
       <name>modules.pages.search.FSearch_flowToAddProductToCart</name>
       <external-parameters/>
       <steps>
@@ -8288,20 +8285,6 @@ Executable with:
       <used>true</used>
     </module>
     <module>
-      <description>Click go straight to checkout start as returning and logged in customer via minicart body link.</description>
-      <name>modules.global.minicart.MGlobal_MiniCart_clickGoToCheckoutStart</name>
-      <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>GlobalMiniCart-ClickGoStraightToCheckout</name>
-          <moduleCall>false</moduleCall>
-        </step>
-      </steps>
-      <calls/>
-      <test-data/>
-      <used>false</used>
-    </module>
-    <module>
       <description>Validate box new customer profile data.</description>
       <name>modules.pages.checkout.steps.boxes.VCheckout_BoxNewCustomer_validateProfile</name>
       <external-parameters/>
@@ -8334,7 +8317,6 @@ Executable with:
     </module>
     <module>
       <description>Store basic product details.</description>
-      <tags>output</tags>
       <name>modules.pages.productdetailpage.MProductDetailPage_storeBasicDetails</name>
       <external-parameters/>
       <steps/>
@@ -8367,7 +8349,6 @@ Executable with:
     </module>
     <module>
       <description>Store totals subtotal.</description>
-      <tags>output</tags>
       <name>modules.pages.cart.MCart_storeTotalsSubtotal</name>
       <external-parameters/>
       <steps/>
@@ -8514,7 +8495,6 @@ Executable with:
     </module>
     <module>
       <description>Valdiate shipping method price.</description>
-      <tags>output</tags>
       <name>modules.pages.checkout.steps.shipping.VCheckout_ShippingMethod_validatePrice</name>
       <external-parameters/>
       <steps/>
@@ -9068,7 +9048,6 @@ Executable with:
     </module>
     <module>
       <description>Store order data.</description>
-      <tags>output</tags>
       <name>modules.pages.checkout.steps.confirmation.MCheckout_Confirmation_storeOrderInformation</name>
       <external-parameters/>
       <steps/>
@@ -9089,7 +9068,6 @@ Executable with:
     </module>
     <module>
       <description>Store product price total via cart row.</description>
-      <tags>output</tags>
       <name>modules.pages.cart.MCart_Row_storeProductPriceTotal</name>
       <external-parameters/>
       <steps/>
@@ -9235,7 +9213,6 @@ Executable with:
     </module>
     <module>
       <description>Validate order totals subtotal, shipping, sales tax and total.</description>
-      <tags>output</tags>
       <name>modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validateTotals</name>
       <external-parameters/>
       <steps/>
@@ -9648,6 +9625,15 @@ Executable with:
       <used>true</used>
     </module>
     <module>
+      <description>Click go straight to checkout as returning and logged in customer via minicart body link.</description>
+      <name>modules.global.minicart.MGlobal_MiniCart_clickGoToCheckoutStraight</name>
+      <external-parameters/>
+      <steps/>
+      <calls/>
+      <test-data/>
+      <used>false</used>
+    </module>
+    <module>
       <description>Validiate color is selected by label.</description>
       <name>modules.pages.catalog.VCatalog_Refinement_validateColorLabelSelected</name>
       <external-parameters/>
@@ -9831,12 +9817,7 @@ Executable with:
       <description>Click go to cart from minicart via cart link inside the mini cart.</description>
       <name>modules.global.minicart.MGlobal_MiniCart_clickGoToCartViaMiniCartLink</name>
       <external-parameters/>
-      <steps>
-        <step disabled="false">
-          <name>ClickMiniCartLink</name>
-          <moduleCall>false</moduleCall>
-        </step>
-      </steps>
+      <steps/>
       <calls/>
       <test-data/>
       <used>false</used>
