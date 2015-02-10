@@ -1,4 +1,4 @@
-# Readme to SiteGenesis-Community-TestSuite
+# Readme
 
 The test suite focuses on functional frontend testing. It was build and may be run with __XLT Script Developer__ in Firefox or the __XLT Framework__ by orchestrating different WebDrivers. As test suites sometimes tend to become complex and hard to maintain we realized it is time to build a clearly structured test suite with a well-defined set of tests. 
 
@@ -54,7 +54,7 @@ This section gives a small introduction to the test suite structure. Please visi
 
 ### [General](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/index.html)
 
-We have already build a __foundation__ of over __200 modules__ structured in over __30 packages__. Our __test set__ consists of over __20 tests__ based on empirical knowledge from our daily business projects. The aim is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes. The modules can be used as buliding bricks to enlarge the current test set quickly. 
+We have already build a __foundation__ of over __200 modules__ structured in over __30 packages__. Our __test set__ consists of over __20 tests__ based on empirical knowledge from our daily business projects. The aim is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes. The modules can be used as building bricks to enlarge the current test set quickly. 
 
     .
     |-- bin                                # executables
