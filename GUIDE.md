@@ -30,7 +30,7 @@ Variable names are written in `camelCase` notation starting with a lowercase let
 - __Test Data__: `{name}` 
 - Dynamic Variables: `{name}_varDynamic`
 - Module Parameters: `{name}`
-- Module Parameters (with needed assignment as variable name): `{name}_varName`
+- Module Parameters (which need assignment as variable name): `{name}_varName`
 
 ### Element Names
 
