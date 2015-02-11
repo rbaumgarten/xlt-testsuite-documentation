@@ -125,4 +125,3 @@ __Test Data__ or short __Data__ can be placed on global, package, module or test
 - René Schwietzke, Xceptance Software Technologies GmbH
 - Robert Baumgarten, Xceptance Software Technologies GmbH
 - Benjamin Nothdurft, Xceptance Software Technologies GmbH
-- your name here ;-)
