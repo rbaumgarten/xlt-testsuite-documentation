@@ -23,13 +23,13 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Installation
 
-- [Download XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.5.0/xlt-scriptdeveloper-4.5.0.xpi)  and unzip this test suite in a directory of your choice. (__Caution:__ Please only download the version from our company website and not the outdated version from Firefox Add-ons repositories.)
-- Install Firefox add-on `XLT Script Developer`.
+- [Download XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.5.0/xlt-scriptdeveloper-4.5.0.xpi) and install Firefox add-on (__Caution:__ Please only download the version from our company website and not the outdated version from Firefox Add-ons repositories.).
 - Open `Tools > XLT Script Developer` in Firefox.
-- Import this test suite by clicking the `folder` icon above the navigation panel.
-- Set `Command Timeout` to 30 sec. and `Implicit Wait Timeout` to 5000 msec. in `XLT Scipt Developer > Settings`.
+- Download and unzip this test suite in a directory of your choice. 
+- Import test suite by clicking the `folder` icon above the navigation panel.
 - Set the `storefront_url` of the shop system under test in `XLT Scipt Developer > Manage Global Test Data`.
 - Open a test case in the navigaton panel and click the replay button in the toolbar.
+- __Optional:__ Configure product inventory to be perpetual inside Site Gensis to make sure products can't be sold out. All product numbers are listed in `XLT Scipt Developer > Manage Global Test Data`.
 
 ### [XLT Framework](https://lab.xceptance.de/releases/xlt/4.5.0/xlt-4.5.0.zip)
 
@@ -89,11 +89,6 @@ We have already build a __foundation__ of over __200 modules__ structured in ove
     |-- xlt-scriptdeveloper.properties     # XLT Script Developer settings
     \-- global_testdata.properties         # global testdata properties
 
-
-### [Test Data](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/testdata.html)
-
-__Test Data__ or short __Data__ can be placed on global, package, module or test layer. Test data defined at a lower layer overwrites test data defined at a higher level (antihierarchical handling).
-
 ### [Packages](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/packages.html)
 
 __Packages__ form the main tree structure of the test suite. Each package may consists of other subpackages (layers) and contains test cases (named `tests.subpackage`), script modules (named `modules.subpackage`) or optional Java modules. The file system implements them as folders. 
@@ -111,6 +106,10 @@ __Validation Modules__ (named `V...`): Validation of webpage elements and dynami
 __Flow Modules__ (named `F...`): Some modules mimic more sophisticated shopping behaviours by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
 
 There are also several __global modules__ for interactions with elements in header, footer or nav (placed in `modules.global`) and some __helper modules__ for converting text, generating random values and other auxiliaries (placed in `modules.helper`).
+
+### [Test Data](http://dataduke.github.io/xlt-testsuite-documentation/scriptdoc/testdata.html)
+
+__Test Data__ or short __Data__ can be placed on global, package, module or test layer. Test data defined at a lower layer overwrites test data defined at a higher level (antihierarchical handling).
 
 ## Test Suite Metadata
 
