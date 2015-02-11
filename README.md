@@ -13,7 +13,7 @@ The project idea is to collect experiences, consolidate knowledge and share idea
 
 The following prerequisites and installation steps are needed to run the test suite with __XLT Script Developer__ in Firefox or the __XLT Framework__ orchestrating different WebDrivers. For further help please refer to [XLT Online](https://lab.xceptance.de/releases/xlt/latest/).
 
-### [XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)
+### [XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.5.0/xlt-scriptdeveloper-4.5.0.xpi)
 
 #### Prerequisites
 
@@ -23,7 +23,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Installation
 
-- [Download XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi)  and unzip this test suite in a directory of your choice. (__Caution:__ Please only download the version from our company website and not the outdated version from Firefox Add-ons repositories.)
+- [Download XLT Script Developer](https://lab.xceptance.de/releases/xlt/4.5.0/xlt-scriptdeveloper-4.5.0.xpi)  and unzip this test suite in a directory of your choice. (__Caution:__ Please only download the version from our company website and not the outdated version from Firefox Add-ons repositories.)
 - Install Firefox add-on `XLT Script Developer`.
 - Open `Tools > XLT Script Developer` in Firefox.
 - Import this test suite by clicking the `folder` icon above the navigation panel.
@@ -31,7 +31,7 @@ The following prerequisites and installation steps are needed to run the test su
 - Set the `storefront_url` of the shop system under test in `XLT Scipt Developer > Manage Global Test Data`.
 - Open a test case in the navigaton panel and click the replay button in the toolbar.
 
-### [XLT Framework](https://lab.xceptance.de/releases/xlt/4.4.5/xlt-4.4.5.zip)
+### [XLT Framework](https://lab.xceptance.de/releases/xlt/4.5.0/xlt-4.5.0.zip)
 
 #### Prerequisites
 
@@ -41,7 +41,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Installation
 
-- [Download the XLT Framework](https://www.xceptance.com/en/xlt/download.html) and unzip this test suite in a directory of your choice.
+- [Download the XLT Framework](https://lab.xceptance.de/releases/xlt/4.5.0/xlt-4.5.0.zip) and unzip this test suite in a directory of your choice.
 - Import test suite as new Java project (with JDK runtime).
 - Import XLT libraries.
 - Edit configuration see below.
