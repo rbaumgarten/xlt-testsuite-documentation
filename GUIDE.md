@@ -60,7 +60,7 @@ This section defines the element names which are part of the naming scheme of pa
 
 **{Name} or {name}**
 
-Names can be longer descriptions containing one of the following terms.
+Names can be longer descriptions containing one of the following terms for example.
 
 - `Customer`: registered user with account.
 - `Guest`: unregistered user without account.
